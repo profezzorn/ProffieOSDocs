@@ -1,5 +1,5 @@
 This a list of some of the most typical commands you can use in the Serial Monitor.  
-For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](Serial-Monitor-Additional-Commands.md).   
+For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](serial-monitor-additional-commands.md).   
 The console can be opened in Arduino by choosing menu Tools>Serial Monitor.  
 Type the command in the top box and hit return, or click the "Send" button on the right side.  
 *Note* - Commands listed under the **Diagnostic Commands** section below only work if  
@@ -108,7 +108,7 @@ Have the board deactivate all current blades, check the BladeID and pick a Blade
 ## pow / aux / aux2 (or any button name)
 
 These commands can be used to send button events from the Serial Monitor.
-See [Button Commands](Button-Commands.md) for more information.  
+See [Button Commands](button-commands.md) for more information.  
 
 ## blink N
 

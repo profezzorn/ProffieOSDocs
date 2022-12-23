@@ -23,4 +23,4 @@ Enter/Exit Color Change - 1 button saber = Hold button and Twist.
 ** Note Color Change only works with ProffieOS 3.x and above)
 ```
 
-Note that other button configurations are available by using different prop files. Several prop files are already provided with ProffieOS and can be found in the [props directory](/profezzorn/ProffieOS/tree/master/props/). To learn how to use a different prop file, see the [The CONFIG_TOP section](The-CONFIG_TOP-section.md).
+Note that other button configurations are available by using different prop files. Several prop files are already provided with ProffieOS and can be found in the [props directory](/profezzorn/ProffieOS/tree/master/props/). To learn how to use a different prop file, see the [The CONFIG_TOP section](the-config_top-section.md).

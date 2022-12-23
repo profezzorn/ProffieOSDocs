@@ -9,7 +9,7 @@ While the code is waiting for the board to reboot into bootloader mode, it will 
 1. Connect Proffieboard to computer.
 2. Hold the BOOT button.
 3. Press and release the RESET button.
-4. Check that the computer can see your board as STM32 BOOTLOADER. (See this page for how to find all USB devices connected to your computer: [USB Connection Issues](USB-Connection-Issues.md))
+4. Check that the computer can see your board as STM32 BOOTLOADER. (See this page for how to find all USB devices connected to your computer: [USB Connection Issues](usb-connection-issues.md))
 5. If the board was not recognized by your computer, try a different cable, port, computer, etc. Ultimately, if the board cannot be found, it may be broken.
 6. Once the board is found, press the upload button in Arduino. Note that there will be no port listed under Arduino->Tools->Port, but if your board is already in bootloader mode, upload should work anyways.
 
@@ -25,4 +25,4 @@ If you get this message instead:
 
 If you get this message "Please select a Port before Upload", but there are no ports to choose from. Please try installing Arduino 1.8.6 or earlier.
 
-See also: [USB Connection Issues](USB-Connection-Issues.md)
+See also: [USB Connection Issues](usb-connection-issues.md)

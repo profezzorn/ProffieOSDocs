@@ -1,10 +1,10 @@
-WS2811BladePtr is an older version of [WS281XBladePtr](WS281XBladePtr.md). I recommend using WS281XBladePtr instead this documentation can be helpful to understand older config files though.
+WS2811BladePtr is an older version of [WS281XBladePtr](ws281xbladeptr.md). I recommend using WS281XBladePtr instead this documentation can be helpful to understand older config files though.
 
 WS2811BladePtr takes 7 arguments, but only two are actually required.
 
      WS2811BladePtr<leds, config, data_pin, power_pins, pin_class, reset_us, t1h, t0h>
 
-All the arguments except for "config" behave the same as in [WS281XBladePtr](WS281XBladePtr.md).
+All the arguments except for "config" behave the same as in [WS281XBladePtr](ws281xbladeptr.md).
 
 The config specifies both the byte order and the frequency. The byte order is one of:
 

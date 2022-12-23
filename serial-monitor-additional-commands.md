@@ -1,5 +1,5 @@
 These commands are usually used for deeper diagnostics beyond typical use.  
-For more typical use case commands, see [Serial Monitor Commands](Serial-Monitor-Commands.md).  
+For more typical use case commands, see [Serial Monitor Commands](serial-monitor-commands.md).  
 # WARNING - While most of these are harmless, some of these are powerful and should only be used if you're familiar with how they work. 
 
 

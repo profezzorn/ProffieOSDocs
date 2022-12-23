@@ -14,7 +14,7 @@ A BladeConfig looks something like this:
       CONFIGARRAY(presets),
     }
 
-If there are multiple BladeConfigs, ProffieOS will measure the resistance between the **blade data pin and GND** and use the BladeConfig that has the closest [Blade ID](Blade-ID.md). This decides what blade definitions and preset arrays to use.<br/>
+If there are multiple BladeConfigs, ProffieOS will measure the resistance between the **blade data pin and GND** and use the BladeConfig that has the closest [Blade ID](blade-id.md). This decides what blade definitions and preset arrays to use.<br/>
 Also, if you use #define SAVE_STATE in your config, you can save states in a subfolder on your SD card for each blade array by adding a quoted save name to the end of the BladeConfig [] array, similar to the quoted "name" at the end of a preset.  For example:
 
     BladeConfig blades[] = {
@@ -28,17 +28,17 @@ will create 2 folders on the SD card named No_Blade_save and My34inch_blade_save
 
 Each blade definition should use one of the following: (click for more info)
 
-* [WS281XBladePtr](WS281XBladePtr.md) - new style pixel blade definition
-* [WS2811BladePtr](WS2811BladePtr.md) - old style pixel blade definition
-* [SimpleBladePtr](SimpleBladePtr.md) - blade for single LEDs and LED stars
-* [StringBladePtr](StringBladePtr.md) - blade for old-fashioned 6-segment blades (or more with external FETs)
-* [SubBlade](SubBlade.md) - A blade from a sub-section of a pixel string
-* [SubBladeReverse](SubBladeReverse.md) - Like SubBlade, but reverses indexing for zig-zag blades
-* [FASTLEDBladePtr](FASTLEDBladePtr.md) - EXPERIMENTAL, used for dotstar blades
-* [DimBlade](DimBlade.md) - Similar to SubBlade, but reduces the brightness of the blade.
-* [SpiBladePtr](SpiBladePtr.md) - Non-experimental, but somewhat slow dotstar support.
+* [WS281XBladePtr](ws281xbladeptr.md) - new style pixel blade definition
+* [WS2811BladePtr](ws2811bladeptr.md) - old style pixel blade definition
+* [SimpleBladePtr](simplebladeptr.md) - blade for single LEDs and LED stars
+* [StringBladePtr](stringbladeptr.md) - blade for old-fashioned 6-segment blades (or more with external FETs)
+* [SubBlade](subblade.md) - A blade from a sub-section of a pixel string
+* [SubBladeReverse](subbladereverse.md) - Like SubBlade, but reverses indexing for zig-zag blades
+* [FASTLEDBladePtr](fastledbladeptr.md) - EXPERIMENTAL, used for dotstar blades
+* [DimBlade](dimblade.md) - Similar to SubBlade, but reduces the brightness of the blade.
+* [SpiBladePtr](spibladeptr.md) - Non-experimental, but somewhat slow dotstar support.
 
-The Preset array is made up of Presets, see [Preset Configuration](Preset-Configuration.md) for details.
+The Preset array is made up of Presets, see [Preset Configuration](preset-configuration.md) for details.
 
 Note that that there can be multiple preset arrays, and the name of the preset array is not important, as long as the blade array uses the right name. Example:
 
@@ -62,7 +62,7 @@ Note that that there can be multiple preset arrays, and the name of the preset a
 
 In this example, the Blade ID is used to select between the red and blue presets.  Also note that spaces and newlines are basically ignored, so we are free to write the configuration on one line or many lines as we please.
 
-If you have RFID_SERIAL in [the CONFIG_TOP section](the-CONFIG_TOP-section.md), then you will also need to have a RFID_Commands array, which could look like this:
+If you have RFID_SERIAL in [the CONFIG_TOP section](the-config_top-section.md), then you will also need to have a RFID_Commands array, which could look like this:
 
     RFID_Command RFID_Commands[] = {
       { 0x0000000C04ULL,    "change_preset", "0" },

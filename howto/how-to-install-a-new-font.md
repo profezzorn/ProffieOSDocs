@@ -27,11 +27,11 @@ If you have ProffieOS 6.x or later, and are using the Fett263 prop with edit mod
 
 ## Add or change a preset and re-program the saber.
 
-See [the CONFIG_PRESETS section](the-CONFIG_PRESETS-section.md) for how to edit configure presets, then just follow the instructions for how to install ProffieOS to re-program the saber. Note that this can be tricky if you don't have the config file that was used to program the saber last time.
+See [the CONFIG_PRESETS section](the-config_presets-section.md) for how to edit configure presets, then just follow the instructions for how to install ProffieOS to re-program the saber. Note that this can be tricky if you don't have the config file that was used to program the saber last time.
 
 ## Edit presets.ini directly
 
-Using the ProffieOS workbench, or edit mode both ends up modifying a file on the sd card called presets.ini. This file can also be edited directly. I wouldn't normally recommend doing this, but if you want to, there is more information about how to do it here: [Editing presets.ini by hand](Editing-presets.ini-by-hand.md)
+Using the ProffieOS workbench, or edit mode both ends up modifying a file on the sd card called presets.ini. This file can also be edited directly. I wouldn't normally recommend doing this, but if you want to, there is more information about how to do it here: [Editing presets.ini by hand](editing-presets.ini-by-hand.md)
 
 ## Replacing an existing font on the SD card.
 

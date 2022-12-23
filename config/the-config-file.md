@@ -52,7 +52,7 @@ Where "NAME" is the name of the section.
 While this file has three sections, some have four, and more may be possible in the future.
 While each section can technically contain any valid C++ code, it is recommended to use the
 sections as intended. Each section is explained in it's own wiki page, to find out more, follow the links below:
-* [The CONFIG_TOP section](The-CONFIG_TOP-section.md)
-* [The CONFIG_PRESETS section](The-CONFIG_PRESETS-section.md)
-* [The CONFIG_BUTTONS section](The-CONFIG_BUTTONS-section.md)
-* [The CONFIG_PROP section](The-CONFIG_PROP-section.md)
+* [The CONFIG_TOP section](the-config_top-section.md)
+* [The CONFIG_PRESETS section](the-config_presets-section.md)
+* [The CONFIG_BUTTONS section](the-config_buttons-section.md)
+* [The CONFIG_PROP section](the-config_prop-section.md)

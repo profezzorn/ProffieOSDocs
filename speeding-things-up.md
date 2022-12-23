@@ -7,7 +7,7 @@ Note that "top" will not be available if you have `#define DISABLE_DIAGNOSTICS_C
 
 ### Turn on optimization in Tools->Optimization
 
-Lots of things gets faster when you turn on optimization. However, they also get bigger, so you may run out of flash memory. See the [Saving Memory](Saving-Memory.md) page for how to reduce flash memory usage.
+Lots of things gets faster when you turn on optimization. However, they also get bigger, so you may run out of flash memory. See the [Saving Memory](saving-memory.md) page for how to reduce flash memory usage.
 
 ### Use ProffieOS 5.x or later
 
