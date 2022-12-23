@@ -11,17 +11,17 @@ Main links:
 Configuration/Programming instructions:
 * [Proffieboard Setup](proffieboard-setup.md)
 * [The config file](config/the-config-file.md)
-* [Blade Configuration](config/blade-configuration.md)
+* [Blade Configuration](config/blades/blade-configuration.md)
 * [LED Configuration](config/led-configuration.md) - for inhilt LEDs
 * [LED Channel Selection](config/led-channel-selection.md) - more about inhilt LEDs
 * [Preset Configuration](config/preset-configuration.md)
 * [How to use it](howto/how-to-use-it.md)
 * [WebUSB](webusb.md)
-* [Button Actions: making your own prop file](button-actions:-making-your-own-prop-file.md)
+* [Button Actions: making your own prop file](bhowto/making-your-own-prop-file.md)
 * [Editing-presets.ini-by-hand](howto/editing-presets.ini-by-hand.md)
 
 Configuration/Programming troubleshooting:
-* [Is it uploading?](troubleshooting/is-it-uploading?.md)
+* [Is it uploading?](troubleshooting/is-it-uploading.md)
 * [It doesn't compile and I don't know why](troubleshooting/it-doesn't-compile-and-i-don't-know-why.md)
 * [USB connection issues](troubleshooting/usb-connection-issues.md)
 * [Zadig](zadig.md)
@@ -30,7 +30,8 @@ Configuration/Programming troubleshooting:
 * [What is it saying?](troubleshooting/what-is-it-saying?.md)
 * [smoothsw.ini](smoothsw.ini.md)
 * [Saving Memory](saving-memory.md)
-* [How many LEDS does my blade have?](how-many-leds-does-my-blade-have?.md)
+* [How many LEDS does my blade have?](howto/how-many-leds-does-my-blade-have.md)
+* [Arduino files and folders](troubleshooting/files-and-folders.html)
 
 Proffieboard Wiring and hardware pages:
 * [GND vs BATT-](hardware/gnd-vs-batt.md)
