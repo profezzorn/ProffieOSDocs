@@ -36,7 +36,7 @@ The style definition specifies the look and behavior of the blade itself. If mor
 Style definitions, or "blade styles" are somewhat complicated, so they have their [own page](Blade-Styles).
 
 ## Preset Description
-The last element in a preset is the Preset Name. It is in the form of a character string, and while it is optional to include in the preset in order for it to compile, it is highly suggested to use since the preset name is used by [[BLE]], [[WebUSB]] and OLED screens to identify the preset. Otherwise it will show nothing and you won't see what the preset is that you are working with.
+The last element in a preset is the Preset Name. It is in the form of a character string, and while it is optional to include in the preset in order for it to compile, it is highly suggested to use since the preset name is used by [BLE](BLE.md), [WebUSB](WebUSB.md) and OLED screens to identify the preset. Otherwise it will show nothing and you won't see what the preset is that you are working with.
 Additionally, if there's a mismatch of number of styles per preset and the number of blades set, no helpful error occurs without the "name" argument in place.  
 The preset description generally uses the [StarJedi](https://www.dafont.com/star-jedi.font) font when displayed.
 As of ProffieOS 6, the name can be displayed on an OLED screen using an Aurebesh font by adding `#define USE_AUREBESH_FONT` to your CONFIG_TOP section.

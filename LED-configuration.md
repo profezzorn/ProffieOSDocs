@@ -79,7 +79,7 @@ Many popular LEDs already have LED configuration structs in blades/leds.h. Since
 
 ## Calculating resistor values
 Calculating resistor values for LEDs is very simple.
-I could give you the formula, but why bother when there are [[simple calculators available online][https://www.thecustomsabershop.com/LedCalc.aspx]].
+I could give you the formula, but why bother when there are [simple calculators available online][https://www.thecustomsabershop.com/LedCalc.aspx]].
 
 ## Adding/Modifying LED structs
 While you are welcome to add your own LED configuration structs to blades/leds.h, I recommend putting them in your config file instead, right before the blades[] array. That way, you won't have to remember to copy them over when you update to a new version of ProffieOS.

@@ -169,7 +169,7 @@ The X, Y and Z are floating point numbers which specify how many degrees to rota
 
 # ProffieOS 5.x defines:
 
-Add an RFID reader. To configure the RFID reader, you will need an RFID_Commands array in [[the CONFIG_PRESETS section]].
+Add an RFID reader. To configure the RFID reader, you will need an RFID_Commands array in [the CONFIG_PRESETS section](the-CONFIG_PRESETS-section.md).
 
     #define RFID_SERIAL Serial3
 

@@ -41,4 +41,4 @@ already asked about it on the forums.
 
 If you still could use some help, go here: http://therebelarmory.com/thread/10207/proffieboard-newbie-thread and post your config file and complete error message, and someone will help you figure out what the problem is.
 
-If you've made edits and it DOES compile, but you don't see your changes after uploading, see the [[Troubleshooting Files and Folder Structure]] page.
+If you've made edits and it DOES compile, but you don't see your changes after uploading, see the [Troubleshooting Files and Folder Structure](Troubleshooting-Files-and-Folder-Structure.md) page.

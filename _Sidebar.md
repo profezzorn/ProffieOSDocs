@@ -34,10 +34,10 @@
   * [StringBladePtr](StringBladePtr)
   * [SubBlade](SubBlade)
     * [SubBladeReverse](SubBladeReverse)
-  * [[DimBlade]]
+  * [DimBlade](DimBlade.md)
 ## Additional Info
   * [Blade ID](Blade-ID)
-  * [[Blade Detect]]
+  * [Blade Detect](Blade-Detect.md)
   * [Contacting Profezzorn](Contacting-Profezzorn)
   * [GND vs BATT](GND-vs-BATT)
   * [OLED Images and Animations](OLED-images-and-animations)

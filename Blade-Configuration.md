@@ -6,14 +6,14 @@ Blade selection works with resistance measurement on the ID pin of the board. If
 Example:
 The following code defines two blade configurations. 
 If you connect 2.6k Resistor between ID and GND pin, the saber board will be configured to use neopixel setup with style configuration in the _presets_ array. Similarly the second configuration switches to Tri-Cree setup.
-To learn how to configure presets array check out the [[Preset Configuration]] page.
+To learn how to configure presets array check out the [Preset Configuration](Preset-Configuration.md) page.
 ```cpp
 BladeConfig blades[] = {
   {2600, WS2811BladePtr<144, WS2811_ACTUALLY_800kHz | WS2811_GRB>(), CONFIGARRAY(presets) },
   {13000, SimpleBladePtr<CreeXPL, CreeXPL, CreeXPL, NoLED>(), CONFIGARRAY(white_presets) },
 };
 ```
-For more information about the blades array, see [[The CONFIG_PRESETS section]] page.
+For more information about the blades array, see [The CONFIG_PRESETS section](The-CONFIG_PRESETS-section.md) page.
 
 ## LED Support
 Most major LEDs that are used in the saber practice are already defined as templates
@@ -58,5 +58,5 @@ Sample Preset that works with sub-blades:
  }
 };
 ```
-For more details check out the [[SubBlade]] page.
+For more details check out the [SubBlade](SubBlade.md) page.
 

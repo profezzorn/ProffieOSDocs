@@ -5,4 +5,4 @@ SimpleBladePtr takes 8 arguments, 4 of which are required:
 The first four are class names which specifies how to drive the LEDs, the last four are the pins for those leds.
 The pins defaults to bladePowerPin1, bladePowerPin2, bladePowerPin3 and bladePin, respectively.
 
-You can read more about how to configure the led classes on the [[Led Configuration]] page.
+You can read more about how to configure the led classes on the [Led Configuration](Led-Configuration.md) page.
