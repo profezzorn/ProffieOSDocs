@@ -17,7 +17,7 @@ Configuration/Programming instructions:
 * [Preset Configuration](config/preset-configuration.md)
 * [How to use it](howto/how-to-use-it.md)
 * [WebUSB](webusb.md)
-* [Button Actions: making your own prop file](bhowto/making-your-own-prop-file.md)
+* [Button Actions: making your own prop file](howto/making-your-own-prop-file.md)
 * [Editing-presets.ini-by-hand](howto/editing-presets.ini-by-hand.md)
 
 Configuration/Programming troubleshooting:
@@ -25,13 +25,13 @@ Configuration/Programming troubleshooting:
 * [It doesn't compile and I don't know why](troubleshooting/it-doesn't-compile-and-i-don't-know-why.md)
 * [USB connection issues](troubleshooting/usb-connection-issues.md)
 * [Zadig](zadig.md)
-* [Serial Monitor](troubleshooting/serial-monitor.md)
-* [Where's my Port?](troubleshooting/where's-my-port?.md)
-* [What is it saying?](troubleshooting/what-is-it-saying?.md)
+* [Serial Monitor](serial-monitor.md)
+* [Where's my Port?](troubleshooting/wheres-my-port.md)
+* [What is it saying?](troubleshooting/what-is-it-saying.md)
 * [smoothsw.ini](smoothsw.ini.md)
 * [Saving Memory](saving-memory.md)
 * [How many LEDS does my blade have?](howto/how-many-leds-does-my-blade-have.md)
-* [Arduino files and folders](troubleshooting/files-and-folders.html)
+* [Arduino files and folders](troubleshooting/files-and-folder-structure.html)
 
 Proffieboard Wiring and hardware pages:
 * [GND vs BATT-](hardware/gnd-vs-batt.md)

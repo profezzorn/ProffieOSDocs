@@ -28,15 +28,15 @@ will create 2 folders on the SD card named No_Blade_save and My34inch_blade_save
 
 Each blade definition should use one of the following: (click for more info)
 
-* [WS281XBladePtr](ws281xbladeptr.md) - new style pixel blade definition
-* [WS2811BladePtr](ws2811bladeptr.md) - old style pixel blade definition
-* [SimpleBladePtr](simplebladeptr.md) - blade for single LEDs and LED stars
-* [StringBladePtr](stringbladeptr.md) - blade for old-fashioned 6-segment blades (or more with external FETs)
-* [SubBlade](subblade.md) - A blade from a sub-section of a pixel string
-* [SubBladeReverse](subbladereverse.md) - Like SubBlade, but reverses indexing for zig-zag blades
-* [FASTLEDBladePtr](fastledbladeptr.md) - EXPERIMENTAL, used for dotstar blades
-* [DimBlade](dimblade.md) - Similar to SubBlade, but reduces the brightness of the blade.
-* [SpiBladePtr](spibladeptr.md) - Non-experimental, but somewhat slow dotstar support.
+* [WS281XBladePtr](blades/ws281xbladeptr.md) - new style pixel blade definition
+* [WS2811BladePtr](blades/ws2811bladeptr.md) - old style pixel blade definition
+* [SimpleBladePtr](blades/simplebladeptr.md) - blade for single LEDs and LED stars
+* [StringBladePtr](blades/stringbladeptr.md) - blade for old-fashioned 6-segment blades (or more with external FETs)
+* [SubBlade](blades/subblade.md) - A blade from a sub-section of a pixel string
+* [SubBladeReverse](blades/subbladereverse.md) - Like SubBlade, but reverses indexing for zig-zag blades
+* [FASTLEDBladePtr](blades/fastledbladeptr.md) - EXPERIMENTAL, used for dotstar blades
+* [DimBlade](blades/dimblade.md) - Similar to SubBlade, but reduces the brightness of the blade.
+* [SpiBladePtr](blades/spibladeptr.md) - Non-experimental, but somewhat slow dotstar support.
 
 The Preset array is made up of Presets, see [Preset Configuration](preset-configuration.md) for details.
 

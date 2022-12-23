@@ -21,7 +21,7 @@ During the upload, progress bars will be printed.  What you should see is a bunc
 Once it gets to 100%, the board will reboot and your upload will have completed successfully.
 
 If you get this message instead:
-"cannot open dfu device 0483:df11", it means that it found the bootloader, but it can't talk to it. On windows, that usually means that you need to run [zadig](zadig.md) to install the right driver for the STM32 BOOTLOADER. On Linux, it means that you need to install the right udev rules.
+"cannot open dfu device 0483:df11", it means that it found the bootloader, but it can't talk to it. On windows, that usually means that you need to run [zadig](../zadig.md) to install the right driver for the STM32 BOOTLOADER. On Linux, it means that you need to install the right udev rules.
 
 If you get this message "Please select a Port before Upload", but there are no ports to choose from. Please try installing Arduino 1.8.6 or earlier.
 
