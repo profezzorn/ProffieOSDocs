@@ -7,7 +7,7 @@ So the paths to these files would look like this in Windows:
 >C:\Users\Fredrik\Desktop\ProffieOS\config\my_saber_config.h
 
 Or graphically in MacOS:
-![](https://i.imgur.com/UIWu7z9.jpg)
+![](images/ff1.jpg)
 
 
 Longer detailed version:
@@ -27,7 +27,7 @@ The root folder for the software (top level folder) must be named ProffieOS. The
 When you have downloaded multiple versions and copies of the software, including forks and prop files, you need to keep everything organized to avoid mixing up which files you're currently using and working with.
 
 It is recommended that you create a folder somewhere, either on the Desktop or in "Documents" where you keep lightsaber stuff. Then inside that, have one directory per ProffieOS version, and inside that, it would be ProffieOS/ProffieOS.ino, so something like:
-![](https://i.imgur.com/9Lz22aC.jpg)
+![](ff2.jpg)
 
 The written path in full could look like this:
 C:\Users\Hubbe\Documents\Lightsaber Stuff\ProffieOS-2.8\ProffieOS\ProffieOS.ino
@@ -41,18 +41,18 @@ C:\Users\Hubbe\Documents\Lightsabers\Graflex\ProffieOS-2.8\ProffieOS\ProffieOS.i
 Let's say you currently have everything contained in a folder named ProffieOS-2.8
  and you try to open the ProffieOS.ino file in Arduino.
 
-![](https://i.imgur.com/p0fvnj7.jpg)
+![](images/ff3.jpg)
 
 You get a message saying "The file "ProffieOS.ino" needs to be inside a sketch folder named "ProffieOS". Create this folder, move the file, and continue?"
 
-![](https://i.imgur.com/qirfLpQ.jpg)
+![](images/ff4.jpg)
 
 If you agree, the ProffieOS.ino file you tried to open gets moved into a newly created subfolder called ProffieOS, and the sketch opens. However, this only moved the .ino and left all of the files that the software needs outside the new folder.
-![](https://i.imgur.com/NEZXxAv.jpg)
+![](images/ff5.jpg)
 
 You need to structure this folder correctly before you can compile the code. 
 Take all the folders next to ProffieOS and place them inside WITH ProffieOS.ino.
 
-![](https://i.imgur.com/fqdpHcn.jpg) ![](https://i.imgur.com/Zqmi6iN.jpg)
+![](images/ff6.jpg) ![](images/ff7.jpg)
 
 The usual problem is that the wrong version of ProffieOS/config/my_saber_config.h is being edited, one from an older version folder, while the newer ProffieOS.ino is being used in Arduino. The relative paths are the same from the ProffieOS folder and down, but the path prior is different. It's hard to put into words, but just make sure you edit the correct config file, and that you #define it in Arduino.
