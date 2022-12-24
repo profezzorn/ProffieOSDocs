@@ -13,7 +13,8 @@ plugins:
   - jekyll-github-metadata
   - jekyll-optional-front-matter
   - jekyll-seo-tag
-  
+  - jekyll-titles-from-headings
+
 whitelist:
   - jekyll-redirect-from
 
