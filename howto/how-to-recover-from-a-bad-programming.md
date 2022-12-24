@@ -5,4 +5,4 @@ If your ProffieBoard is unresponsive, either because of creating a program that 
 1. press and release the RESET button.
 1. Make sure that the board shows up as "STM32 BOOTLOADER" on your computer. [Click here to learn how to check.](../troubleshooting/usb-connection-issues.md) If you don't see "STM32 BOOTLOADER" connected to your computer, try again. If you cannot get past this step, regardless of how many cables you try, then there is most likely something wrong with your board, or you're not actually pushing the buttons correctly.
 1. Click the upload button in Arduino. Note that the board will not show up under "Arduino -> Tools -> Port". This is expected and not a problem, upload should work anyays.
-1. If the upload [went well](Is-it-uploading%3F), your board should now be working normally.
+1. If the upload [went well](../troubleshooting/is-it-uploading.md), your board should now be working normally.
