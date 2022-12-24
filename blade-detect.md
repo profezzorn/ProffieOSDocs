@@ -16,7 +16,7 @@ Example BladesConfig using Blade Detect:
 Please note the "nbsave" part, which will make ProffieOS save presets.ini and other related save files into the "nbsave/" directory on the SD card. If that directory doesn't exist, saving will fail, but that might be ok for the no-blade case.
 
   
-Blade detection is activated by using the BLADE_DETECT_PIN define in the [CONFIG_TOP](https://github.com/profezzorn/ProffieOS/wiki/The-CONFIG_TOP-section) section of the config file.  
+Blade detection is activated by using the BLADE_DETECT_PIN define in the [CONFIG_TOP](config/the-config_top-section) section of the config file.  
 The pin number can either be just a number, or a symbolic name like "blade2Pin". See these 2 examples:   
 
     #define BLADE_DETECT_PIN 0
@@ -29,4 +29,4 @@ The blade detect pin will be monitored continuously, when it changes, the Blade 
 The detection works by repeatedly switching between pull-up and pull-down mode and see if the input follows, or if it stays put at high or low. That means that it doesn't matter if the blade ID pin is connected to GND or BATT+, which is a good thing, because when connected to the '-' pad on a neopixel strip, that can flip between high and low when the FETs are turned on/off.
 
 Please note that Blade Detect is separate from Blade ID and cannot use the same pin.  
-See more about Blade ID here: https://github.com/profezzorn/ProffieOS/wiki/Blade-ID
+See more about [Blade ID here](blade-id.md).

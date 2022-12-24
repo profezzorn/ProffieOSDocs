@@ -22,5 +22,4 @@ Bladein preset bank, and a BladeOut preset bank.
 Give the BladeConfig 2 sets of descriptions, and
 #define BLADE_DETECT_PIN properly.
 
-Read more about blade detect here:
-https://github.com/profezzorn/ProffieOS/wiki/Blade-Detect
+Read more about [blade detect here](blade-detect.md).

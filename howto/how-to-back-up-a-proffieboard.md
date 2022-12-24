@@ -5,7 +5,7 @@ If you want to backup the program that is currently on your Proffieboard, you ca
 Connect your Proffieboard to your computer with USB and make it go into bootloader mode.  
 The easiest way to do this is by issuing a command in Arduino's Serial Monitor, `RebootDFU`.  
 The physical way requires accessing the Proffieboard onboard buttons. (Hold BOOT, press and release RESET, then release BOOT.)  
-If you're running a Windows computer and this is the first time you are connecting a Proffieboard via USB, then you will also need to run [Zadig](https://github.com/profezzorn/ProffieOS/wiki/zadig).
+If you're running a Windows computer and this is the first time you are connecting a Proffieboard via USB, then you will also need to run [Zadig](../zadig.md).
 
 Now click 'Connect' in the programmer. You should be prompted to connect to 'STM32  BOOTLOADER'.  
 Click 'Read'.  This will save a .bin file to your computer that is a backup of the programming on the board.

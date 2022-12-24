@@ -107,7 +107,7 @@ As of OS6:
 * `mdauto`
 
 ## SmoothSwing Configuration
-When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on its [wiki page](smoothsw.ini)
+When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on [the smoothswing page](smoothsw.ini).
 
 #### SmoothSwing V1
 [Demo Video](https://www.youtube.com/watch?v=4AAYGw09bu0) ([Thexter's description](https://www.fx-sabers.com/forum/index.php?topic=51430))

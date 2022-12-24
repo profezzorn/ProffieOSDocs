@@ -1,8 +1,7 @@
 The list of components onboard a Proffieboard v2.2 can be found here:  
 https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing  
 
-A part map of their locations can be found here:  
-https://github.com/profezzorn/ProffieOS/wiki/Proffieboard-V2.2-Part-map---Component-level  
+A part map of their locations can be found [here](proffieboard-v2.2-part-map---component-level.md)
 
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
 
