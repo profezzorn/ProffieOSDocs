@@ -41,5 +41,5 @@ Proffieboard Wiring and hardware pages:
 * [Touch Buttons](hardware/touch-buttons.md)
 
 This site is maintained by the ProffieOS community, and you can help by
-going to [Github](https://github.org/profezzorn/ProffieOSDocs) and improving
+going to [Github](https://github.com/profezzorn/ProffieOSDocs) and improving
 the documentation.
