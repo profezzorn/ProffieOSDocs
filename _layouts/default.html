@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     {% if page.title %}
-       <title>{{ page.title }}</title>
+       <title>ProffieOS Documentation: {{ page.title }}</title>
     {% else %}
        <title>ProffieOS Documentation</title>
     {% endif %}
@@ -27,7 +27,8 @@
       <div id="header">
         <nav>
           <ul>
-            <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+	    <li class="title">ProffieOS Documentation</li>
+            <li class="downloads"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
             {% if site.show_downloads %}
               <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
               <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
@@ -45,7 +46,11 @@
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
 	  -->
-	  <h1>ProffieOS Documentation</h2>
+         {% if page.title %}
+            <h1>{{ page.title }}</h1>
+         {% else %}
+            <h1>ProffieOS Documentation</h1>
+         {% endif %}
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
