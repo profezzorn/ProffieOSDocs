@@ -1,3 +1,6 @@
+---
+title: DimBlade
+---
 DimBlade is used to reduce the brightness of a blade, usually to save battery.
 
      DimBlade(percentage, blade_definition)
