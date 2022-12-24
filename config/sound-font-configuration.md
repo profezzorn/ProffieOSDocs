@@ -7,7 +7,7 @@ This file name is made up of four main parts:
 * The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](the-config_presets-section.md) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
   * Note: While Proffie-based boards support long filenames, Teensy-based boards support a maximum of 8 characters for folder names. It is recommended to stick to this maximum to ensure full compatibility with any sound board. 
 
-* The name (Magenta) - This is the name of the sound type, using the names specified below in the [Sound Effect Names](#Sound-Effect-Names) section. In this example, it's a clash sound.
+* The name (Magenta) - This is the name of the sound type, using the names specified below in the [Sound Effect Names](#sound-effect-names) section. In this example, it's a clash sound.
 
 * The number (Cyan) - If you want to have multiple sound effects of the same type, add a number to the end of the filename before the extension. The numbers can be in the following format:
   * 1,2,3, etc.
@@ -47,8 +47,8 @@ See [The-CONFIG_PROP-section](The-CONFIG_PROP-section) for a list of prop files 
 |---|---|---|
 | `boot`               | `boot`    | Played when ProffieOS boots up. |
 | `swing`              | `swng`    | Accent swing sounds that play near the peak of a swing motion.|
-| N/A                  | `swingl`  | If present with `swingh`, the [SmoothSwing algorithm](#SmoothSwing-Configuration) will be used to generate swing sounds from these files when the saber is moved around. |
-| N/A                  | `swingh`  | If present with `swingl`, the [SmoothSwing algorithm](#SmoothSwing-Configuration) will be used to generate swing sounds from these files when the saber is moved around. |
+| N/A                  | `swingl`  | If present with `swingh`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
+| N/A                  | `swingh`  | If present with `swingl`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
 | `hum`                | `hum`     | Played when the saber is on and stationary (looped) |
 | `poweron`            | `out`     | Extension sound when you ignite the blade. |
 | `poweroff`, `pwroff` | `in`      | Retraction sound when the blade is shut off. |
