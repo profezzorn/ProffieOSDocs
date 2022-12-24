@@ -1,3 +1,6 @@
+---
+title: Audio Troubleshooting
+---
 1. charge the battery and see if that helps
 2. try "get_volume" in the serial monitor and make sure it's at least 1000, you can also try the "beep" command
 3. With the board off, measure resistance across the speaker pads if you see....

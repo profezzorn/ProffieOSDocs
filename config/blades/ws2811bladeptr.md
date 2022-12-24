@@ -1,3 +1,6 @@
+---
+title: WS2811BladePtr
+---
 WS2811BladePtr is an older version of [WS281XBladePtr](ws281xbladeptr.md). I recommend using WS281XBladePtr instead this documentation can be helpful to understand older config files though.
 
 WS2811BladePtr takes 7 arguments, but only two are actually required.

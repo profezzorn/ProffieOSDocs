@@ -1,3 +1,6 @@
+---
+title: OLED display fonts: StarJEDI or Aurabesh
+---
 To have the "name" argument at the end of a blade style display the correct characters, it should be understood that
 the StarJedi font maps ACSII to glyphs with all kinds of characters aside from alphabetical, as well as some that have stylized differences.  
 The font shows as all capitals, but for most cases, **_you should use all lowercase letters_** to assure it will display as the characters you expect.  

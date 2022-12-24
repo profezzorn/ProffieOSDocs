@@ -1,3 +1,6 @@
+---
+title: Preset Configuration
+---
 In Proffie OS the term Preset means the combination of:
 * Sound Font
 * Music Track

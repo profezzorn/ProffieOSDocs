@@ -1,3 +1,6 @@
+---
+title: Proffieboard v2.2 part map
+---
 These part numbers are referenced in the Bill Of Materials (BOM) for Proffieboard V2.2, which contains links to buy them (when available).
 It can be found here:
 https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing  

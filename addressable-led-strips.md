@@ -1,4 +1,6 @@
-
+---
+title: Adressable LED Strips
+---
 ` WS2811BladePtr<97, WS2811_800kHz | WS2811_RGB, blade2Pin, PowerPINS<bladePowerPin1>>()`
 
 1. First argument specifies the number of LEDs in the strip

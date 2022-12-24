@@ -1,3 +1,6 @@
+---
+title: Blade Configuration
+---
 Proffie OS allows the use of multiple blades configurations.
 
 All blades are defined in object array of type _BladeConfig_.

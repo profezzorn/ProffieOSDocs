@@ -1,3 +1,6 @@
+---
+title: The CONFIG_PROP section
+---
 The CONFIG_PROP section is relatively new, and a lot of config files don't use it. The purpose of the CONFIG_PROP section is to specify which class is given control of what everything does. Most of the time, this is done by simply including a file from the ProffieOS/props directory in your config file, like this:
 
     #ifdef CONFIG_PROP

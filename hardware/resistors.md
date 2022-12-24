@@ -1,3 +1,6 @@
+---
+title: Resistors
+---
 Proffieboard and TeensySabers wiring charts features three types of resistors:
 
 ## Current-limiting resistors

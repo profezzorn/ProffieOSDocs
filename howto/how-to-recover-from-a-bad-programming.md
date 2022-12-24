@@ -1,3 +1,6 @@
+---
+title: How to recover from a bad programming
+---
 If your ProffieBoard is unresponsive, either because of creating a program that doesn't work, or because of interrupting a programming in a middle. Don't worry here's what you need to do:
 
 1. Plug in your Proffieboard to your computer

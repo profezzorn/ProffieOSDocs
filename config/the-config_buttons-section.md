@@ -1,3 +1,6 @@
+---
+title: The CONFIG_BUTTONS section
+---
 The CONFIG_BUTTONS is probably the simplest of all the sections in the config file. While it doesn't have to contain anything at all, it's purpose is to contain the buttons. The buttons are global variables in in C++, and we just create the variables directly in the config file. The general format looks like:
 
     TYPE Name(BUTTON, PIN, "name");

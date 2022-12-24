@@ -1,3 +1,6 @@
+---
+title: Serial Monitor Commands
+---
 This a list of some of the most typical commands you can use in the Serial Monitor.  
 For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](serial-monitor-additional-commands.md).   
 The console can be opened in Arduino by choosing menu Tools>Serial Monitor.  

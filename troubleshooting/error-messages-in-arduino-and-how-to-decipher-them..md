@@ -1,3 +1,6 @@
+---
+title: How to decipher Arduino error messages
+---
 While a bit lengthy, and hard to put into typed words, hopefully this helps you understand how to read error messages and what they are caused by.<br>
 First, understand that a long list of errors does not necessarily mean there’s a ton of errors. They are just a cascade effect from the first problem.
 If the compiler comes across something it doesn’t like, let’s say a brace that should be part of an open-close pair but there’s only an opening one without a closing brace, it will continue through the rest of the code trying to pair the remaining odd number of braces, finding each one mis-matched, and will spit out an error for ALL of those problems. 

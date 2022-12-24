@@ -1,3 +1,6 @@
+---
+title: Proffieboard v2.2 BOM alternative parts
+---
 The list of components onboard a Proffieboard v2.2 can be found here:  
 https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing  
 

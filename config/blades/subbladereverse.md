@@ -1,3 +1,6 @@
+---
+title: SubBladeReverse
+---
 SubBladeReverse is works exactly like [SubBlade](subblade.md), except, that the pixels in the indexed range are addressed in reverse order. This can be useful to create zig-zag blades, where the data travels up one strip, than DOWN the other one. Such a blade lets you address all the pixels individually without needing more data lines.
 
 Example, if you have a 100-pixel zig-zag blade:

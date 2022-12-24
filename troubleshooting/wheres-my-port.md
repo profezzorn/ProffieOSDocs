@@ -1,3 +1,6 @@
+---
+title: Where's my port?
+---
 If the Proffieboard Port doesn't show up in Arduino->Tools->Port, don't worry, most of the time you just need to press BOOT+RESET and hit upload. After the board is programmed, the port will show up again.
 
 If programming works, but the port still doesn't show up, it's possible that you you need to install a driver.

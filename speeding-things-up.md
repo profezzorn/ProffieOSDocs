@@ -1,3 +1,6 @@
+---
+title: Speeding things up
+---
 Sometimes, ProffieOS will run slowly, because it has too many things to do and too little time to do it. Here is a list of possible things you can do about it.
 
 

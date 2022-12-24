@@ -1,3 +1,6 @@
+---
+title: SubBlade
+---
 SubBlade is used to split a string of pixels into multiple blades which can have their own styles. It takes three arguments:
 
      SubBlade(first_led, last_led, blade_definition)

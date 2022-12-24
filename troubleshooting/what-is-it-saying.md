@@ -1,3 +1,6 @@
+---
+title: What is it saying?
+---
 ProffieOS has several spoken error messages. While spoken error messages are meant to be user friendly, it can sometimes be difficult to hear what it's actually saying. Luckily, there is a fairly short list of actual error messages:
 
 ### Font directory not found

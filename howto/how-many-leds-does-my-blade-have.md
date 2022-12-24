@@ -1,3 +1,6 @@
+---
+title: How many leds does my blade have?
+---
 If you buy a blade from someone else, you might not know how many LEDs are in it, and unfortunately there is no way for ProffieOS to "just know" how many LEDs there are. Also, when you configure your blades, if you specify too few LEDs, the tip of the blade will not light up, and if you specify too may LEDs, effects which only light up the tip of the blade will not show, as they will light up LEDs that you do not have.
 
 Fortunately, there is an easy way to find out how many LEDs your blade has. Add a new preset to your config file, and make the style for the main blade this:

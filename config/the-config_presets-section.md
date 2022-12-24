@@ -1,3 +1,6 @@
+---
+title: The CONFIG_PRESETS section
+---
 The main purpose of the CONFIG_PRESETS section, is to define the blades[] array. However, the blades[] array contains pointers to the presets[] array(s), so we must also define those in this section. It is also possible to put custom LED structs, style aliases and other such things in this section.
 
 First, let's explain what an array is: It is a repeated list of data. The general format of an array is something like:

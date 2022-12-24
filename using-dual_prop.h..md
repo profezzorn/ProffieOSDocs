@@ -1,3 +1,6 @@
+---
+title: Using dual_prop.h
+---
 dual_prop.h allows for 2 discrete prop files to be used, 
 alternating on a latched switch (Blade Detect).   
 This is useful when you want a saber to 

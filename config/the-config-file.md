@@ -1,3 +1,6 @@
+---
+title: The Config File
+---
 While EVERYTHING in ProffieOS is possible to change, most of the time, only the config file needs to be changed. The config file is really just some C++ code that specifies how the rest of the code should behave, but since many ProffieOS users are not C++ experts, this page describes the ProffieOS config files in more detail.
 
 First, let's take a look at a typical config file:

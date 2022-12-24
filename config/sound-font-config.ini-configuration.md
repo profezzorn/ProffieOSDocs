@@ -1,3 +1,6 @@
+---
+title: Sound Font config.ini configuration
+---
 This page explains the parameters that are available in a sound font's `config.ini` file, and provides an example file. For more information on how to create a ProffieOS compatible sound font, [click here](sound-font-configuration.md)
 
 ```ini

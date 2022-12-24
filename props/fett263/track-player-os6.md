@@ -1,3 +1,6 @@
+---
+title: ProffieOS6 Fett263 Track Player
+---
 The Fett263 prop file (/props/saber_fett263_buttons.h) introduces a Track Player capability that allows unlimited tracks and 4 playback methods for ProffieOS6.
 
 All presets should be set up as follows and a "common" folder should be added to the SD card with the Voice Prompts ([http://fredrik.hubbe.net/lightsaber/sound/](http://fredrik.hubbe.net/lightsaber/sound/))

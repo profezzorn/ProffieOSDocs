@@ -1,3 +1,6 @@
+---
+title: ProffieOS6 "Real Clash" sounds in Fett263 Prop
+---
 In ProffieOS6, using Fett263's prop file you can enable clash, begin lockup and end lockup sounds to be selected based on the actual clash strength.
 
 To enable use /props/saber_fett263_buttons.h

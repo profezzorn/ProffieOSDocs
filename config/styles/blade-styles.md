@@ -1,3 +1,6 @@
+---
+title: Blade Styles
+---
 Blade styles specifies the look and behavior of the "blade". I put "blade" in double quotes, because every accent led, motor or other thing you can control is generally also a "blade".
 
 Blade styles are made by combining style templates. Style templates are sort of mix between layers in gimp and "functions" from high school math. When you use one, it looks like this:

@@ -1,3 +1,6 @@
+---
+title: StringBladePtr
+---
 StringBladePtr is meant for old-style segmented blades and take 3 arguments, but only one is required:
 
     StringBladePtr<LED, clash_pin, clash_led>

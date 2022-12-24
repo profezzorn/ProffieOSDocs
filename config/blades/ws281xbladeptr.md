@@ -1,3 +1,6 @@
+---
+title: WS281XBladePtr
+---
 WS281XBladePtr can have up to 10 arguments, but only the first three are required.
 
     WS281XBladePtr<leds, data_pin, byteorder, power_pins, pin_class, frequency, reset_us, t1h, t0h>

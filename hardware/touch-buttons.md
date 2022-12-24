@@ -1,3 +1,6 @@
+---
+title: Touch Buttons
+---
 ProffieOS supports touch buttons. They work both with Proffieboards and with Teensy based builds, but slightly differently, for now this page will focus on Proffieboards.  On a Proffieboard, the three button pads all support touch buttons. To use a touch button you need to specify it in your config file, like:
 
     TouchButton PowerButton(BUTTON_POWER, powerButtonPin, 1700, "pow");

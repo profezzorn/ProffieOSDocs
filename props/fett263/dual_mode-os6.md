@@ -1,3 +1,6 @@
+---
+title: ProffieOS6 "Dual Mode" Ignition, Preon, Retraction, PostOff sounds in Fett263 Prop
+---
 In ProffieOS6 using Fett263's prop file you can set your font up to select ignition, preon, retraction and postoff sounds based on blade position.  With the odd numbered files being used when the blade is pointing up and even numbered files being used when the blade is pointing down.
 
 You will need to use /props/saber_fett263_buttons.h

@@ -1,3 +1,6 @@
+---
+title: OLED images and animations
+---
 ProffieOS can load images and animations from the SD card and display them on an OLED display screen.  
 Currently, the following events can play them:  
 boot (when power is applied to the board),  

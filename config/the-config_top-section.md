@@ -1,3 +1,6 @@
+---
+title: The CONFIG_TOP section
+---
 The CONFIG_TOP section is primarily used to set up defines which enable and disable features in the code.
 However, it is also used to include a board specific config file. Let's start with the required parts:
 

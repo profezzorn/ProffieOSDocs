@@ -1,3 +1,6 @@
+---
+title: USB Connection Issues
+---
 In order to be able to upload programs to a Proffieboard or Teensy, your computer must be able to talk to it.
 While there are various drivers permission issues that may need to be solved, this page explains how to tell if he connection is working at all.
 

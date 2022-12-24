@@ -1,3 +1,6 @@
+---
+title: Serial Monitor
+---
 The Serial Monitor is a simple tool for talking to ProffieOS.
 ProffieOS will print out messages when something is happening, and you can enter commands to try things out.
 

@@ -1,3 +1,6 @@
+---
+title: Proffieboard Setup
+---
 # Arduino Plugin for [Proffieboard](https://fredrik.hubbe.net/lightsaber/v4/)
 
 ## Installing

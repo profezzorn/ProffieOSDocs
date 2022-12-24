@@ -1,3 +1,6 @@
+---
+title: WavLen
+---
 ## What is WavLen<>?  
 WavLen (length of wav file) takes the duration of a wav file sound and can be used to replace time integer arguments in a blade style.   
 For example, this is a simple InOutTrL that animates the ignition and retraction of the blade:

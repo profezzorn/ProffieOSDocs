@@ -1,3 +1,6 @@
+---
+title: How to install a new sound font
+---
 # Copying the font to the SD card.
 
 First thing we need to do is to make the SD card show up on the computer. There are two ways to do this: Either we can take the SD card out of the saber and put it in an SD card reader attached to the computer, or if your saber is configured with the "mass storage" option, then you can use the Proffieboard as an SD card reader and just connect the saber to the computer with an USB cable. SD card readers are faster, but can be impractical if it's hard to get the SD card out of your saber.

@@ -1,3 +1,6 @@
+---
+title: Contacting Profezzorn
+---
 If you wish to contact me. Please go to [The Crucible](https://crucible.hubbe.net)
 
 If you need help with something, go to the right category and start a new thread about your problem.

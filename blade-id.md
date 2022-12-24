@@ -1,3 +1,6 @@
+---
+title: Blade ID
+---
 So you know that first number in the blade configuration?
 Do you know what it's for?
 It's the Blade ID.

@@ -1,3 +1,6 @@
+---
+title: SimpleBladePtr
+---
 SimpleBladePtr takes 8 arguments, 4 of which are required:
 
     SimpleBladePtr<LED1, LED2, LED3, LED4, pin1, pin2, pin3, pin4>

@@ -1,3 +1,6 @@
+---
+title: GND vs BATT-
+---
 Many people ask me: Do I need to hook up all those negative pads?
 
 The answer is that you need to hook up at least two, and sometimes, you might want to hook up something like a switch or a connector between them.  If you know how electricity flow, just look at the circuit diagram and you can see why. However, if you don't know how electricity flows, here are a few simple rules:

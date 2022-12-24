@@ -1,3 +1,6 @@
+---
+title: How to use a ProffieOS saber
+---
 If no other prop file has been set manually in the config file, then the default file gets used, which is the "saber.h" prop file, and this is how the buttons will work:
 ```
 On/Off -                  Zero buttons saber = Twist (2 directional, like revving a motorcycle)

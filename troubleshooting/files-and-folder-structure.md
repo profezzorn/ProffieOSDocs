@@ -1,3 +1,6 @@
+---
+title: Troubleshooing Files and Folder Structure
+---
 Short version first:
 
 The ProffieOS.ino file must be in a folder named ProffieOS.

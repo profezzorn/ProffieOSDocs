@@ -1,3 +1,6 @@
+---
+title: SpiBladePtr
+---
 SpiBladePtr can have up to 10 arguments, but only the first three are required.
 
     SpiBladePtr<leds, data_pin, clock_pin, byte_order, power_pins, max_frequency, pin_class, power_off_delay>

@@ -1,3 +1,6 @@
+---
+title: Making your own prop file
+---
 By default, the Proffieboard has a wide array of button actions, based on your config (1, 2, or 3 buttons.)  However, some of the default button actions can be less than ideal when spinning or dueling the saber.  For example, a simple short click on the power button will shut off the saber, which is easy to trigger by accident when handling the saber.  
 
 So, how do we fix this?  Easy.

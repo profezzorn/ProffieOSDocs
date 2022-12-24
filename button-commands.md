@@ -1,3 +1,6 @@
+---
+title: Button Commands
+---
 The following instructions require `#define DISABLE_DIAGNOSTIC_COMMANDS` to NOT be enabled in the CONFIG_TOP section of the config file.
 
 A config file typically uses "pow", "aux" and "aux2" as names for the available buttons, which means that those names can be used as commands from the Serial Monitor.

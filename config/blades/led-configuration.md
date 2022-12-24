@@ -1,3 +1,6 @@
+---
+title: LED Configuration
+---
 When using SimpleBladePtr<> or StringBladePtr<> in your blade array, you have to provide a led configuration class. That class specifies the color and electrical properties of the LED.  If the color returned by the style matches the color specified in the led configuration, the LED will be activated.  If the current battery voltage is higher than what is specified in the electrical properties, the LED brightness will be reduced to avoid overheating the LED.
 
 ## Example LED configuration class

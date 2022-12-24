@@ -1,3 +1,6 @@
+---
+title: It doesn't compile, and I don't know why
+---
 First up: The arduino program has a small region at the bottom where it shows error messages in red text. Unfortunately it usually scrolls past the first error message and only shows you the last part, which is not very helpful. Make the error region larger and scroll up to find the first error message. Read on to learn what usually causes the errors, and how to find and fix them.
 
 If you see this error:

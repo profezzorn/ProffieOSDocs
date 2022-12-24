@@ -1,3 +1,6 @@
+---
+title: Is it uploading?
+---
 When you upload to a Proffieboard, the progress of the upload is shown in the same window as compile errors, in the bottom section of the Arduino program. There are a couple of stages, and each one can fail.  
 
 If you have a Teensy, you should get a small pop-up window with a progress bar that moves as the program is uploaded.  

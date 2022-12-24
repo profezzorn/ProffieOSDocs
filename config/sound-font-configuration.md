@@ -1,3 +1,6 @@
+---
+title: Sound Font Configuration
+---
 A sound font is mostly made up of many sound files in a single directory. Let's take a look at the following example and break down the important aspects.
 
 ![font1/clash/001.wav](../images/font1_clash_001_wav.png)

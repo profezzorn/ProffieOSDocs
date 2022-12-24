@@ -1,3 +1,6 @@
+---
+title: Supported Hardware
+---
 While the Proffie OS was developed, a couple of hardware variants followed it. They are all PCB extensions of the Teensy 3.2 Development board. 
 ProffieBoard is the latest variant using its own dedicated CPU and removing the need of "Sandwitch build" installs.
 

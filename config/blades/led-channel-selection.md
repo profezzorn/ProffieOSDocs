@@ -1,3 +1,6 @@
+---
+title: LED Channel Selection
+---
 If you have read the [LED Configuration](led-configuration.md) page, you know how ProffieOS activates channels based on colors. However, what is perhaps less obvious is how to use that in practice.
 
 Let's start with the obvious case, an RGB three-cree star, using the recommended resistors:

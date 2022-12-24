@@ -1,3 +1,6 @@
+---
+title: How to edit presets.ini by hand
+---
 Ok folks, so here is how you can use the ini files stored on the SD card to update your installed fonts and blade presets.
 
 IMPORTANT: to use presets.ini, you have to flash the saber with the #define SAVE_PRESET in your config file, so the saber writes the preset information to the SD card. This define is blanketed under SAVE_STATE. ( See [The CONFIG_TOP Section](../config/the-config_top-section.md) )
