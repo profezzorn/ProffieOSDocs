@@ -11,7 +11,7 @@ Here is a list of prop files that come with ProffieOS, each file will have some 
 * [saber.h](https://github.com/profezzorn/ProffieOS/blob/master/props/saber.h) - this is the default, you don't need a CONFIG_PROP section to use this.
 * [saber_sa22c_buttons.h](https://github.com/profezzorn/ProffieOS/blob/master/props/saber_sa22c_buttons.h) - saber prop with button assignments designed by sa22c.
 * [saber_shtok_buttons.h](https://github.com/profezzorn/ProffieOS/blob/master/props/saber_shtok_buttons.h) - saber prop with button assignments designed by Dmitry Shtok.
-* [saber_fett263_buttons.h](proffieos5.x-saber_fett263_buttons.h-%22battle-mode%22-and-gesture-controls,-defines-and-usage.md) - saber prop with button assignments designed by fett263, includes battle mode.
+* [saber_fett263_buttons.h](../proffieos5.x-saber_fett263_buttons.h-%22battle-mode%22-and-gesture-controls,-defines-and-usage.md) - saber prop with button assignments designed by fett263, includes battle mode.
 * [saber_BC_buttons.h](https://github.com/profezzorn/ProffieOS/blob/master/props/saber_BC_buttons.h) - (ProffieOS 6 or later) saber prop with button assignments and features designed by Brian Conner.
 * [detonator.h](https://github.com/profezzorn/ProffieOS/blob/master/props/detonator.h) - thermal detonator prop.
 * [blaster.h](https://github.com/profezzorn/ProffieOS/blob/master/props/blaster.h) - blaster prop.

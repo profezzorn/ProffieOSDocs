@@ -12,8 +12,8 @@ Configuration/Programming instructions:
 * [Proffieboard Setup](proffieboard-setup.md)
 * [The config file](config/the-config-file.md)
 * [Blade Configuration](config/blades/blade-configuration.md)
-* [LED Configuration](config/led-configuration.md) - for inhilt LEDs
-* [LED Channel Selection](config/led-channel-selection.md) - more about inhilt LEDs
+* [LED Configuration](config/blades/led-configuration.md) - for inhilt LEDs
+* [LED Channel Selection](config/blades/led-channel-selection.md) - more about inhilt LEDs
 * [Preset Configuration](config/preset-configuration.md)
 * [How to use it](howto/how-to-use-it.md)
 * [WebUSB](webusb.md)

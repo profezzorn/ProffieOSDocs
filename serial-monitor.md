@@ -4,7 +4,7 @@ ProffieOS will print out messages when something is happening, and you can enter
 To start the Serial Monitor, go to connect your board to the computer and start up Arduino.
 Now go check Tools->Port and select the right port. For Proffieboard it might say "butterfly" next to it.
 
-If the port doesn't show up, see this page: [Where's my Port?](where's-my-port?.md)
+If the port doesn't show up, see this page: [Where's my Port?](troubleshooting/wheres-my-port.md)
 
 Once the right port is selected, start the serial monitor by selecting it from the Tools menu.
 If everything works, you should see some messages from ProffieOS, such as "Welcome to ProffieOS".

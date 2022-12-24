@@ -6,5 +6,5 @@ If you suspect that your SD card is causing problems, try the "sdtest" command.
 This will read the hum file from your current font over and over again and see how long it takes.
 Normal SD cards should give you 10-11 parallel streams. If you see less than 9, get a new SD card.
 
-Please note that the "sdtest" command will not be available in the [Serial Monitor](serial-monitor.md) if you have
+Please note that the "sdtest" command will not be available in the [Serial Monitor](../serial-monitor.md) if you have
 DISABLE_DIAGNOSTIC_COMMANDS in your config file.
