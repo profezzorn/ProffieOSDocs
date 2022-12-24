@@ -1,6 +1,8 @@
 
 Complete index of all pages on this site:
 
+|title|url|
+|:----|:--|
 {% for p in site.pages %}
-  * [{{ p.title | name | id }}]({{ p.url | absolute_url }})
+  | p.title | [{{p.url | absolute_url}}]({{ p.url | absolute_url }}) |
 {% endfor %}
