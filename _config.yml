@@ -8,6 +8,14 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-redirect-from
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-seo-tag
+  
+whitelist:
+  - jekyll-redirect-from
 
 minima:
   skin: dark
