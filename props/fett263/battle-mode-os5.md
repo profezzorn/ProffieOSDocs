@@ -306,4 +306,4 @@ Preset presets[] = {...
 
 [PDF Version](https://fett263.s3.us-east-2.amazonaws.com/fett263-proffieOS5-gesture-controls.pdf)
 
-![Gesture Controls](https://fett263.s3.us-east-2.amazonaws.com/fett263-proffieOS5-gesture-controls.jpg)
+![Gesture Controls](fett263-proffieOS5-gesture-controls.jpg)

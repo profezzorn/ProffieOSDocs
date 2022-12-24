@@ -40,7 +40,7 @@ The decision of which directory to use is done _once_ for all files with the sam
 The name part of the filename needs to be one that ProffieOS can recognize. Sounds can either be monophonic (Plecter) or polyphonic (Naigon Electronics) style. ProffieOS will automatically decide if a specific sound type is monophonic or polyphonic font based on the filename. Monophonic sounds will smoothly join with the hum when they are finished playing. Polyphonic sounds will automatically mix with the hum sound. Keep in mind that you cannot mix mono and polyphonic sounds for the same effect. For example, if you are using `clash`, you cannot use `clsh` as well. You can, however, mix for different effects. You could use `clash` alongside `blst` in the same font for example.
 
 The following sounds are triggered along with blade animations. The buttons, gestures, or actions used to trigger them is specific to the prop file being used.  
-See [The-CONFIG_PROP-section](The-CONFIG_PROP-section) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](How-to-use-it) for more details.
+See [The-CONFIG_PROP-section](the-config_prop-section.md) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](../howto/how-to-use-it.md) for more details.
 
 #### List of Names and Effects
 | Monophonic Filename | Polyphonic Filename | Effect |
@@ -107,7 +107,7 @@ As of OS6:
 * `mdauto`
 
 ## SmoothSwing Configuration
-When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on [the smoothswing page](smoothsw.ini).
+When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on [the smoothswing page](../smoothsw.ini).
 
 #### SmoothSwing V1
 [Demo Video](https://www.youtube.com/watch?v=4AAYGw09bu0) ([Thexter's description](https://www.fx-sabers.com/forum/index.php?topic=51430))

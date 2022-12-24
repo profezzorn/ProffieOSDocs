@@ -3,7 +3,7 @@ It can be found here:
 https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing  
 
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
-There's a running tab of [alternative parts here](bom:-proffieboard-v2.2-components-and-alternative-parts.md).
+There's a running tab of [alternative parts here](proffieboard-v2.2-bom-alternative-parts.md).
 
 ![](images/partmap.jpeg)
 #### List of Parts and Descriptions

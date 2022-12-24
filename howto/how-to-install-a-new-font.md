@@ -27,7 +27,7 @@ If you have ProffieOS 6.x or later, and are using the Fett263 prop with edit mod
 
 ## Add or change a preset and re-program the saber.
 
-See [the CONFIG_PRESETS section](the-config_presets-section.md) for how to edit configure presets, then just follow the instructions for how to install ProffieOS to re-program the saber. Note that this can be tricky if you don't have the config file that was used to program the saber last time.
+See [the CONFIG_PRESETS section](../config/the-config_presets-section.md) for how to edit configure presets, then just follow the instructions for how to install ProffieOS to re-program the saber. Note that this can be tricky if you don't have the config file that was used to program the saber last time.
 
 ## Edit presets.ini directly
 
