@@ -40,6 +40,8 @@ Proffieboard Wiring and hardware pages:
 * [Speakers](hardware/speakers.md)
 * [Touch Buttons](hardware/touch-buttons.md)
 
+[List of all pages](all_pages.md)
+
 This site is maintained by the ProffieOS community, and you can help by
 going to [Github](https://github.com/profezzorn/ProffieOSDocs) and improving
 the documentation.
