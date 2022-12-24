@@ -1,4 +1,4 @@
-This page explains the parameters that are available in a sound font's `config.ini` file, and provides an example file. For more information on how to create a ProffieOS compatible sound font, [click here](Sound-Font-Configuration)
+This page explains the parameters that are available in a sound font's `config.ini` file, and provides an example file. For more information on how to create a ProffieOS compatible sound font, [click here](sound-font-configuration.md)
 
 ```ini
 # Default config.ini

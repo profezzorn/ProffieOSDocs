@@ -25,7 +25,7 @@ Well, the idea is that if you have multiple blades, you can place a resistor bet
 
 Note that the Blade ID resistor is different from the in-line resistor normally used for WS281X blades. The resistors are also different sizes. The in-line resistor should be 150-470 ohms, but the Blade ID resistor should be somewhere in the 2k to 100k range. Any lower may interfere with the blade data.
 
-The V1 electronics is still one of the best pictures for showing how this can work: [https://fredrik.hubbe.net/lightsaber/electronics.html](https://fredrik.hubbe.net/lightsaber/electronics.html.md)
+The V1 electronics is still one of the best pictures for showing how this can work: [https://fredrik.hubbe.net/lightsaber/electronics.html](https://fredrik.hubbe.net/lightsaber/electronics.html)
 
 Unfortunately, it turns out that Proffieboards are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x. The default charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade.
 

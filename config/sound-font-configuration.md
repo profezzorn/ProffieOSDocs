@@ -1,10 +1,10 @@
 A sound font is mostly made up of many sound files in a single directory. Let's take a look at the following example and break down the important aspects.
 
-![font1/clash/001.wav](images/font1_clash_001_wav.png)
+![font1/clash/001.wav](../images/font1_clash_001_wav.png)
 
 This file name is made up of four main parts:
 
-* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](The-CONFIG_PRESETS-section) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
+* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](the-config_presets-section.md) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
   * Note: While Proffie-based boards support long filenames, Teensy-based boards support a maximum of 8 characters for folder names. It is recommended to stick to this maximum to ensure full compatibility with any sound board. 
 
 * The name (Magenta) - This is the name of the sound type, using the names specified below in the [Sound Effect Names](#Sound-Effect-Names) section. In this example, it's a clash sound.
