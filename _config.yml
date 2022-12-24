@@ -1,5 +1,5 @@
 markdown            : GFM
-theme               : midnight
+theme               : minima
 url: "https://pod.hubbe.net" # the base hostname & protocol for your site
 
 # remote_theme: pages-themes/midnight@v0.2.0
