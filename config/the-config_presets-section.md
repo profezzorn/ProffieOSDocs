@@ -14,7 +14,7 @@ A BladeConfig looks something like this:
       CONFIGARRAY(presets),
     }
 
-If there are multiple BladeConfigs, ProffieOS will measure the resistance between the **blade data pin and GND** and use the BladeConfig that has the closest [Blade ID](blade-id.md). This decides what blade definitions and preset arrays to use.<br/>
+If there are multiple BladeConfigs, ProffieOS will measure the resistance between the **blade data pin and GND** and use the BladeConfig that has the closest [Blade ID](../blade-id.md). This decides what blade definitions and preset arrays to use.<br/>
 Also, if you use #define SAVE_STATE in your config, you can save states in a subfolder on your SD card for each blade array by adding a quoted save name to the end of the BladeConfig [] array, similar to the quoted "name" at the end of a preset.  For example:
 
     BladeConfig blades[] = {
