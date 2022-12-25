@@ -37,9 +37,10 @@ jobs:
       - name: Show files
         run: ls -l .
       - name: Create Site ZIP
-        run: ln -s _site POD && zip -9r POD.zip POD && mv POD.zip ./_site/
+        run: cp -rl _site POD && zip -9r POD.zip POD && mv POD.zip POD
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        path: POD
 
   # Deployment job
   deploy:
