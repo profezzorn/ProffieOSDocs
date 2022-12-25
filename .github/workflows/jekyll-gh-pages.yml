@@ -34,6 +34,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Create Site ZIP
+        run: ln -s _site POD && zip -9r POD.zip POD && mv POD.zip ./_site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
