@@ -127,6 +127,8 @@ This is experimental and may not work properly.
 To use blade ID in a 3-pin connector, the GND leg of the resistor has to be hooked up to the part that is controlled by FETs. That means that those FETs has to be powered on in order for blade ID to work. This define lets you do that by specifying which FETs needs to be powered while the blade is identified.
 
     #define ENABLE_POWER_FOR_ID PowerPINS<bladePowerPin1,bladePowerPin2,bladePowerPin3>
+    
+See [the blade ID page](../blade-id.md) for more information.
 
 # ProffieOS 3.x defines
 
@@ -169,6 +171,8 @@ If you think color change is annoying, or you just need to save some memory, you
 This define lets you use a pin to detect when a blade is present or not. The pin will work kind of like a latching button which is pressed when there is a blade in the saber. When there is no blade in the saber, NO_BLADE (one billion) will be added to the blade ID.
 
     #define BLADE_DETECT_PIN PIN
+
+See [the Blade Detect page](../blade-detect.md) for more information.
 
 ### SAVE_STATE
 Save state is the same as SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET
