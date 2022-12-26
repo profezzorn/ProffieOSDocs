@@ -20,7 +20,7 @@ Configuration/Programming instructions:
 * [Button Actions: making your own prop file](howto/making-your-own-prop-file.md)
 * [Editing-presets.ini-by-hand](howto/editing-presets.ini-by-hand.md)
 
-Configuration/Programming troubleshooting:
+[Configuration/Programming troubleshooting](troubleshooting/):
 * [Is it uploading?](troubleshooting/is-it-uploading.md)
 * [It doesn't compile and I don't know why](troubleshooting/it-doesn't-compile-and-i-don't-know-why.md)
 * [USB connection issues](troubleshooting/usb-connection-issues.md)
