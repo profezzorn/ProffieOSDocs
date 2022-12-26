@@ -167,5 +167,8 @@ This is a typical error message you'll see if you don't have the board selected 
 FS.h No such file or directory
 ```
 
+#  `.text' will not fit in region `FLASH'
 
+This means that you've configured too many things, and ProffieOS won't fit in the available memory anymore.
+See the [saving memory page](../saving-memory.md) for things you can do to fix it.
 
