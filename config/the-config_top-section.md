@@ -147,6 +147,8 @@ Proffieboards have some challenges when it comes to BladeID, but it's possible t
 
     #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, BRIDGED_PIN>
     #define BLADE_ID_CLASS ExternalPullupBladeID<bladeIdentifyPin, PULLUP_RESISTANCE>
+    
+See [the blade ID page](../blade-id.md) for more information.
 
 ### SAVE_COLOR_CHANGE
 On-the-fly color changing is new in 3.x. If you want it to save the color change state, add this define to your config file:
