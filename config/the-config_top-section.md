@@ -134,6 +134,8 @@ To use blade ID in a 3-pin connector, the GND leg of the resistor has to be hook
 By default, some commands which are only useful for developers are normally not compiled into the final binary to save memory, if you want them, add this define to enable them.
 
     #define ENABLE_DEVELOPER_COMMANDS
+    
+Plase beware that this turns off some useful commands, like "sdtest" and "monitor".
 
 ### DISABLE_DIAGNOSTIC_COMMANDS
 To save even more memory, you can disable some diagnostic commands like "monitor", "top" and "sdtest" using this define:
