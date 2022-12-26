@@ -189,6 +189,9 @@ After uploading, all .INI file will be deleted from the SD card. These files may
 To retain this additional information even after re-flashing ProffieOS to the board, use:
 
     #define KEEP_SAVEFILES_WHEN_PROGRAMMING
+    
+Please use this define with caution. If you leave this define in your config file when you
+are tring to make changes to your saber, weird things tends to happen.
 
 ### ORIENTATION_ROTATION
 If your board is not mounted at 90 degree angles to the hilt, you can use this define:
