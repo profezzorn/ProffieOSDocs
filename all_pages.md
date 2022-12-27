@@ -9,28 +9,23 @@ Complete index of all pages on this site:
 
 <!-- testing...
 
-{% liquid
-  assign dirs = "" | split: "x"
-  for page in site.pages
-     if dirs contain page.dir
-     else
-       assign tmp = pages.dir | split: ":"
-       assign dirs = pages | concat: tmp
-     endif
-  endfor
-  assign dirs = dirs | sort
-%}
+  {% assign dirs = "" | split: "x" %}
+  {% for page in site.pages %}
+     {% if dirs contain page.dir %}
+     {% else %}
+       {% assign tmp = pages.dir | split: ":" %}
+       {% assign dirs = pages | concat: tmp %}
+     {% endif %}
+  {% endfor %}
+  {% assign dirs = dirs | sort %}
 
 dirs = {{ dirs }}
 
-{% liquid
-   for dir in dirs
-     for page in pages
-       if page.dir == dir
-          echo page.dir | append: " / " | append page.url
-       endif
-     endfor
-   endfor
-%}   
-
+  {% for dir in dirs %}
+     {% for page in pages %}
+       {% if page.dir == dir %}
+          {{ page.dir }} / {{ page.url }} : {{ page.title }}
+       {% endif %}
+     {% endfor %}
+   {% endfor %}
 -->
