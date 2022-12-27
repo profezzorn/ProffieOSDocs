@@ -9,7 +9,7 @@ Complete index of all pages on this site:
 
 <!-- testing...
 
-  {% assign dirs = site.pages | group_by: "dir" %} 
+  {% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
 
   dirs = {{ dirs }}
 
