@@ -11,7 +11,7 @@ Complete index of all pages on this site:
 
   {% assign dirs = "" | split: "x" %}
   {% for page in site.pages %}
-     {% if dirs contain page.dir %}
+     {% if dirs contains page.dir %}
      {% else %}
        {% assign tmp = pages.dir | split: ":" %}
        {% assign dirs = pages | concat: tmp %}
