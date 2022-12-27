@@ -1,5 +1,7 @@
 ---
 title: Saving FLASH Memory
+redirect_from:
+  - /saving-memory.html
 ---
 If you see this when trying to compile ProffieOS
 
