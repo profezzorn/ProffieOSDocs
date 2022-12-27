@@ -15,7 +15,7 @@ title: Single-page documentation
 ## {{ p.title }}
 ************
 {{ p.content }}
-<center><img src="/image/pod.svg" width=100 height=160></center>
+<center><img src="/images/pod.svg" width=100 height=160></center>
     {% endif %}
   {% endfor %}
 {% endfor %}
