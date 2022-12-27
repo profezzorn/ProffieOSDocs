@@ -1,5 +1,7 @@
 ---
 title: Proffieboard v2.2 part map
+redirect_from:
+  - /proffieboard-v2.2-part-map---component-level.html
 ---
 These part numbers are referenced in the Bill Of Materials (BOM) for Proffieboard V2.2, which contains links to buy them (when available).
 It can be found here:
@@ -8,7 +10,7 @@ https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRs
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
 There's a running tab of [alternative parts here](proffieboard-v2.2-bom-alternative-parts.md).
 
-![](images/partmap.jpeg)
+![](/images/partmap.jpeg)
 #### List of Parts and Descriptions
 | Part | Description | Notes |
 |---|---|---|
