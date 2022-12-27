@@ -1,21 +1,13 @@
 ---
 title: All ProffieOS Documentation Pages
 ---
-Complete index of all pages on this site:
 
-{% for p in site.pages %}{% if p.title %}
+{% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
+
+{% for dir in dirs %}
+{%if dir.name != "/" and dir.name != "/assets/css/" %}
+## {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
+{% endif %}
+{% for p in dir.items %}{% if p.title %}
   * [{{ p.title }}]({{ p.url }}){% endif %}{% endfor %}
-
-
-<!-- testing...
-
-  {% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
-
-  dirs = {{ dirs }}
-
-  {% for dir in dirs %}
-     {% for page in dir.items %}
-          {{ dir.name }} / {{ page.url }} : {{ page.title }}
-     {% endfor %}
-  {% endfor %}
--->
+{% endfor %}
