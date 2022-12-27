@@ -9,7 +9,9 @@ title: Single-page documentation
 ## {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
 {% endif %}
   {% for p in dir.items %}
+    {% if p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
 ## {{ p.title }}
 {{ p.content }}
+    {% endif %}
   {% endfor %}
 {% endfor %}
