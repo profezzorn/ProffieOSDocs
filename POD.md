@@ -6,7 +6,7 @@ title: Single-page documentation
 
 {% for dir in dirs %}
 # {{ dir | capitalize }}
-  {% for page in dir.items %}
+  {% for p in dir.items %}
 ## {{ p.title }}
 {{ p.content }}
   {% endfor %}
