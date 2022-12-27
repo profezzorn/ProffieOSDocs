@@ -6,7 +6,8 @@ title: Single-page documentation
 
 {% for dir in dirs %}
 {%if dir.name != "/" and dir.name != "/assets/css/" %}
-## {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
+# {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
+***
 {% endif %}
   {% for p in dir.items %}
     {% if p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
