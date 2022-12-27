@@ -22,3 +22,4 @@ button and create the pull request. Someone will review your changes and approve
 before they will show up on the site. This may take some time, but it also means that
 you don't have to worry about making any major mistakes or breaking the site somehow.
 
+Of course, if you already know how to use github, you can use any tools you want to fork, edit and upload pull requests.
