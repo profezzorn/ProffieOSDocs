@@ -11,11 +11,11 @@ title: Single-page documentation
 *****
 {% endif %}
   {% for p in dir.items %}
-    {% if p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
+    {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
 ## {{ p.title }}
 ************
 {{ p.content }}
-<center><img src="/images/pod.svg" width=100 height=160></center>
+<center><img src="/images/pod.svg" width=75 height=120></center>
     {% endif %}
   {% endfor %}
 {% endfor %}
