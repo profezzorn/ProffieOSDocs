@@ -7,9 +7,8 @@ Complete index of all pages on this site:
 
 {% for dir in dirs %}
 {%if dir.name != "/" and dir.name != "/assets/css/" %}
-{% assign header = dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize %}
-## {{ dir.name| capitalize }}
+## {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
+{% endif %}
 {% for p in dir.items %}{% if p.title %}
   * [{{ p.title }}]({{ p.url }}){% endif %}{% endfor %}
-{% endif %}
 {% endfor %}
