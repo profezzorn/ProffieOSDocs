@@ -201,6 +201,8 @@ To retain this additional information even after re-flashing ProffieOS to the bo
 Please use this define with caution. If you leave this define in your config file when you
 are tring to make changes to your saber, weird things tends to happen.
 
+See [this page](keeping-edits-when-uploading.md) for further information.
+
 ### ORIENTATION_ROTATION
 If your board is not mounted at 90 degree angles to the hilt, you can use this define:
 
