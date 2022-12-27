@@ -11,6 +11,9 @@ you'll need to do that.
 
 After forking, you can make edits. Make sure to check the "Preview" tab to
 see approximately how your changes will look once they appear on the POD site.
+For more information about how to make it look the way you want, try [this site](https://www.markdownguide.org/tools/github-pages/).
+
+
 Once you are happy with your changes, write a comment describing your changes
 below and hit the "propose" button.
 
