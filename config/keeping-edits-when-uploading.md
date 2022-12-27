@@ -1,5 +1,7 @@
 ---
 title: ProffieOS v6.x, Keeping edits when uploading
+redirect_from:
+  - /proffieos6-keeping-edits-when-uploading.html
 ---
 In ProffieOS6, all edits made to your presets or settings in either [Edit Mode](https://fett263.s3.us-east-2.amazonaws.com/proffieOS6-edit-mode.html) or using [ProffieOS Workbench (WebUSB)](webusb.md) are saved to your SD card in various *.ini files.  
 NOTE: It is strongly recommended you save a backup of all SD card contents (fonts and *.ini files) after making edits in case your SD card is erased or corrupted.
