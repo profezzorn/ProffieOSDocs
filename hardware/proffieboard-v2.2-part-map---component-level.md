@@ -10,7 +10,8 @@ https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRs
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
 There's a running tab of [alternative parts here](proffieboard-v2.2-bom-alternative-parts.md).
 
-![](/images/partmap.jpeg)
+![partmap](/images/partmap.jpg)
+
 #### List of Parts and Descriptions
 | Part | Description | Notes |
 |---|---|---|
