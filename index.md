@@ -41,7 +41,7 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 
 ## Additional Info
 * [List of all pages](all_pages.md)
-* [Making changes to this site](making-changes.md)
+* [Making changes to this site](making_changes.md)
 * [Contacting Profezzorn](contacting-profezzorn.md)
 
 This site is maintained by the ProffieOS community, and you can help by
