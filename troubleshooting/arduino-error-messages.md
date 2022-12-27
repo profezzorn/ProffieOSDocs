@@ -1,7 +1,5 @@
 ---
 title: How to decipher Arduino error messages
-redirect_from:
-  - /troubleshooting/error-messages-in-arduino-and-how-to-decipher-them/html
 ---
 While a bit lengthy, and hard to put into typed words, hopefully this helps you understand how to read error messages and what they are caused by.<br>
 First, understand that a long list of errors does not necessarily mean there’s a ton of errors. They are just a cascade effect from the first problem.
