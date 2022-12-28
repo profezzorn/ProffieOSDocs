@@ -94,7 +94,7 @@
     {% endif %}
   {% endfor %}
 
-  document.getElementsByTag("a").forEach(function(tag) {
+  document.getElementsByTagName("a").forEach(function(tag) {
      var href = tag.href;
      if (linksToFix[href]) {
        tag.href = linksToFix[href];
