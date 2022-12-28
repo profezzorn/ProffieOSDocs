@@ -1,5 +1,7 @@
 ---
 title: ProffieOS v6.x acceleration-based accent swings
+redirect_from:
+  - /proffieos6-acceleration-based-accent-swings.html
 ---
 In ProffieOS6 you can set your font up to use Accent Swings (swng.wav or swing.wav) based on swing acceleration.
 
