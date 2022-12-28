@@ -45,7 +45,7 @@ An algorithm for how to make Star Wars-style lightsaber sounds from motion event
 ## TeensySaber
 This is what ProffieOS used to be called. It is also the name of the teensy-based boards that were used with ProffieOS before Proffieboards.
 
-## [WebUsb](/tools/webusb.md)
+## [WebUsb](/webusb.md)
 A way to connect a browser to a Proffieboard. Lets you use the ProffieOS workbench.
 
 ## [Zadig](/tools/zadig.md)
