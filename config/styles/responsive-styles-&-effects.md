@@ -1,5 +1,5 @@
 ---
-title="Responsive Styles & Effects for ProffieOS 4.x or later."
+title: "Responsive Styles & Effects for ProffieOS 4.x or later."
 redirect_from:
   - "/responsive-styles-&-effects.html"
 ---
