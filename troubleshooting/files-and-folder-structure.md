@@ -30,7 +30,7 @@ The root folder for the software (top level folder) must be named ProffieOS. The
 When you have downloaded multiple versions and copies of the software, including forks and prop files, you need to keep everything organized to avoid mixing up which files you're currently using and working with.
 
 It is recommended that you create a folder somewhere, either on the Desktop or in "Documents" where you keep lightsaber stuff. Then inside that, have one directory per ProffieOS version, and inside that, it would be ProffieOS/ProffieOS.ino, so something like:
-![](ff2.jpg)
+![](images/ff2.jpg)
 
 The written path in full could look like this:
 C:\Users\Hubbe\Documents\Lightsaber Stuff\ProffieOS-2.8\ProffieOS\ProffieOS.ino
