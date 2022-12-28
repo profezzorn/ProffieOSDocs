@@ -1,0 +1,14 @@
+<script>
+  document.getElementsByTag("a").forEach(function(tag) {
+     var href = tag.href;
+     if (linksToFix[href]) {
+       tag.href = linksToFix[href];
+     } else {
+       var href2 = new URL(href, window.location).href;
+       if (linksToFix[href2]) {
+         tag.href = linksToFix[href2];
+         linksToFix[href] = linksToFix[href2];
+       }
+     }
+  });
+</script>
