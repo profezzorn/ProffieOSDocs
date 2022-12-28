@@ -94,7 +94,9 @@
     {% endif %}
   {% endfor %}
 
-  document.getElementsByTagName("a").forEach(function(tag) {
+  var atags = document.getElementsByTagName("a");
+  for (var i = 0; i < atags.length; i++) {
+     var tag = atags[i];
      var href = tag.href;
      if (linksToFix[href]) {
        tag.href = linksToFix[href];
@@ -105,7 +107,7 @@
          linksToFix[href] = linksToFix[href2];
        }
      }
-    });
+  }
  </script>  
 	  {% endif %}
   </body>
