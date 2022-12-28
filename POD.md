@@ -14,13 +14,11 @@ title: Single-page documentation
 {% endif %}
   {% for p in dir.items %}
     {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
-<div id="{{ p.id | slugify }}">
+{% include fix_links.html from_url=p.url to_url=p.id %}
 ## {{ p.title }}
 ************
 {{ p.content }}
-</div>
-{% include fix_links.html from_url=p.url to_url=p.id %}
-<center><img src="/images/pod.svg" width=75 height=120></center>
+{% include fix_links_end.html %}
     {% endif %}
   {% endfor %}
 {% endfor %}
