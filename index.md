@@ -41,6 +41,8 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 
 ## Additional Info
 * [List of all pages](all_pages.md)
+* [Glossary](glossary.md)
+* [All the content in one page](POD.md)
 * [Making changes to this site](making_changes.md)
 * [Contacting Profezzorn](contacting-profezzorn.md)
 
