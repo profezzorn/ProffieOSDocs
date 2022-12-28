@@ -36,6 +36,9 @@ Several prop files come with ProffieOS, and you can also make your own. See [the
 ## presets.ini
 A file that stores changes made to your presets.
 
+## [Serial Monitor](/tools/serial-monitor.md)
+A window in Arduino which lets you type commands and receive text-based output from a Proffieboard. (Or any other Arduino-compatible board.)
+
 ## Smoothswing
 An algorithm for how to make Star Wars-style lightsaber sounds from motion events.
 
