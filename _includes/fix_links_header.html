@@ -1,0 +1,7 @@
+<script>
+  var linksToFix = {};
+  function fixPODLink(f, t) {
+    linksToFix[f] = t;
+    linksToFix[new URL(f, window.location).href] = t;
+  }
+</script>
