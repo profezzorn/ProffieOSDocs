@@ -1,5 +1,7 @@
 ---
 title: Using dual_prop.h
+redirect_from:
+  - /using-dual_prop.h.html
 ---
 dual_prop.h allows for 2 discrete prop files to be used, 
 alternating on a latched switch (Blade Detect).   
