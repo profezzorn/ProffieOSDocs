@@ -2,13 +2,15 @@
 title: Single-page documentation
 ---
 
+{% raw %}
 <script>
   var linksToFix = {};
   function fixPODLink(f, t) {
     linksToFix[f] = t;
     linksToFix[new URL(f, window.location).href] = t;
   }
-</scrip>
+</script>
+{% endraw %}
 
 {% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
 
@@ -25,12 +27,15 @@ title: Single-page documentation
 ************
 {{ p.content }}
 </div>
-<script>fixPODLink("{{ p.url | escape }}", "#{{ p.id | slugify }}");</script>
+{% raw %}
+  <script>fixPODLink("{{ p.url | escape }}", "#{{ p.id | slugify }}");</script>
+{% endraw %}
 <center><img src="/images/pod.svg" width=75 height=120></center>
     {% endif %}
   {% endfor %}
 {% endfor %}
 
+{% raw %}
 <script>
   document.getElementsByTag("a").forEach(function(tag) {
      var href = tag.href;
@@ -45,3 +50,4 @@ title: Single-page documentation
      }
   });
 </script>
+{% endraw %}
