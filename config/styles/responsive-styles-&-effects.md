@@ -1,7 +1,7 @@
 ---
 title="Responsive Styles & Effects for ProffieOS 4.x or later."
 redirect_from:
-  - /responsive-styles-&-effects.html
+  - "/responsive-styles-&-effects.html"
 ---
 Responsive Styles use BladeAngle<> or TwistAngle<> functions to control, modify or move effects in real-time, they are implemented using the below styles. The Responsive Styles all use Layers<> for implementation.
 
