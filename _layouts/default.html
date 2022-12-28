@@ -99,7 +99,7 @@
 	
   {% for p in site.pages %}
     {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
-       fixPODLink("{{ p.url | escape }}", "#{{ p.title | strip_html | strip | slugify }}");
+       fixPODLink("{{ p.url | escape }}", "#{{ p.title | remove: "'" | remove: "_" | slugify }}");
     {% endif %}
   {% endfor %}
 
