@@ -13,7 +13,6 @@ pod: true
 {% endif %}
   {% for p in dir.items %}
     {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
-<div id="PAGE-{{p.title | slugify }}"></div>
 ## {{ p.title }}
 ************
 {{ p.content }}
