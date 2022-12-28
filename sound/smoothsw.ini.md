@@ -1,5 +1,7 @@
 ---
 title: smoothsw.ini
+redirect_from:
+  - /smoothsw.ini.html
 ---
 When one or more set of swingl/swingh (or lswing/hswing) files are present, ProffieOS will activate the
 SmoothSwing V1 or V2 algorithms. To decide which one to use, it will read a file called
