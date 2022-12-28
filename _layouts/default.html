@@ -38,6 +38,29 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
+	  {% if page.pod %}
+	<script>
+  var linksToFix = {};
+  function fixPODLink(f, t) {
+    linksToFix[f] = t;
+    linksToFix[new URL(f, window.location).href] = t;
+  }
+  function dofixPODLinks() {
+     document.getElementsByTag("a").forEach(function(tag) {
+     var href = tag.href;
+     if (linksToFix[href]) {
+       tag.href = linksToFix[href];
+     } else {
+       var href2 = new URL(href, window.location).href;
+       if (linksToFix[href2]) {
+         tag.href = linksToFix[href2];
+         linksToFix[href] = linksToFix[href2];
+       }
+     }
+    });
+  }
+</script>  
+	  {% endif %}
   </head>
   <body>
       <div id="header">
