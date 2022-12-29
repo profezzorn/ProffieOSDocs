@@ -17,6 +17,9 @@ Let's ProffieOS detect when a blade is attached/detached.
 ## [Blade ID](/blade-id.md)
 Let's ProffieOS detect which blade is attached.
 
+## FET
+Field Effect Transistor. Basically a switch that can be controlled electically. A Proffieboard v2.2 has 6 of these that are used to enable/disable power to LEDs and other things.
+
 ## Kill key
 A small plug that plugs into a charge port on a saber, but which does not do any charging. Instead, it just causes the battery to be disconnected. A kill key is an alternative to having an on/off switch to disconnect the battery when you're not using your saber.
 
@@ -28,6 +31,12 @@ Abbreviation meaning "Organic Light Emitting Diode", but in this context, we use
 
 ## [Preset](/config/the_config_presets_section.md)
 A combination of a font, a track and one or more styles. "factory settings" are configured in the config file, but changes can be made with edit mode or the ProffieOS workbench. Such changes are stored in prests.ini on the SD card.
+
+## Port
+Short for "serial port". Used in Arduino to communicate with your Proffieboard. Make sure to select the right one under Arduino -> Tools -> Port.
+
+## Profezzorn
+Fredrik Hubinette's online alias. You know, the guy who designed the Proffieboards, wrote ProffieOS and various other stuff. If you want to get in touch with Profezzorn, see the [How to Contact Profezzorn Page](/contacting-profezzorn.md).
 
 ## Prop file
 A file that controls most of the behaviors of ProffieOS. In particular, it controls which button does what.
