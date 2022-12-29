@@ -44,5 +44,5 @@ This will use no additional FLASH memory.
 This is done by instructing the OS to use an existing preset's blade style in a new preset, assigning any font, and even changing the color of the blade for that new preset. More information can be found at these links:  
 https://fredrik.hubbe.net/lightsaber/webusb.html  
 https://www.fett263.com/proffieOS6-edit-mode.html  
-[Editing presets.ini by hand](howto/editing-presets.ini-by-hand.html)
+[Editing presets.ini by hand](/howto/editing-presets.ini-by-hand.html)
 
