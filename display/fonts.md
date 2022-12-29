@@ -2,7 +2,6 @@
 title: "OLED display fonts: StarJEDI or Aurabesh"
 redirect_from:
   - "/oled-display-fonts:-starjedi-or-aurebesh.html"
-  - "/oled-display-fonts:-starjedi-or-aurebesh.md"
 ---
 To have the "name" argument at the end of a blade style display the correct characters, it should be understood that
 the StarJedi font maps ACSII to glyphs with all kinds of characters aside from alphabetical, as well as some that have stylized differences.  

@@ -2,7 +2,6 @@
 title: Adressable LED Strips
 redirect_from:
   - /addressable-led-strips.html
-  - /addressable-led-strips.md
 ---
 ` WS2811BladePtr<97, WS2811_800kHz | WS2811_RGB, blade2Pin, PowerPINS<bladePowerPin1>>()`
 

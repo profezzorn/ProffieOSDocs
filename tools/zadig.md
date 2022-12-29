@@ -2,7 +2,6 @@
 title: Zadig
 redirect_from:
   - /zadig.html
-  - /zadig.md
 ---
 Zadig is a program that let's you update or replace device drivers for specific USB devices on Windows.
 For Proffieboards, we use Zadig to install a driver that lets us talk to the STM32 BOOTLOADER. Here is how:

@@ -2,7 +2,6 @@
 title: Sound Font Configuration
 redirect_from:
   - /config/sound-font-configuration.html
-  - /config/sound-font-configuration.md
 ---
 A sound font is mostly made up of many sound files in a single directory. Let's take a look at the following example and break down the important aspects.
 

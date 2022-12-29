@@ -2,7 +2,6 @@
 title: Proffieboard v2.2 part map
 redirect_from:
   - /proffieboard-v2.2-part-map---component-level.html
-  - /proffieboard-v2.2-part-map---component-level.md
 ---
 These part numbers are referenced in the Bill Of Materials (BOM) for Proffieboard V2.2, which contains links to buy them (when available).
 It can be found here:
