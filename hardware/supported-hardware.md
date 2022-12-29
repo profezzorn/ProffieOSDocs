@@ -13,6 +13,7 @@ To configure your program to run on specific hardware make sure to have its incl
 * `#include "v3_config.h"`
 * `#include "proffieboard_v1_config.h"`
 * `#include "proffieboard_v2_config.h"`
+* `#include "proffieboard_v3_config.h"`
 ***
 ## [Teensy Saber V1](https://fredrik.hubbe.net/lightsaber/electronics.html)
 [![Teensy + Prop Shield (v1)](https://fredrik.hubbe.net/lightsaber/ratsnest.jpg)](https://fredrik.hubbe.net/lightsaber/electronics.html)
@@ -24,5 +25,7 @@ To configure your program to run on specific hardware make sure to have its incl
 [![ProffieBoard](https://fredrik.hubbe.net/lightsaber/v4/_DSC1630_CROPPED.JPG)](https://fredrik.hubbe.net/lightsaber/v4/)
 ## [ProffieBoard V2.2](https://fredrik.hubbe.net/lightsaber/v5/)
 [![ProffieBoard](https://fredrik.hubbe.net/lightsaber/v5/pbv22.jpg)](https://fredrik.hubbe.net/lightsaber/v5/)
+## [ProffieBoard V3.9](https://fredrik.hubbe.net/lightsaber/v6/)
+[![ProffieBoard](https://fredrik.hubbe.net/lightsaber/v6/pb37.jpg)](https://fredrik.hubbe.net/lightsaber/v6/)
 
 
