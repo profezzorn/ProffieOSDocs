@@ -5,8 +5,8 @@ If the Proffieboard Port doesn't show up in Arduino->Tools->Port, don't worry, m
 
 If programming works, but the port still doesn't show up, it's possible that you you need to install a driver.
 If you're on a Mac, you may need to upgrade to a later version of OSX.
-On linux, make sure you have the udev rules installed. See [Proffieboard Setup](../proffieboard-setup.html)
-If you're on Windows 7, follow the usb serial driver instructions here: [Proffieboard Setup](../proffieboard-setup.html)
+On linux, make sure you have the udev rules installed. See [Proffieboard Setup](/proffieboard-setup.html)
+If you're on Windows 7, follow the usb serial driver instructions here: [Proffieboard Setup](/proffieboard-setup.html)
 On Windows 10, it *should* just work.
 
 If it still doesn't work, it's possible that some other software has messed things up, or perhaps you used zadig incorrectly and changed the driver for the Proffieboard serial device. Here is how you check what driver is used on Windows 10:

@@ -12,7 +12,7 @@ While the code is waiting for the board to reboot into bootloader mode, it will 
 1. Connect Proffieboard to computer.
 2. Hold the BOOT button.
 3. Press and release the RESET button.
-4. Check that the computer can see your board as STM32 BOOTLOADER. (See this page for how to find all USB devices connected to your computer: [USB Connection Issues](usb-connection-issues.html))
+4. Check that the computer can see your board as STM32 BOOTLOADER. (See this page for how to find all USB devices connected to your computer: [USB Connection Issues](/troubleshooting/usb-connection-issues.html))
 5. If the board was not recognized by your computer, try a different cable, port, computer, etc. Ultimately, if the board cannot be found, it may be broken.
 6. Once the board is found, press the upload button in Arduino. Note that there will be no port listed under Arduino->Tools->Port, but if your board is already in bootloader mode, upload should work anyways.
 
@@ -24,8 +24,8 @@ During the upload, progress bars will be printed.  What you should see is a bunc
 Once it gets to 100%, the board will reboot and your upload will have completed successfully.
 
 If you get this message instead:
-"cannot open dfu device 0483:df11", it means that it found the bootloader, but it can't talk to it. On windows, that usually means that you need to run [zadig](../zadig.html) to install the right driver for the STM32 BOOTLOADER. On Linux, it means that you need to install the right udev rules.
+"cannot open dfu device 0483:df11", it means that it found the bootloader, but it can't talk to it. On windows, that usually means that you need to run [zadig](/tools/zadig.html) to install the right driver for the STM32 BOOTLOADER. On Linux, it means that you need to install the right udev rules.
 
 If you get this message "Please select a Port before Upload", but there are no ports to choose from. Please try installing Arduino 1.8.6 or earlier.
 
-See also: [USB Connection Issues](usb-connection-issues.html)
+See also: [USB Connection Issues](/troubleshooting/usb-connection-issues.html)
