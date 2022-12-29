@@ -2,6 +2,7 @@
 title: "ColorChange<> in a blade style"
 redirect_from:
   - /color-change-modes.html
+  - /color-change-modes.md
 ---
 The template is `ColorChange<TRANSITION, COLOR1, COLOR2, ...>`   
 ProffieOS will detect if the style uses ColorChange<> or not.  

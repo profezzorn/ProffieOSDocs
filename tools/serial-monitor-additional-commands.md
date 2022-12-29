@@ -2,6 +2,7 @@
 title: Additional Serial Monitor Commands
 redirect_from:
   - /serial-monitor-additional-commands.html
+  - /serial-monitor-additional-commands.md
 ---
 These commands are usually used for deeper diagnostics beyond typical use.  
 For more typical use case commands, see [Serial Monitor Commands](serial-monitor-commands.md).  

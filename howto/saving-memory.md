@@ -2,6 +2,7 @@
 title: Saving FLASH Memory
 redirect_from:
   - /saving-memory.html
+  - /saving-memory.md
 ---
 If you see this when trying to compile ProffieOS
 

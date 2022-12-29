@@ -2,6 +2,7 @@
 title: Serial Monitor Commands
 redirect_from:
   - /serial-monitor-commands.html
+  - /serial-monitor-commands.md
 ---
 This a list of some of the most typical commands you can use in the Serial Monitor.  
 For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](serial-monitor-additional-commands.md).   

@@ -2,6 +2,7 @@
 title: "OLED additional features: Bullet Counts"
 redirect_from:
   - "/oled-additional-features:-bullet-counts.html"
+  - "/oled-additional-features:-bullet-counts.md"
 ---
 As of ProffiesOS 6.x, it's possible to show bullet counts on an OLED display.
 Here's what you would need:

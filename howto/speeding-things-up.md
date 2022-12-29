@@ -2,6 +2,7 @@
 title: Speeding things up
 redirect_from:
   - /speeding-things-up.html
+  - /speeding-things-up.md
 ---
 Sometimes, ProffieOS will run slowly, because it has too many things to do and too little time to do it. Here is a list of possible things you can do about it.
 

@@ -2,6 +2,7 @@
 title: POV (persistance of vision)
 redirect_from:
   - /pov-(persistance-of-vision).html
+  - /pov-(persistance-of-vision).md
 ---
 
 This page needs more work, but here is some information from the pov_tools directory in ProffieOS...
