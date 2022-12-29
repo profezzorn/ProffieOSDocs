@@ -22,12 +22,12 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 * [Is it uploading?](troubleshooting/is-it-uploading.md)
 * [It doesn't compile and I don't know why](troubleshooting/it-doesn't-compile-and-i-don't-know-why.md)
 * [USB connection issues](troubleshooting/usb-connection-issues.md)
-* [Zadig](zadig.md)
-* [Serial Monitor](serial-monitor.md)
+* [Zadig](tools/zadig.md)
+* [Serial Monitor](tools/serial-monitor.md)
 * [Where's my Port?](troubleshooting/wheres-my-port.md)
 * [What is it saying?](troubleshooting/what-is-it-saying.md) - Voice Error Codes
-* [smoothsw.ini](smoothsw.ini.md)
-* [Saving Memory](saving-memory.md)
+* [smoothsw.ini](sound/smoothsw.ini.md)
+* [Saving Memory](howto/saving-memory.md)
 * [How many LEDS does my blade have?](howto/how-many-leds-does-my-blade-have.md)
 * [Arduino files and folders](troubleshooting/files-and-folder-structure.html)
 
