@@ -5,7 +5,7 @@ redirect_from:
 ---
 The list of components onboard a Proffieboard v2.2 can be found [here](https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing).
 
-To see where the components go, refer to the [ProffieBoard V2.2 part map](proffieboard-v2.2-part-map---component-level.html).
+To see where the components go, refer to the [ProffieBoard V2.2 part map](/hardware/proffieboard-v2.2-part-map---component-level.html).
 
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
  

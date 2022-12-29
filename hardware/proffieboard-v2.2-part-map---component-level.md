@@ -8,7 +8,7 @@ It can be found here:
 https://docs.google.com/spreadsheets/d/18MwtF8ENlrQoEh_lPH9iURkPmyv8qekj8NvmkMRsl70/edit?usp=sharing  
 
 As of late, a couple of the parts are coming up as either unavailable or only available in bulk.
-There's a running tab of [alternative parts here](proffieboard-v2.2-bom-alternative-parts.html).
+There's a running tab of [alternative parts here](/hardware/proffieboard-v2.2-bom-alternative-parts.html).
 
 ![partmap](/images/partmap.jpg)
 
