@@ -29,4 +29,4 @@ Now, if nothing shows up, try a different USB cable, as some micro-USB cables ar
 If you need to buy a new cable, I recommend buying one that is USB-IF certified.
 
 
-Once you have verified that the board shows up properly, proceed to [Where's my Port?](wheres-my-port.md).
+Once you have verified that the board shows up properly, proceed to [Where's my Port?](wheres-my-port.html).

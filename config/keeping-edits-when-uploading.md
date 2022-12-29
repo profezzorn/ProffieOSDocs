@@ -3,7 +3,7 @@ title: ProffieOS v6.x, Keeping edits when uploading
 redirect_from:
   - /proffieos6-keeping-edits-when-uploading.html
 ---
-In ProffieOS6, all edits made to your presets or settings in either [Edit Mode](https://fett263.s3.us-east-2.amazonaws.com/proffieOS6-edit-mode.html) or using [ProffieOS Workbench (WebUSB)](/webusb.md) are saved to your SD card in various *.ini files.  
+In ProffieOS6, all edits made to your presets or settings in either [Edit Mode](https://fett263.s3.us-east-2.amazonaws.com/proffieOS6-edit-mode.html) or using [ProffieOS Workbench (WebUSB)](/webusb.html) are saved to your SD card in various *.ini files.  
 NOTE: It is strongly recommended you save a backup of all SD card contents (fonts and *.ini files) after making edits in case your SD card is erased or corrupted.
 
 Typically, whenever you reupload through Arduino the existing .ini files are ignored.  In order to prevent this you will want to include this define in your config BEFORE you make your edits.
@@ -38,6 +38,6 @@ If it's absolutely necessary to remove the style entirely then you will need to 
 
 `style=builtin 14 1`
 
-and change the "14" to any number between 0 and 13 corresponding to the style you want.  See [Edit presets.ini by Hand](/howto/editing-presets.ini-by-hand.md) for more information.
+and change the "14" to any number between 0 and 13 corresponding to the style you want.  See [Edit presets.ini by Hand](/howto/editing-presets.ini-by-hand.html) for more information.
 
 Once you have all of the initial settings and the styles you want uploaded to your saber you can then use this define to move all edits to Edit Mode or ProffieOS Workbench.

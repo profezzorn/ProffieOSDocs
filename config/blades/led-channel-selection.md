@@ -1,7 +1,7 @@
 ---
 title: LED Channel Selection
 ---
-If you have read the [LED Configuration](led-configuration.md) page, you know how ProffieOS activates channels based on colors. However, what is perhaps less obvious is how to use that in practice.
+If you have read the [LED Configuration](led-configuration.html) page, you know how ProffieOS activates channels based on colors. However, what is perhaps less obvious is how to use that in practice.
 
 Let's start with the obvious case, an RGB three-cree star, using the recommended resistors:
 
@@ -21,7 +21,7 @@ would expect, but red won't turn on anything.  The amber LED struct defines it's
   static const int Green = 128;
   static const int Blue = 0;
 `
-Going back to the [LED configuration](led-configuration.md) page, we can figure out that we would need to use a color like Rgb<255,128,0> to activate the amber LED. However, that color will also activate the green LED with 50% power, which might not be what we want.
+Going back to the [LED configuration](led-configuration.html) page, we can figure out that we would need to use a color like Rgb<255,128,0> to activate the amber LED. However, that color will also activate the green LED with 50% power, which might not be what we want.
 
 However, there is another option: We can redefine what RGB means.
 To do that, we'll need to copy the amber LED struct into our config file and change it to:
