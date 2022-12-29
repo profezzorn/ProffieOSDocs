@@ -5,11 +5,11 @@ redirect_from:
 ---
 A sound font is mostly made up of many sound files in a single directory. Let's take a look at the following example and break down the important aspects.
 
-![font1/clash/001.wav](../images/font1_clash_001_wav.png)
+![font1/clash/001.wav](/images/font1_clash_001_wav.png)
 
 This file name is made up of four main parts:
 
-* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](the-config_presets-section.html) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
+* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](/config/the-config_presets-section.html) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
   * Note: While Proffie-based boards support long filenames, Teensy-based boards support a maximum of 8 characters for folder names. It is recommended to stick to this maximum to ensure full compatibility with any sound board. 
 
 * The name (Magenta) - This is the name of the sound type, using the names specified below in the [Sound Effect Names](#sound-effect-names) section. In this example, it's a clash sound.
@@ -45,7 +45,7 @@ The decision of which directory to use is done _once_ for all files with the sam
 The name part of the filename needs to be one that ProffieOS can recognize. Sounds can either be monophonic (Plecter) or polyphonic (Naigon Electronics) style. ProffieOS will automatically decide if a specific sound type is monophonic or polyphonic font based on the filename. Monophonic sounds will smoothly join with the hum when they are finished playing. Polyphonic sounds will automatically mix with the hum sound. Keep in mind that you cannot mix mono and polyphonic sounds for the same effect. For example, if you are using `clash`, you cannot use `clsh` as well. You can, however, mix for different effects. You could use `clash` alongside `blst` in the same font for example.
 
 The following sounds are triggered along with blade animations. The buttons, gestures, or actions used to trigger them is specific to the prop file being used.  
-See [The-CONFIG_PROP-section](the-config_prop-section.html) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](../howto/how-to-use-it.html) for more details.
+See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](/howto/how-to-use-it.html) for more details.
 
 #### List of Names and Effects
 | Monophonic Filename | Polyphonic Filename | Effect |
@@ -112,7 +112,7 @@ As of OS6:
 * `mdauto`
 
 ## SmoothSwing Configuration
-When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on [the smoothswing page](../smoothsw.ini).
+When one or more set of `swingl`/`swingh` files are present, ProffieOS will activate the SmoothSwing algorithms. To decide if it should use V1 or V2, it will read a file called "smoothsw.ini". More information on how to configure this file can be found on [the smoothswing page](/sound/smoothsw.ini.html).
 
 #### SmoothSwing V1
 [Demo Video](https://www.youtube.com/watch?v=4AAYGw09bu0) ([Thexter's description](https://www.fx-sabers.com/forum/index.php?topic=51430))

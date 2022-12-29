@@ -3,7 +3,7 @@ title: Sound Font config.ini configuration
 redirect_from:
   - /config/sound-font-config.ini-configuration.html
 ---
-This page explains the parameters that are available in a sound font's `config.ini` file, and provides an example file. For more information on how to create a ProffieOS compatible sound font, [click here](sound-font-configuration.html)
+This page explains the parameters that are available in a sound font's `config.ini` file, and provides an example file. For more information on how to create a ProffieOS compatible sound font, [click here](/sound/sound-font-configuration.html)
 
 ```ini
 # Default config.ini
