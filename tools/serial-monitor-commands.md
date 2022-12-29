@@ -113,7 +113,7 @@ Have the board deactivate all current blades, check the BladeID and pick a Blade
 ## pow / aux / aux2 (or any button name)
 
 These commands can be used to send button events from the Serial Monitor.
-See [Button Commands](button-commands.html) for more information.  
+See [Button Commands](/button-commands.html) for more information.  
 
 ## blink N
 
