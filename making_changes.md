@@ -26,3 +26,16 @@ before they will show up on the site. This may take some time, but it also means
 you don't have to worry about making any major mistakes or breaking the site somehow.
 
 Of course, if you already know how to use github, you can use any tools you want to fork, edit and upload pull requests.
+
+PS: Here is a useful linux command for finding broken links:
+
+```
+wget --spider -r -nd -nv -l 3  https://pod.hubbe.net/ 2>&1 | grep -B1 'broken link'
+```
+
+You'll need to use grep or something to find where the broken links come from though.
+If you have the ProffieOSDocs github repository, you can do that with git grep, like this:
+
+```
+wget --spider -r -nd -nv -l 3  https://pod.hubbe.net/ 2>&1 | grep -B1 'broken link' | sed -n 's@https://pod.hubbe.net/\(.*\):@\1@gp'  | while read LINK ; do echo "=== $LINK ===" ; git grep $LINK ; done
+```
