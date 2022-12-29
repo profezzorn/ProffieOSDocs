@@ -34,7 +34,7 @@ See [the CONFIG_PRESETS section](/config/the-config_presets-section.html) for ho
 
 ## Edit presets.ini directly
 
-Using the ProffieOS workbench, or edit mode both ends up modifying a file on the sd card called presets.ini. This file can also be edited directly. I wouldn't normally recommend doing this, but if you want to, there is more information about how to do it here: [Editing presets.ini by hand](/config/editing-presets.ini-by-hand.html)
+Using the ProffieOS workbench, or edit mode both ends up modifying a file on the sd card called presets.ini. This file can also be edited directly. I wouldn't normally recommend doing this, but if you want to, there is more information about how to do it here: [Editing presets.ini by hand](/howto/editing-presets.ini-by-hand.html)
 
 ## Replacing an existing font on the SD card.
 
