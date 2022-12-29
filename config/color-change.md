@@ -1,4 +1,8 @@
-# **ColorChange<> in a blade style**  
+---
+title: "ColorChange<> in a blade style"
+redirect_from:
+  - /color-change-modes.html
+---
 The template is `ColorChange<TRANSITION, COLOR1, COLOR2, ...>`   
 ProffieOS will detect if the style uses ColorChange<> or not.  
 If it does NOT use ColorChange<>, the "color wheel" will be activated, which has 32768 steps per rotation.  
