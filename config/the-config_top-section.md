@@ -150,7 +150,7 @@ Proffieboards have some challenges when it comes to BladeID, but it's possible t
     #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, BRIDGED_PIN>
     #define BLADE_ID_CLASS ExternalPullupBladeID<bladeIdentifyPin, PULLUP_RESISTANCE>
     
-See [the blade ID page](../blade-id.html) for more information.
+See [the blade ID page](/blade-id.html) for more information.
 
 ### SAVE_COLOR_CHANGE
 On-the-fly color changing is new in 3.x. If you want it to save the color change state, add this define to your config file:
@@ -172,7 +172,7 @@ This define lets you use a pin to detect when a blade is present or not. The pin
 
     #define BLADE_DETECT_PIN PIN
 
-See [the Blade Detect page](../blade-detect.html) for more information.
+See [the Blade Detect page](/blade-detect.html) for more information.
 
 ### SAVE_STATE
 Save state is the same as SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET
@@ -201,7 +201,7 @@ To retain this additional information even after re-flashing ProffieOS to the bo
 Please use this define with caution. If you leave this define in your config file when you
 are tring to make changes to your saber, weird things tends to happen.
 
-See [this page](keeping-edits-when-uploading.html) for further information.
+See [this page](/config/keeping-edits-when-uploading.html) for further information.
 
 ### ORIENTATION_ROTATION
 If your board is not mounted at 90 degree angles to the hilt, you can use this define:
@@ -213,7 +213,7 @@ The X, Y and Z are floating point numbers which specify how many degrees to rota
 # ProffieOS 5.x defines:
 
 ### RFID_SERIAL
-Add an RFID reader. To configure the RFID reader, you will need an RFID_Commands array in [the CONFIG_PRESETS section](the-config_presets-section.html).
+Add an RFID reader. To configure the RFID reader, you will need an RFID_Commands array in [the CONFIG_PRESETS section](/config/the-config_presets-section.html).
 
     #define RFID_SERIAL Serial3
 

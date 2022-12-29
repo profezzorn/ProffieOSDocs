@@ -29,7 +29,7 @@ The Adafruit brand name for LEDs that can be controlled using the WS2811 protoco
 ## OLED
 Abbreviation meaning "Organic Light Emitting Diode", but in this context, we use it to mean a small display connected to the Proffieboard which can show messages and images.
 
-## [Preset](/config/the_config_presets_section.html)
+## [Preset](/config/the-config_presets-section.html)
 A combination of a font, a track and one or more styles. "factory settings" are configured in the config file, but changes can be made with edit mode or the ProffieOS workbench. Such changes are stored in prests.ini on the SD card.
 
 ## Port

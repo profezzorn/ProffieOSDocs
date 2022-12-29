@@ -8,4 +8,4 @@ Configuration/Programming troubleshooting:
 * [Where's my Port?](/troubleshooting/wheres-my-port.html)
 * [What is it saying?](/troubleshooting/what-is-it-saying.html)
 * [Arduino files and folders](/troubleshooting/files-and-folder-structure.html)
-* [Arduino error messages and how to descipher them](/troubleshooting/error-messages-in-arduino-and-how-to-decipher-them..html)
+* [Arduino error messages and how to descipher them](/troubleshooting/arduino-error-messages.html)
