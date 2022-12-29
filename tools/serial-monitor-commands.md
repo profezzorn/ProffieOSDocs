@@ -4,7 +4,7 @@ redirect_from:
   - /serial-monitor-commands.html
 ---
 This a list of some of the most typical commands you can use in the Serial Monitor.  
-For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](serial-monitor-additional-commands.html).   
+For more diagnostic/developer based commands, see [Serial Monitor Additional Commands](/tools/serial-monitor-additional-commands.html).   
 The console can be opened in Arduino by choosing menu Tools>Serial Monitor.  
 Type the command in the top box and hit return, or click the "Send" button on the right side.  
 *Note* - Commands listed under the **Diagnostic Commands** section below only work if  
