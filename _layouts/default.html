@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="{{ base | append: '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="{{ base | append: '/assets/js/respond.js' | relative_url }}"></script>
-    <script async src="https://cse.google.com/cse.js?cx=9633569c723374181"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -54,7 +53,6 @@
         <nav>
           <ul>
 	    <li class="fork"><font size=+2 onclick="location.href='{{base}}/index.html'">ProffieOS Documentation</a></font></li>
-            <li class="downloads"><div class="gcse-search"></div></li>
             <li class="downloads"><a href="{% github_edit_link %}">&#x270E;</a></li>
             <li class="downloads"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
             {% if site.show_downloads %}
