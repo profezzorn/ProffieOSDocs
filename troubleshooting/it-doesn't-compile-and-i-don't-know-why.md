@@ -37,7 +37,7 @@ This tells you that when the compiler got to line 47, it was expecting a closing
 This config file uses 2 blade styles per preset, and line 47 looks fine, _and it is_. But the problem is that there is no comma after the style **ABOVE** it, so when the compiler got to the end of the first style and found no comma, it assumed it was the end of the preset, and expected a closing brace **}**
 That is how you find errors using error messages from Arduino. <br>
 For more info on deciphering Arduino error codes, read here:  <br>
-[Error Messages in Arduino and how to decipher them.](error-messages-in-arduino-and-how-to-decipher-them..md)
+[Error Messages in Arduino and how to decipher them.](arduino-error-messages.md)
 
 If it still doesn't compile, try Googling your error message combined with a search term "Proffie". If it shows things that are not helpful, try adding site:therebelarmory.com to your query. Chances are that someone else has had the same problem and
 already asked about it on the forums.
