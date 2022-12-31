@@ -13,7 +13,6 @@ After forking, you can make edits. Make sure to check the "Preview" tab to
 see approximately how your changes will look once they appear on the POD site.
 For more information about how to make it look the way you want, try [this site](https://www.markdownguide.org/tools/github-pages/).
 
-
 Once you are happy with your changes, write a comment describing your changes
 below and hit the "propose" button.
 
@@ -26,6 +25,30 @@ before they will show up on the site. This may take some time, but it also means
 you don't have to worry about making any major mistakes or breaking the site somehow.
 
 Of course, if you already know how to use github, you can use any tools you want to fork, edit and upload pull requests.
+
+## Best practices
+Don't add newlines unless you need it. In the github editor, set it to "Soft wrap" and just write long lines to make paragraphs. This makes page resizing work better.
+
+## Images
+To make things look good in PDFs, print and retina displays, all images should be uploaded at the highest resolution available. That might come out too large when shown on the screen, and the solution is to use an "image" tag instead of using the markdown for an image.
+
+So instead of this:
+
+```
+   ![alt text](/images/someimage.jpg)
+```
+
+you do:
+
+```
+   <image src="/images/someimage.jpg" width=400 height=200 alt="alt text" />
+```
+
+This will make the browser scale the image to 400 x 200 instead of whatever size the image was when you uploaded it, but print and retina displays will use the extra pixels to make things look good.
+
+Uploading screenshots is good for pointing out where buttons and menues are, but not to show an error message or something like that. Information that is fundamentally text should use text, not images.
+
+## Searching for dead links (on Linux)
 
 PS: Here is a useful linux command for finding broken links:
 
