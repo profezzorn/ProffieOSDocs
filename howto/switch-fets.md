@@ -1,8 +1,8 @@
 ---
-title: how to switch LED pads
+title: How to switch LED pads
 ---
 
-Sometimes, a [FET](/glossary.html#FET) goes gets damaged. Or, maybe a solder pad gets ripped out, or something else happens that means that one of the LED1-6 pads can't be used anymore. In most cases, there is an unused LED pad or two that can be used instead. For now, let's assume that something bad happend to LED2 and LED3, and that we need to move the main blade over to use LED4 and LED5 instead.
+Sometimes, a [FET](/glossary.html#fet) goes gets damaged. Or, maybe a solder pad gets ripped out, or something else happens that means that one of the LED1-6 pads can't be used anymore. In most cases, there is an unused LED pad or two that can be used instead. For now, let's assume that something bad happend to LED2 and LED3, and that we need to move the main blade over to use LED4 and LED5 instead.
 
 The soldering part is fairly obvious, just cut or de-solder the wire from LED2/LED3 and solder it to LED4 and LED5 instead.
 
