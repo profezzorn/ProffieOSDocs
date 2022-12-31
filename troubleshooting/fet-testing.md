@@ -14,7 +14,7 @@ This method is particularly effective for [/config/blades/simplebladeptr.html](s
 
 Now, before you jump to conclusions, please make sure that your proffieboard programming is actually trying to turn the FET on. If you're not sure, I recommend measuring the gate voltage on the FET. Make sure your multimeter probe is pointy enough, and measure the voltage between the FET gate and GND.
 
-![fet gate illustration](/images/fet-gate.jpg){: width="223" height="348" }
+<img src="/images/fet-gate.jpg" width=223 height=348 alt="fet gate illustration" />
 
 When the gate is supposed to be on, this voltage is supposed to be 3.3v. When the gate is off, this voltage is supposed to be 0v.
 
