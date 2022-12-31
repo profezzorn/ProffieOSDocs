@@ -2,7 +2,7 @@
 title: How to test a FET
 ---
 
-[FETs](/glossary.html#FET) can sometimes get damaged by shorts. However, it can be difficult to test if they are working or not, because when they are not supposed to be on, they behave just like if they were broken. So let's discuss some ways to check if they are working or not.
+[FETs](/glossary.html#fet) can sometimes get damaged by shorts. However, it can be difficult to test if they are working or not, because when they are not supposed to be on, they behave just like if they were broken. So let's discuss some ways to check if they are working or not.
 
 First or all: It's not easy to test if a FET is working if nothing is connected to it. However, if something *is* connected to it, it's fairly easy.
 
