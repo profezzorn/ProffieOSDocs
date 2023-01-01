@@ -46,12 +46,22 @@
   height: 65px; /* fixed header height*/
   margin: -65px 0 0; /* negative fixed header height */
 }
-            @media print {
-               .noprint {
-                  visibility: hidden;
-               }
-            }
-	  </style>
+@media print {
+  .noprint {
+    visibility: hidden;
+  }
+  .pagebreak {
+    visibility: hidden;
+    page-break-after: always;
+  }
+  h3, h4 {
+    page-break-after: avoid;
+  }
+  pre, blockquote {
+    page-break-inside: avoid;
+  }
+}
+</style>
   </head>
   <body>
       <div id="header">
