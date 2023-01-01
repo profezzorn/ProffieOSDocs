@@ -16,7 +16,7 @@ pod: true
 ## {{ p.title }}
 ************
 {{ p.content }}
-<center><img src="/images/pod.svg" width=75 height=120></center>
+<center><img src="/images/pod.svg" width=75 height=120 class="noprint" style="page-break-after: always;" ></center>
     {% endif %}
   {% endfor %}
 {% endfor %}
