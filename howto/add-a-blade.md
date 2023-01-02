@@ -11,7 +11,7 @@ We'll need to do four things:
 4. add another style to each preset in your config file
 
 ## Step 1, remove KEEP_SAVEFILES_WHEN_PROGRAMMING if present
-If you have [KEEP_SAVEFILES_WHEN_PROGRAMMING](/config/the-config_top-section.html#keep-savefiles-when-programming) in your config file, you need to remove it, because it's not going to work when you add another blade.
+If you have [KEEP_SAVEFILES_WHEN_PROGRAMMING](/config/the-config_top-section.html#keepsavefileswhenprogramming) in your config file, you need to remove it, because it's not going to work when you add another blade.
 
 ## Step 2, increase NUM_BLADES by one.
 Simple, just change:
