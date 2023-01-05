@@ -11,28 +11,14 @@ var index = elasticlunr(function () {
   this.setRef('id');
 });
   
-  var tags = document.getElementsByTagName("searchdata");
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i];
-    var id = tag.attributes.url.value;
-    var title = tag.attributes.title.value;
-    var body = tag.innerHTML;
-    console.log("id = " + id + " title = " + title);
-//    console.log("body = " + body);
-    index.addDoc({ "id": id, "title": title, "body": body });
-  }
-
-  console.log(index.search(window.location.search.substr(1)));
-</script>
-
-<div style=display:none>
 {% for p in site.pages %}
     {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" and p.url != "/search.html" %}
-     <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
-      {{ p.content }}
-     </searchdata>
+    index.addDoc({
+       "id": unescape("{{ p.url | escape }}"),
+       "title": unescape("{{ p.title | escape }}"),
+       "body": unescape("{{ p.content | escape }}") });
   {% endif %}
 {% endfor %}
-</div>
-
-
+  
+  console.log(index.search(window.location.search.substr(1)));
+</script>
