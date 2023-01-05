@@ -26,10 +26,13 @@ var index = elasticlunr(function () {
 
 <div style=display:none>
 {% for p in site.pages %}
-  {% if p.title and not p.meta and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
-   <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
-    {{ p.content }}
-   </searchdata>
+  {% if p.meta %}
+  {% else %}
+    {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
+     <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
+      {{ p.content }}
+     </searchdata>
+    {% endif %}
   {% endif %}
 {% endfor %}
 </div>
