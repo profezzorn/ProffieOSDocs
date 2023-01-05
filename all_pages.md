@@ -1,5 +1,6 @@
 ---
 title: All ProffieOS Documentation Pages
+meta: true
 ---
 
 {% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
