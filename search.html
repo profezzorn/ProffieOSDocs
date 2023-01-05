@@ -4,6 +4,16 @@ meta: true
 ---
 <script src="/js/elasticlunr.min.js"></script>
 
+<div style=display:none>
+{% for p in site.pages %}
+    {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" and p.url != "/search.html" %}
+     <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
+      {{ p.content | escape}}
+     </searchdata>
+  {% endif %}
+{% endfor %}
+</div>
+
 <script>
 var index = elasticlunr(function () {
   this.addField('title');
@@ -24,13 +34,3 @@ var index = elasticlunr(function () {
 
   console.log(index.search(window.location.search.substr(1)));
 </script>
-
-<div style=display:none>
-{% for p in site.pages %}
-    {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" and p.url != "/search.html" %}
-     <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
-      {{ p.content | escape}}
-     </searchdata>
-  {% endif %}
-{% endfor %}
-</div>
