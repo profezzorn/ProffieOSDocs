@@ -13,7 +13,7 @@ var index = elasticlunr(function () {
   var tags = document.getElementsByClassName("searchdata");
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    this.add({ "id": tag.attributes.url.value,
+    index.add({ "id": tag.attributes.url.value,
                "title": tag.attributes.title.value,
                "body": tag.innerHTML });
   }
