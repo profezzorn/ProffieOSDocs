@@ -13,9 +13,9 @@ var index = elasticlunr(function () {
   var tags = document.getElementsByClassName("searchdata");
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i];
-    index.add({ "id": tag.attributes.url.value,
-               "title": tag.attributes.title.value,
-               "body": tag.innerHTML });
+    index.addDoc({ "id": tag.attributes.url.value,
+                   "title": tag.attributes.title.value,
+                   "body": tag.innerHTML });
   }
 
   console.log(index.search(window.location.search.substr(1)));
