@@ -35,7 +35,7 @@ var index = elasticlunr(function () {
     index.addDoc({ "id": id, "title": title, "body": body });
   }
 
-  var results = index.search(unescape(window.location.search.substr(1)));
+  var results = index.search(unescape(window.location.search.substr(3)));
   var ret = "";
   if (results.length > 0) {
     ret += "<ul>\n";
