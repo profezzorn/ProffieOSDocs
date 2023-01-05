@@ -17,7 +17,7 @@ var index = elasticlunr(function () {
     var title = tag.attributes.title.value;
     var body = tag.innerHTML;
     console.log("id = " + id + " title = " + title);
-    console.log("body = " + body);
+//    console.log("body = " + body);
     index.addDoc({ "id": id, "title": title, "body": body });
   }
 
