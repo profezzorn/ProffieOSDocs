@@ -1,6 +1,7 @@
 ---
 title: Single-page documentation
 pod: true
+meta: true
 ---
 
 {% assign dirs = site.pages | group_by: "dir" | sort: "name" %} 
