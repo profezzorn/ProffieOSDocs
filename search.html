@@ -1,6 +1,6 @@
 ---
 title: Search page
-list: false
+meta: true
 ---
 <script src="/js/elasticlunr.min.js"></script>
 <script>
@@ -26,7 +26,7 @@ var index = elasticlunr(function () {
 
 <div style=display:none>
 {% for p in site.pages %}
-  {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
+  {% if p.title and not p.meta and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
    <searchdata url="{{ p.url | escape }}" title="{{ p.title | escape }}">
     {{ p.content }}
    </searchdata>
