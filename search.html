@@ -8,6 +8,11 @@ var index = elasticlunr(function () {
   this.addField('body');
   this.setRef('id');
 });
+  
+  var tags = document.getElementsByClassName("searchdata");
+  for (var i = 0; i < tags.length; i++) {
+  }
+</script>
 
 {% for p in site.pages %}
   {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html" %}
