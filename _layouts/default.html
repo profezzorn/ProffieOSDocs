@@ -71,8 +71,8 @@
           <ul>
 	    <li class="fork"><font size=+2 onclick="location.href='{{base}}/index.html'">ProffieOS Documentation</a></font></li>
             <li class="downloads"><a href="{% github_edit_link %}">&#x270E;</a></li>
-            <li class="downloads"><a href="{{ site.github.repository_url }}"><img src="/images/github-mark.svg" width=16 height=16 /></a></li>
-            <li class="downloads"><form action="/search.html" ><input type="submit" value="&#128269;" /><input type=text name=q size=10 placeholder="Search.." /></form></li>
+            <li class="downloads"><a href="{{ site.github.repository_url }}"><img src="/images/github-mark.svg" width=12 height=12 /></a></li>
+            <li class="downloads"><form action="/search.html" ><button type="submit"><i class="fa fa-search"></i></button><input type=text name=q size=10 placeholder="Search.." /></form></li>
             <!-- <li class="downloads"><a href="{{ site.github.repository_url }}">View On GitHub</a></li> -->
 	   
             {% if site.show_downloads %}
