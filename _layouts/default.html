@@ -46,6 +46,28 @@
   height: 65px; /* fixed header height*/
   margin: -65px 0 0; /* negative fixed header height */
 }
+.nav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.nav search-container {
+          color: white;
+          border: 1px solid #5d910b;
+          background: linear-gradient(#93bd20, #659e10);
+          border-radius: 2px;
+          box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
+
+          background-color: #93bd20;
+          padding: 10px 12px;
+          margin-top: 6px;
+          line-height:14px;
+          font-size:14px;
+          display:inline-block;
+          text-align:center;
+		  }
+
 @media print {
   .noprint {
     display: none;
@@ -69,10 +91,10 @@
       <div id="header">
         <nav>
           <ul>
-	    <li class="fork"><font size=+2 onclick="location.href='{{base}}/index.html'">ProffieOS Documentation</a></font></li>
+	    <li class="title"><div onclick="location.href='{{base}}/index.html'">ProffieOS Documentation</div></li>
             <li class="downloads"><a href="{% github_edit_link %}">&#x270E;</a></li>
             <li class="downloads"><a href="{{ site.github.repository_url }}"><img src="/images/github-mark.svg" width=12 height=12 /></a></li>
-            <li class="downloads"><form action="/search.html" ><button type="submit">&#128269;</button><input type=text name=q size=10 placeholder="Search.." /></form></li>
+            <li class="downloads"><div class=search-container><form action="/search.html" ><button type="submit">&#128269;</button><input type=text name=q size=10 placeholder="Search.." /></form></div></li>
             <!-- <li class="downloads"><a href="{{ site.github.repository_url }}">View On GitHub</a></li> -->
 	   
             {% if site.show_downloads %}
