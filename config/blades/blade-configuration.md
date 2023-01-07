@@ -24,6 +24,8 @@ Most major LEDs that are used in the saber practice are already defined as templ
 
 **Note**: For direct drive it is still good practice to use a resistor to prolong the LED dye lifespan.
 
+For more info on direct drive LEDs, see [this page](/config/blades/led-configuration.html).
+
 ## SubBlade
 When using addressable LED strip, a single strip can be separated into a couple of sub blades with their own style configuration and behaviour. This is really useful when you want to use only one data pin for all the addressable LEDs in your setup.
 
