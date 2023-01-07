@@ -13,7 +13,7 @@ meta: true
 *****
 {% endif %}
   {% for p in dir.items %}
-    {% if p.title and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html"  and p.url != dir.name %}
+    {% if p.title and p.meta != "true" and p.url != "/" and p.url != "/all_pages.html" and p.url != "/POD.html"  and p.url != dir.name %}
 ## {{ p.title }}
 ************
 {{ p.content }}
