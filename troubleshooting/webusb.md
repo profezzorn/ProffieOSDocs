@@ -1,5 +1,7 @@
 ---
 title: WebUSB
+redirect_from:
+  - /webusb.html
 ---
 WebUSB is a standard that lets browsers talk to USB devices directly. ProffieOS uses this to let you control and configure the board from a browser. To make WebUSB work, you need:
 
