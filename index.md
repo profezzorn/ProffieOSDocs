@@ -21,7 +21,7 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 * [How to add a blade](/howto/add-a-blade.html)
 * [How to add a sound font](/howto/how-to-install-a-new-font.html)
 * [How to find how many LEDs your blade has](/howto/how-many-leds-does-my-blade-have.html)
-* [...more howtos](/howtos/)
+* [...more howtos](/howto/)
 
 ## Troubleshooting:
 * [Is it uploading?](/troubleshooting/is-it-uploading.html)
