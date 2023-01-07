@@ -1,5 +1,7 @@
 ---
 title: Blade ID
+redirect_from:
+  - /blade-id.html
 ---
 So you know that first number in the blade configuration?
 Do you know what it's for?
