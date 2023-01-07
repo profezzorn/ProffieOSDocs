@@ -1,5 +1,7 @@
 ---
 title: Blade Detect
+redirect_from:
+  - /blade-detect.html
 ---
 Blade Detect typically uses a floating pin on the hilt side PCB that only gets connected when the ring of the blade side PCB contacts it and another pin in the same ring footprint. A latching button or switch could also be used.  
 This latching action is detected by the board and triggers a sound and a swap of which blade configuration is used; NO_BLADE or a blade present one. The active blades[] array specifies which CONFIGARRAY (bank of presets) to use, so you get to have a different group of presets used depending on the presence of a blade or not.  
