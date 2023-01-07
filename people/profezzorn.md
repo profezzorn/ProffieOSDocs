@@ -1,7 +1,7 @@
 ---
 title: About Profezzorn
 redirect_from:
-  - /contact-profezzorn.html
+  - /contacting-profezzorn.html
 ---
 
 Hi, I'm Profezzorn.
