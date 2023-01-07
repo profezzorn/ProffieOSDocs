@@ -7,43 +7,37 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 * [Proffieboard V2 manual by Dmitry](https://drive.google.com/file/d/1vn9vRk-CNZSUHL4xm_hHwS6UgkfKXdO2/view)
 * [Fett263 resources and style library](https://www.fett263.com/index.html)
 
-## Configuration/Programming instructions:
+## Getting started
 * [Proffieboard Setup](/proffieboard-setup.html)
 * [The config file](/config/the-config-file.html)
 * [Blade Configuration](/config/blades/blade-configuration.html)
-* [LED Configuration](/config/blades/led-configuration.html) - for inhilt LEDs
-* [LED Channel Selection](/config/blades/led-channel-selection.html) - more about inhilt LEDs
 * [Preset Configuration](/config/preset-configuration.html)
 * [How to use it](/howto/how-to-use-it.html)
-* [WebUSB](/webusb.html)
-* [Button Actions: making your own prop file](/howto/making-your-own-prop-file.html)
-* [Editing-presets.ini-by-hand](/howto/editing-presets.ini-by-hand.html)
+* [The ProffieOS Workbench](/tools/workbench.html)
 
-## [Configuration/Programming troubleshooting](/troubleshooting/):
+## [Howtos](/howto/):
+* [How many LEDS does my blade have?](/howto/how-many-leds-does-my-blade-have.html)
+* [How to set up blade detect](/howto/blade-detect.html)
+* [How to add a blade](/howto/add-a-blade.html)
+* [How to add a sound font](/howto/how-to-install-a-new-font.html)
+* [How to find how many LEDs your blade has](/howto/how-many-leds-does-my-blade-have.html)
+
+## [Troubleshooting](/troubleshooting/):
 * [Is it uploading?](/troubleshooting/is-it-uploading.html)
 * [It doesn't compile and I don't know why](/troubleshooting/it-doesn't-compile-and-i-don't-know-why.html)
 * [USB connection issues](/troubleshooting/usb-connection-issues.html)
-* [Zadig](/tools/zadig.html)
 * [Serial Monitor](/tools/serial-monitor.html)
 * [Where's my Port?](/troubleshooting/wheres-my-port.html)
 * [What is it saying?](/troubleshooting/what-is-it-saying.html) - Voice Error Codes
-* [smoothsw.ini](/sound/smoothsw.ini.html)
-* [Saving Memory](/howto/saving-memory.html)
-* [How many LEDS does my blade have?](/howto/how-many-leds-does-my-blade-have.html)
 * [Arduino files and folders](/troubleshooting/files-and-folder-structure.html)
-
-## Proffieboard Wiring and hardware pages:
-* [Supported Hardware](/hardware/supported-hardware.html)
-* [GND vs BATT-](/hardware/gnd-vs-batt.html)
-* [Resistors](/hardware/resistors.html)
-* [SD Cards](/hardware/sd-cards.html)
-* [Speakers](/hardware/speakers.html)
-* [Touch Buttons](/hardware/touch-buttons.html)
+* [How to recover from a bad programming](/howto/how-to-recover-from-a-bad-programming.html)
+* [Saving FLASH memory](/howto/saving-memory.html) - when you see `'.text' will not fit in region 'FLASH'`
+* [How to test a FET](/troubleshooting/fet-testing.html)
 
 ## Additional Info
-* [List of all pages](/all_pages.html)
+* [List of all pages](/all_pages.html) - there are a lot more pages than the ones listed above
 * [Glossary](/glossary.html)
-* [All the content in one page](/POD.html)
+* [All the information on one page](/POD.html) - for printing, saving or searching
 * [Making changes to this site](/making_changes.html)
 * [Contacting Profezzorn](/contacting-profezzorn.html)
 
