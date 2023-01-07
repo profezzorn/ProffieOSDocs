@@ -7,8 +7,8 @@ meta: true
 
 {% for dir in dirs %}
 {%if dir.name != "/" and dir.name != "/assets/css/" %}
-## {{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}
+## [{{ dir.name | remove_first: "/" | split: "/" | join: ", " | capitalize }}]({{ dir.name }})
 {% endif %}
-{% for p in dir.items %}{% if p.title %}
+{% for p in dir.items %}{% if p.title and p.url != dir.name %}
   * [{{ p.title }}]({{ p.url }}){% endif %}{% endfor %}
 {% endfor %}
