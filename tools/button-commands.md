@@ -1,5 +1,7 @@
 ---
 title: Button Commands
+redirect_from:
+  - /button-commands.html
 ---
 The following instructions require `#define DISABLE_DIAGNOSTIC_COMMANDS` to NOT be enabled in the CONFIG_TOP section of the config file.
 
