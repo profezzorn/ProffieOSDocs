@@ -8,7 +8,7 @@ Any component can cause voltage drops, this includes battery, wires, solder join
 
 In most sabers, the power circuit looks something like this:
 
-![power path](/images/power-path.webp)
+[![power path](/images/power-path.webp)](/images/power-path.webp)
 
 1. Turn the saber on and ignite it with the blade connected.
 2. Start at the battery, measure the voltage betweend + and -. Is it low? (Meaning less than 3.5 volts.) Then the battery is the problem. Try charging it. If that doesn't help, get a new battery.
