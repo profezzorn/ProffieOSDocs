@@ -8,7 +8,7 @@ Most operating systems have a way to view all connected devices. When a Proffieb
 
 Here is how to check connected devices on...
 
-## Windows 10
+## Windows 10 / 11
 
 Go to Start Menu->Control Panel->Devices and Printers
 
