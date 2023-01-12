@@ -21,7 +21,7 @@ Example BladesConfig using Blade Detect:
 Please note the "nbsave" part, which will make ProffieOS save presets.ini and other related save files into the "nbsave/" directory on the SD card. If that directory doesn't exist, saving will fail, but that might be ok for the no-blade case.
 
   
-Blade detection is activated by using the BLADE_DETECT_PIN define in the [CONFIG_TOP](config/the-config_top-section) section of the config file.  
+Blade detection is activated by using the BLADE_DETECT_PIN define in the [CONFIG_TOP](/config/the-config_top-section) section of the config file.  
 The pin number can either be just a number, or a symbolic name like "blade2Pin". See these 2 examples:   
 
     #define BLADE_DETECT_PIN 0
