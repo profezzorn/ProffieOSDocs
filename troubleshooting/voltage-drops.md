@@ -37,7 +37,7 @@ Sometimes voltage drops happen because the power is shorted to another part of t
 Some people only hook up a single FET (led pads) to power a blade. Sometimes that works ok, sometimes it doesn't. Use two or more FETs.
 
 ### Bad FETs.
-FETs can become damaged if shorted. Check [the FET testing page](/troubleshoting/fet-testing.html) to learn how to check if they are working properly or not.
+FETs can become damaged if shorted. Check [the FET testing page](/troubleshooting/fet-testing.html) to learn how to check if they are working properly or not.
 
 ### Insufficient pogo pins
 If you have a high-power blade, a 7-pin pogo pin adapter might not be sufficient, get one with 9 or 11 pins instead.
