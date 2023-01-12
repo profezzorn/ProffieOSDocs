@@ -27,7 +27,7 @@ After that, plug in the board to a computer or phone if you want to use the USB 
 ProffieOS has some code that allows Windows 8.1+ assign the right driver automatically to make WebUSB work.
 Unfortunately, that code does not work with Windows 7. so if you're using Windows 7 you have to use zadig to make WebUSB work:
 
-* Run [Zadig](zadig.html)
+* Run [Zadig](/tools/zadig.html)
 * Select Options->List All Devices
 * Select "CDC Data (interface 2)"
 * Check that the USB ID is 1209 6668 02
