@@ -17,6 +17,7 @@ struct MyBlueLED {
   static const int Green = 0;
   static const int Blue = 255;
 };
+```
 
 MaxAmps should be the maximum current that the LED allows. In this case, 1.0A.
 MaxVolts is the forward voltage at which you get the maximum number of amps. In this case 3.15 volts.
