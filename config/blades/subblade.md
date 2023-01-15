@@ -3,15 +3,19 @@ title: SubBlade
 ---
 SubBlade is used to split a string of pixels into multiple blades which can have their own styles. It takes three arguments:
 
-     SubBlade(first_led, last_led, blade_definition)
+```cpp
+SubBlade(first_led, last_led, blade_definition)
+```
 
 Note the use of () instead of <>, as SubBlade is a regular function, not a template. If blade_definition is NULL, SubBlade() will use the blade definition from the previous call to SubBlade(). Since you can't have two blade definitions for the same string, you must use NULL to make multiple SubBlades refer to the same string of pixels.
 
 Let's say we have a string that has one accent LED, one 8-pixel battery indicator and then a 100-LED blade. The blades[] array could then look something like this:
 
-    SubBlade(9, 108, WS281XBlade<109, bladePin, Color8::GRB>()),
-    SubBlade(0, 0, NULL),
-    SubBlade(1, 8, NULL),
+```cpp
+SubBlade(9, 108, WS281XBlade<109, bladePin, Color8::GRB>()),
+SubBlade(0, 0, NULL),
+SubBlade(1, 8, NULL),
+```
 
 Note that the first LED in the string is counted as zero, so there's always a -1 offset to your numbers to the actual pixels as you'd count them.
 Also, The code doesn't really know what the "main blade" is.
@@ -31,12 +35,15 @@ The second SubBlade is for the accent led / crystal chamber which has 1 pixel.  
 
 They both use bladePin (data pad 1) and run in series
 
-     BladeConfig blades[] = {
-     { 0,
-        SubBlade(1, 134, WS281XBladePtr<135, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3, bladePowerPin5>>()),	
-        SubBlade(0, 0, NULL),
-     CONFIGARRAY(presets),
-     }
+```cpp
+BladeConfig blades[] = {
+  { 0,
+    SubBlade(1, 134, WS281XBladePtr<135, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3, bladePowerPin5>>()),	
+    SubBlade(0, 0, NULL),
+    CONFIGARRAY(presets),
+  }
+};
+````
 
 ## SubBladeWithStride
 
@@ -52,16 +59,21 @@ So instead of editing every single argument that pertains to speed throughout th
 
 Same as above, but an additional argument of stride length is added like this:
 
-     SubBladeWithStride(first_led, last_led, stride_length, blade_definition)
+```cpp
+SubBladeWithStride(first_led, last_led, stride_length, blade_definition)
+```
 
 So to split the 264 pixel strip into 2 x 132 pixel blades, we would do this :
 
-     BladeConfig blades[] = {
-     { 0,
-        SubBladeWithStride (0, 262, 2, WS281XBladePtr<264, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >() ),
-        SubBladeWithStride (1, 263, 2, NULL),
-     CONFIGARRAY(presets),
-     } 
+```cpp
+BladeConfig blades[] = {
+  { 0,
+    SubBladeWithStride (0, 262, 2, WS281XBladePtr<264, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >() ),
+    SubBladeWithStride (1, 263, 2, NULL),
+    CONFIGARRAY(presets),
+  }
+};
+```
 
 
 
