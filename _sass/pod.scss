@@ -75,6 +75,8 @@ h6:hover .anchor {
 }
 
 pre.highlight {
+  position: relative;
+
   // copy code to clipboard
   .copy {
     color: #ffffff;
