@@ -3,9 +3,11 @@ title: The CONFIG_PROP section
 ---
 The CONFIG_PROP section is relatively new, and a lot of config files don't use it. The purpose of the CONFIG_PROP section is to specify which class is given control of what everything does. Most of the time, this is done by simply including a file from the ProffieOS/props directory in your config file, like this:
 
-    #ifdef CONFIG_PROP
-    #include "../props/detonator.h"
-    #endif
+```cpp
+#ifdef CONFIG_PROP
+#include "../props/detonator.h"
+#endif
+```
 
 However, it would be perfectly fine to define your own prop class in this section and then define PROP_CLASS to be the name of your class.  Learning how to do that is outside the scope of this tutorial though.
 
