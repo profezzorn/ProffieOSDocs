@@ -10,7 +10,7 @@ Go to https://www.arduino.cc/en/software and download the Arduino IDE version v1
  1. Start the Arduino IDE
  3. Go into File -> Preferences
  3. In "Additional Board Manager URL", enter the following:
-```
+```text
 https://profezzorn.github.io/arduino-proffieboard/package_proffieboard_index.json
 ```    
 It should look like this:
