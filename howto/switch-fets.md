@@ -8,7 +8,7 @@ The soldering part is fairly obvious, just cut or de-solder the wire from LED2/L
 
 Now, we just need to update the blades array so that the Proffieboard knows to use the new pads. The blades array in the config file might look like this:
 
-```
+```cpp
 BladeConfig blades[] = {
  { 0, WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(), CONFIGARRAY(presets) },
 };
@@ -16,7 +16,7 @@ BladeConfig blades[] = {
 
 We just need to search & replace bladePowerPin2 with bladePowerPin4 and bladePoerPin3 with bladePowerPin5, so the results looks like this:
 
-```
+```cpp
 BladeConfig blades[] = {
  { 0, WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin4, bladePowerPin5> >(), CONFIGARRAY(presets) },
 };
