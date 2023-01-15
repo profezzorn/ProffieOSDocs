@@ -13,7 +13,7 @@ May become the default in the future.
 ```
 
 Here's how we activate the display:
-```
+```cpp
 #ifdef CONFIG_BOTTOM
 
 DisplayHelper<128, uint32_t,
