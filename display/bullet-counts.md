@@ -8,7 +8,7 @@ Here's what you would need:
 
 This includes the display code, but doesn't activate it.
 May become the default in the future.
-```
+```cpp
 #define INCLUDE_SSD1306
 ```
 
