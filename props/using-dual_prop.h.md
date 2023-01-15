@@ -10,7 +10,7 @@ toggle to a blaster for example,
 and you want the buttons to take on different behaviors.
 
 How to: Use the following lines where you set your prop file in your config.
-```
+```cpp
 #ifdef CONFIG_PROP   
 #include "../props/dual_prop.h"   
 #include "../props/saber_sa22c_buttons.h"   
