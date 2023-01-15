@@ -15,22 +15,22 @@ If you have [KEEP_SAVEFILES_WHEN_PROGRAMMING](/config/the-config_top-section.htm
 
 ## Step 2, increase NUM_BLADES by one.
 Simple, just change:
-```
+```cpp
 #define NUM_BLADES 1
 ```
 to:
-```
+```cpp
 #define NUM_BLADES 2
 ```
 ## Step 3, add another blade in each entry in the blades[] array
 This is a little trickier. Your blades array may look like this:
-```
+```cpp
 BladeConfig blades[] = {
  { 0, WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(), CONFIGARRAY(presets) },
 };
 ```
 Now, let's say we have a crystal chamber with two LEDs, once we add the second blade, it might look like this:
-```
+```cpp
 BladeConfig blades[] = {
  { 0,
    WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
@@ -45,14 +45,14 @@ The style will determine the color for your new LEDs, and obviously, you can use
 
 ### Option 1, copy the existing style.
 So if your preset looks like this:
-```
+```cpp
   { "TeensySF", "tracks/venus.wav",
     StyleNormalPtr<CYAN, WHITE, 300, 800>(),
     "cyan"},
 ```
 Then you just copy the style, and the comma after it, like so:
 
-```
+```cpp
   { "TeensySF", "tracks/venus.wav",
     StyleNormalPtr<CYAN, WHITE, 300, 800>(),
     StyleNormalPtr<CYAN, WHITE, 300, 800>(),
@@ -64,8 +64,7 @@ Now the new LEDs will behave exactly like the main blade. That might not be what
 ## Option 2, get a style from somewhere
 You can use the style generator, take a style posted somewhere, or one that came with a sound font. You just insert the new style after the old one, exactly like we did above, the result might look like:
 
-
-```
+```cpp
   { "TeensySF", "tracks/venus.wav",
     StyleNormalPtr<CYAN, WHITE, 300, 800>(),
     StylePtr<SimpleClash<Lockup<Blast<Cylon<Rgb<0,0,64>,15,10, DeepSkyBlue,15,100,2000,Cylon<Rgb<64,0,0>,15,6, Red,15,57,2000,Cylon<Rgb<0,40,0>,15,7, Green,15,37,2000>>>,White>,AudioFlicker<Blue,White>>,White>>(),
@@ -76,7 +75,7 @@ This is just an example of course, the style you use might be much shorter. (Or,
 
 ## Option 3, make the new LEDs black
 This can be nice for some presets that don't need the extra bling. In this case we simply set the new style to black, like so:
-```
+```cpp
   { "TeensySF", "tracks/venus.wav",
     StyleNormalPtr<CYAN, WHITE, 300, 800>(),
     StylePtr<Black>(),
@@ -85,13 +84,13 @@ This can be nice for some presets that don't need the extra bling. In this case 
 
 Now, please note that you may have a charging style that looks something like this:
 
-```
+```cpp
   { "TeensySF", "tracks/mars.wav",
     &style_charging,
     "Battery\nLevel"}
 ```
 Note that "&style_charging" *is* a style, even if it looks different from most other styles. All the options above apply the same. Here is what it would look like if make the crystal chamber off/black while charging.
-```
+```cpp
   { "TeensySF", "tracks/mars.wav",
     &style_charging,
     StylePtr<Black>(),
