@@ -33,9 +33,10 @@ Using the same style multiple times in your config file uses no extra memory. Th
 
 ### Disable basic parser styles  (ProffieOS 6.x or newer)
 ProffieOS contains a few simple blade styles can be selected, used and customized from the ProffieOS Workbench by using Bluetooth or WebUSB.  If you never use the ProffieOS Workbench, you don't need these styles. Also, if you use styles updated for Edit Mode, then you will have lots of options for customization in the Workbench even if you don't have these basic styles. To disable them, you can add
-
-    #define DISABLE_BASIC_PARSER_STYLES
-
+    
+```cpp
+#define DISABLE_BASIC_PARSER_STYLES
+```
 to your config file.
 
 ### Use ProffieOS Workbench webpage, Edit Mode, or edit presets.ini by hand to add more presets.
