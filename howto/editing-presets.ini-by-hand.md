@@ -10,21 +10,25 @@ First, open your presets.ini on the SD card using a text editor like Notepad ++ 
 First line is the 'installed date,' which is when the saber was last programmed
 Then we have blocks of statements that look like this:
 
-    new_preset
-    font=TFAFlex
-    track=tracks/rey_training.wav
-    style=builtin 0 1
-    style=builtin 0 2
-    name=Graflex8
-    variation=23299
+```ini
+new_preset
+font=TFAFlex
+track=tracks/rey_training.wav
+style=builtin 0 1
+style=builtin 0 2
+name=Graflex8
+variation=23299
+```
 
 That block of statements describes a preset. It shows the font, the track, blade style(s) (in this case, the saber in question has two 'blades:' the main blade an a pixel chamber), the name of the preset (used for OLED displays) and the 'variation' which is used for color-change. You'll see that the style entries show 'builtin and then two numbers. The first number corresponds to the first entry in your presets list and the second is which blade style in that entry should be used.
 
 So for this saber, the config file entry for this preset looks like this:
 
-    { "TFAFlex", "tracks/rey_training.wav",
-    StyleNormalPtr<CYAN, WHITE, 300, 800>(),
-    StyleNormalPtr<Blue, WHITE, 300, 800>(), "Graflex8"},
+```cpp
+{ "TFAFlex", "tracks/rey_training.wav",
+StyleNormalPtr<CYAN, WHITE, 300, 800>(),
+StyleNormalPtr<Blue, WHITE, 300, 800>(), "Graflex8"},
+```
 
 So you can see how the config file entry matches what we see in the presets.ini style statements: builtin style, entry 0 (the first entry) and blade style 1 / 2
 
@@ -32,43 +36,51 @@ You will see several of these blocks, corresponding to the number of presets in 
 
 Now, if you want to alter your presets, you can change any of the lines in the block that describe a preset AND you can add new blocks. Here's how we would change this preset to use a new font:
 
-    new_preset
-    font=GraflexIV
-    track=tracks/rey_training.wav
-    style=builtin 0 1
-    style=builtin 0 2
-    name=Graflex8
-    variation=23299
+```ini
+new_preset
+font=GraflexIV
+track=tracks/rey_training.wav
+style=builtin 0 1
+style=builtin 0 2
+name=Graflex8
+variation=23299
+```
 
 You could also change the track:
 
-    new_preset
-    font=GraflexIV
-    track=tracks/rots.wav
-    style=builtin 0 1
-    style=builtin 0 2
-    name=Graflex8
-    variation=23299
+```ini
+new_preset
+font=GraflexIV
+track=tracks/rots.wav
+style=builtin 0 1
+style=builtin 0 2
+name=Graflex8
+variation=23299
+```
 
 Or even alter the styles to use entries from an entirely different preset:
 
-    new_preset
-    font=GraflexIV
-    track=tracks/rots.wav
-    style=builtin 3 1
-    style=builtin 3 2
-    name=Graflex8
-    variation=23299
+```ini
+new_preset
+font=GraflexIV
+track=tracks/rots.wav
+style=builtin 3 1
+style=builtin 3 2
+name=Graflex8
+variation=23299
+```
 
 You could even use a blade style from one preset and a crystal chamber style from an entirely different preset:
 
-    new_preset
-    font=GraflexIV
-    track=tracks/rots.wav
-    style=builtin 3 1
-    style=builtin 5 2
-    name=Graflex8
-    variation=23299
+```ini
+new_preset
+font=GraflexIV
+track=tracks/rots.wav
+style=builtin 3 1
+style=builtin 5 2
+name=Graflex8
+variation=23299
+```
 
 So as you can see, the presets.ini can be modified by editing a couple lines and totally change how that preset functions when the saber is used. You can also insert as many preset blocks as you like, so long as they reference the blade styles in your config file and there is a single line at the end of presets.ini with the word `end` to tell the saber that the list of presets is finished.
 
