@@ -5,8 +5,10 @@ SubBladeReverse is works exactly like [SubBlade](/config/blades/subblade.html), 
 
 Example, if you have a 100-pixel zig-zag blade:
 
-    SubBlade(0, 99, WS281XBladePtr<200, bladePtr, Color8::GRB>()),
-    SubBladeReverse(100, 199, NULL)
+```cpp
+SubBlade(0, 99, WS281XBladePtr<200, bladePtr, Color8::GRB>()),
+SubBladeReverse(100, 199, NULL)
+```
 
 Note that you'll need to increase maxLedsPerString to 200.
 Also, the first LED in the string is counted as zero, so there's always a -1 offset to your numbers to the actual pixels as you'd count them.
