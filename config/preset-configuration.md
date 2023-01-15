@@ -9,12 +9,14 @@ In Proffie OS the term Preset means the combination of:
 
 Presets are defined in object array of type _Preset_. A single Preset looks something like this:
 
-    {
-      "fontdir",
-      "tracks/track.wav",
-      style definition, // NUM_BLADES specifies how many style definitions there are
-      "description",
-    }
+```cpp
+{
+  "fontdir",
+  "tracks/track.wav",
+  style definition, // NUM_BLADES specifies how many style definitions there are
+  "description",
+}
+```
 
 ## Sound Font ("fontdir")
 The first part of a preset is the directory of the sound font.
