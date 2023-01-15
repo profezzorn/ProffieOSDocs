@@ -48,9 +48,11 @@ Button AuxButton(BUTTON_AUX, auxPin, "aux");
 As you can see, this file has three sections: TOP, PRESETS and BUTTONS.
 Each section looks something like this:
 
-    #ifdef CONFIG_NAME
-    Some stuff goes here
-    #endif
+```cpp
+#ifdef CONFIG_NAME
+Some stuff goes here
+#endif
+```
 
 Where "NAME" is the name of the section.
 While this file has three sections, some have four, and more may be possible in the future.
