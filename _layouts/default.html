@@ -102,6 +102,20 @@
     page-break-inside: avoid;
   }
 }
+.anchor {
+  visibility: hidden;
+  color: #dfe2e5;
+}
+
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+  visibility: visible;
+}
+
 </style>
   </head>
   <body>
@@ -140,8 +154,12 @@
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
         </div>
-	      
-        {{ content }}
+
+	{% if page.skip_linkify %}
+          {{ content }}
+	{% else %}
+	  {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor" %}
+	{% endif %}
 
       </section>
 
