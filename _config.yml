@@ -1,5 +1,5 @@
-#markdown            : kramdown
-markdown            : GFM
+markdown            : kramdown
+#markdown            : GFM
 # theme               : minimau
 rl: "https://pod.hubbe.net" # the base hostname & protocol for your site
 
@@ -21,6 +21,7 @@ whitelist:
 
 minima:
   skin: dark
+
 
 kramdown:
   input: GFM
