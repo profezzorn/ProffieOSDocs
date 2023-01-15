@@ -5,17 +5,18 @@ When using SimpleBladePtr<> or StringBladePtr<> in your blade array, you have to
 
 ## Example LED configuration class
 
-    struct MyBlueLED {
-      static constexpr float MaxAmps = 1.0;
-      static constexpr float MaxVolts = 3.15;
-      static constexpr float P2Amps = 0.7;
-      static constexpr float P2Volts = 3.05;
-      static constexpr float R = 0.55;
-      // LED color
-      static const int Red = 0;
-      static const int Green = 0;
-      static const int Blue = 255;
-    };
+```cpp
+struct MyBlueLED {
+  static constexpr float MaxAmps = 1.0;
+  static constexpr float MaxVolts = 3.15;
+  static constexpr float P2Amps = 0.7;
+  static constexpr float P2Volts = 3.05;
+  static constexpr float R = 0.55;
+  // LED color
+  static const int Red = 0;
+  static const int Green = 0;
+  static const int Blue = 255;
+};
 
 MaxAmps should be the maximum current that the LED allows. In this case, 1.0A.
 MaxVolts is the forward voltage at which you get the maximum number of amps. In this case 3.15 volts.
@@ -30,10 +31,12 @@ Finally, the Red, Green and Blue values specifies the color of the LED.
 ## Color Activation
 ProffieOS uses a simple formula to determine how much a LED should be turned on given a particular color from style associated with that LED. The formula is:
 
-    activation = 255;
-    if (LED.Red) activation = min(activation, color_from_style.red * 255 / LED.Red);
-    if (LED.Green) activation = min(activation, color_from_style.green * 255 / LED.Green);
-    if (LED.Blue) activation = min(activation, color_from_style.blue * 255 / LED.Blue);
+```cpp
+activation = 255;
+if (LED.Red) activation = min(activation, color_from_style.red * 255 / LED.Red);
+if (LED.Green) activation = min(activation, color_from_style.green * 255 / LED.Green);
+if (LED.Blue) activation = min(activation, color_from_style.blue * 255 / LED.Blue);
+```
 
 This essentially means that for the blue led in our example, only the blue part of the RGB color is considered when deciding how much the LED should be activated. This also means that Cyan, Purple and White will also activate the Blue LED, which is usually what we want.  A LED specified as being White, will only be activated when for White colors. For a color like {10, 20, 30}, the min() means that a white LED will have it's activation set to 10 (out of 255).  For an RGB star, three LED definitions are used, and the activation for each channel is calculated separately according to the above formula.
 
@@ -43,24 +46,30 @@ This formula is not well suited for color accuracy. A matrix multiplication coul
 One problem with the activation formula above is that if you have a Blue/Blue/White LED, there is no way to
 get a pure white color, because the Blue LEDs will also be activated. To remedy this, we can introduce subtraction into the activation formula. To do that we place the following in the blue LED struct:
 
-    typedef MyWhiteLED SUBTRACT;   // MyWhiteLED is the name of the led struct used for the white LED
+```cpp
+typedef MyWhiteLED SUBTRACT;   // MyWhiteLED is the name of the led struct used for the white LED
+```
 
 When you do this, ProffieOS will calculate the activation as shown above, then calculate the activation based on the white color and subtract that, sort of like:
 
-    activation = CalculateActivation(MyBlueLED) - CalculateActivation(MyWhiteLED)
+```cpp
+activation = CalculateActivation(MyBlueLED) - CalculateActivation(MyWhiteLED)
+```
 
 With this setup, the blue led will turn on for blue colors, but turn off for white colors. This can also be used as a power-saving feature for RGBW stars to make it so that only the white die is used for white colors. Otherwise all of the dies will turn on for white colors. Here is how you would do that:
 
-    struct MyWhiteLED : public CreeXPE2WhiteTemplate<550> {};
-    struct MyRedLED : public CreeXPE2RedTemplate<1000> { typedef MyWhiteLED SUBTRACT; };
-    struct MyGreenLED : public CreeXPE2GreenTemplate<0> { typedef MyWhiteLED SUBTRACT; };
-    struct MyBlueLED : public CreeXPE2BlueTemplate<240> { typedef MyWhiteLED SUBTRACT; };
+```cpp
+struct MyWhiteLED : public CreeXPE2WhiteTemplate<550> {};
+struct MyRedLED : public CreeXPE2RedTemplate<1000> { typedef MyWhiteLED SUBTRACT; };
+struct MyGreenLED : public CreeXPE2GreenTemplate<0> { typedef MyWhiteLED SUBTRACT; };
+struct MyBlueLED : public CreeXPE2BlueTemplate<240> { typedef MyWhiteLED SUBTRACT; };
 
-    BladeConfig blades[] = {
-      { 0,  SimpleBladePtr<MyRedLED, MyBlueLED, MyGreenLED, MyWhiteLED,
-                           bladePowerPin1, bladePowerPin2, bladePowerPin3, bladePowerPin4>(), 
-        CONFIGARRAY(presets) }
-    };
+BladeConfig blades[] = {
+  { 0,  SimpleBladePtr<MyRedLED, MyBlueLED, MyGreenLED, MyWhiteLED,
+                       bladePowerPin1, bladePowerPin2, bladePowerPin3, bladePowerPin4>(), 
+    CONFIGARRAY(presets) }
+};
+```
 
 Note the use of "struct SOMETHING : public SOMETHING_ELSE { .... }" this creates a new struct, but copies the content of SOMETHING_ELSE into it. If you decide to use the snipped above in your config file, please make sure to adjust the resistors to the values you are actually using.
 
@@ -86,5 +95,4 @@ I could give you the formula, but why bother when there are [simple calculators 
 
 ## Adding/Modifying LED structs
 While you are welcome to add your own LED configuration structs to blades/leds.h, I recommend putting them in your config file instead, right before the blades[] array. That way, you won't have to remember to copy them over when you update to a new version of ProffieOS.
-
 
