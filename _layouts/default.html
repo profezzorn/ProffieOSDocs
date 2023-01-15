@@ -29,6 +29,7 @@
 {% seo title=false %}
     <link rel="stylesheet" href="{{ base | append: '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/js/codeblock.js"></script>
     <script src="{{ base | append: '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,85 +39,7 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
-	  <style>
-		  
-:target::before {
-  content: "";
-  display: block;
-  height: 65px; /* fixed header height*/
-  margin: -65px 0 0; /* negative fixed header height */
-}
-		  
-
-.search-container input[type=text] button {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 14px;
-  border: none;
-}
-.search-container {
-          color: white;
-          border: 1px solid #5d910b;
-          background: linear-gradient(#93bd20, #659e10);
-          border-radius: 2px;
-          box-shadow: inset 0px 1px 0px rgba(255,255,255,.3), 0px 3px 7px rgba(0,0,0,.7);
-
-          background-color: #93bd20;
-          padding: 6px 6px;
-          margin-top: 6px;
-          line-height:14px;
-          font-size:14px;
-          display:inline-block;
-          text-align:center;
-  }
-		  
-#header {
-  nav {
-    ul {
-      li {
-        a {
-          padding: 8px 10px  !important;
-          margin-top: 6px  !important;
-          line-height:18px  !important;
-          font-size:18px   !important;
-        }
-      }
-    }
-  }
-}
-
-@media print {
-  .noprint {
-    display: none;
-  }
-  #header {
-    display: none;
-  }
-  .pagebreak {
-    page-break-after: always;
-  }
-  h3, h4 {
-    page-break-after: avoid;
-  }
-  pre, blockquote {
-    page-break-inside: avoid;
-  }
-}
-.anchor {
-  visibility: hidden;
-  color: #dfe2e5;
-}
-
-h1:hover .anchor,
-h2:hover .anchor,
-h3:hover .anchor,
-h4:hover .anchor,
-h5:hover .anchor,
-h6:hover .anchor {
-  visibility: visible;
-}
-
-</style>
+    <link rel="stylesheet" href="/css/pod.css">
   </head>
   <body>
       <div id="header">
