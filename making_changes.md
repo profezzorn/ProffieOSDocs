@@ -29,7 +29,7 @@ Of course, if you already know how to use github, you can use any tools you want
 ## Best practices
 Don't add newlines unless you need it. In the github editor, set it to "Soft wrap" and just write long lines to make paragraphs. This makes page resizing work better.
 
-## Images
+### Images
 To make things look good in PDFs, print and retina displays, all images should be uploaded at the highest resolution available. That might come out too large when shown on the screen, and the solution is to use an "image" tag instead of using the markdown for an image.
 
 So instead of this:
@@ -47,6 +47,21 @@ you do:
 This will make the browser scale the image to 400 x 200 instead of whatever size the image was when you uploaded it, but print and retina displays will use the extra pixels to make things look good.
 
 Uploading screenshots is good for pointing out where buttons and menues are, but not to show an error message or something like that. Information that is fundamentally text should use text, not images.
+
+### Code
+
+Write code blocks like this:
+```
+    ```cpp
+    #define EXAMPLE_DEFINE
+    ```
+```
+This will make it highlighted as C++, with a copy button, like this:
+
+```cpp
+#define EXAMPLE_DEFINE
+```
+
 
 ## Searching for dead links (on Linux)
 
