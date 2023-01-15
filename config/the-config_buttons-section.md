@@ -37,8 +37,9 @@ To establish what value to use, use the serial monitor and type "monitor touch".
 
 Simple two-button example:
 
-    #ifdef CONFIG_BUTTONS
-    Button PowerButton(BUTTON_POWER, powerButtonPin, "pow");
-    Button AuxButton(BUTTON_AUX, auxPin, "aux");
-    #endif
-
+```cpp
+#ifdef CONFIG_BUTTONS
+Button PowerButton(BUTTON_POWER, powerButtonPin, "pow");
+Button AuxButton(BUTTON_AUX, auxPin, "aux");
+#endif
+```
