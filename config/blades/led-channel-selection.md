@@ -38,6 +38,7 @@ struct MyCreeXPE2PCAmberTemplate {
   static const int Green = 0;  // This is the only thing that was changed
   static const int Blue = 0;
 };
+```
 
 The we can use it:
 `SimpleBladePtr<MyCreeXPE2AmberTemplate<420>, CreeXPE2GreenTemplate<0>, CreeXPE2BlueTemplate<240>, NoLED>()`
