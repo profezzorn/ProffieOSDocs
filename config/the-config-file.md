@@ -5,44 +5,45 @@ While EVERYTHING in ProffieOS is possible to change, most of the time, only the 
 
 First, let's take a look at a typical config file:
 
-    #ifdef CONFIG_TOP
-    #include "proffieboard_v1_config.h"
-    #define NUM_BLADES 1
-    #define NUM_BUTTONS 2
-    #define VOLUME 1000
-    const unsigned int maxLedsPerStrip = 144;
-    #define CLASH_THRESHOLD_G 1.0
-    #define ENABLE_AUDIO
-    #define ENABLE_MOTION
-    #define ENABLE_WS2811
-    #define ENABLE_SD
-    #endif
+```C++
+#ifdef CONFIG_TOP
+#include "proffieboard_v1_config.h"
+#define NUM_BLADES 1
+#define NUM_BUTTONS 2
+#define VOLUME 1000
+const unsigned int maxLedsPerStrip = 144;
+#define CLASH_THRESHOLD_G 1.0
+#define ENABLE_AUDIO
+#define ENABLE_MOTION
+#define ENABLE_WS2811
+#define ENABLE_SD
+#endif
 
-    #ifdef CONFIG_PRESETS
-    Preset presets[] = {
-       { "TeensySF", "tracks/venus.wav",
-        StyleNormalPtr<CYAN, WHITE, 300, 800>(), "cyan"},
-       { "SmthJedi", "tracks/mars.wav",
-        StylePtr<InOutSparkTip<EASYBLADE(BLUE, WHITE), 300, 800> >(), "blue"},
-       { "TthCrstl", "tracks/mars.wav",
-        StylePtr<InOutHelper<EASYBLADE(OnSpark<GREEN>, WHITE), 300, 800> >(), "green"},
-       { "TthCrstl", "tracks/uranus.wav",
-        StyleStrobePtr<WHITE, Rainbow, 15, 300, 800>(), "strobe"},
-       { "TeensySF", "tracks/venus.wav",
-        &style_pov, "POV"},
-       { "SmthJedi", "tracks/mars.wav",
-        &style_charging, "Battery\nLevel"}
-    };
-    BladeConfig blades[] = {
-     { 0, WS2811BladePtr<144, WS2811_ACTUALLY_800kHz | WS2811_GRB>(), CONFIGARRAY(presets) },
-    };
-    #endif
+#ifdef CONFIG_PRESETS
+Preset presets[] = {
+   { "TeensySF", "tracks/venus.wav",
+    StyleNormalPtr<CYAN, WHITE, 300, 800>(), "cyan"},
+   { "SmthJedi", "tracks/mars.wav",
+    StylePtr<InOutSparkTip<EASYBLADE(BLUE, WHITE), 300, 800> >(), "blue"},
+   { "TthCrstl", "tracks/mars.wav",
+    StylePtr<InOutHelper<EASYBLADE(OnSpark<GREEN>, WHITE), 300, 800> >(), "green"},
+   { "TthCrstl", "tracks/uranus.wav",
+    StyleStrobePtr<WHITE, Rainbow, 15, 300, 800>(), "strobe"},
+   { "TeensySF", "tracks/venus.wav",
+    &style_pov, "POV"},
+   { "SmthJedi", "tracks/mars.wav",
+    &style_charging, "Battery\nLevel"}
+};
+BladeConfig blades[] = {
+ { 0, WS2811BladePtr<144, WS2811_ACTUALLY_800kHz | WS2811_GRB>(), CONFIGARRAY(presets) },
+};
+#endif
 
-    #ifdef CONFIG_BUTTONS
-    Button PowerButton(BUTTON_POWER, powerButtonPin, "pow");
-    Button AuxButton(BUTTON_AUX, auxPin, "aux");
-    #endif
-
+#ifdef CONFIG_BUTTONS
+Button PowerButton(BUTTON_POWER, powerButtonPin, "pow");
+Button AuxButton(BUTTON_AUX, auxPin, "aux");
+#endif
+```
 
 As you can see, this file has three sections: TOP, PRESETS and BUTTONS.
 Each section looks something like this:
