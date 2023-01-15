@@ -10,7 +10,7 @@ First, open your presets.ini on the SD card using a text editor like Notepad ++ 
 First line is the 'installed date,' which is when the saber was last programmed
 Then we have blocks of statements that look like this:
 
-```ini
+```conf
 new_preset
 font=TFAFlex
 track=tracks/rey_training.wav
@@ -36,7 +36,7 @@ You will see several of these blocks, corresponding to the number of presets in 
 
 Now, if you want to alter your presets, you can change any of the lines in the block that describe a preset AND you can add new blocks. Here's how we would change this preset to use a new font:
 
-```ini
+```conf
 new_preset
 font=GraflexIV
 track=tracks/rey_training.wav
@@ -48,7 +48,7 @@ variation=23299
 
 You could also change the track:
 
-```ini
+```conf
 new_preset
 font=GraflexIV
 track=tracks/rots.wav
@@ -60,7 +60,7 @@ variation=23299
 
 Or even alter the styles to use entries from an entirely different preset:
 
-```ini
+```conf
 new_preset
 font=GraflexIV
 track=tracks/rots.wav
@@ -72,7 +72,7 @@ variation=23299
 
 You could even use a blade style from one preset and a crystal chamber style from an entirely different preset:
 
-```ini
+```conf
 new_preset
 font=GraflexIV
 track=tracks/rots.wav
