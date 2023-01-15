@@ -1,4 +1,4 @@
-var codeBlocks = document.querySelectorAll('pre.highlight');
+var codeBlocks = document.querySelectorAll('pre');
 
 codeBlocks.forEach(function (codeBlock) {
   var  Button = document.createElement('button');
