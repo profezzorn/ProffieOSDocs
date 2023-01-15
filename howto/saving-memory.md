@@ -21,7 +21,9 @@ The POV style uses a lot of memory, and most people never really use it. Look fo
 ### Disable diagnostic commands
 ProffieOS contains several serial monitor commands which are very useful for diagnosing problems, like "top", "monitor" and "dir". However, disabling these commands can save some memory. To do so you can add
 
-    #define DISABLE_DIAGNOSTIC_COMMANDS
+```cpp
+#define DISABLE_DIAGNOSTIC_COMMANDS
+```
 
 to your config file. Note that this define is only available in ProffieOS 3.x and over.
 
