@@ -9,7 +9,7 @@ It's the Blade ID.
 
 When ProffieOS starts, it measures the resistance between the Blade ID pin (which is usually the same as the neopixel data pin for the first blade) and GND. It then finds the entry in the blades table with the closest first number, and then it uses that entry until the next time it scans for a blade. This may be at power on, or triggered by [Blade Detect](blade-detect.html).
 An example of a BladeConfig with multiple, different resistor value blades is shown here:
-```
+```cpp
  BladesConfig blades[] = {
       { 5000,
         WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
@@ -36,18 +36,24 @@ Unfortunately, it turns out that Proffieboards are unable to do Blade ID in the 
 
 Alternatively, an external pull-up resistor can be used. This resistor should be in the 20k to 50k range and placed between the blade pin and 3.3v. Then you add this to the config file:
 
-     #define BLADE_ID_CLASS ExternalPullupBladeID<bladeIdentifyPin, 22000>
+```cpp
+#define BLADE_ID_CLASS ExternalPullupBladeID<bladeIdentifyPin, 22000>
+```
 
 (Replace 22000 with the value of your pullup resistor.) With this workaround, Blade ID should return values that are close to the Blade ID resistor values, which will make configuration easier.
 
 Another option is to bridge the blade pin with another pin and use that pull-up resistor. On a Proffieboard V2.2, the ID pin is right next to the TX pin. If you bridge those two together, and put this is your config file:
 
-    #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, 9>
+```cpp
+#define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, 9>
+```
 
 (9 is the pin number for the TX pin) Then Blade ID should also return the values of the resistors. However, this means that you can't use the TX pin for anything else of course, such as a Bluetooth radio.
 
 Another quirk of Blade ID is that unpowered neopixels throws it off. When the neopixels are powered, the inputs are high impedance, which doesn't affect the Blade ID, but when unpowered, they leech power from the data line, which throws off the Blade ID value. The solution is to turn the power on while we're doing Blade ID by using the ENABLE_POWER_FOR_ID define. If your blade is hooked up to the LED2 and LED3 pads, it would look like this:
 
-    #define ENABLE_POWER_FOR_ID PowerPINS<bladePowerPin2,bladePowerPin3>
+```cpp
+#define ENABLE_POWER_FOR_ID PowerPINS<bladePowerPin2,bladePowerPin3>
+```
 
 *IMPORTANT NOTE* - BladeID requires a direct, uninterrupted connection from the board's data pin to the main blade (usually the center pin on the hilt-side of the main blade PCB). Therefore using SubBlades with neopixel accents, crystal chamber, or NPXL LED PCBs in series with the main blade won't work. They can be their own SubBlade chain on a data pin other than data1, but only data1 can use BladeID.
