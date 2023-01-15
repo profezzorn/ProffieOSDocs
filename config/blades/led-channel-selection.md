@@ -26,17 +26,18 @@ Going back to the [LED configuration](/config/blades/led-configuration.html) pag
 However, there is another option: We can redefine what RGB means.
 To do that, we'll need to copy the amber LED struct into our config file and change it to:
 
-    template<int milliohms = 420>
-    struct MyCreeXPE2PCAmberTemplate {
-      static constexpr float MaxAmps = 1.0;
-      static constexpr float MaxVolts = 3.28;
-      static constexpr float P2Amps = 0.35;
-      static constexpr float P2Volts = 3.05;
-      static constexpr float R = milliohms / 1000.0;
-      static const int Red = 255;
-      static const int Green = 0;  // This is the only thing that was changed
-      static const int Blue = 0;
-    };
+```cpp
+template<int milliohms = 420>
+struct MyCreeXPE2PCAmberTemplate {
+  static constexpr float MaxAmps = 1.0;
+  static constexpr float MaxVolts = 3.28;
+  static constexpr float P2Amps = 0.35;
+  static constexpr float P2Volts = 3.05;
+  static constexpr float R = milliohms / 1000.0;
+  static const int Red = 255;
+  static const int Green = 0;  // This is the only thing that was changed
+  static const int Blue = 0;
+};
 
 The we can use it:
 `SimpleBladePtr<MyCreeXPE2AmberTemplate<420>, CreeXPE2GreenTemplate<0>, CreeXPE2BlueTemplate<240>, NoLED>()`
