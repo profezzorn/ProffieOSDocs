@@ -8,12 +8,12 @@ Here's what you would need:
 
 This includes the display code, but doesn't activate it.
 May become the default in the future.
-```
+```cpp
 #define INCLUDE_SSD1306
 ```
 
 Here's how we activate the display:
-```
+```cpp
 #ifdef CONFIG_BOTTOM
 
 DisplayHelper<128, uint32_t,

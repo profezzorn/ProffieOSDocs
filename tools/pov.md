@@ -75,7 +75,7 @@ If you used a Full Color source file, memory use might be less by choosing the 8
 in the CONFIG_TOP section: `#define POV_INCLUDE_FILE "dataFileNameHere.h"`  
 
 - Then you just use the POV blade style in a preset:  
-```
+```cpp
 { "Font", "tracks/track.wav",
    &style_pov, 
   "my_pov"},

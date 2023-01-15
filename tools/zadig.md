@@ -3,8 +3,8 @@ title: Zadig
 redirect_from:
   - /zadig.html
 ---
-Zadig is a program that let's you update or replace device drivers for specific USB devices on Windows.
-For Proffieboards, we use Zadig to install a driver that lets us talk to the STM32 BOOTLOADER. Here is how:
+
+Zadig is a program that let's you update or replace device drivers for specific USB devices on Windows. For Proffieboards, we can Zadig to install a driver that lets us talk to the STM32 BOOTLOADER. However, it's easier to just use [proffie-dfu-setup.exe](https://fredrik.hubbe.net/lightsaber/proffie-dfu-setup.exe). If proffie-defu-setup.exe doesn't work, or you just prefer to do things the hard way, here is how you do it with Zadig:
 
  1. Download [Zadig](https://zadig.akeo.ie/)
  2. Plugin the Proffieboard and toggle the RESET button while holding down the BOOT button
