@@ -5,7 +5,7 @@ While EVERYTHING in ProffieOS is possible to change, most of the time, only the 
 
 First, let's take a look at a typical config file:
 
-```C++
+```cpp
 #ifdef CONFIG_TOP
 #include "proffieboard_v1_config.h"
 #define NUM_BLADES 1
