@@ -24,10 +24,13 @@ Please note the "nbsave" part, which will make ProffieOS save presets.ini and ot
 Blade detection is activated by using the BLADE_DETECT_PIN define in the [CONFIG_TOP](/config/the-config_top-section) section of the config file.  
 The pin number can either be just a number, or a symbolic name like "blade2Pin". See these 2 examples:   
 
-    #define BLADE_DETECT_PIN 0
+```cpp
+#define BLADE_DETECT_PIN 0
+```
 or  
-
-    #define BLADE_DETECT_PIN blade4Pin  
+```cpp
+#define BLADE_DETECT_PIN blade4Pin  
+```
 
 The blade detect pin will be monitored continuously, when it changes, the Blade ID routines will be re-triggered. In addition, when not connected to anything, Blade ID will be offset by the value of NO_BLADE, which equals a billion.
 
