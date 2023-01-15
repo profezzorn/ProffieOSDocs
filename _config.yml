@@ -1,7 +1,7 @@
-markdown            : kramdown
+#markdown            : kramdown
 highlighter         : rouge
 
-#markdown            : GFM
+markdown            : GFM
 # theme               : minimau
 rl: "https://pod.hubbe.net" # the base hostname & protocol for your site
 
@@ -30,4 +30,6 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
-    
+
+GFM:
+  syntax_highlighter: rouge
