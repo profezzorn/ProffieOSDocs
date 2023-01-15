@@ -5,11 +5,15 @@ If you buy a blade from someone else, you might not know how many LEDs are in it
 
 Fortunately, there is an easy way to find out how many LEDs your blade has. Add a new preset to your config file, and make the style for the main blade this:
 
-    StylePtr<LengthFinder<>>(),
+```cpp
+StylePtr<LengthFinder<>>(),
+```
 
 Change the blade config to 144 LEDs, something like this:  
 
-    WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+```cpp
+WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+```
 
 If you have COLOR_CHANGE_DIRECT in your config file, I recommend removing that temporarily while determining the blade length.
 Now compile and upload.
