@@ -26,7 +26,7 @@ Note that Windows may hide the part after the period, so it may look a little di
 
 ## The Config File
 
-If you are upgrading an existing saber, then you may already have a config file, in which case, just use that. If you need to create a new congfig file, keep reading.
+If you are upgrading an existing saber, then you may already have a config file, in which case, just use that. If you need to create a new config file, keep reading.
 
 1. Go to the configurator page that matches your board:
   * Proffieboard V1.x: https://fredrik.hubbe.net/lightsaber/v4/
