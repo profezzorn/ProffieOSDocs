@@ -36,7 +36,7 @@ If you are upgrading an existing saber, then you may already have a config file,
 5. Make a copy of the file called `default_proffieboard_config.h`.
 6. Rename the copy to something reasonable for your saber, like maybe `my_saber_config.h`. (Please note, that on Windows, the `.h`. is normally not shown. If it wasn't before you selected rename, don't add it.)
 7. Open up the renamed file in a text editor. You can use Notepad, Notepad++, Sublime or any other editor that knows how to edit plain text. Do not use word, wordpad or other programs intended to edit documents. Documents and text are not the same thing.
-8. Select all the contents in the file and delete it.
+8. Select all the contents in the renamed file and delete it.
 9. Go back to the configurator page, scroll down and press the "copy to clipboard" button.
 10. Paste it into the editor and save.
 
