@@ -16,7 +16,7 @@ There's a running tab of [alternative parts here](/hardware/proffieboard-v2.2-bo
 | Part | Description | Notes |
 |---|---|---|
 | U0   | Main CPU       | Does everything |
-| U2   | Motion chip    | Played when you move the saber around |
+| U2   | Motion chip    | Senses when you move the saber around |
 | U1   | Audio Amplifier|
 | U3   | Booster |
 | U60  | 3.3V Regulator | Feeds the CPU, SD card |
