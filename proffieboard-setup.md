@@ -30,7 +30,8 @@ When you're done, the tools menu should look like this:
 ## OS Specific Setup
 
 ###  Windows
-Download [proffie-dfu-setup](https://fredrik.hubbe.net/lightsaber/proffie-dfu-setup.exe) and run it. (sha256: 4773c8693cf62777cd8da4c95441690e7ae7c4171e8c1d533b1f6225f3bdc29e)
+Download [proffie-dfu-setup](https://fredrik.hubbe.net/lightsaber/proffie-dfu-setup.exe) and run it. 
+(sha256:4773c8693cf62777cd8da4c95441690e7ae7c4171e8c1d533b1f6225f3bdc29e)
 
 If you're using Windows 7 or earlier, you also need to install a USB ACM serial driver:
  1. Go to ~/AppData/Local/Arduino15/packages/profezzorn/hardware/stm32l4/```<VERSION>```/drivers/windows
