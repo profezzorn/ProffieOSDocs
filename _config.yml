@@ -3,7 +3,7 @@ highlighter         : rouge
 
 markdown            : GFM
 # theme               : minimau
-rl: "https://pod.hubbe.net" # the base hostname & protocol for your site
+url: "https://pod.hubbe.net" # the base hostname & protocol for your site
 
 website: "https://pod.hubbe.net"
 
