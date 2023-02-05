@@ -5,6 +5,8 @@ markdown            : GFM
 # theme               : minimau
 rl: "https://pod.hubbe.net" # the base hostname & protocol for your site
 
+website: "https://pod.hubbe.net"
+
 remote_theme: pages-themes/midnight@v0.2.0
 
 plugins:
