@@ -39,7 +39,7 @@ First option would be adding this to the config file:
 #define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin> 
 ```
 
-The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade.
+The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade. Measured values can be found by using Serial Monitor in Arduino, and entering `scanid` while the blade is off.
 
 Alternatively, an external pull-up resistor can be used. This resistor should be in the 20k to 50k range and placed between the blade pin and 3.3v. Then you add this to the config file:
 
