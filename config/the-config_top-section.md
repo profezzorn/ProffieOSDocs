@@ -86,7 +86,7 @@ This code will flip the OLED displayed content 180 degrees.
 ```
 
 ### SHARED_POWER_PINS
-This code makes it possible to use the same power pins for multiple blades. Note that this is currently EXPERIMENTAL code and may not work properly.
+This code makes it possible to use the same power pins for multiple blades.
 
 ```cpp
 #define SHARED_POWER_PINS
