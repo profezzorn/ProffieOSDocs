@@ -32,7 +32,14 @@ Note that the Blade ID resistor is different from the in-line resistor normally 
 
 The V1 electronics is still one of the best pictures for showing how this can work: [https://fredrik.hubbe.net/lightsaber/electronics.html](https://fredrik.hubbe.net/lightsaber/electronics.html)
 
-Unfortunately, it turns out that Proffieboards are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x. The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade.
+Unfortunately, it turns out that Proffieboards are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x.   
+First option would be adding this to the config file:
+
+```cpp
+#define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin> 
+```
+
+The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade.
 
 Alternatively, an external pull-up resistor can be used. This resistor should be in the 20k to 50k range and placed between the blade pin and 3.3v. Then you add this to the config file:
 
