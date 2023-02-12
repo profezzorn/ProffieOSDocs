@@ -63,4 +63,7 @@ Another quirk of Blade ID is that unpowered neopixels throws it off. When the ne
 #define ENABLE_POWER_FOR_ID PowerPINS<bladePowerPin2,bladePowerPin3>
 ```
 
-*IMPORTANT NOTE* - BladeID requires a direct, uninterrupted connection from the board's data pin to the main blade (usually the center pin on the hilt-side of the main blade PCB). Therefore using SubBlades with neopixel accents, crystal chamber, or NPXL LED PCBs in series with the main blade won't work. They can be their own SubBlade chain on a data pin other than data1, but only data1 can use BladeID.
+*IMPORTANT NOTE* - BladeID requires a direct, uninterrupted connection from the board's data pin to the main blade (usually the center pin on the hilt-side of the main blade PCB). Therefore using SubBlades with neopixel accents, crystal chamber, or NPXL LED PCBs in series with the main blade won't work. They can be their own SubBlade chain on a data pin other than data1, but only data1 can use BladeID.  
+
+As of ProffieOS7, a new method of detecting different "blades" by using Blade ID is available.  
+See [Blade ID constant monitoring](blade-id-constant-monitoring.html).
