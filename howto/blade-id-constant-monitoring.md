@@ -1,4 +1,4 @@
-## BLADE_ID_SCAN_MILLIS
+## Blade ID constant monitoring
 
 As of ProffieOS7, a new method of detecting different "blades" by using Blade ID is available.  
 This can also include detecting other changes besides just blades, such as a removable chassis being inserted into a hilt.  
