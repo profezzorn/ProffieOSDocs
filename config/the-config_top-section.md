@@ -398,3 +398,10 @@ When playing overlapping effects, you can sometimes run out of available wav pla
 ```cpp
 #define KILL_OLD_PLAYERS
 ```
+
+### DISABLE_TALKIE
+Saves 7.5kB of flash memory by disabling the spoken error codes that ProffieOS uses. The spoken error codes will be replaced with beeps, and you can use the ("What is it beeping?" page)[/troubleshooting/beep_codes.html] to figure out what the sounds mean. You can also see the errors in the (serial monitor)[/tools/serial-monitor.html].
+
+```cpp
+#define DISABLE_TALKIE
+```
