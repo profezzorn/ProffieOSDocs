@@ -60,7 +60,7 @@ byte_order depends on what kind of pixel strip is used, these values are possibl
     Color8::wRBG
     Color8::wRGB
 
-By far the most common byte order is GRB, but some pixel strips use RGB byte order. The four-letter byte orders are used for RGBW strips, the most common of those are GRBW and RGBW. The byte orders will capitol W will use both RGB AND W for white colors, while byte orders will lower-case w will only turn on the white LED for white colors. Thus RGBw is more power efficient than RGBW, but not as bright.
+By far the most common byte order is GRB, but some pixel strips use RGB byte order. The four-letter byte orders are used for RGBW strips, the most common of those are GRBW and RGBW. The byte orders with a capital W will use both RGB AND W LEDs for white colors, while byte orders with lower-case w will turn on only the white LEDs for white colors. Thus RGBw is more power efficient than RGBW, but not as bright.
 
 Most of the time it does not make sense to change the pin_class, but if you have a Teensy, and you have problems with glitches, you might want to try the serial pixel driver by setting pin_class to WS2811SerialPin. You'll also need to use a data pin that is serial-capable, which may mean that you can't use the serial port for something else. Note that WS2811SerialPin ignores t0h and t1h.
 
