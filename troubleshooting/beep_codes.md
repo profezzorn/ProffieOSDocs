@@ -2,7 +2,7 @@
 title: What is it beeping?
 ---
 
-If you're using the DISABLE_TALKIE define to save memory, the spoken error messages from the ("What is it saying?" page)[/troubleshooting/what-is-it-saying.md] will be replaced with beeps. This page will let you figure out what those beeps mean. Once you figure out which one is is, go to the (What is it saying? page)[/troubleshooting/what-is-it-saying.html] to find out what to do about it.
+If you're using the DISABLE_TALKIE define to save memory, the spoken error messages from the ["What is it saying?" page](/troubleshooting/what-is-it-saying.md) will be replaced with beeps. This page will let you figure out what those beeps mean. Once you figure out which one is is, go to the [What is it saying? page](/troubleshooting/what-is-it-saying.html) to find out what to do about it.
 
 Try clicking on each line to hear what it sounds like.
 
