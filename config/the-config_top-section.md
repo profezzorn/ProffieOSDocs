@@ -383,3 +383,18 @@ SAVE_DYNAMIC_DIMMING
 ```cpp
 #define ENABLE_ALL_EDIT_OPTIONS
 ```
+# ProffieOS 7.x defines
+
+### BOOT_VOLUME	
+Let's you specify what volume should be used at boot. Note that if you have SAVE_VOLUME defined, this will probably be overriden by reading a value from the global.ini config file.
+
+```cpp
+#define BOOT_VOLUME 300
+```
+
+### KILL_OLD_PLAYERS
+When playing overlapping effects, you can sometimes run out of available wav players. Whis define is enabled, ProffieOS will find the oldest playing overlapping effect and stop that sound to make room for the new sound to play. The result is that the new sound always plays.
+
+```cpp
+#define KILL_OLD_PLAYERS
+```
