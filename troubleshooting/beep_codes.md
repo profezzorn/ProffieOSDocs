@@ -7,12 +7,12 @@ If you're using the DISABLE_TALKIE define to save memory, the spoken error messa
 Try clicking on each image to hear what it sounds like.
 
 <center>
-<image src="/troubleshooting/images/font-directory-not-found.png" alt="Font directory not found" onclick='(new Audio("/troubleshooting/sound/font-directory-not-found.wav")).play()' /></br>
-<image src="/troubleshooting/images/sd-card-not-found.png" alt="SD card not found" onclick='(new Audio("/troubleshooting/sound/sd-card-not-found.wav")).play()' /></br>
-<image src="/troubleshooting/images/error-in-font-directory.png" alt="Error in font directory" onclick='(new Audio("/troubleshooting/sound/error-in-font-directory.wav")).play()' /></br>
-<image src="/troubleshooting/images/error-in-blade-array.png" alt="Error in blade array" onclick='(new Audio("/troubleshooting/sound/error-in-blade-array.wav")).play()' /></br>
-<image src="/troubleshooting/images/battery-low.png" alt="Battery low" onclick='(new Audio("/troubleshooting/sound/battery-low.wav")).play()' /></br>
-<image src="/troubleshooting/images/aliens-are-here.png" alt="Aliens are here" onclick='(new Audio("/troubleshooting/sound/aliens-are-here.wav")).play()' /></br>
+<image src="/troubleshooting/images/font_directory_not_found.png" alt="Font directory not found" onclick='(new Audio("/troubleshooting/sound/font_directory_not_found.wav")).play()' /></br>
+<image src="/troubleshooting/images/sd_card_not_found.png" alt="SD card not found" onclick='(new Audio("/troubleshooting/sound/sd_card_not_found.wav")).play()' /></br>
+<image src="/troubleshooting/images/error_in_font_directory.png" alt="Error in font directory" onclick='(new Audio("/troubleshooting/sound/error_in_font_directory.wav")).play()' /></br>
+<image src="/troubleshooting/images/error_in_blade_array.png" alt="Error in blade array" onclick='(new Audio("/troubleshooting/sound/error_in_blade_array.wav")).play()' /></br>
+<image src="/troubleshooting/images/battery_low.png" alt="Battery low" onclick='(new Audio("/troubleshooting/sound/battery_low.wav")).play()' /></br>
+<image src="/troubleshooting/images/aliens_are_here.png" alt="Aliens are here" onclick='(new Audio("/troubleshooting/sound/aliens_are_here.wav")).play()' /></br>
 </center>
 
 That last one is not actually an error message, it's the sounds you hear if you use the "beep" command, and is also the notes from "Close Encounters of the 3rd Kind".
