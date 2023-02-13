@@ -8,12 +8,12 @@ Try clicking on each line to hear what it sounds like.
 
 <center>
 <image src="/troubleshooting/images/font_directory_not_found.png" alt="Font directory not found" onclick='(new Audio("/troubleshooting/sound/font_directory_not_found.wav")).play()'
-/></br><image src="/troubleshooting/images/sd_card_not_found.png" alt="SD card not found" onclick='(new Audio("/troubleshooting/sound/sd_card_not_found.wav")).play()'
-/></br><image src="/troubleshooting/images/error_in_font_directory.png" alt="Error in font directory" onclick='(new Audio("/troubleshooting/sound/error_in_font_directory.wav")).play()'
-/></br><image src="/troubleshooting/images/error_in_blade_array.png" alt="Error in blade array" onclick='(new Audio("/troubleshooting/sound/error_in_blade_array.wav")).play()'
-/></br><image src="/troubleshooting/images/battery_low.png" alt="Battery low" onclick='(new Audio("/troubleshooting/sound/battery_low.wav")).play()'
-/></br><image src="/troubleshooting/images/aliens_are_here.png" alt="Aliens are here" onclick='(new Audio("/troubleshooting/sound/aliens_are_here.wav")).play()'
-/></br>
+/><image src="/troubleshooting/images/sd_card_not_found.png" alt="SD card not found" onclick='(new Audio("/troubleshooting/sound/sd_card_not_found.wav")).play()'
+/><image src="/troubleshooting/images/error_in_font_directory.png" alt="Error in font directory" onclick='(new Audio("/troubleshooting/sound/error_in_font_directory.wav")).play()'
+/><image src="/troubleshooting/images/error_in_blade_array.png" alt="Error in blade array" onclick='(new Audio("/troubleshooting/sound/error_in_blade_array.wav")).play()'
+/><image src="/troubleshooting/images/battery_low.png" alt="Battery low" onclick='(new Audio("/troubleshooting/sound/battery_low.wav")).play()'
+/><image src="/troubleshooting/images/aliens_are_here.png" alt="Aliens are here" onclick='(new Audio("/troubleshooting/sound/aliens_are_here.wav")).play()'
+/>
 </center>
 
 That last one is not actually an error message, it's the sounds you hear if you use the "beep" command, and is also the notes from "Close Encounters of the 3rd Kind".
