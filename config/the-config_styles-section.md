@@ -12,3 +12,5 @@ Here is an example of what it could look like:
 using BatteryLevelStyle = InOutHelperX<Gradient<Red,Orange,Yellow,Green,Green,Green,Green>, BatteryLevel>;
 #endif
 ```
+
+Please not that there is no actual difference between putting things at the top of the CONFIG_PRESETS section and putting them in the CONFIG_STYLES section, it is merely provided make it easier to keep your config file organized.
