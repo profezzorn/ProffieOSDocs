@@ -108,3 +108,5 @@ ProffieOSMaxSwingAcceleration=100.0
 # ProffieOS.SFX.EFFECTNAME.volume=100
 
 ```
+
+From ProffieOS 7.x forward, if there are multiple config.ini files in the font search path, they will all be read. Values specified in the first one will take precedence over values specified in the second one, and so forth. In ProffieOS 6.x and earlier, only once a config.ini was found, no more files were read.
