@@ -62,3 +62,4 @@ sections as intended. Each section is explained in it's own page, to find out mo
 * [The CONFIG_PRESETS section](/config/the-config_presets-section.html)
 * [The CONFIG_BUTTONS section](/config/the-config_buttons-section.html)
 * [The CONFIG_PROP section](/config/the-config_prop-section.html)
+* [The CONFIG_STYLES section](/config/the-config_styles-section.html)
