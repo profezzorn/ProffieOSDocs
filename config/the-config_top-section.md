@@ -405,3 +405,19 @@ Saves 7.5kB of flash memory by disabling the spoken error codes that ProffieOS u
 ```cpp
 #define DISABLE_TALKIE
 ```
+
+### BLADE_ID_TIMES
+This define tells ProffieOS to run the blade id multiple times and then averaging the results. This is particularly helpful when using BLADE_ID_SCAN_MILLIS, as the results tends to be very noisy otherwise.
+
+```cpp
+#define BLADE_ID_TIMES 10
+```
+
+### BLADE_ID_SCAN_MILLIS
+With this define, blade id will run all the time, even when the blade is on. The define specifies how many milliseconds in between each blade id scan. Reasonable values might be 100 to 5000 ms. If the computed blade ID is different from the previous ones, then the saber will re-load blade definitions and presets, as if a blade detect event had occured.
+
+```cpp
+#define BLADE_ID_SCAN_MILLIS 500
+```
+
+Please note, you will most likely need BLADE_ID_TIMES and SHARED_POWER_PINS to use this define. Also, it currently only works with pixel blades.
