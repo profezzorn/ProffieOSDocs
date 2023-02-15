@@ -27,9 +27,13 @@ Sound-playing engine automatically detects through the files in the directory an
 * Smooth Swing V1
 * Smooth Swing V2
 
-**Note**: Font directory should not exceed 8 characters
+You can also specify multiple directories, in which case ProffieOS will search all of them when looking for sound files. When using multiple directories, they should be separated by semicolons, like this:
 
-**Note**: Default sample rate in ProffieOS is 44kHz so all sounds with lower sample rates are upsampled automatically.
+```cpp
+"fontdir;common"
+```
+
+This will make ProffieOS first look in "fontdir" then in "common". Note that all sounds with the same name (but different numbers) have to be in the same directory.
 
 ## Music Track ("tracks/track.wav")
 In the second field is configured the audio track which can be used for soundtrack music or ambient sound in parallel to the rest of the sounds that are played by the saber.
