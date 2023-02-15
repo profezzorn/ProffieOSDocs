@@ -15,25 +15,39 @@ While you don't have to use these arguments, they can be very useful for saving 
 Let's consider a simple preset, and I want a red a green and blue preset, I would do:
 
 ```cpp
-{"font1", "tracks/track1.wav", StylePtr<EasyBlade<Red, White, 800, 300>>(), "label"},
-{"font2", "tracks/track2.wav", StylePtr<EasyBlade<Green, White, 800, 300>>(), "label"},
-{"font3", "tracks/track3.wav", StylePtr<EasyBlade<Blue, White, 800, 300>>(), "label"},
+{"font1", "tracks/track1.wav",
+ StylePtr<EasyBlade<Red, White, 800, 300>>(),
+ "label"},
+{"font2", "tracks/track2.wav",
+ StylePtr<EasyBlade<Green, White, 800, 300>>(),
+ "label"},
+{"font3", "tracks/track3.wav",
+ StylePtr<EasyBlade<Blue, White, 800, 300>>(),
+ "label"},
 ```
 
 Not a problem, right? Since these are simple styles, they won't take up much space, and because they were made without arguments, they cannot be modified at run time.
 
 Using arguments, I could insted write this as a single preset:
 ```cpp
-{"font1", "tracks/track1.wav", StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>(), "label"},
+{"font1", "tracks/track1.wav",
+ StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>(),
+ "label"},
 ```
 
 Then I could use edit mode or the proffieos workbench to copy this preset two more times, and change the fonts and the color for each preset. These copies would not take up any extra FLASH memory, which means I can use that memory for something else. (Like more styles...)
 
 From ProffieOS 7.x, this gets even better, because you can specify the default arguments in the config file, like this:
 ```cpp
-{"font1", "tracks/track1.wav", StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("65535,0,0"), "label"},
-{"font2", "tracks/track2.wav", StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("0,65535,0"), "label"},
-{"font3", "tracks/track3.wav", StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("0,0,65535"), "label"},
+{"font1", "tracks/track1.wav",
+ StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("65535,0,0"),
+ "label"},
+{"font2", "tracks/track2.wav",
+ StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("0,65535,0"),
+ "label"},
+{"font3", "tracks/track3.wav",
+ StylePtr<EasyBlade<RgbArg<BASE_COLOR_ARG, Red>, White, 800, 300>>("0,0,65535"),
+ "label"},
 ```
 
 Because were using the very same style each time, it doesn't actually use up any more memory, and we don't have to use the style editor or the proffieos workbench to do the edits. It can all be done in the config file. Also, we mess something up using edit mode, we can delete presets.ini and presets.tmp from the SD card, without loosing the defaults.
