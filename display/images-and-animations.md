@@ -103,6 +103,10 @@ If the final bmp image/animation is inverted colors on the OLED itself, a simple
 ## Orientation
 Lastly, if the image is displayed upside down on the installed screen, we can easily rotate it 180 degrees by adding  
 a define to the CONFIG_TOP section of the uploaded config file:  
-`#define OLED_FLIP_180`  
+```cpp
+#define OLED_FLIP_180
+```
 There's also an option to flip it mirror image:  
-`#define OLED_MIRRORED`
+```cpp
+#define OLED_MIRRORED
+```
