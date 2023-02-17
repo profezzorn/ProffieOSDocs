@@ -82,7 +82,15 @@ StylePtr<Layers<
 There, now alt and variance will be synchronized, so the Red color will play alt000 sounds and the Blue color will play alt001 sounds.
 
 ### TrDoEffect<EFFECT_ALT_SOUND, N>
-By using TrDoEffect, with the EFFECT_ALT_SOUND effect, we can have the style explicitly select which alt sounds are used. This means that you can trigger alt sounds based on effecs and pulses. This creates the ability to move between states in the style, and you can check which state you are in by using the AltF<> function. The possibilities here are endless, but also more complicated, so I will leave it up to the reader to figure out good examples of how to use this.
+By using TrDoEffect, with the EFFECT_ALT_SOUND effect, we can have the style explicitly select which alt sounds are used. This means that you can trigger alt sounds based on effecs and pulses. This creates the ability to move between states in the style, and you can check which state you are in by using the AltF function. The possibilities here are endless, but also more complicated, so I will leave it up to the reader to figure out good examples of how to use this.
+
+```cpp
+StylePtr<Layers<
+	ColorSelect<AltF,TrWipe<300>,Green,Blue,Red>,
+	TransitionEffectL<TrDoEffectX<TrInstant,EFFECT_ALT_SOUND,EffectIncrementF<EFFECT_FORCE,Int<3>>>,EFFECT_FORCE>,
+	InOutTrL<TrWipe<300>,TrWipeIn<500>,Black>>>()
+```
+This style will increment the alt and color by 1 each time EFFECT_FORCE is triggered, so Green color will play alt000 sounds, Blue color will play alt001 sounds and Red color will play alt002 sounds. The TransitionEffectL<> layer controls the change for EFFECT_ALT_SOUND which in turn changes the ColorSelect via the AltF function.
 
 ### Have the prop control the alt.
 If your prop has builtin modes, it might make sense to switch alt sounds when you switch mode as well. For fonts that don't have alt sounds, this will have no effect. A prop that wants to do this sould call SaberBase::DoEffect(EFFECT_ALT_SOUND, 0.0, N), which is basically the same as the TrDoEffect<> shown above. The prop could also control the variance, and let the style decide if the font should be synchronized with the variance or not. Doing it this way would essentially disable the "color change" functionality though.
