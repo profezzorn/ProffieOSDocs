@@ -7,7 +7,7 @@ From ProffieOS 7.x, sound fonts can can have alternatives for some or all sound 
 ## File structure
 Let's say we want to create a light and a dark version of the same font, and the only sounds we actually want to change to do that is the hum and the force sounds.
 
-Before, our font directory looks like this: (some effects ommitted for brevity.)
+Before, our font directory looks like this: (some effects omitted for brevity.)
 ```txt
 clsh/
 font.wav
