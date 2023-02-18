@@ -50,7 +50,7 @@ are more than 144 pixels long.
 const unsigned int maxLedsPerStrip = 144;
 ```
 
-### CLASH_THRESHOLD
+### CLASH_THRESHOLD_G
 Next, we have the clash threshold. When two consecutive accelerometer readings differ by this
 much, a clash is triggered. The unit is in Gs. (About 9.81 newtons.) Larger values will make
 clashes harder to trigger, smaller values will make clashes easier to trigger.
@@ -58,6 +58,11 @@ clashes harder to trigger, smaller values will make clashes easier to trigger.
 ```cpp
 #define CLASH_THRESHOLD_G 1.0
 ```
+
+Please note that in ProffieOS 6.x, some changes were made to the motion detection system. This tended to make clash detection more sensetive, so it's not uncommon to have to increase the clash threshold when upgrading from 5.x to 6.x.
+
+In ProffieOS 7.x, the clash detection was modified in ways that makes it less sensetive to false clashes. This change also means that the CLASH_THRESHOLD_G might have to be changed when upgrading from 6.x to 7.x. However, in this case you will probably be adjusting the clash threshold downwards rather than upwards.
+
 
 Finally, we have a set of defines that enable standard features.
 It's on my TODO list to make these not required:
