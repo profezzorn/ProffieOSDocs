@@ -398,7 +398,7 @@ Let's you specify what volume should be used at boot. Note that if you have SAVE
 ```
 
 ### KILL_OLD_PLAYERS
-When playing overlapping effects, you can sometimes run out of available wav players. Whis define is enabled, ProffieOS will find the oldest playing overlapping effect and stop that sound to make room for the new sound to play. The result is that the new sound always plays.
+When playing overlapping effects, you can sometimes run out of available wav players. When this define is enabled, ProffieOS will find the oldest playing overlapping effect and stop that sound to make room for the new sound to play. The result is that the new sound always plays.
 
 ```cpp
 #define KILL_OLD_PLAYERS
@@ -412,14 +412,14 @@ Saves 7.5kB of flash memory by disabling the spoken error codes that ProffieOS u
 ```
 
 ### BLADE_ID_TIMES
-This define tells ProffieOS to run the blade id multiple times and then averaging the results. This is particularly helpful when using BLADE_ID_SCAN_MILLIS, as the results tends to be very noisy otherwise.
+This define tells ProffieOS to run the blade ID multiple times and then averaging the results. This is particularly helpful when using BLADE_ID_SCAN_MILLIS, as the results tends to be very noisy otherwise.
 
 ```cpp
 #define BLADE_ID_TIMES 10
 ```
 
 ### BLADE_ID_SCAN_MILLIS
-With this define, blade id will run all the time, even when the blade is on. The define specifies how many milliseconds in between each blade id scan. Reasonable values might be 100 to 5000 ms. If the computed blade ID is different from the previous ones, then the saber will re-load blade definitions and presets, as if a blade detect event had occured.
+With this define, blade ID will run all the time, even when the blade is on. The define specifies how many milliseconds in between each blade id scan. Reasonable values might be 100 to 5000 ms. If the computed blade ID is different from the previous ones, then the saber will re-load blade definitions and presets, as if a blade detect event had occured.
 
 ```cpp
 #define BLADE_ID_SCAN_MILLIS 500
