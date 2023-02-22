@@ -68,9 +68,7 @@ When using a feature that skips preon.
 ### EFFECT_USER3  
 ### EFFECT_USER4  
 
-
-
-### *The following are as of ProffieOS7 
+## ----- The following are as of ProffieOS7 -----
 
 ### EFFECT_VOLUME_LEVEL    
 Show volume level visually on blade, great for using with volume menu feature.  
