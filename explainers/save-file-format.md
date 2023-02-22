@@ -14,7 +14,7 @@ While super simple, it did cause some problems, because saving these files delet
 
 However, if the gobblygook occurs while creating or deleting a file, then the directory itself becomes corrupt, and that can mean files and directories just can't be found anymore. In some cases, this makes the SD card completely unreadable.
 
-In ProffieOS 7.x, this problem has been mostly solved. The solution is to create the files once, make them big enough to contain all the data we could ever want to write to them, and then re-write them. By never creating new files, and never resizing the files, only the contents of the files can become corrupt, not the directories. At least as longas the SD card itself doesn't go crazy.
+In ProffieOS 7.x, this problem has been mostly solved. The solution is to create the files once, make them big enough to contain all the data we could ever want to write to them, and then re-write them. By never creating new files, and never resizing the files, only the contents of the files can become corrupt, not the directories. At least as long as the SD card itself doesn't go crazy.
 
 To make this work, we'll need two files for each save file, and we'll take turns writing to them. That way, we never overwrite the last savefile, we only write over the last-last savefile.
 
