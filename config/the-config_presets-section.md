@@ -70,7 +70,7 @@ BladesConfig blades[] = {
 };
 ```
 
-In this example, the Blade ID is used to select between the red and blue presets.  Also note that spaces and newlines are basically ignored, so we are free to write the configuration on one line or many lines as we please.
+In this example, the Blade ID is used to select between the red and blue presets.  Also note that spaces and newlines are basically ignored, so we are free to write the configuration on one line or many lines as we please. Finally, please note that you cannot have two identical blades in the same bladeconfig, it will crash ProffieOS.
 
 If you have RFID_SERIAL in [the CONFIG_TOP section](/config/the-config_top-section.html), then you will also need to have a RFID_Commands array, which could look like this:
 
