@@ -9,7 +9,7 @@ A basic example:
 `TransitionEffectL<TrConcat<TrWipe<50>,White,TrWipe<50>>,EFFECT_BLAST>`  
 In plain English, this says "When I press the blaster deflect button, run a string of concatenated events that wipe White in 50ms, then wipe it away."  
 Any EFFECT can be substituted in place of the EFFECT_BLAST argument above.  
-Note that some of these EFFECTS may be included in some prop files (button controls files) and not in others.
+Note that some of these EFFECTS may be included in features used by some prop files (button controls files) but not in others.
 
 The majority of these are self explanitory. 
 Just read EFFECT as "do something during_XXXX"
