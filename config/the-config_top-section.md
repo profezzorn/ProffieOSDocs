@@ -161,7 +161,7 @@ This is experimental and may not work properly.
 #define ENABLE_FASTLED
 ```
 
-### ENABLE_POWER_FOD_ID
+### ENABLE_POWER_FOR_ID
 To use blade ID in a 3-pin connector, the GND leg of the resistor has to be hooked up to the part that is controlled by FETs. That means that those FETs has to be powered on in order for blade ID to work. This define lets you do that by specifying which FETs needs to be powered while the blade is identified.
 
 ```cpp
