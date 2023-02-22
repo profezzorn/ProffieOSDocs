@@ -12,6 +12,11 @@ This page explains the parameters that are available in a sound font's `config.i
 # starts to fade in. Default 100
 humStart=100
 
+# From ProffieOS 7.x, you can use ProffieOSHumDelay to specify how many milliseconds
+# from the beginning of "out" to start the hum. If both ProffieOSHumDelay and humStart
+# are specified, then ProffieOSHumDelay is the one that will count.
+ProffieOSHumDelay=-1
+
 # The volume of the hum sound. Can be 0-16, where 0 is muted.
 # Default 15
 volHum=15
