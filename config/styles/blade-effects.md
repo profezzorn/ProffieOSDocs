@@ -44,11 +44,36 @@ Typically used to apply a dimming effect on blade to conserve battery.
 ### EFFECT_BATTERY_LEVEL  
 Show battery level visually on blade.  
 
-### EFFECT_VOLUME_LEVEL  *as of ProffieOS7  
-Show volume level visually on blade, great for using with volume menu feature.  
-
 ### EFFECT_FAST_ON  
 When using a feature that skips preon.  
+
+## Blaster effects  
+### EFFECT_STUN  
+### EFFECT_FIRE  
+### EFFECT_CLIP_IN  
+### EFFECT_CLIP_OUT  
+### EFFECT_RELOAD  
+### EFFECT_MODE  
+### EFFECT_RANGE  
+### EFFECT_EMPTY  
+### EFFECT_FULL  
+### EFFECT_JAM  
+### EFFECT_UNJAM  
+### EFFECT_PLI_ON  
+### EFFECT_PLI_OFF  
+
+## User-definable effects  
+### EFFECT_USER1  
+### EFFECT_USER2  
+### EFFECT_USER3  
+### EFFECT_USER4  
+
+
+
+### *The following are as of ProffieOS7 
+
+### EFFECT_VOLUME_LEVEL    
+Show volume level visually on blade, great for using with volume menu feature.  
 
 ### EFFECT_QUOTE  
 ### EFFECT_SECONDARY_IGNITION  
@@ -77,21 +102,6 @@ Triggers an optional sound effect during transitions from within a style via TrD
 ### EFFECT_SOUND_LOOP  
 Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
 
-## Blaster effects  
-### EFFECT_STUN  
-### EFFECT_FIRE  
-### EFFECT_CLIP_IN  
-### EFFECT_CLIP_OUT  
-### EFFECT_RELOAD  
-### EFFECT_MODE  
-### EFFECT_RANGE  
-### EFFECT_EMPTY  
-### EFFECT_FULL  
-### EFFECT_JAM  
-### EFFECT_UNJAM  
-### EFFECT_PLI_ON  
-### EFFECT_PLI_OFF  
-
 ## Mini game effects  
 ### EFFECT_GAME_START  
 ### EFFECT_GAME_ACTION1  
@@ -105,10 +115,6 @@ Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.
 ### EFFECT_GAME_LOSE  
 
 ## User-definable effects  
-### EFFECT_USER1  
-### EFFECT_USER2  
-### EFFECT_USER3  
-### EFFECT_USER4  
 ### EFFECT_USER5  
 ### EFFECT_USER6  
 ### EFFECT_USER7  
