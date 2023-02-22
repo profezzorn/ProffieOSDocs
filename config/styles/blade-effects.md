@@ -2,12 +2,13 @@
 title: Blade Style EFFECTs
 ---
 
-Events of animations on the blade are triggered by various things. Some examples are ignition, clash, blast, etc...  
-When these are triggered by a button event, a gesture, or other means, the way the blade knows which animation, or EFFECT to show, is by designating it in the blade style.
-A basic example:  
+Events of animations on the blade are triggered by various things.  
+Some examples are ignition, clash, blast, etc...  
+When these are triggered by a button event, a gesture, or other means, the way the blade knows which animation, or EFFECT to show, is by designating it in the blade style.  
+A basic example:    
 `TransitionEffectL<TrConcat<TrWipe<50>,White,TrWipe<50>>,EFFECT_BLAST>`  
-In plain English, this says "When I do the blaster deflect button, run a string of concatenated events that wipe White in 50ms, then wipe it away."  
-Any EFFECT can be substituted in place of the `EFFECT_BLAST` argument above.
+In plain English, this says "When I press the blaster deflect button, run a string of concatenated events that wipe White in 50ms, then wipe it away."  
+Any EFFECT can be substituted in place of the EFFECT_BLAST argument above.  
 Note that some of these EFFECTS may be included in some prop files (button controls files) and not in others.
 
 The majority of these are self explanitory. 
