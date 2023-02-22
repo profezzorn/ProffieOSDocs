@@ -198,13 +198,6 @@ Proffieboards have some challenges when it comes to BladeID, but it's possible t
 
 See [the blade ID page](/blade-id.html) for more information.
 
-### SAVE_COLOR_CHANGE
-On-the-fly color changing is new in 3.x. If you want it to save the color change state, add this define to your config file:
-
-```cpp
-#define SAVE_COLOR_CHANGE
-```
-
 ### IDLE_OFF_TIME
 ProffieOS has pretty good standby idle time, but if you have accent LEDs that glow even when the saber is off, that will make your saber run out of batteries pretty fast. This define lets you specify a timeout for such accent LEDs (in milliseconds), this example would set it to 10 minutes:
 
@@ -228,11 +221,18 @@ This define lets you use a pin to detect when a blade is present or not. The pin
 
 See [the Blade Detect page](/blade-detect.html) for more information.
 
-### SAVE_STATE
-Save state is the same as SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET
+### SAVE_COLOR_CHANGE
+On-the-fly color changing is new in 3.x. If you want it to save the color change state, add this define to your config file:
 
 ```cpp
-#define SAVE_STATE
+#define SAVE_COLOR_CHANGE
+```
+
+### SAVE_VOLUME
+Start with the volume used last
+
+```cpp
+#define SAVE_VOLUME
 ```
 
 ### SAVE_PRESET
@@ -242,11 +242,11 @@ Start at the last preset when you turn the saber on:
 #define SAVE_PRESET
 ```
 
-### SAVE_VOLUME
-Start with the volume used last
+### SAVE_STATE
+Save state is one define to encompass SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET
 
 ```cpp
-#define SAVE_VOLUME
+#define SAVE_STATE
 ```
 
 # ProffieOS 4.x defines
@@ -378,8 +378,8 @@ DYNAMIC_CLASH_THRESHOLD
 SAVE_VOLUME  
 SAVE_BLADE_DIMMING  
 SAVE_CLASH_THRESHOLD  
-SAVE_COLOR_CHANGE
-*Note - `#define SAVE_STATE' is different, as that encompasses:
+SAVE_COLOR_CHANGE  
+*Note - `#define SAVE_STATE` is different, as that encompasses:  
 SAVE_VOLUME  
 SAVE_PRESET  
 SAVE_COLOR_CHANGE  
@@ -391,7 +391,7 @@ SAVE_DYNAMIC_DIMMING
 # ProffieOS 7.x defines
 
 ### BOOT_VOLUME	
-Let's you specify what volume should be used at boot. Note that if you have SAVE_VOLUME defined, this will probably be overriden by reading a value from the global.ini config file.
+Let's you specify what volume should be used at boot. Note that if you have SAVE_VOLUME defined, this will probably be overridden by reading a value from the global.ini config file.
 
 ```cpp
 #define BOOT_VOLUME 300
@@ -412,14 +412,14 @@ Saves 7.5kB of flash memory by disabling the spoken error codes that ProffieOS u
 ```
 
 ### BLADE_ID_TIMES
-This define tells ProffieOS to run the blade ID multiple times and then averaging the results. This is particularly helpful when using BLADE_ID_SCAN_MILLIS, as the results tends to be very noisy otherwise.
+This define tells ProffieOS to run the blade ID multiple times and then average the results. This is particularly helpful when using BLADE_ID_SCAN_MILLIS, as the results tends to be very noisy otherwise.
 
 ```cpp
 #define BLADE_ID_TIMES 10
 ```
 
 ### BLADE_ID_SCAN_MILLIS
-With this define, blade ID will run all the time, even when the blade is on. The define specifies how many milliseconds in between each blade id scan. Reasonable values might be 100 to 5000 ms. If the computed blade ID is different from the previous ones, then the saber will re-load blade definitions and presets, as if a blade detect event had occured.
+With this define, blade ID will run all the time, even when the blade is on. The define specifies how many milliseconds in between each blade ID scan. Reasonable values might be 100 to 5000 ms. If the computed blade ID is different from the previous ones, then the saber will re-load blade definitions and presets, as if a Blade Detect event had occured.
 
 ```cpp
 #define BLADE_ID_SCAN_MILLIS 500
