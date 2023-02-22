@@ -46,7 +46,7 @@ This force effect would fade in an unstable looking blade, then fade back out to
 TransitionEffectL<TrConcat<TrFade<1000>,BrownNoiseFlicker<Red,Rgb<150,0,0>,500>,TrFade<1000>>,EFFECT_FORCE>
 ```
 Since it's a 2 part effect, we can keep the half and half ratio of fade in/fade out equal to the sound duration time, even though the force.wav lengths may vary. In this case, we'd want each fade to take 1/2 the sound's duration. This is where Percentage gets applied.   
-It gets wrapped around the WavLen, so in plain English it caould rad as "Get the percentage< of the <wav length of <the current force effect sound>> that is equal to 50"
+It gets wrapped around the WavLen, so in plain English it could read as "Get the percentage< of the <wav length of <the current force effect sound>> that is equal to 50"
 ```
 TransitionEffectL<TrConcat<TrFadeX<Percentage<WavLen<>,50>>,BrownNoiseFlicker<Red,Rgb<150,0,0>,500>,TrFadeX<Percentage<WavLen<>,50>>>,EFFECT_FORCE>
 ```
