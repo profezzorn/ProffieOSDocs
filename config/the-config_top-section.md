@@ -426,3 +426,19 @@ With this define, blade id will run all the time, even when the blade is on. The
 ```
 
 Please note, you will most likely need BLADE_ID_TIMES and SHARED_POWER_PINS to use this define. Also, it currently only works with pixel blades.
+
+### AUDIO_CLASH_SUPPRESSION_LEVEL
+
+This define lets you adjust how much harder it is to do a clash when the audio is loud. The useful range is roughly 1 to 50, and the default is 10.
+
+```cpp
+#define AUDIO_CLASH_SUPPRESSION_LEVEL 20
+```
+
+### POV_INCLUDE_FILE
+
+This define lets you include some other POV data instead of the default star wars logo. To learn how to generate pov data, go check out the [POV tools](https://github.com/profezzorn/ProffieOS/tree/master/pov_tools)
+
+```cpp
+#define POV_INCLUDE_FILE "jedi_logo.h"
+```
