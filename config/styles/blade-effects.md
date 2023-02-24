@@ -15,7 +15,9 @@ Note that some of these EFFECTS may be included in features used by some prop fi
 
 The majority of these are self explanitory. 
 Just read EFFECT as "do something during_XXXX"
-### EFFECT_NONE  
+### EFFECT_NONE
+Never generated, used as defaults in some places to mean "no effect", but is otherwise not useful for anything.
+
 ### EFFECT_CLASH  
 ### EFFECT_BLAST  
 ### EFFECT_FORCE  
