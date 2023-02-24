@@ -5,7 +5,7 @@ redirect_from:
 ---
 A sound font is mostly made up of many sound files in a single directory. Let's take a look at the following example and break down the important aspects.
 
-<center><font size=+4 style=color:black><span style=background-color:yellow>font1/</span><span style=background-color:magenta>clash</span><span style=background-color:cyan>001</span><span style=background-color:pink>.wav</span></font></center>
+<center><font size=+4 style=color:black><span style="background-color:yellow;-webkit-print-color-adjust: exact;">font1/</span><span style="background-color:magenta;-webkit-print-color-adjust: exact;">clash</span><span style="background-color:cyan;-webkit-print-color-adjust: exact;">001</span><span style="background-color:pink;-webkit-print-color-adjust: exact;">.wav</span></font></center>
 
 This file name is made up of four main parts:
 
