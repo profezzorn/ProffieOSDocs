@@ -80,6 +80,7 @@ See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list o
 |  N/A                 | `ccchange` | Played when changing color in "stepped" color change mode |
 | `preon`              | `preon`    | Played before the blade turns on |
 | `pstoff`             | `pstoff`   | Played after retraction when the blade turns off |
+| `altchng`            | `altchng`  | Played when the alt is changed. (OS7+) |
 
 #### Thermal Detonator Props
 * `bgnarm` - when the td is arming
