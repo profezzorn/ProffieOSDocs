@@ -55,40 +55,65 @@ Typically used to apply a dimming effect on blade to conserve battery.
 ### EFFECT_BATTERY_LEVEL  
 Show battery level visually on blade.  
 
-### EFFECT_ON *(OS 7.0+)*
-### EFFECT_OFF *(OS 7.0+)*
+### EFFECT_ON
+*(OS 7.0+)*
+
+### EFFECT_OFF
+*(OS 7.0+)*
 
 ### EFFECT_FAST_ON  
 When using a feature that skips preon.
 
-### EFFECT_FAST_OFF *(OS 7.0+)*
-When using a feature that bypasses postoff.  
+### EFFECT_FAST_OFF
+*(OS 7.0+)* When using a feature that bypasses postoff.  
 
-### EFFECT_VOLUME_LEVEL *(OS 7.0+)*
-Show volume level visually on blade, great for using with volume menu feature.  
+### EFFECT_VOLUME_LEVEL
+*(OS 7.0+)* Show volume level visually on blade, great for using with volume menu feature.  
 
-### EFFECT_QUOTE *(OS 7.0+)*
-### EFFECT_SECONDARY_IGNITION *(OS 7.0+)*
-### EFFECT_SECONDARY_RETRACTION *(OS 7.0+)*
+### EFFECT_QUOTE
+*(OS 7.0+)* 
 
-### EFFECT_OFF_CLASH *(OS 7.0+)*
-### EFFECT_NEXT_QUOTE *(OS 7.0+)*
-### EFFECT_INTERACTIVE_PREON *(OS 7.0+)*
-### EFFECT_INTERACTIVE_BLAST *(OS 7.0+)*
-### EFFECT_TRACK *(OS 7.0+)*
-### EFFECT_BEGIN_BATTLE_MODE *(OS 7.0+)*  
-### EFFECT_END_BATTLE_MODE *(OS 7.0+)*
-### EFFECT_BEGIN_AUTO_BLAST *(OS 7.0+)*
-### EFFECT_END_AUTO_BLAST *(OS 7.0+)*
+### EFFECT_SECONDARY_IGNITION
+*(OS 7.0+)* 
 
-### EFFECT_ALT_SOUND *(OS 7.0+)*
-Triggers the change for sets of sounds within the font from one alternative to another.  
+### EFFECT_SECONDARY_RETRACTION
+*(OS 7.0+)* 
 
-### EFFECT_TRANSITION_SOUND *(OS 7.0+)*
-Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
+### EFFECT_OFF_CLASH
+*(OS 7.0+)* 
 
-### EFFECT_SOUND_LOOP *(OS 7.0+)*
-Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
+### EFFECT_NEXT_QUOTE
+*(OS 7.0+)* 
+
+### EFFECT_INTERACTIVE_PREON
+*(OS 7.0+)* 
+
+### EFFECT_INTERACTIVE_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_TRACK
+*(OS 7.0+)* 
+
+### EFFECT_BEGIN_BATTLE_MODE
+*(OS 7.0+)* 
+
+### EFFECT_END_BATTLE_MODE
+*(OS 7.0+)* 
+
+### EFFECT_BEGIN_AUTO_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_END_AUTO_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_ALT_SOUND
+*(OS 7.0+)* Triggers the change for sets of sounds within the font from one alternative to another.  
+
+### EFFECT_TRANSITION_SOUND
+*(OS 7.0+)* Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
+
+### EFFECT_SOUND_LOOP
+*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
 
 
 ## Blaster effects  
@@ -107,29 +132,65 @@ Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.
 ### EFFECT_PLI_OFF  
 
 ## Mini game effects  
-### EFFECT_GAME_START *(OS 7.0+)*
-### EFFECT_GAME_ACTION1 *(OS 7.0+)*
-### EFFECT_GAME_ACTION2 *(OS 7.0+)*
-### EFFECT_GAME_CHOICE *(OS 7.0+)*
-### EFFECT_GAME_RESPONSE1 *(OS 7.0+)*
-### EFFECT_GAME_RESPONSE2 *(OS 7.0+)*
-### EFFECT_GAME_RESULT1 *(OS 7.0+)*
-### EFFECT_GAME_RESULT2 *(OS 7.0+)*
-### EFFECT_GAME_WIN *(OS 7.0+)*
-### EFFECT_GAME_LOSE *(OS 7.0+)*
+### EFFECT_GAME_START
+*(OS 7.0+)* 
+
+### EFFECT_GAME_ACTION1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_ACTION2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_CHOICE
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESPONSE1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESPONSE2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESULT1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESULT2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_WIN
+*(OS 7.0+)* 
+
+### EFFECT_GAME_LOSE
+*(OS 7.0+)* 
+
 
 ## User-definable effects  
 ### EFFECT_USER1
 ### EFFECT_USER2
 ### EFFECT_USER3
 ### EFFECT_USER4
-### EFFECT_USER5 *(OS 7.0+)*
-### EFFECT_USER6 *(OS 7.0+)*
-### EFFECT_USER7 *(OS 7.0+)*
-### EFFECT_USER8 *(OS 7.0+)*
+### EFFECT_USER5
+*(OS 7.0+)* 
+
+### EFFECT_USER6
+*(OS 7.0+)* 
+
+### EFFECT_USER7
+*(OS 7.0+)* 
+
+### EFFECT_USER8
+*(OS 7.0+)* 
+
 
 ## Errors
-### EFFECT_SD_CARD_NOT_FOUND *(OS 7.0+)*
-### EFFECT_ERROR_IN_FONT_DIRECTORY *(OS 7.0+)*
-### EFFECT_ERROR_IN_BLADE_ARRAY *(OS 7.0+)*
-### EFFECT_FONT_DIRECTORY_NOT_FOUND *(OS 7.0+)*
+### EFFECT_SD_CARD_NOT_FOUND
+*(OS 7.0+)* 
+
+### EFFECT_ERROR_IN_FONT_DIRECTORY
+*(OS 7.0+)* 
+
+### EFFECT_ERROR_IN_BLADE_ARRAY
+*(OS 7.0+)* 
+
+### EFFECT_FONT_DIRECTORY_NOT_FOUND
+*(OS 7.0+)* 
+
