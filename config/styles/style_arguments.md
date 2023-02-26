@@ -88,6 +88,7 @@ By convention, these are the arguments we normally use in proffieos:
 * POSTOFF_COLOR_ARG = 30, // PostOff Color
 * OFF_COLOR_ARG = 31, // Off Color (Color when blade is Off for crystals and accents)
 * OFF_OPTION_ARG = 32, // Off Options (when blade is Off, for crystals and accents)
+* // Arguments 33 and up are new in ProffieOS 7.x
 * ALT_COLOR2_ARG = 33, // Generic 2nd Alt Color
 * ALT_COLOR3_ARG = 34, // Generic 3rd Alt Color
 * STYLE_OPTION2_ARG = 35, // Generic 2nd Style Option
