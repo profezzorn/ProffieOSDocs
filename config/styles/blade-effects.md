@@ -15,6 +15,15 @@ Note that some of these EFFECTS may be included in features used by some prop fi
 
 The majority of these are self explanitory. 
 Just read EFFECT as "do something during_XXXX"
+
+- [General effects](#general-effects)
+- [Blaster effects](#blaster-effects)
+- [Mini game effects](#mini-game-effects)
+- [User-definable effects](#user-definable-effects)
+- [Errors](#errors)
+
+
+## General effects
 ### EFFECT_NONE
 Never generated, used as defaults in some places to mean "no effect", but is otherwise not useful for anything.
 
@@ -46,8 +55,66 @@ Typically used to apply a dimming effect on blade to conserve battery.
 ### EFFECT_BATTERY_LEVEL  
 Show battery level visually on blade.  
 
+### EFFECT_ON
+*(OS 7.0+)*
+
+### EFFECT_OFF
+*(OS 7.0+)*
+
 ### EFFECT_FAST_ON  
-When using a feature that skips preon.  
+When using a feature that skips preon.
+
+### EFFECT_FAST_OFF
+*(OS 7.0+)* When using a feature that bypasses postoff.  
+
+### EFFECT_VOLUME_LEVEL
+*(OS 7.0+)* Show volume level visually on blade, great for using with volume menu feature.  
+
+### EFFECT_QUOTE
+*(OS 7.0+)* 
+
+### EFFECT_SECONDARY_IGNITION
+*(OS 7.0+)* 
+
+### EFFECT_SECONDARY_RETRACTION
+*(OS 7.0+)* 
+
+### EFFECT_OFF_CLASH
+*(OS 7.0+)* 
+
+### EFFECT_NEXT_QUOTE
+*(OS 7.0+)* 
+
+### EFFECT_INTERACTIVE_PREON
+*(OS 7.0+)* 
+
+### EFFECT_INTERACTIVE_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_TRACK
+*(OS 7.0+)* 
+
+### EFFECT_BEGIN_BATTLE_MODE
+*(OS 7.0+)* 
+
+### EFFECT_END_BATTLE_MODE
+*(OS 7.0+)* 
+
+### EFFECT_BEGIN_AUTO_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_END_AUTO_BLAST
+*(OS 7.0+)* 
+
+### EFFECT_ALT_SOUND
+*(OS 7.0+)* Triggers the change for sets of sounds within the font from one alternative to another.  
+
+### EFFECT_TRANSITION_SOUND
+*(OS 7.0+)* Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
+
+### EFFECT_SOUND_LOOP
+*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
+
 
 ## Blaster effects  
 ### EFFECT_STUN  
@@ -64,65 +131,66 @@ When using a feature that skips preon.
 ### EFFECT_PLI_ON  
 ### EFFECT_PLI_OFF  
 
-## User-definable effects  
-### EFFECT_USER1  
-### EFFECT_USER2  
-### EFFECT_USER3  
-### EFFECT_USER4  
-
-## ----- The following are as of ProffieOS7 -----
-
-### EFFECT_VOLUME_LEVEL    
-Show volume level visually on blade, great for using with volume menu feature.  
-
-### EFFECT_QUOTE  
-### EFFECT_SECONDARY_IGNITION  
-### EFFECT_SECONDARY_RETRACTION
-### EFFECT_ON
-### EFFECT_OFF  
-
-### EFFECT_FAST_OFF  
-When using a feature that bypasses postoff.  
-
-### EFFECT_OFF_CLASH  
-### EFFECT_NEXT_QUOTE  
-### EFFECT_INTERACTIVE_PREON  
-### EFFECT_INTERACTIVE_BLAST  
-### EFFECT_TRACK  
-### EFFECT_BEGIN_BATTLE_MODE  
-### EFFECT_END_BATTLE_MODE  
-### EFFECT_BEGIN_AUTO_BLAST  
-### EFFECT_END_AUTO_BLAST  
-
-### EFFECT_ALT_SOUND  
-Triggers the change for sets of sounds within the font from one alternative to another.  
-
-### EFFECT_TRANSITION_SOUND  
-Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
-
-### EFFECT_SOUND_LOOP  
-Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
-
 ## Mini game effects  
-### EFFECT_GAME_START  
-### EFFECT_GAME_ACTION1  
-### EFFECT_GAME_ACTION2  
-### EFFECT_GAME_CHOICE  
-### EFFECT_GAME_RESPONSE1  
-### EFFECT_GAME_RESPONSE2  
-### EFFECT_GAME_RESULT1  
-### EFFECT_GAME_RESULT2  
-### EFFECT_GAME_WIN  
-### EFFECT_GAME_LOSE  
+### EFFECT_GAME_START
+*(OS 7.0+)* 
+
+### EFFECT_GAME_ACTION1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_ACTION2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_CHOICE
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESPONSE1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESPONSE2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESULT1
+*(OS 7.0+)* 
+
+### EFFECT_GAME_RESULT2
+*(OS 7.0+)* 
+
+### EFFECT_GAME_WIN
+*(OS 7.0+)* 
+
+### EFFECT_GAME_LOSE
+*(OS 7.0+)* 
+
 
 ## User-definable effects  
-### EFFECT_USER5  
-### EFFECT_USER6  
-### EFFECT_USER7  
+### EFFECT_USER1
+### EFFECT_USER2
+### EFFECT_USER3
+### EFFECT_USER4
+### EFFECT_USER5
+*(OS 7.0+)* 
+
+### EFFECT_USER6
+*(OS 7.0+)* 
+
+### EFFECT_USER7
+*(OS 7.0+)* 
+
 ### EFFECT_USER8
+*(OS 7.0+)* 
+
 
 ## Errors
 ### EFFECT_SD_CARD_NOT_FOUND
+*(OS 7.0+)* 
+
 ### EFFECT_ERROR_IN_FONT_DIRECTORY
+*(OS 7.0+)* 
+
 ### EFFECT_ERROR_IN_BLADE_ARRAY
+*(OS 7.0+)* 
+
 ### EFFECT_FONT_DIRECTORY_NOT_FOUND
+*(OS 7.0+)* 
+
