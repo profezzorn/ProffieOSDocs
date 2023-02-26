@@ -119,3 +119,9 @@ Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.
 ### EFFECT_USER6  
 ### EFFECT_USER7  
 ### EFFECT_USER8
+
+## Errors
+### EFFECT_SD_CARD_NOT_FOUND
+### EFFECT_ERROR_IN_FONT_DIRECTORY
+### EFFECT_ERROR_IN_BLADE_ARRAY
+### EFFECT_FONT_DIRECTORY_NOT_FOUND
