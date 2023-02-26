@@ -77,7 +77,8 @@ Show volume level visually on blade, great for using with volume menu feature.
 
 ### EFFECT_QUOTE  
 ### EFFECT_SECONDARY_IGNITION  
-### EFFECT_SECONDARY_RETRACTION  
+### EFFECT_SECONDARY_RETRACTION
+### EFFECT_ON
 ### EFFECT_OFF  
 
 ### EFFECT_FAST_OFF  
