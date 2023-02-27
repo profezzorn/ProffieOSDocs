@@ -112,6 +112,25 @@ ProffieOSMaxSwingAcceleration=100.0
 # EFFECTNAME can be "clash", “preon”, “out”, “pstoff”, etc.
 # ProffieOS.SFX.EFFECTNAME.volume=100
 
+### ---- OS 7.x and above ----
+
+# Note, that from ProffieOS 7.x, all of the ImageDuration
+# variables can be set to zero, in which case the length
+# of the played wav file will be used to determing how long
+# to show the image for.
+
+# For OLED displays, the time a out.bmp will play
+ProffieOSOutImageDuration=2000.0
+
+# For OLED displays, the time a in.bmp will play
+ProffieOSInImageDuration=2000.0
+
+# For OLED displays, the time a pstoff.bmp will play
+ProffieOSPstoffImageDuration=2000.0
+
+# For OLED displays, the time a on.bmp will play
+ProffieOSOnImageDuration=5000.0
+
 ```
 
 From ProffieOS 7.x forward, if there are multiple config.ini files in the font search path, they will all be read. Values specified in the first one will take precedence over values specified in the second one, and so forth. In ProffieOS 6.x and earlier, only once a config.ini was found, no more files were read.
