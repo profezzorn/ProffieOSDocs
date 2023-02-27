@@ -16,8 +16,6 @@ Note that some of these EFFECTS may be included in features used by some prop fi
 The majority of these are self explanitory. 
 Just read EFFECT as "do something during_XXXX"
 
-*Historical tidbit*: Some effects where deprecated for consistency in naming or the introduction of new methods. As such, this documentation is relevant for OS 5.0 and up.
-
 - [General effects](#general-effects)
 - [Blaster effects](#blaster-effects)
 - [Mini game effects](#mini-game-effects)
@@ -29,7 +27,7 @@ Just read EFFECT as "do something during_XXXX"
 ### EFFECT_NONE
 Never generated, used as defaults in some places to mean "no effect", but is otherwise not useful for anything.
 ### CLASH_UPDATE
-*(OS 6.0+)* Internal functions that *shall not* be used on styles.
+*(OS 6.0+)* No effect in blade styles, but may be used in props and other places to detect when the strength of a clash increases after the EFFECT_CLASH has occurred..
 
 ### EFFECT_CLASH  
 ### EFFECT_BLAST  
