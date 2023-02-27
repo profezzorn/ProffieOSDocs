@@ -16,6 +16,8 @@ Note that some of these EFFECTS may be included in features used by some prop fi
 The majority of these are self explanitory. 
 Just read EFFECT as "do something during_XXXX"
 
+*Historical tidbit*: Some effects where deprecated for consistency in naming or the introduction of new methods. As such, this documentation is relevant for OS 5.0 and up.
+
 - [General effects](#general-effects)
 - [Blaster effects](#blaster-effects)
 - [Mini game effects](#mini-game-effects)
@@ -26,6 +28,8 @@ Just read EFFECT as "do something during_XXXX"
 ## General effects
 ### EFFECT_NONE
 Never generated, used as defaults in some places to mean "no effect", but is otherwise not useful for anything.
+### CLASH_UPDATE
+*(OS 6.0+)* Internal functions that *shall not* be used on styles.
 
 ### EFFECT_CLASH  
 ### EFFECT_BLAST  
@@ -37,7 +41,9 @@ Never generated, used as defaults in some places to mean "no effect", but is oth
 ### EFFECT_DRAG_BEGIN  
 ### EFFECT_DRAG_END  
 ### EFFECT_PREON  
-### EFFECT_POSTOFF  
+### EFFECT_POSTOFF
+*(OS 6.0+)* 
+
 ### EFFECT_IGNITION  
 ### EFFECT_RETRACTION  
 
@@ -169,8 +175,6 @@ When using a feature that skips preon.
 ### EFFECT_USER3
 ### EFFECT_USER4
 ### EFFECT_USER5
-*(OS 7.0+)* 
-
 ### EFFECT_USER6
 *(OS 7.0+)* 
 
