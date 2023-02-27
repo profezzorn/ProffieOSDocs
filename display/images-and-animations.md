@@ -5,10 +5,20 @@ redirect_from:
 ---
 ProffieOS can load images and animations from the SD card and display them on an OLED display screen.  
 Currently, the following events can play them:  
-boot (when power is applied to the board),  
-font (when a new preset is selected),  
-on (when blade is running),  
-clsh, blst, force, and lock.  
+* boot (when power is applied to the board),  
+* font (when a new preset is selected),  
+* on (when blade is running),  
+* clsh
+* blst
+* force
+* lock
+
+From ProffieOS 7.x, these additional events are available:
+* preon
+* out
+* in
+* pstoff
+
 In the future, there will probably be more things that will trigger loading OLED images or animations from the SD card.  
    
 ProffieOS uses the same code to locate image files as it uses for sound files.  
