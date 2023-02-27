@@ -26,6 +26,8 @@ Just read EFFECT as "do something during_XXXX"
 ## General effects
 ### EFFECT_NONE
 Never generated, used as defaults in some places to mean "no effect", but is otherwise not useful for anything.
+### CLASH_UPDATE
+*(OS 6.0+)* No effect in blade styles, but may be used in props and other places to detect when the strength of a clash increases after the EFFECT_CLASH has occurred..
 
 ### EFFECT_CLASH  
 ### EFFECT_BLAST  
@@ -37,7 +39,9 @@ Never generated, used as defaults in some places to mean "no effect", but is oth
 ### EFFECT_DRAG_BEGIN  
 ### EFFECT_DRAG_END  
 ### EFFECT_PREON  
-### EFFECT_POSTOFF  
+### EFFECT_POSTOFF
+*(OS 6.0+)* 
+
 ### EFFECT_IGNITION  
 ### EFFECT_RETRACTION  
 
@@ -169,8 +173,6 @@ When using a feature that skips preon.
 ### EFFECT_USER3
 ### EFFECT_USER4
 ### EFFECT_USER5
-*(OS 7.0+)* 
-
 ### EFFECT_USER6
 *(OS 7.0+)* 
 
