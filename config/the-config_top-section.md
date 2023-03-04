@@ -437,8 +437,7 @@ This define lets you adjust how much harder it is to do a clash when the audio i
 
 ### POV_INCLUDE_FILE
 
-This define lets you include some other POV data instead of the default star wars logo. To learn how to generate pov data, go check out the [POV tools](https://github.com/profezzorn/ProffieOS/tree/master/pov_tools)
-
+This define lets you include some other POV data instead of the default star wars logo. To learn how to generate pov data, go check out the [POV tools](/tools/pov.html)
 ```cpp
 #define POV_INCLUDE_FILE "jedi_logo.h"
 ```
