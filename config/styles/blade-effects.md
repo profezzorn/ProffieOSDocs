@@ -112,13 +112,16 @@ When using a feature that skips preon.
 
 ### EFFECT_ALT_SOUND
 *(OS 7.0+)* Triggers the change for sets of sounds within the font from one alternative to another.  
-
+See: [Alt Sounds](/sound/alt_sounds.html)
 ### EFFECT_TRANSITION_SOUND
 *(OS 7.0+)* Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
+Basic usage example: `TrDoEffect<CURRENT_TRANSITION,EFFECT_TRANSITION_SOUND>`
+Uses sounds named trNN.wav, where N is a number if more than one tr.wav exist.  
 
 ### EFFECT_SOUND_LOOP
-*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
-
+*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.
+Used like a user-defined Lockup state in coordination with a control and visual effect.  
+Uses sounds named trloopNN.wav, where N is a number if more than one trloop.wav exist.
 
 ## Blaster effects  
 ### EFFECT_STUN  
