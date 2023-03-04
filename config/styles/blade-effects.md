@@ -115,7 +115,8 @@ When using a feature that skips preon.
 See: [Alt Sounds](/sound/alt_sounds.html)
 ### EFFECT_TRANSITION_SOUND
 *(OS 7.0+)* Triggers an optional sound effect during transitions from within a style via TrDoEffect.  
-Basic usage example: `TrDoEffect<CURRENT_TRANSITION,EFFECT_TRANSITION_SOUND>`
+Basic usage example:  
+`TrDoEffect<CURRENT_TRANSITION,EFFECT_TRANSITION_SOUND>`  
 Uses sounds named trNN.wav, where N is a number if more than one tr.wav exist.  
 
 ### EFFECT_SOUND_LOOP
