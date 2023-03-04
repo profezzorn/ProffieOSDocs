@@ -120,7 +120,7 @@ Basic usage example:
 Uses sounds named trNN.wav, where N is a number if more than one tr.wav exist.  
 
 ### EFFECT_SOUND_LOOP
-*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.
+*(OS 7.0+)* Toggles an optonal sound effect loop ON/OFF from within a style via TrDoEffect.  
 Used like a user-defined Lockup state in coordination with a control and visual effect.  
 Uses sounds named trloopNN.wav, where N is a number if more than one trloop.wav exist.
 
