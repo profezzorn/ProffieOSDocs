@@ -133,6 +133,10 @@ ProffieOSSmoothSwingHumstart=1
 # choosing a different file once the current hum ends,
 #ProffieOS.SFX.hum.paired=1
 
+# Set smoothswings to start in sync with hum start.
+# Set to 1 to sync, or 0 to resume swings where last pair left off.
+# Default 0
+ProffieOSSmoothSwingHumstart=1
 
 # ---- OLED displays ---- #
 
