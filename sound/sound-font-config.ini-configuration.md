@@ -131,6 +131,12 @@ ProffieOSPstoffImageDuration=2000.0
 # For OLED displays, the time a on.bmp will play
 ProffieOSOnImageDuration=5000.0
 
+# If true (non-zero) then smoothswing pairs will be played
+# in sync with the hum. This means that you could have a
+# musical beat in the hum, and smoothswing sounds could have
+# melodies which would be played in sync with the beat.
+ProffieOSSmoothSwingHumstart=0
+
 ```
 
 From ProffieOS 7.x forward, if there are multiple config.ini files in the font search path, they will all be read. Values specified in the first one will take precedence over values specified in the second one, and so forth. In ProffieOS 6.x and earlier, only once a config.ini was found, no more files were read.
