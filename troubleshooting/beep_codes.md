@@ -20,3 +20,4 @@ That last one is not actually an error message, it's the sounds you hear if you 
 
 ### Try singing it
 All of the beep codes above were composed with the same number of notes as the syllables in the error message. If you can sing the error code to the beep codes, then maybe you can figure out what the problem is without consulting this page.
+This video might help visualize things as well: https://www.youtube.com/watch?v=bVPDhBp1l9c
