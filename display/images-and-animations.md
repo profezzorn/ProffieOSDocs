@@ -105,10 +105,9 @@ then just convert back to bmp or pbm.
 
 
 ## Inverted color results
-If the final bmp image/animation is inverted colors on the OLED itself, a simple fix could be:  
-- opening the file in MSpaint, (or the online java script based version at http://jspaint.app)  
-- choose menu Image>Invert Colors,     
-- File>Save and save as Monochrome Bitmap. The browser downloads to the set downloads location.  
+If the final bmp image/animation is an inverted black and white color scheme from what you intended,  
+simply redo the conversion as above, but this time add the `-negate` flag, like:  
+`convert -monochrome -negate *.jpg font.bmp`
 
 ## Orientation
 Lastly, if the image is displayed upside down on the installed screen, we can easily rotate it 180 degrees by adding  
