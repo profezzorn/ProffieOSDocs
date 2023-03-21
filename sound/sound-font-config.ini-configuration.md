@@ -8,7 +8,9 @@ This page explains the parameters that are available in a sound font's `config.i
 ```ini
 # Default config.ini
 
-# This specifies how many milliseconds before the end of the "out" sound 
+# Entries commented with # are ignored
+
+# This specifies how many milliseconds before the end of the "out" sound
 # that the hum starts to fade in.
 # Default 100
 humStart=100
@@ -17,7 +19,7 @@ humStart=100
 # from the beginning of "out" to start the hum. If both ProffieOSHumDelay and humStart
 # are specified, then ProffieOSHumDelay is the one that will count.
 # Default -1.0
-ProffieOSHumDelay=-1
+ProffieOSHumDelay=-1.0
 
 # The volume of the hum sound. Can be 0-16, where 0 is muted.
 # Default 15
@@ -27,37 +29,37 @@ volHum=15
 # Default 16
 volEff=16
 
-# How fast (degrees per second) we have to swing before 
-# a swing effect is triggered. 
-# Default 250.
+# How fast (degrees per second) we have to swing before
+# a swing effect is triggered.
+# Default 250
 ProffieOSSwingSpeedThreshold=250
 
 # How much to bend the response curve between swing speed and swing volume.
-# Can be 0.01 - 2.0, where value of 1.0 will result in no bending. 
+# Can be 0.01 - 2.0, where value of 1.0 will result in no bending.
 # Default 0.5
 ProffieOSSwingVolumeSharpness=0.5
 
 # The volume multiplier when swings are at the swing speed threshold.
-# Can be 1.0 to 3.0. 
+# Can be 1.0 to 3.0.
 # Default 2.0
 ProffieOSMaxSwingVolume=2.0
 
 # Specify what fraction of swing that must be played before a new swing can be
-# started. Can be 0.0-1.0. 
-# Defaults to 0.5 (50%).
+# started. Can be 0.0-1.0.
+# Defaults to 0.5 (50%)
 ProffieOSSwingOverlap=0.5
 
 # This is used to control the volume of the combined hum and smoothswings
 # when an accent swing plays.
 # Values range from 0.0 to 1.0, with 0 being no reduction, and 1
 # meaning that when the accent swing is at peak volume, the
-# smooth swing pairs are totally muted.                       
-# Defaults to 0.2 (volume is decreased by 20% of swing volume)    
-ProffieOSSmoothSwingDucking=0.2  
+# smooth swing pairs are totally muted.
+# Defaults to 0.2 (volume is decreased by 20% of swing volume)
+ProffieOSSmoothSwingDucking=0.2
 
 # How slow (degrees per second) the swing has to be before it's not considered
-# to be a swing anymore. 
-# Default 200.
+# to be a swing anymore.
+# Default 200
 ProffieOSSwingLowerThreshold=200
 
 # Only used for non-smoothswing fonts. Specifies how aggressive a swing has
@@ -73,33 +75,34 @@ ProffieOSSlashAccelerationThreshold=260
 # Default is 360 or one full rotation.
 ProffieOSSpinDegrees=360.0
 
-# ---- As of ProffieOS 6 ---- #
+# ---- Features below supported as of ProffieOS 6 ---- #
 
 # Minimum acceleration for Accent Swing file Selection
 # recommended value is 20.0 ~ 30.0
-ProffieOSMinSwingAcceleration=20.0
+# Default 0.0
+ProffieOSMinSwingAcceleration=0.0
 
 # Maximum acceleration for Accent Swing file Selection
 # must be higher than Min value to enable selection
 # recommended value is 100.0 ~ 150.0
-ProffieOSMaxSwingAcceleration=100.0
+# Default 0.0
+ProffieOSMaxSwingAcceleration=0.0
 
 # Set the volume for each effect individually, in percent.
-# 50 makes it half as loud. 200 makes it twice as loud. 
+# 50 makes it half as loud. 200 makes it twice as loud.
 # Maximum allowed value is currently 255. The default is 100.
 # EFFECTNAME can be "clash", “preon”, “out”, “pstoff”, etc.
-#
+# Default 100
 # ProffieOS.SFX.EFFECTNAME.volume=100
-ProffieOS.SFX.boot.volume=75
-
-# Make smoothswings start in sync with hum.
-# Set to 1 to sync, or 0 to resume swings where last pair left off.
-ProffieOSSmoothSwingHumstart=1
+ProffieOS.SFX.boot.volume=100
 
 # Pair sequential effects such as preon->out.wav files.
 # EFFECTNAME can be “preon”, “out”, "lock", “in”, etc.
 # Set to 1 *AND* have the same number of files in the second effect
 # to activate this feature. Only the first in the chain need be paired here.
+#
+# All Effect pairings Default to 0
+#
 # ProffieOS.SFX.EFFECTNAME.paired=1
 # For example:
 # pair preon -> out.wavs
@@ -107,7 +110,8 @@ ProffieOSSmoothSwingHumstart=1
 # pair in -> pstoff.wavs
 #ProffieOS.SFX.in.paired=1
 
-# ---- As of ProffieOS 7 ---- #
+# ---- Features below supported as of ProffieOS 7 ---- #
+
 # bgnlock -> lock
 #ProffieOS.SFX.bgnlock.paired=1
 # lock -> endlock
@@ -128,17 +132,27 @@ ProffieOSSmoothSwingHumstart=1
 # hum -> in
 # *Note* When multiple hum files exist,
 # even if not the same number of files as in.wavs,
-# (so it won't pair to them,) this also will loop the 
-# same hum sound until next ignition instead of randomly 
+# (so it won't pair to them,) this also will loop the
+# same hum sound until next ignition instead of randomly
 # choosing a different file once the current hum ends,
 #ProffieOS.SFX.hum.paired=1
 
-# Set smoothswings to start in sync with hum start.
+# Make smoothswings start in sync with hum start.
 # Set to 1 to sync, or 0 to resume swings where last pair left off.
 # Default 0
-ProffieOSSmoothSwingHumstart=1
+ProffieOSSmoothSwingHumstart=0
 
-# ---- OLED displays ---- #
+
+
+# =========== OLED displays =========== #
+
+# This specifies the frame rate of animtions.
+# If not specified (or set to zero) the frame rate will be 24 frames
+# per second for non-looped animations. For looped animations, the
+# frame rate will be set so that the loop takes one second.
+ProffieOSAnimationFrameRate=0.0
+
+# ---- Feature below supported as of ProffieOS 6 ---- #
 
 # Pair OLED images to sounds with same numbers
 # Ex: blst02.bmp shows when blst02.wav plays
@@ -152,25 +166,12 @@ ProffieOSSmoothSwingHumstart=1
 #ProffieOS.IMG.clsh.paired=1
 #ProffieOS.IMG.lock.paired=1
 
-# This specifies the frame rate of animtions.
-# If not specified (or set to zero) the frame rate will be 24 frames
-# per second for non-looped animations. For looped animations, the
-# frame rate will be set so that the loop takes one second.
-ProffieOSAnimationFrameRate=0.0
+# -------- IMAGE DURATIONS -------- #
 
-#-----------------
 # Below are the display durations.
 # If commented out or not specified, the default is used.
 # As of ProffieOS 7, effect IMAGES can use 0.0 to automatically 
 # sync to the effect sound file duration.
-
-# Text Message duration
-# Default -1.0
-ProffieOSTextMessageDuration=3500.0
-
-# Boot image duration
-# Default -1.0
-ProffieOSBootImageDuration=4000.0
 
 # Font image duration
 # Default 3000.0
@@ -191,6 +192,16 @@ ProffieOSClashImageDuration=0.0
 # Default 2000.0
 ProffieOSForceImageDuration=0.0
 
+# ---- Images below supported as of ProffieOS 7 ---- #
+
+# Text Message duration
+# Default -1.0
+ProffieOSTextMessageDuration=3500.0
+
+# Boot image duration
+# Default -1.0
+ProffieOSBootImageDuration=4000.0
+
 # Preon always autosyncs
 
 # Out image duration
@@ -205,8 +216,9 @@ ProffieOSInImageDuration=0.0
 # Default 2000.0
 ProffieOSPstoffImageDuration=0.0
 
-#----------------------------
+
 # Blaster Images
+#----------------------------
 
 # Reload image duration
 # Default 1000.0
@@ -227,7 +239,6 @@ ProffieOSClipinImageDuration=0.0
 # Clip Out image duration
 # Default 1000.0
 ProffieOSClipoutImageDuration=0.0
-
 ```
 
 From ProffieOS 7.x forward, if there are multiple config.ini files in the font search path, they will all be read. Values specified in the first one will take precedence over values specified in the second one, and so forth. In ProffieOS 6.x and earlier, only once a config.ini was found, no more files were read.
