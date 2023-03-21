@@ -173,6 +173,10 @@ ProffieOSAnimationFrameRate=0.0
 # As of ProffieOS 7, effect IMAGES can use 0.0 to automatically 
 # sync to the effect sound file duration.
 
+# Boot image duration
+# Default -1.0
+ProffieOSBootImageDuration=4000.0
+
 # Font image duration
 # Default 3000.0
 ProffieOSFontImageDuration=0.0
@@ -197,10 +201,6 @@ ProffieOSForceImageDuration=0.0
 # Text Message duration
 # Default -1.0
 ProffieOSTextMessageDuration=3500.0
-
-# Boot image duration
-# Default -1.0
-ProffieOSBootImageDuration=4000.0
 
 # Preon always autosyncs
 
