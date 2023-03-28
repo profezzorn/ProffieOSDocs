@@ -3,8 +3,8 @@ title: Blade ID
 redirect_from:
   - /blade-id.html
 ---
-So you know that first number in the blade configuration?
-Do you know what it's for?
+So you know that first number in the blade configuration?  
+Do you know what it's for?  
 It's the Blade ID.
 
 When ProffieOS starts, it measures the resistance between the Blade ID pin (which is usually the same as the neopixel data pin for the first blade) and GND. It then finds the entry in the blades table with the closest first number, and then it uses that entry until the next time it scans for a blade. This may be at power on, or triggered by [Blade Detect](blade-detect.html).
