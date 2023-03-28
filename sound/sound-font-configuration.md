@@ -46,7 +46,7 @@ The name part of the filename needs to be one that ProffieOS can recognize. Soun
 The following sounds are triggered along with blade animations. The buttons, gestures, or actions used to trigger them is specific to the prop file being used.  
 See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](/howto/how-to-use-it.html) for more details.
 
-#### List of Names and Effects
+## List of Names and Effects
 | Monophonic Filename | Polyphonic Filename | Effect |
 |---|---|---|
 | `boot`               | `boot`    | Played when ProffieOS boots up. |
