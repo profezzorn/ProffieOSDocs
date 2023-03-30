@@ -6,7 +6,10 @@ title: How to set up a blaster
 If you want to setup a blaster, first you have to understand the general mechanics of the `blaster.h` prop. A blaster is always on (unless a dedicated Power button is added). The `blaster.h` prop offers three "modes": Stunt, Kill and Auto. Also, you have a certain number of shots until you need to reload. And you have a certain chance of your weapon randombly jamming.
 
 # Hardware
-We will assume for exposition purposes that you will be using a Proffie V2.2 board. You will have two buttons, a WS2812B strip on the weapon barrel, powered by LED 2 (pin 19), plus a Red LED for an accent powered by LED 4 (pin 5). You will connect your Fire button (trigger) to Button1 (pin 21) and your Mode button (selector) to Button2 (pin 23). Optionally, you can connect either a Power button, or a Clip Detect switch to Button3 (pin 22), and of course an OLED.
+You will need a ProffieOS compatible board, at least two momentary buttons and at least one LED to illuminate each fire action, plus a speaker.
+Please note that button behaviour differs from the saber props. As such you can have Fire (required), Mode (required), Power, Reload, Clip and/or Range. Most are of momentary type, except Clip that can be latching. Both for momentary and latching switches when it is closed a clip is assumed to be in, while open is assumed as a Clip not present.
+Speaker is handled exactly the same as in the saber version, and so are the blades. The main difference is that in your hardware installation you will probably use fixed illumination elements rather than removable ones.
+For exposition purposes we will assume that you will be using a Proffie V2.2 board. Also, you will have two buttons, a WS2812B strip on the weapon barrel, powered by LED 2 (pin 19), plus a Red LED for an accent powered by LED 4 (pin 5). You will connect your Fire button (trigger) to Button1 (pin 21) and your Mode button (selector) to Button2 (pin 23). Optionally, you can connect either a Power button,a Reload or a Clip switch to Button3 (pin 22), and of course an OLED.
 
 # Soundfonts
 You will need at least one blaster soundfont. There are some free soundfonts only a search away.
@@ -40,7 +43,7 @@ You will need at least one blaster soundfont. There are some free soundfonts onl
 
 *If no `mdkill`, `mdstun`, `mdauto` nor `mode` are present Talkie voice speaks selected mode.*
 
-## OLED Animations
+# OLED Animations
 [TODO]
 
 # Configuration
@@ -56,7 +59,7 @@ Similarly to the saber version, each "blade" is a string of pixels (or a single 
 ```
 
 ### NUM_BUTTONS
-And we must also specify how many buttons we have. Remember that for `blaster.h` prop, your first button is Fire, the second is Mode button and the third either Power or Clip Present.
+And we must also specify how many buttons we have. Remember that for `blaster.h` prop, your first button is Fire, the second is Mode button and then you can add Power, Reload or Clip.
 
 ```cpp
 #define NUM_BUTTONS 2
@@ -107,7 +110,11 @@ Here we set the change of the weapon jamming per shot. The range is 0-100. Pleas
 #define BLASTER_JAM_PERCENTAGE 1
 ```
 
-## CONFIG_TOP Sample
+## Config Sections Samples
+
+### CONFIG_TOP
+
+For the `CONFIG_TOP` section we will adjust it for the hardware we had assumed in our hardware section.
 
 ```
 /****** CONFIG_TOP blaster defines  ****/
@@ -126,12 +133,13 @@ const unsigned int maxLedsPerStrip = 144;
 #define ENABLE_SD
 #define ENABLE_BLASTER_AUTO           // If you desire to enable AUTO mode.
 #define BLASTER_SHOTS_UNTIL_EMPTY 15  // The capacity of your weapons rounds. Comment to have infinite ammo.
-#define BLASTER_JAM_PERCENTAGE 1     //  0-100. If not defined, random.
+#define BLASTER_JAM_PERCENTAGE 3     //  0-100. If not defined, random.
 
 #endif
 ```
 
-So, you will start by setting the `CONFIG_PROP` to use the `blaster.h` prop.
+### CONFIG_PROP
+So, you will start by setting the `CONFIG_PROP` to use the `blaster.h` prop. It currently is the only prop adjusted for blaster use.
 
 ```
 /****** CONFIG_PROP blaster defines  ****/
@@ -142,7 +150,9 @@ So, you will start by setting the `CONFIG_PROP` to use the `blaster.h` prop.
 #endif
 ```
 
-You can then add your Presets to `CONFIG_PRESETS`:
+### CONFIG_PRESET
+
+You can then add your Presets to `CONFIG_PRESETS`. In this case we defined two different presets: one for E-11 and another for E-11D. Also, please note that for using different colors on FIRE and STUN mode, it should be done inside the style. Then again, for the monochromatic LED, you can't do anything but control the output power, so take that into consideration for your styles.
 
 ```
 /****** CONFIG_PROP blaster defines  ****/
@@ -159,10 +169,13 @@ Preset presets[] = {
   StylePtr<Lockup<BlastFadeout<BlastFadeout<Black,AudioFlicker<Black,Red>,250,EFFECT_FIRE>,AudioFlicker<Black,Red>,1500,EFFECT_STUN>,AudioFlicker<Black,Red>>>() },
   "E-11D" }
 ;
+```
 
+Defining your blades is exactly the same as for a saber. You can use [SubBlades](/config/blades/subblade.html) and even use [Blade ID](/howto/blade-id.html) and [Blade Detect](/howto/blade-detect.html). If you are using LED please read [this page](/config/blades/led-configuration.html).
+```
 BladeConfig blades[] = {
  { 10000,
-   WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2> >(),,
+   WS281XBladePtr<40, bladePin, Color8::GRB, PowerPINS<bladePowerPin2> >(),,
    SimpleBladePtr<CreeXPE2RedTemplate<1000>, NoLED, NoLED, NoLED, bladePowerPin4, -1, -1, -1>(),
    CONFIGARRAY(presets) },
 };
@@ -170,18 +183,23 @@ BladeConfig blades[] = {
 #endif
 ```
 
-And last you should set your `CONFIG_BUTTONS` defines:
+### CONFIG_BUTTONS
+
+And last you should set your `CONFIG_BUTTONS`. As we said before, you need a bare minimum of two buttons: Fire and Mode. But you can add Power, Reload and Clip dedicated buttons.
 
 ```
 #ifdef CONFIG_BUTTONS
 Button FireButton(BUTTON_FIRE, powerButtonPin, "fire");
 Button ModeButton(BUTTON_MODE_SELECT, auxPin, "modeselect");
 //Button PowerButton(BUTTON_POWER, aux2Pin, "power"); //A third button to power on/off your weapon
-//Button PowerButton(BUTTON_CLIP_DETECT, aux2Pin, "clip"); //A third button is a clip sensor. It should be closed when the clip is in, and open when the clip is removed. 
+//Button ClipButton(BUTTON_CLIP_DETECT, aux2Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
+//Button ReloadButton(BUTTON_RELOAD, aux2Pin, "reload"); //Dedicated button for reloading.
+//Button RangeButton(BUTTON_RANGE, aux2Pin, "reload"); //Dedicated button for increasing range/power of the weapon.
+
 #endif
 ```
 
-## Config example
+## Complete Config example
 
 ```
 /****** CONFIG_TOP blaster defines  ****/
@@ -243,17 +261,17 @@ Button ModeButton(BUTTON_MODE_SELECT, auxPin, "modeselect");
 //Button ClipButton(BUTTON_CLIP_DETECT, aux2Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
 //Button ReloadButton(BUTTON_RELOAD, aux2Pin, "reload"); //Dedicated button for reloading.
 //Button RangeButton(BUTTON_RANGE, aux2Pin, "reload"); //Dedicated button for increasing range/power of the weapon.
-//
+
 #endif
 ```
 
-# Weapon Use
+# Blaster Use
 
 ## Single Button
 
 **Buttons**: *FIRE*
 
-This case quite limited since you can only fire. Weapon will always be on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on.
+This case quite limited since you can only fire. Weapon will always be on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on. And if you have limited amount of rounds you can't reload.
 
 * Fire -                  Click *FIRE*. (Hold to Auto Fire / Rapid Fire if you have `ENABLE_BLASTER_AUTO`)
 * Unjam -                 Bang the blaster.
