@@ -17,25 +17,25 @@ You will need at least one blaster soundfont. There are some free soundfonts onl
 ## List of Names and Effects
 | Filename | Effect |
 |---|---|
-| `bgnauto` | Played when auto fire starts |
-| `auto` | Played while auto fire is |
-| `endauto` | Played when auto fire ends |
-| `blast` | Is the semi-automatic fire sound. You can have as many as you want |
+| `bgnauto` | Played when auto fire starts. |
+| `auto` | Played while auto fire is going. |
+| `endauto` | Played when auto fire ends. |
+| `blast` | Is the semi-automatic fire sound. You can have as many as you want. |
 | `boot` | Played when ProffieOS boots up. |
-| `clipin` | Sound made when inserting a clip |
-| `clipout` | Sound made when dropping a clip |
-| `empty` | Sound when the weapon is out of rounds |
-| `font` | Name of the preset |
-| `full` | Sound made when the weapon is full of ammo |
-| `hum` | Constant sound looping while not firing |
-| `jam` | Sound made when the weapon jams |
-| `unjam` | Sound made when unjamming the blaster |
+| `clipin` | Sound made when inserting a clip. |
+| `clipout` | Sound made when dropping a clip. |
+| `empty` | Sound when the weapon is out of rounds. |
+| `font` | Name of the preset. |
+| `full` | Sound made when the weapon is full of ammo. |
+| `hum` | Constant sound looping while not firing. |
+| `jam` | Sound made when the weapon jam.s |
+| `unjam` | Sound made when unjamming the blaster. |
 | `mode` | Sound made when switching mode (OS 6+: when `mdkill`, `mdstun` and/or `mdauto` not present) |
 | `plioff` | Played while retracting the PLI bargraph. | 
 | `plion` | Played while extending the PLI bargraph. |
-| `range` |  Up to 16 sounds of increasing weapon range/power |
-| `stun` | Firing sound for stun mode |
-| `reload` | Reloading sound |
+| `range` |  Sounds of increasing weapon range/power. Currently not implemented. |
+| `stun` | Firing sound for stun mode. |
+| `reload` | Reloading sound. |
 | `mdkill` | (OS 6+) Sound made when switching to KILL mode |
 | `mdstun` | (OS 6+) Sound made when switching to STUN mode |
 | `mdauto` | (OS 6+) Sound made when switching to AUTO mode |
@@ -91,6 +91,21 @@ It's on my TODO list to make these not required:
 
 ## Optional Defines
 
+### FILTER_CUTOFF_FREQUENCY
+If present, these defines enable a butterworth highpass filter with the given order and cutoff frequency. The idea is to remove frequencies that your speaker can't reproduce anyways to put less stress on the speaker. The filter order defaults to 8. A reasonable cutoff frequncy might be 100Hz. The filter does not affect I2C or S/PDIF output if enabled.
+
+```cpp
+#define FILTER_CUTOFF_FREQUENCY
+#define FILTER_ORDER
+```
+
+### NO_REPEAT_RANDOM
+This define will make ProffieOS remember which file (of each effect) was played last and avoid playing it again next time. If there are only 2 of a particular sound, there is still a chance that the same sound is played to avoid simply flipping between them in a predictable pattern.
+
+```cpp
+#define NO_REPEAT_RANDOM
+```
+
 ### ENABLE_BLASTER_AUTO
 This define determines if your weapon has the automatic fire mode enabled. If you want your weapon to be semi-automatic only, simply comment it out.
 ```cpp
@@ -107,6 +122,13 @@ This is your weapon round capacity per "clip" (i.e. before needing to reload). I
 Here we set the change of the weapon jamming per shot. The range is 0-100. Please note that if you comment it out, it will be replaced with a random chance per ignition.
 ```cpp
 #define BLASTER_JAM_PERCENTAGE 1
+```
+
+### FEMALE_TALKIE_VOICE
+Uses a female talkie voice, only affects built-in error messages, for other sounds, go check out the Sound Library.
+
+```cpp
+#define FEMALE_TALKIE_VOICE
 ```
 
 ## Config Sections Samples
@@ -191,8 +213,8 @@ And last you should set your `CONFIG_BUTTONS`. As we said before, you need a bar
 Button FireButton(BUTTON_FIRE, powerButtonPin, "fire");
 Button ModeButton(BUTTON_MODE_SELECT, auxPin, "modeselect");
 //Button PowerButton(BUTTON_POWER, aux2Pin, "power"); //A third button to power on/off your weapon
-//Button ClipButton(BUTTON_CLIP_DETECT, aux2Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
-//Button ReloadButton(BUTTON_RELOAD, aux2Pin, "reload"); //Dedicated button for reloading.
+//Button ClipButton(BUTTON_CLIP_DETECT, blade4Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
+//Button ReloadButton(BUTTON_RELOAD, blade3Pin, "reload"); //Dedicated button for reloading.
 //Button RangeButton(BUTTON_RANGE, aux2Pin, "reload"); //Dedicated button for increasing range/power of the weapon.
 
 #endif
@@ -257,8 +279,8 @@ BladeConfig blades[] = {
 Button FireButton(BUTTON_FIRE, powerButtonPin, "fire");
 Button ModeButton(BUTTON_MODE_SELECT, auxPin, "modeselect");
 //Button PowerButton(BUTTON_POWER, aux2Pin, "power"); //A third button to power on/off your weapon
-//Button ClipButton(BUTTON_CLIP_DETECT, aux2Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
-//Button ReloadButton(BUTTON_RELOAD, aux2Pin, "reload"); //Dedicated button for reloading.
+//Button ClipButton(BUTTON_CLIP_DETECT, blade4Pin, "clip"); //Actually clip sensor. It should be closed when the clip is in, and open when the clip is removed. So you can use either latching or momentary.
+//Button ReloadButton(BUTTON_RELOAD, blade3Pin, "reload"); //Dedicated button for reloading.
 //Button RangeButton(BUTTON_RANGE, aux2Pin, "reload"); //Dedicated button for increasing range/power of the weapon.
 
 #endif
