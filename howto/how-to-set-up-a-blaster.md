@@ -197,7 +197,7 @@ From OS 7.x onwards, the `CONFIG_STYLES` section has been added. It allows you t
 # Blaster Use
 ## Single Button
 **Buttons**: *FIRE*
-This case quite limited since you can only fire. Weapon will always be on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on. And if you have limited amount of rounds you can't reload.
+This case quite limited since you can only fire. Weapon will always be on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on *but you need a `poweron.wav` file present or the blaster will default to off and you will not have a switch to turn it on*. And if you have limited amount of rounds you can't reload.
 
 * Fire -                  Click *FIRE*. (Hold to Auto Fire / Rapid Fire if you have `ENABLE_BLASTER_AUTO`)
 * Unjam -                 Bang the blaster.
@@ -205,7 +205,7 @@ This case quite limited since you can only fire. Weapon will always be on the de
 ## Dual Button
 **Buttons**: *FIRE* and *MODE*
 
-This is the "stock" configuration. Weapon will always start on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on.
+This is the "stock" configuration. Weapon will always start on the default mode (STUN is the defined in the prop, if you wish another you will have to change it on the code). Weapon will always be powered on *but you need a `poweron.wav` file present or the blaster will default to off and you will not have a switch to turn it on*.
 
 * Fire -                  Click *FIRE*. (Hold to Auto Fire / Rapid Fire if you have `ENABLE_BLASTER_AUTO`)
 * Cycle Modes -           Click *MODE*.
