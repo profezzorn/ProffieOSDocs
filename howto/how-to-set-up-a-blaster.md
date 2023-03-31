@@ -25,7 +25,6 @@ You will need at least one blaster soundfont. There are some free soundfonts onl
 | `clipin` | Sound made when inserting a clip |
 | `clipout` | Sound made when dropping a clip |
 | `empty` | Sound when the weapon is out of rounds |
-| `fire` | Currently does nothing |
 | `font` | Name of the preset |
 | `full` | Sound made when the weapon is full of ammo |
 | `hum` | Constant sound looping while not firing |
