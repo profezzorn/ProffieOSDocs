@@ -391,7 +391,8 @@ SAVE_DYNAMIC_DIMMING
 # ProffieOS 7.x defines
 
 ### BOOT_VOLUME	
-Let's you specify what volume should be used at boot. Note that if you have SAVE_VOLUME defined, this will probably be overridden by reading a value from the global.ini config file.
+Let's you specify what volume should be used at boot.  
+Note that if `#define SAVE_VOLUME` is active (or SAVE_STATE since it encompasses SAVE_VOLUME), BOOT_VOLUME wil be overridden by your saved value.
 
 ```cpp
 #define BOOT_VOLUME 300
