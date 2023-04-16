@@ -7,13 +7,17 @@ If you see this when trying to compile ProffieOS
 
     `.text' will not fit in region `FLASH'
 
-Then the combination of all the features and styles takes up too much space to fit on the board. Here is a list of things you can try to make it fit:
+Then the combination of all the features and styles takes up too much space to fit on the board. Here is a list of things you can try to make it fit, or just to reduce memory use in general:  
 
 ### Update to the latest available Arduino Proffieboard plug-in
 Arduino menu Tools>Board>Boards Manager, type "proffie" in the search box. Install or update to the latest version available in the dropdown menu. Specifically, 3.6.0 introduced a lot of optimizations to save compiled code size.
 
 ### Use "smallest size"
 In the Arduino menu Tools->Optimize, you can select "smallest size". This will disable some optimizations that usually make the compiled code bigger. The program will run a little slower, but that is generally not a problem.
+
+### Don't use "Serial + Mass Storage" if not neccessary.
+Arduino menu Tools>USB Type can be set to "Serial" only to save additional memory that is used if Mass Storage is turned on.  
+If you can use a standalone USB SD card reader, you'll access your files faster, and with less chance of file corruption, plus get the memory savings as well.  
 
 ### Don't use the POV style.
 The POV style uses a lot of memory, and most people never really use it. Look for "&pov_style" in your config file and either replace those styles with something else, or remove the preset completely.
@@ -49,3 +53,4 @@ https://fredrik.hubbe.net/lightsaber/webusb.html
 https://www.fett263.com/proffieOS6-edit-mode.html  
 [Editing presets.ini by hand](/howto/editing-presets.ini-by-hand.html)
 
+### Set 
