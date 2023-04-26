@@ -147,7 +147,8 @@ Set current style.
 <br/>
 <br/>  
 
-# Diagnostic Commands
+# Diagnostic Commands  
+  *Note:* The uploaded config file can not have `#define DISABLE_DIAGNOSTIC_COMMANDS` active for these to work.
 
 ## beep
 
