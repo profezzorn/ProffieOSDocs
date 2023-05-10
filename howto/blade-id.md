@@ -17,11 +17,9 @@ An example of a BladeConfig with multiple, different resistor value blades is sh
       { 10000,
         WS281XBladePtr<128, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
         CONFIGARRAY(blade2_in) },
-      },
       { NO_BLADE,
         WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
         CONFIGARRAY(no_blade) },
-      }
     };
 ```
  
