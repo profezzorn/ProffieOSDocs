@@ -1,5 +1,5 @@
 ---
-title: Desciphering the status LED
+title: Deciphering the status LED
 ---
 
 The V3 Proffieboard has a status led. That LED can provide a fair amount of information about what the board is doing. Let this page be your decoder wheel for understanding what it's doing.
