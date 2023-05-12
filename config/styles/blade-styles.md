@@ -50,12 +50,13 @@ To better see how the arguments work, we can re-format it like this:
                         Blue,              // base blade color
                         White              // blast color
                     >,                     // end of blast
-                AudioFlicker<Blue,White>   // lockup color
+                    AudioFlicker<Blue,White>   // lockup color
                 >,          // end of lockup
-            White>,         // second argument to SimpleClash  
-        300,                // second argument to InOutHelper
-        800>                // third argument to InOutHelper
-    >()
+                White>,         // second argument to SimpleClash  
+            300,                // second argument to InOutHelper
+            800                // third argument to InOutHelper
+        >      // end of InOutHelper
+    >()        // end of StylePtr
 
 This is a still a valid blade style, which can be placed in your config file as is. The config file will not care if there are some extra spaces or newlines or comments inside your style. Let's walk through it from inside to out.
 
