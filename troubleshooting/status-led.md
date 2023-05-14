@@ -19,7 +19,7 @@ The LED will be off if the saber is completely idle in order to save power.
 ## Pulsing
 
 When the saber is doing something, the LED will be pulsing. The speed of the pulse will tell you how busy the saber is. If it's pulsing fast, then the saber is working hard, if it's pulsing slowly, it is not.  
-When USB is connected, the shape of the pulse will change from a triangle wave ( &#9013;&#9013;&#9013;&#9013; ) to a sawtooth wave ( &#10840;&#10840;&#10840;&#10840; ).  
+When USB is connected, the shape of the pulse will change from a triangle wave ( &#8896;&#8896;&#8896;&#8896; ) to a sawtooth wave ( &#10840;&#10840;&#10840;&#10840; ).  
 When ignited, the brightness of the LED will increase.  
 When charging, there will be an extra "blip" every 2 seconds on the Status LED. 
  
