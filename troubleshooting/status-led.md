@@ -1,3 +1,4 @@
+---
 title: Deciphering the Status LED
 ---
 
