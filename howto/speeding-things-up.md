@@ -8,11 +8,26 @@ Sometimes, ProffieOS will run slowly, because it has too many things to do and t
 
 ### Use the "top" command to identify what is using up all the CPU time.
 
-Note that "top" will not be available if you have `#define DISABLE_DIAGNOSTICS_COMMANDS` in your config file. Also note that "top" produces very different numbers when the saber is on and when it's off. Finally, top shows the cpu statistics since the last time you ran it, so generally you will want to turn the saber on, run "top", wait a few seconds, then run "top" again.
+Note that "top" will not be available if you have `#define DISABLE_DIAGNOSTICS_COMMANDS` active in your config file. Also note that "top" produces very different numbers when the saber is on and when it's off. Finally, "top" shows the CPU statistics since the last time you ran it, so generally you will want to turn the saber on, run "top", wait a few seconds, then run "top" again.
 
-### Turn on optimization in Tools->Optimization
+### Turn on Optimization
 
-Lots of things gets faster when you turn on optimization. However, they also get bigger, so you may run out of flash memory. See the [Saving Memory](saving-memory.html) page for how to reduce flash memory usage.
+There are 4 levels to choose from under Arduino menu Tools>Optimize, however, the labels are a bit misleading.  
+“Fast” means that the we’ll use the -O0 flag when calling gcc, which actually means “don’t do any optimization at all."  
+“Faster” means we’ll use the -O2 flag which means, “do lots of optimizations."  
+“Fastest” means use -O3, which means even more optimizations.  
+“Smallest Code” uses the -Os flag, which is similar to -O2, but the goal of the optimizations is to make the code smaller instead of making the code faster.  
+For a better description, check out actual documentation:  
+https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html  
+
+You could think of them like this:  
+“Fastest" = more optimization  
+"Faster" = some optimization  
+“Fast" = no optimization  
+“Smallest Size result”  
+
+Lots of things gets faster when you turn on optimization. However, they also get bigger, so you may run out of flash memory.  
+See the [Saving Memory](saving-memory.html) page for how to reduce flash memory usage.
 
 ### Use ProffieOS 5.x or later
 
