@@ -82,5 +82,4 @@ in the CONFIG_TOP section: `#define POV_INCLUDE_FILE "dataFileNameHere.h"`
   ```
 
 Swing the blade in a steady, quick movement to see the image in the air. A long-exposure camera capture showcases the result best.  
-Enjoy!  (⌐■_■) NoSloppy
--- credits: Thanks profezzorn for overseeing/providing options, kaQnub for Windows testing/contributions.
+Enjoy!
