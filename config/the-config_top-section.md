@@ -12,6 +12,7 @@ First, we must include a board config file, basically, we have to pick one of th
 #include "v3_config.h"   // TeensySaber V3
 #include "proffieboard_v1_config.h"  // Proffieboard V1
 #include "proffieboard_v2_config.h"  // Proffieboard V2
+#include "proffieboard_v3_config.h"  // Proffieboard V3
 ```
 
 Note that if you include the proffieboard_config.h file (no version in the filename), the appropriate board version will be chosen for you based on which board is being programmed. This allows you to use your config on multiple versions of Proffieboards without needing to change this line to match.
@@ -26,34 +27,27 @@ Note that accent LEDs, crystal chambers and light-up buttons also counts as blad
 
 ### NUM_BUTTONS
 And we must also specify how many buttons we have.
-Note that this is just used to change how some of the buttons behave, and nothing
-will actually break if you specify a number different from your actual number of buttons.
+Note that this is just used to change how some of the buttons behave, and nothing will actually break if you specify a number different from your actual number of buttons.
 
 ```cpp
 #define NUM_BUTTONS 2
 ```
 ### VOLUME
-Then we specify the volumes. Generally values between 0 and 3000 are useful, but it may
-depend on what kind of board you have.
+Then we specify the volumes. Generally values between 0 and 3000 are useful, but it may depend on what kind of board you have.
 
 ```cpp
 #define VOLUME 1000
 ```
 
 I don't remember why, but this next number is a constant instead of a define.
-It specifies how many pixels we can have in a single strip. Note that if you use RGBW pixels,
-this number needs to be 25% bigger than your actual number of pixels. There is no need to make
-this smaller if your strips are not 144 pixels long, but you do need to make it bigger if they
-are more than 144 pixels long.
+It specifies how many pixels we can have in a single strip. Note that if you use RGBW pixels, this number needs to be 25% bigger than your actual number of pixels. There is no need to make this smaller if your strips are not 144 pixels long, but you do need to make it bigger if they are more than 144 pixels long.
 
 ```cpp
 const unsigned int maxLedsPerStrip = 144;
 ```
 
 ### CLASH_THRESHOLD_G
-Next, we have the clash threshold. When two consecutive accelerometer readings differ by this
-much, a clash is triggered. The unit is in Gs. (About 9.81 newtons.) Larger values will make
-clashes harder to trigger, smaller values will make clashes easier to trigger.
+Next, we have the clash threshold. When two consecutive accelerometer readings differ by this much, a clash is triggered. The unit is in Gs. (About 9.81 newtons.) Larger values will make clashes harder to trigger, smaller values will make clashes easier to trigger.
 
 ```cpp
 #define CLASH_THRESHOLD_G 1.0
@@ -243,7 +237,7 @@ Start at the last preset when you turn the saber on:
 ```
 
 ### SAVE_STATE
-Save state is one define to encompass SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET
+Save state is one define to encompass SAVE_COLOR_CHANGE, SAVE_VOLUME and SAVE_PRESET. (From ProffieOS 7.8 onward, this also encompasses SAVE_BLADE_DIMMING)
 
 ```cpp
 #define SAVE_STATE
@@ -260,8 +254,7 @@ To retain this additional information even after re-flashing ProffieOS to the bo
 #define KEEP_SAVEFILES_WHEN_PROGRAMMING
 ```
     
-Please use this define with caution. If you leave this define in your config file when you
-are tring to make changes to your saber, weird things tends to happen.
+Please use this define with caution. If you leave this define in your config file when you are tring to make changes to your saber, weird things tends to happen.
 
 See [this page](/config/keeping-edits-when-uploading.html) for further information.
 
@@ -371,23 +364,24 @@ Saves memory by disabling old-fashioned styles. With this define, these styles w
 ```
 
 ### ENABLE_ALL_EDIT_OPTIONS
-The following "umbrella" define is equivalent to separately defining:  
-DYNAMIC_BLADE_LENGTH  
-DYNAMIC_BLADE_DIMMING  
-DYNAMIC_CLASH_THRESHOLD  
-SAVE_VOLUME  
-SAVE_BLADE_DIMMING  
-SAVE_CLASH_THRESHOLD  
-SAVE_COLOR_CHANGE  
-*Note - `#define SAVE_STATE` is different, as that encompasses:  
-SAVE_VOLUME  
-SAVE_PRESET  
-SAVE_COLOR_CHANGE  
-SAVE_DYNAMIC_DIMMING
+The following "umbrella" define is equivalent to separately defining:
+DYNAMIC_BLADE_LENGTH
+DYNAMIC_BLADE_DIMMING
+DYNAMIC_CLASH_THRESHOLD
+SAVE_VOLUME
+SAVE_BLADE_DIMMING
+SAVE_CLASH_THRESHOLD
+SAVE_COLOR_CHANGE
+*Note - `#define SAVE_STATE` is different, as that encompasses:
+SAVE_VOLUME
+SAVE_PRESET
+SAVE_COLOR_CHANGE
+SAVE_BLADE_DIMMING (From ProffieOS 7.9 onward)
 
 ```cpp
 #define ENABLE_ALL_EDIT_OPTIONS
 ```
+
 # ProffieOS 7.x defines
 
 ### BOOT_VOLUME	
