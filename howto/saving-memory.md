@@ -35,7 +35,7 @@ to your config file. Note that this define is only available in ProffieOS 3.x an
 If all else fails, you'll need to reduce the number of presets you use, or use less complicated blade styles.
 
 ### Use the same, or similar style for multiple presets
-Using the same style multiple times in your config file uses no extra memory. This means that you can have multiple presets, with different fonts and tracks, but with identical blade styles, and it will use very little memory. Since ProffieOS 4.x, this short of memory saving also applies when making minor changes, like changing the base color of a blade. Basically: Having similar blade styles, but with different colors uses less memory than having unique blade styles for each preset.
+Using the same style multiple times in your config file uses no extra memory. This means that you can have multiple presets, with different fonts and tracks, but with identical blade styles, and it will use very little memory. Since ProffieOS 4.x, this sort of memory saving also applies when making minor changes, like changing the base color of a blade. Basically: Having similar blade styles, but with different colors uses less memory than having unique blade styles for each preset.
 
 ### Disable basic parser styles  (ProffieOS 6.x or newer)
 ProffieOS contains a few simple blade styles can be selected, used and customized from the ProffieOS Workbench by using Bluetooth or WebUSB.  If you never use the ProffieOS Workbench, you don't need these styles. Also, if you use styles updated for Edit Mode, then you will have lots of options for customization in the Workbench even if you don't have these basic styles. To disable them, you can add
@@ -52,5 +52,3 @@ This is done by instructing the OS to use an existing preset's blade style in a 
 https://fredrik.hubbe.net/lightsaber/webusb.html  
 https://www.fett263.com/proffieOS6-edit-mode.html  
 [Editing presets.ini by hand](/howto/editing-presets.ini-by-hand.html)
-
-### Set 
