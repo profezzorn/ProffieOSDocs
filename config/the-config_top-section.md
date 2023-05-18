@@ -392,7 +392,7 @@ SAVE_DYNAMIC_DIMMING
 
 ### BOOT_VOLUME	
 Let's you specify what volume should be used at boot.  
-Note that if `#define SAVE_VOLUME` is active (or SAVE_STATE since it encompasses SAVE_VOLUME), BOOT_VOLUME wil be overridden by your saved value.
+Note that if `#define SAVE_VOLUME` is active (or SAVE_STATE or ENABLE_ALL_EDIT_OPTIONS since they also encompass SAVE_VOLUME), BOOT_VOLUME wil be overridden by your saved value.
 
 ```cpp
 #define BOOT_VOLUME 300
