@@ -37,7 +37,8 @@ This will make ProffieOS first look in "fontdir" then in "common". Note that all
 
 ## Music Track ("tracks/track.wav")
 In the second field is configured the audio track which can be used for soundtrack music or ambient sound in parallel to the rest of the sounds that are played by the saber.
-Music Track invoke is configured to be runned via button combination or with Command send via the Serial port/Bluetooth module.
+Music Track invoke is configured to be runned via button combination or with Command send via the Serial port/Bluetooth module.  
+*NOTE -* If a music track is not desired for use with the preset, that's fine, however there needs to be a placeholder for the argument in the preset. This can be as simple as `"",`  
 
 ## Style definition
 The style definition specifies the look and behavior of the blade itself. If more then one blade is used (NUM_BLADES is greater than 1) then more then one styles have to be defined in the current preset.
