@@ -1,5 +1,5 @@
 ---
-title: Faster-performance-of-fonts-and-blade-animations.
+title: Faster performance of fonts and blade animations.
 ---
 As blade styles become more complex, combined with some pixel strips having more LEDs in serial, you may find less animation lag and fewer Audio Underflows (pops, clicks, gaps) by optimizing your font folder structure.
 
