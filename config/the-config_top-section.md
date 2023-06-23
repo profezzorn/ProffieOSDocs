@@ -101,7 +101,7 @@ This code makes it possible to use the same power pins for multiple blades.
 If your board is installed in a different orientation than normal, you may need to add one of the following lines to make ProffieOS behave properly:
 
 ```cpp
-#define ORIENTATION ORIENTATION_NORMAL
+#define ORIENTATION ORIENTATION_NORMAL  // USB connector points away from blade
 #define ORIENTATION ORIENTATION_FETS_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_USB_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_SDA_TOWARDS_BLADE
