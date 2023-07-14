@@ -30,8 +30,11 @@ Note that the Blade ID resistor is different from the in-line resistor normally 
 
 The V1 electronics is still one of the best pictures for showing how this can work: [https://fredrik.hubbe.net/lightsaber/electronics.html](https://fredrik.hubbe.net/lightsaber/electronics.html)
 
-Unfortunately, it turns out that Proffieboards are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x.   
-First option would be adding this to the config file:
+Unfortunately, it turns out that Proffieboard V1.5 and V2.2s are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x.  
+*NOTE* - These are not needed for a Proffieboard V3.
+V3 already has what it needs internally.  
+
+The first option would be adding this to the config file:
 
 ```cpp
 #define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin> 
