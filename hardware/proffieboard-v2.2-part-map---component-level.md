@@ -21,7 +21,7 @@ There's a running tab of [alternative parts here](/hardware/proffieboard-v2.2-bo
 | U3   | Booster |
 | U60  | 3.3V Regulator | Feeds the CPU, SD card |
 | L1   | Booster coil |
-| Q7   | Dual pFET | Used to control current to SD car and the audio booster, as well as provide reverse-current protection for most of the board. (Except for Q1-Q6) |
+| Q7   | Dual pFET | Used to control current to SD card and the audio booster, as well as provide reverse-current protection for most of the board. (Except for Q1-Q6) |
 | Y1   | Clock crystal | (together with C7/C8) |
 | RN4  | USB protection resistors |
 | U40  | USB ESD protection diodes |
