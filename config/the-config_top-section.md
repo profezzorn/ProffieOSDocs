@@ -104,13 +104,13 @@ If your board is installed in a different orientation than normal, you may need 
 #define ORIENTATION ORIENTATION_NORMAL  // USB connector points away from blade
 #define ORIENTATION ORIENTATION_FETS_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_USB_TOWARDS_BLADE
-#define ORIENTATION ORIENTATION_SDA_TOWARDS_BLADE
-#define ORIENTATION ORIENTATION_SERIAL_TOWARDS_BLADE
+#define ORIENTATION ORIENTATION_DATA1_PAD_TOWARDS_BLADE
+#define ORIENTATION ORIENTATION_SPKR_PAD_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_TOP_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_BOTTOM_TOWARDS_BLADE
 ```
+For a visual reference for these, see [board_orientations.png](https://pod.hubbe.net/images/board_orientations.png)
 
-Note that SERIAL/SDA towards blade was meant for TeensySabers, so I really should make up new names for them.
 
 ### ORIENTATION_ROTATION
 For Curved hilts, or where the board is not parallel with the blade (for Twist on/off particularly)
