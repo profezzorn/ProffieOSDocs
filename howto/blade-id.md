@@ -66,5 +66,84 @@ Another quirk of Blade ID is that unpowered neopixels throws it off. When the ne
 
 *IMPORTANT NOTE* - BladeID requires a direct, uninterrupted connection from the board's data pin to the main blade (usually the center pin on the hilt-side of the main blade PCB). Therefore using SubBlades with neopixel accents, crystal chamber, or NPXL LED PCBs in series with the main blade won't work. They can be their own SubBlade chain on a data pin other than data1, but only data1 can use BladeID.  
 
+Here's an example template of a config file formatted to use Blade ID:  
+```cpp
+
+// This is a simplified config file template set up for Blade ID.
+
+#ifdef CONFIG_TOP
+#define SHARED_POWER_PINS
+// #define BLADE_DETECT_PIN blade4Pin
+#define ENABLE_POWER_FOR_ID PowerPINS<bladePowerPin2, bladePowerPin3>
+// #define BLADE_ID_CLASS ExternalPullupBladeID<bladeIdentifyPin, 33000> // value of resistor used
+// #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, 9> // TX pad for example
+
+/*  This will make it use the speed-of-charging-a-capacitor method of blade ID which sometimes works without resistors.
+    Blade ID can detect if a blade is connected or not, but it won't actually reach the NO_BLADE value,
+    so I would recommend using something like 200000 instead of NO_BLADE. */
+#define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin>
+
+/*  Millis is Blade ID scan interval. If the blade ID comes out the same as before, it will do nothing.
+    If it comes out different, it will do FindBladeAgain(), which will basically initialize the saber from 
+    scratch and load the right settings for the new id().
+    It will only work with neopixel blades, and requires SHARED_POWER_PINS to work. */
+#define BLADE_ID_SCAN_MILLIS 1000
+//    How many Blade ID scans to average
+#define BLADE_ID_TIMES 10
+// other defines go here
+#endif
+
+#ifdef CONFIG_PROP
+#include "../props/PROP_FILE_OF_CHOICE_GOES_HERE.h"
+#endif
+
+
+#ifdef CONFIG_PRESETS
+
+Preset blade_1 [] = {
+
+{ "font", "tracks/track",
+  StylePtr<Red>(), "preset name"},
+
+};
+
+//---------------------------------------------------------------
+
+Preset blade_2 [] = {
+
+{ "font", "tracks/track",
+  StylePtr<Green>(), "preset name"},
+
+};
+
+//---------------------------------------------------------------
+Preset no_blade[] = {
+
+{ "font", "tracks/track",
+  StylePtr<Blue>(), "preset name"},
+
+};
+
+
+BladesConfig blades[] = {
+  { 10000,
+    WS281XBladePtr<123, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+    CONFIGARRAY(blade_1), "blade_1_Save" },
+  { 33000,
+    WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+    CONFIGARRAY(blade_2), "blade_2_Save" },    
+  { 200000,
+    WS281XBladePtr<1, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+    CONFIGARRAY(no_blade), "no_blade_Save" }
+};
+#endif
+
+#ifdef CONFIG_BUTTONS
+Button PowerButton(BUTTON_POWER, powerButtonPin, "pow"); 
+Button AuxButton(BUTTON_AUX, auxPin, "aux");
+#endif
+
+```  
+
 As of ProffieOS7, a new method of detecting different "blades" by using Blade ID is available.  
 See [Blade ID constant monitoring](blade-id-constant-monitoring.html).
