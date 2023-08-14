@@ -49,13 +49,15 @@ Alternatively, an external pull-up resistor can be used. This resistor should be
 
 (Replace 22000 with the value of your pullup resistor.) With this workaround, Blade ID should return values that are close to the Blade ID resistor values, which will make configuration easier.
 
-Another option is to bridge the blade pin with another pin and use that pull-up resistor. On a Proffieboard V2.2, the ID pin is right next to the TX pin. If you bridge those two together, and put this is your config file:
+Another option is to bridge the blade pin with another pin and use that pull-up resistor. This is the default method on a V3 board as it is built-in already, so it does not to be specified.  
+On a Proffieboard V2.2, the ID pin is right next to the TX pin. If you bridge those two together, and put this is your config file:
 
 ```cpp
 #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, 9>
 ```
 
-(9 is the pin number for the TX pin) Then Blade ID should also return the values of the resistors. However, this means that you can't use the TX pin for anything else of course, such as a Bluetooth radio.
+(9 is the pin number for the TX pin) With this, Blade ID should return the actual value of the Blade ID Resistor.  Use this value in the blade definition.
+* Note - this means that you can't use the TX pin for anything else of course, such as a Bluetooth radio.
 
 Another quirk of Blade ID is that unpowered neopixels throws it off. When the neopixels are powered, the inputs are high impedance, which doesn't affect the Blade ID, but when unpowered, they leech power from the data line, which throws off the Blade ID value. The solution is to turn the power on while we're doing Blade ID by using the ENABLE_POWER_FOR_ID define. If your blade is hooked up to the LED2 and LED3 pads, it would look like this:
 
