@@ -39,7 +39,7 @@ The first BLADE_ID_CLASS option is the default on Proffieboards V1.5 and V2.2s. 
 #define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin> 
 ```
 
-The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the actual value of the Blade ID resistor in the blade. The blades array has to be configured with these measured values instead. Measured values can be found by using Serial Monitor in Arduino, and entering `id` while the blade is off. This will report "BLADE ID: N" where N is the measured value.
+The default blade ID class SnapshotBladeID charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the actual value of the Blade ID resistor in the blade. The blades array has to be configured with these measured values instead. Measured values can be found by using Serial Monitor in Arduino, and entering `id` while the blade is off. This will report "BLADE ID: N" where N is the measured value.
 
 Alternatively, an external pull-up resistor can be used. This resistor should be in the 20k to 50k range and placed between the blade pin and 3.3v. Then you add this to the config file:
 
