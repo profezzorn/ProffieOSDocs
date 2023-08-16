@@ -52,15 +52,6 @@ Here's an example template of a config file formatted to use Blade Detect:
 
 #ifdef CONFIG_PRESETS
 
-Preset blade_in[] = {
-
-{ "font", "tracks/track",
-  StylePtr<Red>(), "preset name"},
-
-};
-
-//---------------------------------------------------------------
-
 Preset no_blade[] = {
 
 { "font", "tracks/track",
@@ -68,14 +59,25 @@ Preset no_blade[] = {
 
 };
 
+//---------------------------------------------------------------
+
+Preset blade_in[] = {
+
+{ "font", "tracks/track",
+  StylePtr<Red>(), "preset name"},
+
+};
+
+
 
 BladesConfig blades[] = {
-  { 0,
-    WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
-    CONFIGARRAY(blade_in), "blade_in_Save" },
   { NO_BLADE,
     WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
-    CONFIGARRAY(no_blade), "no_blade_Save" }
+    CONFIGARRAY(no_blade), "no_blade_Save" },
+  { 0,
+    WS281XBladePtr<144, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
+    CONFIGARRAY(blade_in), "blade_in_Save" }
+
 };
 #endif
 
