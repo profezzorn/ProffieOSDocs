@@ -34,7 +34,7 @@ or
 
 The blade detect pin will be monitored continuously, when it changes, the Blade ID routines will be re-triggered. In addition, when not connected to anything, Blade ID will be offset by the value of NO_BLADE, which equals a billion.
 
-The detection works by repeatedly switching between pull-up and pull-down mode and see if the input follows, or if it stays put at high or low. That means that it doesn't matter if the blade ID pin is connected to GND or BATT+, which is a good thing, because when connected to the '-' pad on a neopixel strip, that can flip between high and low when the FETs are turned on/off.
+The detection works by repeatedly switching between pull-up and pull-down mode and see if the input follows, or if it stays put at high or low. That means that it doesn't matter if the blade ID pin is connected to GND or BATT+, which is a good thing, because when connected to the '-' pad on an LED pixel strip, that can flip between high and low when the FETs are turned on/off.
 
 Here's an example template of a config file formatted to use Blade Detect:  
 ```cpp
