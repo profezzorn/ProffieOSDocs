@@ -30,17 +30,16 @@ Note that the Blade ID resistor is different from the in-line resistor normally 
 
 The V1 electronics is still one of the best pictures for showing how this can work: [https://fredrik.hubbe.net/lightsaber/electronics.html](https://fredrik.hubbe.net/lightsaber/electronics.html)
 
-Unfortunately, it turns out that Proffieboard V1.5 and V2.2s are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several workarounds exist for this in ProffieOS 3.x.  
-*NOTE* - These are not needed for a Proffieboard V3.
-V3 already has what it needs internally.  
+Unfortunately, it turns out that Proffieboard V1.5 and V2.2s are unable to do Blade ID in the same way as TeensySabers do, because there is no way to enable a pullup/pulldown resistor while doing an analog read from the pin. Several options can be defined to help with this as of ProffieOS 3.x.  
+*NOTE* - These are not needed for a Proffieboard V3. V3 already has a Bridged Pullup internally.  
 
-The first option would be adding this to the config file:
+The first BLADE_ID_CLASS option is the default on Proffieboards V1.5 and V2.2s. Therefore it does not need to be specified in the config file, but here is what it is and what it does:
 
 ```cpp
 #define BLADE_ID_CLASS SnapshotBladeID<bladeIdentifyPin> 
 ```
 
-The default blade ID class (SnapshotBladeID) charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the value of the Blade ID resistor, so the blades array has to be configured with measured values, not with values based on the resistor in the blade. Measured values can be found by using Serial Monitor in Arduino, and entering `scanid` while the blade is off.
+The default blade ID class SnapshotBladeID charges up the internal sampling capacitor, then connects the sampling capacitor to the Blade ID pin for a *very* short time, and then does the analog-to-digital conversion. This should give consistent values for the same blade, but unfortunately, the values will not reflect the actual value of the Blade ID resistor in the blade. The blades array has to be configured with these measured values instead. Measured values can be found by using Serial Monitor in Arduino, and entering `id` while the blade is off. This will report "BLADE ID: N" where N is the measured value.
 
 Alternatively, an external pull-up resistor can be used. This resistor should be in the 20k to 50k range and placed between the blade pin and 3.3v. Then you add this to the config file:
 
@@ -50,13 +49,15 @@ Alternatively, an external pull-up resistor can be used. This resistor should be
 
 (Replace 22000 with the value of your pullup resistor.) With this workaround, Blade ID should return values that are close to the Blade ID resistor values, which will make configuration easier.
 
-Another option is to bridge the blade pin with another pin and use that pull-up resistor. On a Proffieboard V2.2, the ID pin is right next to the TX pin. If you bridge those two together, and put this is your config file:
+Another option is to bridge the blade pin with another pin and use that pull-up resistor. This is the default method on a V3 board as it is built-in already, so it does not to be specified.  
+On a Proffieboard V2.2, the ID pin is right next to the TX pin. If you bridge those two together, and put this is your config file:
 
 ```cpp
 #define BLADE_ID_CLASS BridgedPullupBladeID<bladeIdentifyPin, 9>
 ```
 
-(9 is the pin number for the TX pin) Then Blade ID should also return the values of the resistors. However, this means that you can't use the TX pin for anything else of course, such as a Bluetooth radio.
+(9 is the pin number for the TX pin) With this, Blade ID should return the actual value of the Blade ID Resistor.  Use this value in the blade definition.
+* Note - this means that you can't use the TX pin for anything else of course, such as a Bluetooth radio.
 
 Another quirk of Blade ID is that unpowered neopixels throws it off. When the neopixels are powered, the inputs are high impedance, which doesn't affect the Blade ID, but when unpowered, they leech power from the data line, which throws off the Blade ID value. The solution is to turn the power on while we're doing Blade ID by using the ENABLE_POWER_FOR_ID define. If your blade is hooked up to the LED2 and LED3 pads, it would look like this:
 
