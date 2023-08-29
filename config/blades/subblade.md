@@ -33,12 +33,12 @@ Below we have a total of 135 pixels.<br/>
 The first SubBlade is for the main blade which has 134 pixels.  It starts at 1 and ends at 134.<br/>
 The second SubBlade is for the accent led / crystal chamber which has 1 pixel.  It starts and ends at 0.<br/>
 
-They both use bladePin (data pad 1) and run in series
+They both use bladePin (data pad 1) and run in series. Power (-) for all pixels in series uses bladePowerPin2 and bladePowerPin3 (LED2 and LED3 pads, usually bridged).
 
 ```cpp
 BladeConfig blades[] = {
   { 0,
-    SubBlade(1, 134, WS281XBladePtr<135, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3, bladePowerPin5>>()),	
+    SubBlade(1, 134, WS281XBladePtr<135, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()),	
     SubBlade(0, 0, NULL),
     CONFIGARRAY(presets),
   }
