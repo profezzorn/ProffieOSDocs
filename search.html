@@ -40,7 +40,8 @@ var index = elasticlunr(function () {
   if (results.length > 0) {
     ret += "<ul>\n";
     for (var i = 0; i < results.length; i++) {
-        ret += "<li><a href='"+results[i].ref + "'>" + results[i].doc.title + "</a></li>\n"; 
+        // ret += "<li><a href='"+results[i].ref + "'>" + results[i].doc.title + "</a></li>\n";
+        ret += "<li><a href=\"" + results[i].ref + "\">" + results[i].doc.title + "</a></li>\n";
     }
     ret += "</ul>\n";
   } else {
