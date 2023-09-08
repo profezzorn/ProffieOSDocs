@@ -88,9 +88,9 @@ So, if we have a grid of 3x5 leds, where data is going left, then right, alterna
 ```
 BladeConfig blades[] = {
   { 0,
-    SubBladeZZ(0, 15, 3, 0, WS281XBladePtr<15, bladePin, Color8::GRB, PowerPINS<bladePowerPin6> >() ),
-    SubBladeZZ(0, 15, 3, 1, NULL),
-    SubBladeZZ(0, 15, 3, 2, NULL)
+    SubBladeZZ(0, 14, 3, 0, WS281XBladePtr<15, bladePin, Color8::GRB, PowerPINS<bladePowerPin6> >() ),
+    SubBladeZZ(0, 14, 3, 1, NULL),
+    SubBladeZZ(0, 14, 3, 2, NULL)
     CONFIGARRAY(presets),
   }
 };
