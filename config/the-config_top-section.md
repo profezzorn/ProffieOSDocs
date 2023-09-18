@@ -430,6 +430,14 @@ This define lets you adjust how much harder it is to do a clash when the audio i
 #define AUDIO_CLASH_SUPPRESSION_LEVEL 20
 ```
 
+### PROFFIEOS_DONT_USE_GYRO_FOR_CLASH
+
+This define allows you to use only Accelerometer for Clash Detection (OS6 or earlier algorithm), instead of Accelerometer and Gyro combined (OS7 algorithm).
+
+```cpp
+#define PROFFIEOS_DONT_USE_GYRO_FOR_CLASH
+```
+
 ### POV_INCLUDE_FILE
 
 This define lets you include some other POV data instead of the default star wars logo. To learn how to generate pov data, go check out the [POV tools](/tools/pov.html)
