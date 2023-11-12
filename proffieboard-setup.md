@@ -44,6 +44,16 @@ If you're using Windows 7 or earlier, you also need to install a USB ACM serial 
  2. sudo cp *.rules /etc/udev/rules.d
  3. reboot
 
+If you have no 32-bit support, you will get this error:
+
+    dfu-suffix: no such file or directory
+
+On debian-like systems, this can be fixed with the following commands:
+
+    sudo dpkg --add-architecture i386
+    sudo apt-get update
+    sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
+
 ### Mac
 If you're using an M1/M2 mac, you're going to need to install Rosetta. The Arduino-Proffieboard plugin does not have native arm-mac support yet.
 
