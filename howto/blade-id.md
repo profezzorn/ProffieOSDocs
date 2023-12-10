@@ -90,7 +90,7 @@ Here's an example template of a config file formatted to use Blade ID:
     It will only work with neopixel blades, and requires SHARED_POWER_PINS to work. */
 #define BLADE_ID_SCAN_MILLIS 1000
 //    How many Blade ID scans to average
-#define BLADE_ID_TIMES 10
+#define BLADE_ID_TIMES 15
 // other defines go here
 #endif
 
