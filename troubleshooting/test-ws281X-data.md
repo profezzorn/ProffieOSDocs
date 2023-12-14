@@ -14,7 +14,7 @@ If data is flowing, you should see a fluctuating value somewhere around one volt
 
 Data should be flowing when the board is on and ignited unless you use styles which allows the blade to turn off, like `StylePtr<Black>()` in your config file. If data is not flowing there are a couple of things to check:
 
-* the config file might have an error in it causing the blade to not work. To rule this out, replace your config file with a super-simple one, like the default_proffieos_config.h, or one that comes from the proffieboard configurator.
+* the config file might have an error in it causing the blade to not work. To rule this out, replace your config file with a super-simple one, like the default_proffieboard_config.h, or one that comes from the proffieboard configurator.
 * There may be a short somewhere permanently making that particular pin fixed at a particular voltage. Try checking for continuity between the data pin and GND, 3.3v or BATT+.
 * The pin is burnt out and you should try a different one.
 
