@@ -1,11 +1,17 @@
 ---
 title: How to edit presets.ini by hand
 ---
-Ok folks, so here is how you can use the ini files stored on the SD card to update your installed fonts and blade presets.
+Ok folks, so here is how you can use the .ini files stored on the SD card to update your installed fonts and blade presets manually.
 
-IMPORTANT: to use presets.ini, you have to flash the saber with the #define SAVE_PRESET in your config file, so the saber writes the preset information to the SD card. This define is blanketed under SAVE_STATE. ( See [The CONFIG_TOP Section](/config/the-config_top-section.html) )
+IMPORTANT: to use presets.ini, you have to flash the saber with the #define SAVE_PRESET in your config file, so the saber writes the preset information to the SD card.  
+This define is blanketed under SAVE_STATE. ( See [The CONFIG_TOP Section](/config/the-config_top-section.html) )
 
-First, open your presets.ini on the SD card using a text editor like Notepad ++ on PC or Textedit on Mac. It has a very basic structure:
+*Note** As of ProffieOS 7, files are saved differently and need to be "unlocked" before editing as below.  
+There's an easy app that do this for you here: https://github.com/NoSloppy/Unlock_Savefiles
+
+See here for more info on the new save format. [Save File Format](/explainers/save-file-format.html)
+
+Once the .ini is unlocked and editable, find the presets.ini on the SD card and edit it using a text editor like Sublime Text, or Notepad ++ on PC or Textedit on Mac. It has a very basic structure:
 
 First line is the 'installed date,' which is when the saber was last programmed
 Then we have blocks of statements that look like this:
