@@ -6,7 +6,7 @@ Ok folks, so here is how you can use the .ini files stored on the SD card to upd
 IMPORTANT: to use presets.ini, you have to flash the saber with the #define SAVE_PRESET in your config file, so the saber writes the preset information to the SD card.  
 This define is blanketed under SAVE_STATE. ( See [The CONFIG_TOP Section](/config/the-config_top-section.html) )
 
-*Note** As of ProffieOS 7, files are saved differently and need to be "unlocked" before editing as below.  
+*Note** As of ProffieOS 7, files are saved differently and need to be "unlocked" before editing.  
 There's an easy app that do this for you here: https://github.com/NoSloppy/Unlock_Savefiles
 
 See here for more info on the new save format. [Save File Format](/explainers/save-file-format.html)
