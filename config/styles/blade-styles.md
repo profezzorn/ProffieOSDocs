@@ -84,6 +84,6 @@ So for a Red blade that clashes White for 80 milliseconds, you would need to add
 For a working list of many templates, some with default values included, along with Functions and Transition syntax, see here:
 [TEMPLATES SYNTAX SUMMARY](http://therebelarmory.com/thread/11489/templates-syntax-summary)
 
-To experiment with them and figure out how to use them, I recommend using the [style editor](https://fredrik.hubbe.net/lightsaber/style_editor.html).
+To experiment with them and figure out how to use them, I recommend using the [Style Editor](https://fredrik.hubbe.net/lightsaber/style_editor.html).
 
 Also, you can find lots of pre-made blade styles in the [Style sharing thread on TheRebelArmory.com](http://therebelarmory.com/thread/9273/teensysaber-blade-style-sharing-thread).
