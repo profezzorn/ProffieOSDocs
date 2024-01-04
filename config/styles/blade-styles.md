@@ -71,7 +71,7 @@ Here is where you can find all the possible style templates:
 * FUNCTIONS https://github.com/profezzorn/ProffieOS/tree/master/functions
 * TRANSITIONS https://github.com/profezzorn/ProffieOS/tree/master/transitions
 
-Note - There are default values for style templates. These can be found in the files located in the styles folder. Arguments with default values can be left out, which makes it easier and shorter to write out the style, however, it can be difficult to know that those arguments are available if you are trying to change something in an existing blade style. The style editor will show all arguments for a style, so you can use it find arguments that you otherwise cannot see.
+Note - There are default values for style templates. These can be found in the files located in the styles folder. Arguments with default values can be left out, which makes it easier and shorter to write out the style, however, it can be difficult to know that those arguments are available if you are trying to change something in an existing blade style. The [Style Editor](https://fredrik.hubbe.net/lightsaber/style_editor.html) will show all arguments for a style, so you can use it find arguments that you otherwise cannot see.
  
 For example, SimpleClash has a default duration of 40. In the example above, that argument is not shown, but it is nevertheless there. If you use the style editor you will see it, or if you look up the [documentation for SimpleClash](https://github.com/profezzorn/ProffieOS/blob/094b3f482d1981d47235bb40773c6424214f2b69/styles/clash.h#L6) you can see that the full template is:
 
