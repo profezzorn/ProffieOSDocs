@@ -564,8 +564,8 @@ File: ./blink.h
     // If WIDTH = 16384 A and B appear equally, lower decreases length of A, higher increases length of A
 
 File: ./boing.h
-// Usage: TrFadeX<MILLIS_FUNCTION, N>
-    // or: TrFade<MILLIS, N>
+// Usage: TrBoingX<MILLIS_FUNCTION, N>
+    // or: TrBoing<MILLIS, N>
     // MILLIS_FUNCTION: FUNCTION
     // MILLIS: a number
     // N: a number
