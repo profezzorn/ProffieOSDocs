@@ -225,8 +225,6 @@ Usage: Layers<BASE, LAYER1, LAYER2, ...>
     opaque. If the base color is transparent, the final result may also be transparent,
     depending on what the layers paint on top of the base color.
 
-## [legacy_styles.h](https://github.com/profezzorn/ProffieOS/blob/master/styles/legacy_styles.h)
-
 ## [length_finder.h](https://github.com/profezzorn/ProffieOS/blob/master/styles/length_finder.h)
 Usage: LengthFinder<BASE, LIGHTUP>
     or: LengthFinder<>
