@@ -311,7 +311,7 @@ Usage: Rainbow
     Basic RGB rainbow.
 
 ## [random_blink.h](https://github.com/profezzorn/ProffieOS/blob/master/styles/random_blink.h)
-usage: RandomBlink<MILLIHZ, COLOR1, COLOR2>
+Usage: RandomBlink<MILLIHZ, COLOR1, COLOR2>
     or: RandomBlinkX<MILLIHZ_CLASS, COLOR1, COLOR2>
     or: RandomBlinkL<MILLIHZ_CLASS, COLOR1>
     MILLIHZ: integer
@@ -435,7 +435,7 @@ Usage: RotateColorsX<ROTATION, COLOR>
     space. 0 = none, 32768 = 360degrees
 
 ## [sequence.h](https://github.com/profezzorn/ProffieOS/blob/master/styles/sequence.h)
-usage: Sequence<COLOR1, COLOR2, int millis_per_bits, int bits, 0b0000000000000000, ....>
+Usage: Sequence<COLOR1, COLOR2, int millis_per_bits, int bits, 0b0000000000000000, ....>
     COLOR1: COLOR
     COLOR2: COLOR
     millis_per_bit: millseconds spent on each bit
