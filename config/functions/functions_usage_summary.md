@@ -119,7 +119,7 @@ Large values can give the blade a shimmering look,
 while small values look more like speckles.  
 
 ## [CenterDistF](https://github.com/profezzorn/ProffieOS/blob/master/functions/center_dist.h)  
-Usage: Remap<CenterDistF<CENTER>,COLOR>  
+Usage: Remap<CenterDistF\<CENTER>,COLOR>  
 Distributes led COLOR from CENTER  
 CENTER : FUNCTION (defaults to Int<16384>)  
 
