@@ -347,7 +347,7 @@ Mixes randomly between A and B.
 mix is chosen individually for every LED.  
 
 ## [Remap](https://github.com/profezzorn/ProffieOS/blob/master/styles/remap.h)  
-Usage: Remap<F,COLOR>  
+Usage: Remap<F, COLOR>  
 F: FUNCTION - the remapping function  
 COLOR: COLOR - color values to remap  
 Returns: COLOR  
@@ -432,7 +432,7 @@ DEFAULT_COLOR: Must be Rgb<> or Rgb16<>
 Return value: COLOR  
 This is used to create templates that can be configured dynamically.  
 These templates can be assigned to presets from WebUSB or bluetooth.  
-See style_parser](https://github.com/profezzorn/ProffieOS/blob/master/styles/ for more details.  
+See [style_parser](https://github.com/profezzorn/ProffieOS/blob/master/styles/style_parser.h) for more details.  
 
 ## [RgbCycle](https://github.com/profezzorn/ProffieOS/blob/master/styles/rgb_cycle.h)  
 Usage: RgbCycle  
