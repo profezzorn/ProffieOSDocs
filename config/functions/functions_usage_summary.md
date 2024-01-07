@@ -305,7 +305,7 @@ When F is greater than MAX, F wraps to 0
 When F is less than 0, F wraps to MAX  
 returns Integer  
 
-## [Mult, Percentage](https://github.com/profezzorn/ProffieOS/blob/master/functions/mult.h)  
+## [Mult](https://github.com/profezzorn/ProffieOS/blob/master/functions/mult.h)  
 Usage: Mult<F, V>  
 Fixed point multiplication of values F * V,   
 fixed point 16.15 arithmetic (32768 = 1.0)  
@@ -313,6 +313,15 @@ fixed point 16.15 arithmetic (32768 = 1.0)
 (16384 * 16384 = 8192, representation of 0.5*0.5=0.25)   
 most blade functions use this method of fixed point calculations  
 F, V: INTEGER,   
+return value: INTEGER  
+
+## [Percentage](https://github.com/profezzorn/ProffieOS/blob/master/functions/mult.h)  
+Usage: Percentage<F, V>  
+Gets Percentage V of value F,   
+Percentages over 100% are allowed and will effectively be a multiplier.   
+F, V: INTEGER  
+example Percentage<Int<16384>,25>  
+this will give you 25% of Int<16384> and returns Int<4096>  
 return value: INTEGER  
 
 Usage: Percentage<F, V>  
