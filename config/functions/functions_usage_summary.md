@@ -369,24 +369,6 @@ Randomly returns either 0 or 32768 for each LED. The returned value
 is held, but changed to a new random value MILLIHZ * 1000 times per  
 second.  
 
-## [ReadPinF, AnalogReadPinF](https://github.com/profezzorn/ProffieOS/blob/master/functions/readpin.h)  
-Usage: ReadPinF<PIN>  
-or: ReadPinF<PIN, PIN_MODE>  
-returns INTEGER, 0 if pin is low and 32768 if pin is high  
-PIN: int, pin you want your style to respond to  
-PIN_MODE: int, one of INPUT, INPUT_PULLUP or INPUT_PULLDOWN, defaults to INPUT  
-
-Usage: AnalogReadPinF<PIN>  
-or: AnalogReadPinF<PIN, PIN_MODE>  
-returns INTEGER, 0-32768 depending on input reading.  
-PIN: int, pin you want your style to respond to  
-PIN_MODE: int, one of INPUT, INPUT_PULLUP or INPUT_PULLDOWN, defaults to INPUT  
-Notes:  
-  * May cause slowdowns  
-  * may not update every run() call  
-  * pin modes other than INPUT may not be supported,  
-  * Only analog-capable pins will work.  
-
 ## [Scale](https://github.com/profezzorn/ProffieOS/blob/master/functions/scale.h)  
 Usage: Scale<F, A, B>  
 Changes values in range 0 - 32768 to A-B  
