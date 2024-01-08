@@ -30,20 +30,12 @@
     <link rel="stylesheet" href="{{ base | append: '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!-- TODO: Figure out how to serve jquery locally (do we even use it?) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-         inlineMath: [ ['$', '$'] ],
-         displayMath: [ ['$$', '$$'] ],
-         processEscapes: true,
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
         }
-      });
-      MathJax.Hub.Register.MessageHook("Math Processing Error",function (message) {
-        alert("Math Processing Error: "+message[1]);
-      });
-      MathJax.Hub.Register.MessageHook("TeX Jax - parse error",function (message) {
-        alert("Math Processing Error: "+message[1]);
-      });
+       };
     </script>
     <!-- TODO: Figure out how to serve MathJax locally -->
     <script type="text/javascript" id="MathJax-script" async
