@@ -6,7 +6,7 @@ In the beginning, there was `CLASH_THRESHOLD_G`.
 
 Originally, the clash algorithm would simply compare the new accelerometer value with the last accelerometer value, and if it was greater than `CLASH_THRESHOLD_G`, it would trigger a clash, like:
 
-$|Acceleration_{now} - Acceleration_{last} | > CLASH\_THRESHOLD\_G $
+$|Acceleration_{now} - Acceleration_{last} | > CLASH{\_}THRESHOLD{\_}G $
 
 Note that the acceleration values are vectors with X, Y and Z components, and the || takes the length of the vector. In other words, this is the same as doing:
 
@@ -16,17 +16,17 @@ $Y = YAcceleration_{now} - ZAcceleration_{last}$
 
 $Y = YAcceleration_{now} - ZAcceleration_{last}$
 
-$\sqrt{X^2 + Y^2 + Z^2} > CLASH\_THRESHOLD\_G$
+$\sqrt{X^2 + Y^2 + Z^2} > CLASH{\_}THRESHOLD{\_}G$
 
 The problem with this algorithm is that the frequency of readings changes what it does. If you get more readings per second, then the difference between each one will be smaller, so the same CLASH_THRESHOLD_G wouldn't work. Back then, Proffieboards were new, and there were lots of Teensysabers still around, and because of differences in how they worked, they would often get different number of readings per second.
 
 So a long long time ago, I changed this algorithm, instead of using the "last" value, I used a slow average of values instead, so the algorithm became:
 
-$| Acceleration_{now} - Acceleration_{average} | > CLASH\_THRESHOLD\_G $
+$| Acceleration_{now} - Acceleration_{average} | > CLASH{\_}THRESHOLD{\_}G $
 
 In ProffieOS 3, this algorithm was improved by adding the Fusor class. The Fusor uses the accelerometer and the gyro to calculate a down vector. When nothing is happening, the down vector and the accelerometer should be the same thing.  But this allowed me to change the algorithm to:
 
-$| Acceleration_{now} - Down | > CLASH\_THRESHOLD\_G $
+$| Acceleration_{now} - Down | > CLASH{\_}THRESHOLD{\_}G $
 
 So far, the improvements have been just that: improvements, however, at this point the story takes a bit of a turn... I discovered two potentially problematic things.
 
@@ -73,7 +73,7 @@ So I did a bunch of experimentation, and I found that the gyro values tends to s
 
 The formula is basically:
 
-$| accel - down |/2+ | \Delta gyro|/2 > CLASH\_THRESHOLD\_G $
+$| accel - down |/2+ | \Delta gyro|/2 > CLASH{\_}THRESHOLD{\_}G $
 
 For many people, this formula works really well, and it helps filter out most of the false clashes. However, for some people, this formula seems to be the opposite of helpful, forcing them to increase their clash threshold and make clashes harder to trigger. I'm not sure why that is though, but somehow the clash spike and the acceleration spike must not arrive at the same time.
 
