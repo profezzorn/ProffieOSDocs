@@ -46,7 +46,7 @@ A slow SD card can slow down ProffieOS a lot. So make sure that your SD card is 
  * Don't have a lot of extra files in the font and root directories on the SD card. If you put them in a sub-directory, it is fine.
  * Don't put font deeply into the directory structure. If your font is in "fonts/obi/ep4/font11", it will take longer to open the files than if the font was simply called "obi11".
  * Don't use long filenames. Long filenames use up more directory entries and will make it take slightly longer to find *other* files in the same directory. However, making file names shorter than 8 characters, plus 3 characters for the extension has no effect on speed.
- * Prefer using the "EffectName/NNN.wav" structure over "EffectNameNNN.wav". Because of the way FAT32 works, having lots and lots of files in the same directory will make some of those files take longer to open. By creating sub-directories for each effect name (if that effect has more than one file) it will make finding files easier.
+ * Prefer using the "EffectName/NNN.wav" structure over "EffectNameNNN.wav". Because of the way FAT32 works, having lots and lots of files in the same directory will make some of those files take longer to open. By creating sub-directories for each effect name (if that effect has more than one file) it will make finding files easier.  For more info see [Faster Performance of fonts and blade animations](https://pod.hubbe.net/sound/faster-fonts.html)
 
 Finally, sometimes SD cards become slow as they get older. Doing the format-and-replace-all-the-files maneuver might fix such problems, but at some point, you may need to just replace the SD card even if it was working fine in the past.
 
