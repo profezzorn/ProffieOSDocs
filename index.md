@@ -9,6 +9,7 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 
 ## Getting started
 * [Proffieboard Setup](/proffieboard-setup.html)
+* [Your first config file](/config/your-first-config-file.html)
 * [The config file](/config/the-config-file.html)
 * [Blade Configuration](/config/blades/blade-configuration.html)
 * [Preset Configuration](/config/preset-configuration.html)
