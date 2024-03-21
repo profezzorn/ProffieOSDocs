@@ -3,6 +3,7 @@ Welcome to the ProffieOS / Proffieboard / TeensySaber documentation site!
 ## Main links:
 * ProffieOS: https://fredrik.hubbe.net/lightsaber/proffieos.html
 * Proffieboard V2: https://fredrik.hubbe.net/lightsaber/v5/
+* Proffieboard V3: https://fredrik.hubbe.net/lightsaber/v6/
 * Support forum: https://crucible.hubbe.net/
 * [Proffieboard V2 manual by Dmitry](https://drive.google.com/file/d/1vn9vRk-CNZSUHL4xm_hHwS6UgkfKXdO2/view)
 * [Fett263 resources and style library](https://www.fett263.com/index.html)
