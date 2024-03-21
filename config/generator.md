@@ -303,7 +303,7 @@ Button AuxButton(BUTTON_AUX, auxPin, "aux");
 #endif
 ```
 
-WHatever configuration you select at the top, the wiring diagram will change to match it, and the contents of the text window will contain the config file you need. Note that the presets for this config file are fairly primitive, and you might want to use the Fett263 configuration tool to make more interesting presets. This configuration generator is mainly targeted at getting the blade array and buttons configured correctly.
+Whatever configuration you select at the top, the wiring diagram will change to match it, and the contents of the text window will contain the config file you need. Note that the presets for this config file are fairly primitive, and you might want to use the Fett263 configuration tool to make more interesting presets. This configuration generator is mainly targeted at getting the blade array and buttons configured correctly.
 
 ## Saving the config file.
 
