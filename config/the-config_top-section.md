@@ -111,9 +111,12 @@ For Curved hilts, or where the board is not parallel with the blade (for Twist o
 This will rotate the orientation of the board 20 degrees around the Y axis.
 Depending on the orientation of the board, you might need -20 degrees instead. (Or 15 degrees? or 30?)
 
+
 ```cpp
 #define ORIENTATION_ROTATION 0,20,0
 ```
+
+The values for the define are in degrees and in the order of `X,Y,Z`, to see how this translates to physical rotation of the board, see [board_orientation_rotation.svg](https://pod.hubbe.net/images/board_orientation_rotation.svg).
 
 ### DUAL_POWER_BUTTONS
 This one means that clicking the AUX will also turn the saber on.
