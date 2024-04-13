@@ -18,7 +18,7 @@ First, we must include a board config file, basically, we have to pick one of th
 Note that if you include the proffieboard_config.h file (no version in the filename), the appropriate board version will be chosen for you based on which board is being programmed. This allows you to use your config on multiple versions of Proffieboards without needing to change this line to match.
 
 ### NUM_BLADES
-Next we must defines how many blades there are.
+Next we must define how many blades there are.
 Note that accent LEDs, crystal chambers and light-up buttons also counts as blades.
 
 ```cpp
