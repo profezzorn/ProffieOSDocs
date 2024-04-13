@@ -38,7 +38,7 @@ To set the maximum volume of the saber, use this with the value of your choice:
 ```cpp
 #define VOLUME 1000
 ```  
-With some [prop files](../the-config_prop-section.html), you can use a volume menu to adjust the sound level of the saber. This menu's maximum volume is set by the above define.
+With some [prop files](the-config_prop-section.html), you can use a volume menu to adjust the sound level of the saber. This menu's maximum volume is set by the above define.
 Sometimes (like late night for example) you may want to boot the saber at a lower volume level, which can be adjusted up to the maximum later using volume menu. To do that, use this with the value of your choice:
 ```cpp
 #define BOOT_VOLUME 300
