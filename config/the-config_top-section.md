@@ -33,12 +33,18 @@ Note that this is just used to change how some of the buttons behave, and nothin
 #define NUM_BUTTONS 2
 ```
 ### VOLUME
-Then we specify the volumes. Generally values between 0 and 3000 are useful, but it may depend on what kind of board you have.
-
+Then we specify the volumes. Generally values between 0 and 3000 are useful, but it may depend on what kind of board you have.  
+To set the maximum volume of the saber, use this with the value of your choice:
 ```cpp
 #define VOLUME 1000
+```  
+With some [prop files](../the-config_prop-section.html), you can use a volume menu to adjust the sound level of the saber. This menu's maximum volume is set by the above define.
+Sometimes (like late night for example) you may want to boot the saber at a lower volume level, which can be adjusted up to the maximum later using volume menu. To do that, use this with the value of your choice:
+```cpp
+#define BOOT_VOLUME 300
 ```
 
+### maxLedsPerStrip
 I don't remember why, but this next number is a constant instead of a define.
 It specifies how many pixels we can have in a single strip. Note that if you use RGBW pixels, this number needs to be 25% bigger than your actual number of pixels. There is no need to make this smaller if your strips are not 144 pixels long, but you do need to make it bigger if they are more than 144 pixels long.
 
