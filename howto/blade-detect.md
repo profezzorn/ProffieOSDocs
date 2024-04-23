@@ -32,7 +32,7 @@ or
 #define BLADE_DETECT_PIN blade4Pin  
 ```
 
-All pins that are hooked up directly to the CPU can be used for blade detect, so data pins, free pins, button pins and RX/TX, except Data1 on a 3.9 board because it’s already bridged to a resistor.  
+All pins that are hooked up directly to the CPU can be used for blade detect, so data pins, free pins, button pins and RX/TX, with the exception of Data1 because it’s already bridged to a resistor.  
 The blade detect pin will be monitored continuously, when it changes, the Blade ID routines will be re-triggered. In addition, when not connected to anything, Blade ID will be offset by the value of NO_BLADE, which equals a billion.
 
 The detection works by repeatedly switching between pull-up and pull-down mode and see if the input follows, or if it stays put at high or low. That means that it doesn't matter if the blade ID pin is connected to GND or BATT+, which is a good thing, because when connected to the '-' pad on an LED pixel strip, that can flip between high and low when the FETs are turned on/off.
