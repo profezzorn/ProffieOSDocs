@@ -11,7 +11,7 @@ While it's possible to just open up a text editor and write a config file, I wou
 * If you are installing your own Proffieboard, you can use the [configuration generator web page](/config/generator.html) to generate a config file for your board.
 * You can take an existing, similar config file and modify it. (If necessary)
 * You can use the [Fett263 configuration helper tool](https://www.fett263.com/fett263-os7-config-helper.html), but please beware that it requires you to input the blade configuration, so it's usually best to start with one of the other methods above, and then use the Fett263 tool to generate a *better* config file.
-* There is also the [ProffieConfig tool](https://github.com/ryryog25/ProffieConfig), which aims to streamline this entire process, including uploads to the board.
+* There is also the [ProffieConfig tool](https://github.com/ryancog/ProffieConfig), which aims to streamline this entire process, including uploads to the board.
 
 
 ## Configuring ProffieOS to use your config file.
