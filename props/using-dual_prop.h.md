@@ -16,7 +16,7 @@ How to: Use the following lines where you set your prop file in your config.
 #include "../props/saber_sa22c_buttons.h"   
 #include "../props/blaster.h"   
 #undef PROP_TYPE   
-#define PROP_TYPE DualProp<SaberSA22CButtons, Blaster>   
+#define PROP_TYPE SaberBlasterProp<SaberSA22CButtons, Blaster>   
 #endif   
 ```
 ** Note the prop file SaberSA22CButtons here would change
