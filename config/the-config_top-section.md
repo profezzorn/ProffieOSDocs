@@ -89,6 +89,19 @@ This code will flip the OLED displayed content 180 degrees.
 ```cpp
 #define OLED_FLIP_180
 ```
+### OLED_MIRRORED
+Shows the OLED displayed content in reverse (for scopes that might use HUD 45 degree mirrors for example).
+
+```cpp
+#define OLED_MIRRORED
+```
+### PLI_OFF_TIME
+Duration that the Power Level Indicator (battery level meter) will show on the OLED when blade is turned off.  
+Example below show 10 seconds set.
+
+```cpp
+#define PLI_OFF_TIME 10000
+```
 
 ### SHARED_POWER_PINS
 This code makes it possible to use the same power pins for multiple blades.
