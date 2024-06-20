@@ -15,7 +15,7 @@ humStart=100
 # From ProffieOS 7.x, you can use ProffieOSHumDelay to specify how many milliseconds
 # from the beginning of out.wav to start the hum. If both ProffieOSHumDelay and humStart
 # are specified, then ProffieOSHumDelay is the one that will count.
-# If not specified or set to 0 (no delay), humStart will be used instead.
+# If not specified or set to -1, humStart will be used instead.
 # Defaults to -1.
 ProffieOSHumDelay=-1
 
