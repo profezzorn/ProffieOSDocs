@@ -34,9 +34,9 @@ Example for SubBlade usage:
 BladeConfig blades[] = {
 { 0,
    SubBlade(0, 1, WS2811BladePtr<146, WS2811_580kHz>()),
-   SubBlade(2, 14, NULL),  //Quilon A
-   SubBlade(15,26, NULL), //Quilon B
-   SubBlade(27, 145, NULL) //Main Blade
+   SubBlade(2, 14, NULL),   // Quillon A
+   SubBlade(15,26, NULL),   // Quillon B
+   SubBlade(27, 145, NULL)  // Main Blade
    CONFIGARRAY(presets) 
 }
 };
