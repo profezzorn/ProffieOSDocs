@@ -33,7 +33,7 @@ Example for SubBlade usage:
 ```cpp
 BladeConfig blades[] = {
 { 0,
-   SubBlade(0, 1, WS2811BladePtr<145, WS2811_580kHz>()),
+   SubBlade(0, 1, WS2811BladePtr<146, WS2811_580kHz>()),
    SubBlade(2, 14, NULL),  //Quilon A
    SubBlade(14,26, NULL), //Quilon B
    SubBlade(27, 145, NULL) //Main Blade
