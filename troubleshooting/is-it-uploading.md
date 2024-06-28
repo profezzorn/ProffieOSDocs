@@ -5,7 +5,7 @@ When you upload to a Proffieboard, the progress of the upload is shown in the sa
 
 <image src="/troubleshooting/images/successful_upload.png" width=686 height=531 alt="successful upload" />
 
-Note that for some version of Android you will need to scroll down to see this. If you do not see this, or something similar, then the upload was probably not successful.
+Note that for some version of Arduino you will need to scroll down to see this. If you do not see this, or something similar, then the upload was probably not successful.
 
 
 ## Wrong port
