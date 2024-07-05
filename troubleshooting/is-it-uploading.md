@@ -10,7 +10,7 @@ Note that for some version of Arduino you will need to scroll down to see this. 
 
 ## Wrong port
 
-One of the most common reasons for this is not selecting the right port. Usually this looks like this:
+One of the most common reasons for a failed upload is not selecting the right port. Usually this looks like this:
 
 <image src="/troubleshooting/images/wrong_port.png" width=707 height=361 alt="wrong port" />
 
