@@ -82,7 +82,7 @@ StylePtr<Layers<
 There, now alt and variance will be synchronized, so the Red color will play alt000 sounds and the Blue color will play alt001 sounds.
 
 ### TrDoEffect<EFFECT_ALT_SOUND, N>
-By using TrDoEffect, with the EFFECT_ALT_SOUND effect, we can have the style explicitly select which alt sounds are used. This means that you can trigger alt sounds based on effecs and pulses. This creates the ability to move between states in the style, and you can check which state you are in by using the AltF function. The possibilities here are endless, but also more complicated, so I will leave it up to the reader to figure out good examples of how to use this.
+By using TrDoEffect, with the EFFECT_ALT_SOUND effect, we can have the style explicitly select which alt sounds are used. This means that you can trigger alt sounds based on effects and pulses. This creates the ability to move between states in the style, and you can check which state you are in by using the AltF function. The possibilities here are endless, but also more complicated, so I will leave it up to the reader to figure out good examples of how to use this.
 
 ```cpp
 StylePtr<Layers<
