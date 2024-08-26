@@ -54,7 +54,7 @@ alt001/hum.wav
 Note that alt001/force and alt002/force has the same number of files in it. This is important; every alt directory MUST have exactly the same set of files in them. Only the length and content of the files can be different. If you don't have the same set of files, you will get an "error in font directory" error.
 
 ## Controlling which alternative is used.
-Ok, so now our has two sets of hum and force sounds, but how do we select which set of sounds is actually used? ProffieOS does not actually do anything to select which alternative is used by default, it just provides ways for you do it, either from a blade style, or from a prop. I will now describe a few ways that this could work, but it's by no means the only ways.
+Ok, so now our sound font has two sets of hum and force sounds, but how do we select which set of sounds is actually used? ProffieOS does not actually do anything to select which alternative is used by default, it just provides ways for you to do it, either from a blade style, or from a prop. I will now describe a few ways that this could work, but it's by no means the only ways.
 
 ### SyncAltToVariance
 By putting SyncAltToVarianceL or SyncAltToVarianceF in your style, which alt is used will be linked to the variance. This makes it super-easy to create blade styles which switch colors AND sounds at the same time. Any controls used to change the variance (color change) will also affect the alt sounds.
