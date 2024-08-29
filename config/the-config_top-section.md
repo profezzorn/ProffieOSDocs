@@ -137,7 +137,7 @@ Depending on the orientation of the board, you might need -20 degrees instead. (
 ```
 
 The values for the define are in degrees and in the order of `X,Y,Z`, the following image shows how these values translate to physical rotation of the board:
-<img src="https://pod.hubbe.net/images/board_orientation_rotation.svg" width=400 alt="orientation rotation">
+<img src="https://pod.hubbe.net/images/board_orientation_rotation.png" width=400 alt="orientation rotation">
 
 ### DUAL_POWER_BUTTONS
 This one means that clicking the AUX will also turn the saber on.
