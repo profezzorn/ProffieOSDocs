@@ -14,7 +14,7 @@ using BatteryLevelStyle = InOutHelperX<Gradient<Red,Orange,Yellow,Green,Green,Gr
 ```
 Then in the preset you would apply that aliased style like this:
 ```cpp
-StylePtr<BatteryLevelStyle>();
+StylePtr<BatteryLevelStyle>(),
 ```
 
 
