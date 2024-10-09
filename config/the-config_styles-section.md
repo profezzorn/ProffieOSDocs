@@ -8,7 +8,7 @@ The CONFIG_STYLES section is a convenience location for placing custom style tem
 
 Here is an example of what it could look like:
 ```cpp
-#ifndef CONFIG_STYLES
+#ifdef CONFIG_STYLES
 using BatteryLevelStyle = InOutHelperX<Gradient<Red,Orange,Yellow,Green,Green,Green,Green>, BatteryLevel>;
 #endif
 ```
