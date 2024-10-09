@@ -9,8 +9,13 @@ The CONFIG_STYLES section is a convenience location for placing custom style tem
 Here is an example of what it could look like:
 ```cpp
 #ifdef CONFIG_STYLES
-using BatteryLevelStyle = InOutHelperX<Gradient<Red,Orange,Yellow,Green,Green,Green,Green>, BatteryLevel>;
+using BatteryLevelStyle = InOutHelperX<Gradient<Red,Orange,Yellow,Green,Green,Green,Green>,BatteryLevel>;
 #endif
 ```
+Then in the preset you would apply that aliased style like this:
+```cpp
+StylePtr<BatteryLevelStyle>();
+```
+
 
 Please not that there is no actual difference between putting things at the top of the CONFIG_PRESETS section and putting them in the CONFIG_STYLES section, it is merely provided make it easier to keep your config file organized.
