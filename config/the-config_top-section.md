@@ -122,7 +122,7 @@ If your board is installed in a different orientation than normal, you may need 
 #define ORIENTATION ORIENTATION_TOP_TOWARDS_BLADE
 #define ORIENTATION ORIENTATION_BOTTOM_TOWARDS_BLADE
 ```
-Here's a visual reference:  
+Here's a visual reference (viewed from above with the blade to the right):  
 <img src="https://pod.hubbe.net/images/board_orientations.png" width=400 alt="board orientation_defines">
 
 
