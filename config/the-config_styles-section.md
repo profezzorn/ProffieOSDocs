@@ -18,4 +18,4 @@ StylePtr<BatteryLevelStyle>();
 ```
 
 
-Please not that there is no actual difference between putting things at the top of the CONFIG_PRESETS section and putting them in the CONFIG_STYLES section, it is merely provided make it easier to keep your config file organized.
+Please not that there is no actual difference between putting things at the top of the CONFIG_PRESETS section and putting them in the CONFIG_STYLES section, it is merely provided to make it easier to keep your config file organized.
