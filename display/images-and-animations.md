@@ -38,7 +38,7 @@ Images shown on the display can be single frame stills, or they can be animated.
 They can be created in an image editor like Paint or Photoshop, or online such as at https://www.pixilart.com.  
 To get started, save each animation frame as its own image file, 128x32, and make sure the names of the exported files are sequential, like  
 font001.jpg font002.jpg font003.jpg etc...  
-The file type here doesn't really matter (jpg, bmp, png, etc...) as long as they are all the same.  
+The file type here doesn't really matter (jpg, bmp, png, etc...) as long as they are all the same. However, png gives weird results when previewing as a gif.  
 The file name extension will be used in the commands below to process the image down to a 1bpp monochrome image, formatted as either bmp or pbm. 
 
 ## Install Imagemagick
@@ -80,13 +80,13 @@ Example: Make a currently looping 128x3648 boot.bmp into a non-looping boot.pbm 
 
 1. Stick a copy of the file in a new, empty working directory, and calculate the number of frames by dividing the total vertical pixels by 32. (3648/32=114)  
 2. `cd` to that directory, then use that number in this command  
-`convert boot.bmp -crop 1x114@ frame-%04d.png`  
-This is going to give you 114 files (one per frame) named “frame” with 4 digits and .png extensions.  
+`convert boot.bmp -crop 1x114@ frame-%04d.jpg`  
+This is going to give you 114 files (one per frame) named “frame” with 4 digits and .jpg extensions.  
 3. Take all the files that start with “frame” and make a .pbm file.  
 `convert -monochrome frame* boot.pbm`  
 
 On Linux , this can be optionally done with the "cat" command, however we need to either process files that are monochrome already, or convert the result of this:  
-`cat frame????.png >font.pbm`
+`cat frame????.jpg >font.pbm`
 
 
 ## Converting video to frames
@@ -96,12 +96,12 @@ To install ffmpeg on MacOS, see here https://phoenixnap.com/kb/ffmpeg-mac
 Videos with .mp4 and .mov extensions have been tested, others likely work as well.  
 
 This command will make numbered files for EACH frame of the video.  
-`ffmpeg -i SourceFileName.mp4 frame%04d.png`  
+`ffmpeg -i SourceFileName.mp4 frame%04d.jpg`  
 Now, that command as-is may generate too many frames depending on your video length, so you can optionally choose an interval by using the `-r` flag like this:  
-`ffmpeg -i SourceFileName.mp4 -r 1 frame%04d.png`  
+`ffmpeg -i SourceFileName.mp4 -r 1 frame%04d.jpg`  
 Using the option `-r 1` will set the output frame rate to 1 every second. Assuming the input video has a frame rate of 30 per second, `-r 1` will output about every 30th frame.  
 Calculate the interval you need according to the frame rate of the input. For example, to get approximately every 10th frame, use `-r 3.0`.
-The output file name uses `%04d` which creates a numbered sequence with four digits, so frame0001.png, frame0002.png, and so on.
+The output file name uses `%04d` which creates a numbered sequence with four digits, so frame0001.jpg, frame0002.jpg, and so on.
 
 Once all of the frame files are available, making a .bmp or .pbm from them is the same as explained above.
 
@@ -114,7 +114,7 @@ The non-looping pbm file won't view in the same way, so while it's pretty easy t
 Make a gif file from the frames, and then it CAN be dragged onto the browser window to watch the playback.  
 *Note - while gifs of pbm files will loop in the browser, the pbm will play once on the OLED using ProffieOS.
 The delay speed used here is pretty close to on-display speed when set to ~3 as seen below.  
-`convert -delay 3 *.png preview.gif`  
+`convert -delay 3 *.jpg preview.gif`  
 If we wanted to "boomerang" the animation by adding a reversed order of frames to the end,   
 we make the gif as above, then use this command:  
 `convert preview.gif -coalesce -duplicate 1,-2-1 -quiet -layers OptimizePlus -loop 0 boomerang.gif`  
