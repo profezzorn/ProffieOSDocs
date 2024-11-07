@@ -66,13 +66,13 @@ Animations for the OLED display can play either looped, or non-looped.
 To make a looped animation, use bmp files, stacking frames vertically. For instance, a bmp image that is 128x64 is a 2-frame looped animation. 128x96 is a 3-frame looped animation, etc.  
 Use the "magick" command with "-append" (which stacks the frames vertically) and "-monochrome" flags, which looks like this:  
 ( * is a wildcard so all files enging in ".jpg" will be processed)  
-`magick -append -monochrome *.jpg font.bmp`  
+`convert -append -monochrome *.jpg font.bmp`  
 The resulting file named "font.bmp" is now ready to play on the OLED.  
    
 ## Non-looped Animations  
 To make non-looped animations, we need to concatenate the files together into a pbm file without the vertical stacking.  
 We can use the same Imagemagick "magick" command as above, just without the "-append" option.  
-`magick -monochrome *.jpg font.pbm`
+`convert -monochrome *.jpg font.pbm`
 
 ## Convert from bmp to pbm, or vice-versa
 The idea here is simply to break out a file (back) to its individual frames and then make the desired file type.  
@@ -80,10 +80,10 @@ Example: Make a currently looping 128x3648 boot.bmp into a non-looping boot.pbm 
 
 1. Stick a copy of the file in a new, empty working directory, and calculate the number of frames by dividing the total vertical pixels by 32. (3648/32=114)  
 2. `cd` to that directory, then use that number in this command  
-`magick boot.bmp -crop 1x114@ frame-%04d.png`  
+`convert boot.bmp -crop 1x114@ frame-%04d.png`  
 This is going to give you 114 files (one per frame) named “frame” with 4 digits and .png extensions.  
 3. Take all the files that start with “frame” and make a .pbm file.  
-`magick -monochrome frame* boot.pbm`  
+`convert -monochrome frame* boot.pbm`  
 
 On Linux , this can be optionally done with the "cat" command, however we need to either process files that are monochrome already, or convert the result of this:  
 `cat frame????.png >font.pbm`
@@ -114,18 +114,18 @@ The non-looping pbm file won't view in the same way, so while it's pretty easy t
 Make a gif file from the frames, and then it CAN be dragged onto the browser window to watch the playback.  
 *Note - while gifs of pbm files will loop in the browser, the pbm will play once on the OLED using ProffieOS.
 The delay speed used here is pretty close to on-display speed when set to ~3 as seen below.  
-`magick -delay 3 *.png preview.gif`  
+`convert -delay 3 *.png preview.gif`  
 If we wanted to "boomerang" the animation by adding a reversed order of frames to the end,   
 we make the gif as above, then use this command:  
-`magick preview.gif -coalesce -duplicate 1,-2-1 -quiet -layers OptimizePlus -loop 0 boomerang.gif`  
+`convert preview.gif -coalesce -duplicate 1,-2-1 -quiet -layers OptimizePlus -loop 0 boomerang.gif`  
 The gif could even be converted back to bmp or pbm.  
-`magick boomerang.gif font.pbm`
+`convert boomerang.gif font.pbm`
 
 
 ## Inverted color results
 If the final bmp image/animation is an inverted black and white color scheme from what you intended,  
 simply redo the conversion as above, but this time add the `-negate` flag, like:  
-`magick -monochrome -negate *.jpg font.bmp`
+`convert -monochrome -negate *.jpg font.bmp`
 
 ## Orientation
 Lastly, if the image is displayed upside down on the installed screen, we can easily rotate it 180 degrees by adding  
