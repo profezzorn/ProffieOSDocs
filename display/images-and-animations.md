@@ -125,7 +125,7 @@ The gif could even be converted back to bmp or pbm.
 ## Inverted color results
 If the final bmp image/animation is an inverted black and white color scheme from what you intended,  
 simply redo the conversion as above, but this time add the `-negate` flag, like:  
-`convert -monochrome -negate *.jpg font.bmp`
+`convert -append -monochrome -negate *.jpg font.bmp`
 
 ## Orientation
 Lastly, if the image is displayed upside down on the installed screen, we can easily rotate it 180 degrees by adding  
