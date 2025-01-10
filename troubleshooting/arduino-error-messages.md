@@ -15,12 +15,20 @@ In that case, back at the beginning of a section, a preset, or higher up in the 
 # Incorrect number of blade styles in preset
 You have to have a blade style for every "blade" defined in the Bladeconfig section at the bottom of your config file.
 If you have 3 blades (a main blade, a crystal chamber LED, and another LED pixel accent for example), then there needs to be 3 blade styles in each preset.
-This is a typical error, indicating there's at least one preset with too little or too many styles.
+This is a typical error, indicating there's at least one preset with too many styles.
 ```
 error: too many initializers for 'Preset'
 
   421 | };
 ```  
+
+If on the other hand you get this error:
+
+```
+error: cannot convert 'const char*' to 'StyleFactory*' in initialization
+```
+
+then you have too few styles in one or more of your presets.
 
 # Transparent color as base layer
 The error generated if this is the case will say:
