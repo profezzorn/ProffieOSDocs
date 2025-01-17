@@ -65,7 +65,7 @@ Animations for the OLED display can play either looped, or non-looped.
 ## Looped Animations  
 To make a looped animation, use bmp files, stacking frames vertically. For instance, a bmp image that is 128x64 is a 2-frame looped animation. 128x96 is a 3-frame looped animation, etc.  
 Use the "magick" command with "-append" (which stacks the frames vertically) and "-monochrome" flags, which looks like this:  
-( * is a wildcard so all files enging in ".jpg" will be processed)  
+( * is a wildcard so all files ending in ".jpg" will be processed)  
 `convert -append -monochrome *.jpg font.bmp`  
 The resulting file named "font.bmp" is now ready to play on the OLED.  
    
