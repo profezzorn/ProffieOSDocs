@@ -39,7 +39,7 @@ jobs:
       - name: Create Site ZIP
         run: cp -r _site POD && zip -9r POD.zip POD && mv POD.zip POD
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1
         with:
           path: POD
 
