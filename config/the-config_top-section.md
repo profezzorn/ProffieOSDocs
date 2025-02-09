@@ -479,7 +479,7 @@ ENABLE_MOTION is now the default, but this define can be used to disable it. Thi
 #define DISABLE_MOTION
 ```
 
-### DISABLE_WS811
+### DISABLE_WS2811
 ENABLE_WS2811 is now the default, but this define can be used to disable it. This would only be used when developing support for new boards though.
 ```cpp
 #define DISABLE_WS2811
