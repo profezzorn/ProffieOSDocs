@@ -65,7 +65,7 @@ In ProffieOS 7.x, the clash detection was modified in ways that makes it less se
 
 
 Finally, we have a set of defines that enable standard features.
-It's on my TODO list to make these not required:
+From ProffieOS 8.x, these defines are on by default and are not required.
 
 ```cpp
 #define ENABLE_AUDIO
@@ -463,4 +463,30 @@ This define allows you to use only Accelerometer for Clash Detection (OS6 or ear
 This define lets you include some other POV data instead of the default star wars logo. To learn how to generate pov data, go check out the [POV tools](/tools/pov.html)
 ```cpp
 #define POV_INCLUDE_FILE "jedi_logo.h"
+```
+
+# ProffieOS 8.x defines
+
+### DISABLE_AUDIO
+ENABLE_AUDIO is now the default, but this define can be used to disable it. This would only be used when developing support for new boards though.
+```cpp
+#define DISABLE_AUDIO
+```
+
+### DISABLE_MOTION
+ENABLE_MOTION is now the default, but this define can be used to disable it. This would only be used when developing support for new boards though.
+```cpp
+#define DISABLE_MOTION
+```
+
+### DISABLE_WS811
+ENABLE_WS2811 is now the default, but this define can be used to disable it. This would only be used when developing support for new boards though.
+```cpp
+#define DISABLE_WS2811
+```
+
+### DISABLE_SD
+ENABLE_SD is now the default, but this define can be used to disable it. This would only be used when developing support for new boards though.
+```cpp
+#define DISABLE_SD
 ```
