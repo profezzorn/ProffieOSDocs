@@ -490,3 +490,15 @@ ENABLE_SD is now the default, but this define can be used to disable it. This wo
 ```cpp
 #define DISABLE_SD
 ```
+
+### MOUNT_SD_SETTING
+With this setting, you don't have to worry about your computer accessing the SD card and causing a corruption when you program the board anymore. By default, if you have "Mass Storage" selected in Arduino -> Tools -> USB Type, you can use access your SD card from you computer, basically, the Proffieboard performs the function of a (slow) SD card reader. Unfortunately, your computer may access the SD card when you don't expect it, and if interrupted at the wrong time, your SD card may become corrupt. This is why it is normally very important to "eject" the SD card before disconnecting or programming the proffieboard.
+
+With MOUNT_SD_SETTING defined, ProffieOS will default to not allowing the computer to access the SD card, but you can change that setting at any time by using the comamnd "sd 1" in the serial monitor, an in-hilt menu setting, or by using the ProffieOS workbench. Then you can access the card like normal from the computer, and then make sure to "eject" it when you are done. Afterwards, you can use "sd 0" to disable access again. Note that the SD access setting is never saved and always returns to disallowing SD access when the saber is rebooted.
+
+This setting is recommended for all users, especially when combined with a menu to enable/disable it easily.
+
+```cpp
+#define MOUNT_SD_SETTING
+```
+
