@@ -509,3 +509,9 @@ Lower values makes finding problems more difficult.
 ```cpp
 #define PROFFIEOS_LOG_LEVEL 300
 ```
+
+### DISABLE_NO_REPEAT_RANDOM
+NO_REPEAT_RANDOM is on by default in ProffieOS 8.x, however, if you want to turn it off, you can still do so with this define.
+```cpp
+#define DISABLE_NO_REPEAT_RANDOM
+```
