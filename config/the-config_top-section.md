@@ -502,3 +502,10 @@ This setting is recommended for all users, especially when combined with a menu 
 #define MOUNT_SD_SETTING
 ```
 
+### PROFFIEOS_LOG_LEVEL
+This lets you quickly and easily control how much information ProffieOS will log to the serial monitor. 100 means only the absolute necesseties, 200 means include things that tell you what is going on, 300 is the default, which includes things you probably want to know, 400 is verbose logging, which includes things you don't normally need and 500 is spammy logging which includes lots of things that happen on a regular basis.
+Higher values use more cpu and memory.
+Lower values makes finding problems more difficult.
+```cpp
+#define PROFFIEOS_LOG_LEVEL 300
+```
