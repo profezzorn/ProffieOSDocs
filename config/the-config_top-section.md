@@ -515,3 +515,10 @@ NO_REPEAT_RANDOM is on by default in ProffieOS 8.x, however, if you want to turn
 ```cpp
 #define DISABLE_NO_REPEAT_RANDOM
 ```
+
+### NO_BLADE_ID_RANGE
+This define will change how blade ID works. Basically, if the blade ID is between the two given values, then the NO_BLADE (1 billion) will be added to the returned ID. The idea is that in most cases, the ID values returned when there is no blade in your hilt is different from when there is a blade in your hilt. By making ID values in that range return NO_BLADE, you may not need a blade detect pin to see if there is a blade in your hilt or not. This is particularly useful in combination with BLADE_ID_SCAN_MILLIS.
+
+```cpp
+#define NO_BLADE_ID_RANGE 100,1000
+```
