@@ -8,9 +8,9 @@ IncrementModulo<PULSE, MAX, INCREMENT>
 ```
 
 # Arguments
-PULSE: FUNCTION (pulse type)
-MAX: FUNCTION (not zero) defaults to Int<32768>
-INCREMENT: FUNCTION defaults to Int<1>
+ * PULSE: FUNCTION (pulse type)
+ * MAX: FUNCTION (not zero) defaults to Int<32768>
+ * INCREMENT: FUNCTION defaults to Int<1>
 
 # Description
 Increments by I each time PULSE occurs wraps around when

@@ -8,9 +8,9 @@ ResponsiveClashL<CLASH COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE>
 ```
 
 # Arguments
-TRANSITION1 & TRANSITION2: transition Begin & End
-TOP: uppermost Clash position limit, BOTTOM = lowermost Clash position limit, 32768 = tip, 0 = hilt
-SIZE: controls Clash area size 0 ~ 32768
+ * TRANSITION1 & TRANSITION2: transition Begin & End
+ * TOP: uppermost Clash position limit, BOTTOM = lowermost Clash position limit, 32768 = tip, 0 = hilt
+ * SIZE: controls Clash area size 0 ~ 32768
 
 # Description
 Implements LocalizedClash effect that mimics ResponsiveLockup location and size

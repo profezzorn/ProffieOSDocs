@@ -11,9 +11,9 @@ TrWipeIn<MILLIS>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-MILLIS: a number
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * MILLIS: a number
+ * return value: TRANSITION
 
 # Description
 Like TrWipe, but from tip to base.

@@ -8,9 +8,9 @@ ResponsiveMeltL<MELT COLOR, TRANSITION1, TRANSITION2, SIZE1, SIZE2>
 ```
 
 # Arguments
-TRANSITION1 & TRANSITION2: transition Begin & End
-SIZE1 & SIZE2: control MELT area limits for TwistAngle
-LOCATION: control SmoothStep location
+ * TRANSITION1 & TRANSITION2: transition Begin & End
+ * SIZE1 & SIZE2: control MELT area limits for TwistAngle
+ * LOCATION: control SmoothStep location
 
 # Description
 Implements Melt effect for cutting through object, size will change to mimic metal

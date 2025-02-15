@@ -11,9 +11,9 @@ HumpFlickerF<N>
 ```
 
 # Arguments
-FUNCTION: FUNCTION
-N: NUMBER
-return value: INTEGER
+ * FUNCTION: FUNCTION
+ * N: NUMBER
+ * return value: INTEGER
 
 # Description
 Creates hump shapes that randomize over the blade.

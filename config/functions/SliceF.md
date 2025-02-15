@@ -9,9 +9,9 @@ SliceF<DENSITY_FUNCTION, OFFSET>
 ```
 
 # Arguments
-DENSITY_FUNCTION: 3DF
-OFFSET: integer, defaults to 20
-return value: FUNCTION
+ * DENSITY_FUNCTION: 3DF
+ * OFFSET: integer, defaults to 20
+ * return value: FUNCTION
 
 # Description
 The DENSITY_FUNCTION is a 3-dimensional function, f(x, y, z)

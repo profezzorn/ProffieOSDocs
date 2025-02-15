@@ -8,9 +8,9 @@ Layers<BASE, LAYER1, LAYER2, ...>
 ```
 
 # Arguments
-BASE: COLOR or LAYER
-LAYER1, LAYER2: LAYER
-return value: COLOR or LAYER (same as BASE)
+ * BASE: COLOR or LAYER
+ * LAYER1, LAYER2: LAYER
+ * return value: COLOR or LAYER (same as BASE)
 
 # Description
 This style works like layers in gimp or photoshop.

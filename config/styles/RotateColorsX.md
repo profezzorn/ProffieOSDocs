@@ -8,9 +8,9 @@ RotateColorsX<ROTATION, COLOR>
 ```
 
 # Arguments
-ROTATION: FUNCTION
-COLOR: COLOR or LAYER
-return value: COLOR or LAYER (same as COLOR)
+ * ROTATION: FUNCTION
+ * COLOR: COLOR or LAYER
+ * return value: COLOR or LAYER (same as COLOR)
 
 # Description
 

@@ -8,8 +8,8 @@ Rgb<R, G, B>
 ```
 
 # Arguments
-R, G, B: a number (0-255)
-return value: COLOR
+ * R, G, B: a number (0-255)
+ * return value: COLOR
 
 # Description
 

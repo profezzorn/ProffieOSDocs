@@ -13,10 +13,10 @@ PulsingL<B, PULSE_MILLIS_FUNC>
 ```
 
 # Arguments
-A, B: COLOR
-PULSE_MILLIS: a number
-PULSE_MILLIS_FUNC: FUNCTION
-return value: COLOR
+ * A, B: COLOR
+ * PULSE_MILLIS: a number
+ * PULSE_MILLIS_FUNC: FUNCTION
+ * return value: COLOR
 
 # Description
 Goes back and forth between COLOR1 and COLOR2.

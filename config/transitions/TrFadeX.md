@@ -11,9 +11,9 @@ TrFade<MILLIS>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-MILLIS: a number
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * MILLIS: a number
+ * return value: TRANSITION
 
 # Description
 Linear fading between two colors in specified number of milliseconds.

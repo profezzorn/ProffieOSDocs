@@ -9,9 +9,9 @@ Mix<F, A, B, C, ....>
 ```
 
 # Arguments
-F: INTEGER
-A, B, C: COLOR
-return value: COLOR or LAYER (if A or B is a layer)
+ * F: INTEGER
+ * A, B, C: COLOR
+ * return value: COLOR or LAYER (if A or B is a layer)
 
 # Description
 

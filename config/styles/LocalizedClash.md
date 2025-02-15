@@ -11,10 +11,10 @@ LocalizedClashL<CLASH_COLOR, CLASH_MILLIS, CLASH_WIDTH_PERCENT=50>
 ```
 
 # Arguments
-BASE: COLOR
-CLASH_COLOR: COLOR (defaults to white)
-CLASH_MILLIS: a number (defaults to 40)
-return value: COLOR
+ * BASE: COLOR
+ * CLASH_COLOR: COLOR (defaults to white)
+ * CLASH_MILLIS: a number (defaults to 40)
+ * return value: COLOR
 
 # Description
 Similar to SimpleClash, but lights up a portion of the blade.

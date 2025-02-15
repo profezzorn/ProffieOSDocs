@@ -11,12 +11,12 @@ TrBlink<MILLIS, N, WIDTH>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-MILLIS: a number
-N: a number
-WIDTH_FUNCTION: FUNCTION, defaults to Int<16384>
-WIDTH: a number, defaults to 16384
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * MILLIS: a number
+ * N: a number
+ * WIDTH_FUNCTION: FUNCTION, defaults to Int<16384>
+ * WIDTH: a number, defaults to 16384
+ * return value: TRANSITION
 
 # Description
 Blinks A-B N times in MILLIS, based on WIDTH (0 ~ 32768)

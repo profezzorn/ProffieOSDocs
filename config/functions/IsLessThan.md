@@ -8,8 +8,8 @@ IsLessThan<F, V>
 ```
 
 # Arguments
-F, V: FUNCTION
-return value: FUNCTION
+ * F, V: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Returns 0 or 32768 based on V

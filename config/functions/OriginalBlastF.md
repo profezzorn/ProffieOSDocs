@@ -8,8 +8,8 @@ OriginalBlastF<EFFECT>
 ```
 
 # Arguments
-EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
-return value: FUNCTION
+ * EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
+ * return value: FUNCTION
 
 # Description
 Original blast function. Normally returns zero, but

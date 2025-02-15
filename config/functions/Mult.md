@@ -8,8 +8,8 @@ Mult<F, V>
 ```
 
 # Arguments
-F, V: FUNCTION
-return value: FUNCTION
+ * F, V: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Fixed point multiplication of values F * V,

@@ -11,10 +11,10 @@ SimpleClashL<CLASH_COLOR, CLASH_MILLIS>
 ```
 
 # Arguments
-BASE: COLOR
-CLASH_COLOR: COLOR (defaults to white)
-CLASH_MILLIS: a number (defaults to 40)
-return value: COLOR
+ * BASE: COLOR
+ * CLASH_COLOR: COLOR (defaults to white)
+ * CLASH_MILLIS: a number (defaults to 40)
+ * return value: COLOR
 
 # Description
 Turns the blade to CLASH_COLOR for CLASH_MILLIS millseconds

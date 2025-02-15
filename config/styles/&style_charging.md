@@ -8,7 +8,7 @@ title: &style_charging
 ```
 
 # Arguments
-return value: POINTER
+ * return value: POINTER
 
 # Description
 Charging blade style.

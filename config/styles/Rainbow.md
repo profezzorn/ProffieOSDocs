@@ -8,7 +8,7 @@ Rainbow
 ```
 
 # Arguments
-return value: COLOR
+ * return value: COLOR
 
 # Description
 Basic RGB rainbow.

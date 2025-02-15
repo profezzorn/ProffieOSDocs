@@ -8,8 +8,8 @@ Divide<F, V>
 ```
 
 # Arguments
-F, V: FUNCTION,
-return value: FUNCTION
+ * F, V: FUNCTION,
+ * return value: FUNCTION
 
 # Description
 Divide F by V

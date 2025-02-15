@@ -8,8 +8,8 @@ SwingAcceleration<MAX>
 ```
 
 # Arguments
-MAX: FUNCTION, defaults to 150
-returned value: FUNCTION
+ * MAX: FUNCTION, defaults to 150
+ * returned value: FUNCTION
 
 # Description
 Returns 0-32768 based on swing acceleration

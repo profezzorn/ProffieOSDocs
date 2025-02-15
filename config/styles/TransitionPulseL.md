@@ -8,9 +8,9 @@ TransitionPulseL<TRANSITION, PULSE>
 ```
 
 # Arguments
-TRANSITION: TRANSITION
-PULSE: FUNCTION
-return value: COLOR
+ * TRANSITION: TRANSITION
+ * PULSE: FUNCTION
+ * return value: COLOR
 
 # Description
 

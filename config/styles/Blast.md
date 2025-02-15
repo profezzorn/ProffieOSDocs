@@ -11,11 +11,11 @@ BlastL<BLAST, FADEOUT_MS, WAVE_SIZE, WAVE_MS>
 ```
 
 # Arguments
-BASE, BLAST: COLOR
-FADEOUT_MS: a number (defaults to 150)
-WAVE_SIZE: a number (defaults to 100)
-WAVE_MS: a number (defaults to 400)
-return value: COLOR
+ * BASE, BLAST: COLOR
+ * FADEOUT_MS: a number (defaults to 150)
+ * WAVE_SIZE: a number (defaults to 100)
+ * WAVE_MS: a number (defaults to 400)
+ * return value: COLOR
 
 # Description
 Normally shows BASE, but creates a blast effect using

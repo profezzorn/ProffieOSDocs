@@ -11,11 +11,11 @@ HardStripesX<WIDTH_CLASS, SPEED, COLOR1, COLOR2, ... >
 ```
 
 # Arguments
-WIDTH: integer (start with 1000, then adjust up or down)
-WIDTH_CLASS: INTEGER
-SPEED: integer  (start with 1000, then adjust up or down)
-COLOR1, COLOR2: COLOR
-return value: COLOR
+ * WIDTH: integer (start with 1000, then adjust up or down)
+ * WIDTH_CLASS: INTEGER
+ * SPEED: integer  (start with 1000, then adjust up or down)
+ * COLOR1, COLOR2: COLOR
+ * return value: COLOR
 
 # Description
 Works like Stripes, but with no gradient between color segments..

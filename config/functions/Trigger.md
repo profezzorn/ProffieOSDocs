@@ -8,12 +8,12 @@ Trigger<EFFECT, FADE_IN_MILLIS, SUSTAIN_MILLIS, FADE_OUT_MILLIS, DELAY>
 ```
 
 # Arguments
-EFFECT: BladeEffectType
-FADE_IN_MILLIS: INTEGER
-SUSTAIN_MILLIS: INTEGER
-FADE_OUT_MILLIS: INTEGER
-DELAY_MILLIS: INTEGER (defaults to Int<0>)
-return value: INTEGER
+ * EFFECT: BladeEffectType
+ * FADE_IN_MILLIS: INTEGER
+ * SUSTAIN_MILLIS: INTEGER
+ * FADE_OUT_MILLIS: INTEGER
+ * DELAY_MILLIS: INTEGER (defaults to Int<0>)
+ * return value: INTEGER
 
 # Description
 Normally returns 0, but when EFFECT occurs, it ramps up to 32768,

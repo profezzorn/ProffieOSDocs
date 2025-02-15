@@ -8,8 +8,8 @@ Rgb16<R, G, B>
 ```
 
 # Arguments
-R, G, B: a number (0-65536)
-return value: COLOR
+ * R, G, B: a number (0-65536)
+ * return value: COLOR
 
 # Description
 

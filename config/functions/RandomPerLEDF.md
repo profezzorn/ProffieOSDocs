@@ -8,7 +8,7 @@ RandomPerLEDF
 ```
 
 # Arguments
-Return value: FUNCTION
+ * Return value: FUNCTION
 
 # Description
 Returns a random number between 0 and 32768.

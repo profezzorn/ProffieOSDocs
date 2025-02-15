@@ -8,8 +8,8 @@ Int<N>
 ```
 
 # Arguments
-N: a number
-return value: INTEGER
+ * N: a number
+ * return value: INTEGER
 
 # Description
 Returns N

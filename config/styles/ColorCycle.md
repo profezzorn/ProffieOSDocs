@@ -9,9 +9,9 @@ ColorCycle<OFF_COLOR, OFF_PERCENT, OFF_RPM, ON_COLOR, ON_PERCENT, ON_RPM, FADE_T
 ```
 
 # Arguments
-OFF_COLOR, ON_COLOR, BASE_COLOR: COLOR
-OFF_RPM, OFF_PERCENT, ON_PERCENT, ON_RPM, FADE_TIME_MILLIS: a number
-return value: COLOR
+ * OFF_COLOR, ON_COLOR, BASE_COLOR: COLOR
+ * OFF_RPM, OFF_PERCENT, ON_PERCENT, ON_RPM, FADE_TIME_MILLIS: a number
+ * return value: COLOR
 
 # Description
 This is intended for a small ring of neopixels

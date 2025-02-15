@@ -8,7 +8,7 @@ BrownNoiseF<GRADE>
 ```
 
 # Arguments
-return value: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Returns a value between 0 and 32768 with nearby pixels being similar.

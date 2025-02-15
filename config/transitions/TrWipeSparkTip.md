@@ -8,10 +8,10 @@ TrWipeSparkTip<SPARK_COLOR, MILLIS, SIZE>
 ```
 
 # Arguments
-SPARK_COLOR: COLOR
-MILLIS: a number
-SIZE: a number
-return value: TRANSITION
+ * SPARK_COLOR: COLOR
+ * MILLIS: a number
+ * SIZE: a number
+ * return value: TRANSITION
 
 # Description
 Same as TrWipe, but adds a "spark" tip to the

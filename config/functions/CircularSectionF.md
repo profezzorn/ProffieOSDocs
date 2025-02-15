@@ -8,9 +8,9 @@ CircularSectionF<POSITION, FRACTION>
 ```
 
 # Arguments
-POSITION: FUNCTION position on the circle or blade, 0-32768
-FRACTION: FUNCTION how much of the blade to light up, 0 = none, 32768 = all of it
-return value: FUNCTION
+ * POSITION: FUNCTION position on the circle or blade, 0-32768
+ * FRACTION: FUNCTION how much of the blade to light up, 0 = none, 32768 = all of it
+ * return value: FUNCTION
 
 # Description
 Returns 32768 for LEDs near the position with wrap-around.

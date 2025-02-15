@@ -8,9 +8,9 @@ RgbArg<ARG, DEFAULT_COLOR>
 ```
 
 # Arguments
-ARG: a number
-DEFAULT_COLOR: Must be Rgb<> or Rgb16<>
-Return value: COLOR
+ * ARG: a number
+ * DEFAULT_COLOR: Must be Rgb<> or Rgb16<>
+ * Return value: COLOR
 
 # Description
 This is used to create templates that can be configured dynamically.

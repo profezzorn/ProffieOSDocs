@@ -8,7 +8,7 @@ TrInstant
 ```
 
 # Arguments
-return value: TRANSITION
+ * return value: TRANSITION
 
 # Description
 Instant transition.

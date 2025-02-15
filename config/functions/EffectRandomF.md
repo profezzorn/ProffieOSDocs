@@ -8,8 +8,8 @@ EffectRandomF<EFFECT>
 ```
 
 # Arguments
-EFFECT: BladeEffectType
-return value: INTEGER
+ * EFFECT: BladeEffectType
+ * return value: INTEGER
 
 # Description
 Returns a random value between 0 and 32768 each time EVENT is triggered

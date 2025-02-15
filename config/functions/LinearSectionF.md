@@ -8,9 +8,9 @@ LinearSectionF<POSITION, FRACTION>
 ```
 
 # Arguments
-POSITION: FUNCTION position on the blade, 0-32768
-FRACTION: FUNCTION how much of the blade to light up, 0 = none
-return value: FUNCTION
+ * POSITION: FUNCTION position on the blade, 0-32768
+ * FRACTION: FUNCTION how much of the blade to light up, 0 = none
+ * return value: FUNCTION
 
 # Description
 creates a "block" of pixels at POSITION taking up FRACTION of blade

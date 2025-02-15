@@ -13,12 +13,12 @@ BlinkingL<B, BLINK_MILLIS_FUNC, BLINK_PROMILLE_FUNC>
 ```
 
 # Arguments
-A, B: COLOR
-BLINK_MILLIS: a number
-BLINK_PROMILLE: a number, defaults to 500
-BLINK_MILLIS_FUNC: FUNCTION
-BLINK_PROMILLE_FUNC: FUNCTION
-return value: COLOR
+ * A, B: COLOR
+ * BLINK_MILLIS: a number
+ * BLINK_PROMILLE: a number, defaults to 500
+ * BLINK_MILLIS_FUNC: FUNCTION
+ * BLINK_PROMILLE_FUNC: FUNCTION
+ * return value: COLOR
 
 # Description
 Switches between A and B.

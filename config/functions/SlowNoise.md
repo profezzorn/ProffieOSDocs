@@ -8,7 +8,7 @@ SlowNoise<SPEED>
 ```
 
 # Arguments
-return value: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Returns a value between 0 and 32768 which changes randomly up and

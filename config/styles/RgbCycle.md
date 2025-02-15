@@ -8,7 +8,7 @@ RgbCycle
 ```
 
 # Arguments
-return value: COLOR
+ * return value: COLOR
 
 # Description
 Very fast Red, Green, Blue cycle, result should essentially be white

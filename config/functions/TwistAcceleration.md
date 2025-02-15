@@ -8,8 +8,8 @@ TwistAcceleration<MAX>
 ```
 
 # Arguments
-MAX : Maximum acceleration needed to return 32768
-returned value: FUNCTION, same for all leds
+ * MAX : Maximum acceleration needed to return 32768
+ * returned value: FUNCTION, same for all leds
 
 # Description
 Returns 0-32768 based on acceleration of twist in one direction

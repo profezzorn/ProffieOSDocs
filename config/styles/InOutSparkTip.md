@@ -8,9 +8,9 @@ InOutSparkTip<BASE, OUT_MILLIS, IN_MILLIS, SPARK_COLOR>
 ```
 
 # Arguments
-BASE, SPARK_COLOR: COLOR
-OUT_MILLIS, IN_MILLIS: a number
-return value: COLOR
+ * BASE, SPARK_COLOR: COLOR
+ * OUT_MILLIS, IN_MILLIS: a number
+ * return value: COLOR
 
 # Description
 Similar to InOutHelper, but makes the tip a different color

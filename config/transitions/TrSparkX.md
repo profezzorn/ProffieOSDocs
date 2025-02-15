@@ -8,8 +8,8 @@ TrSparkX< COLOR, SPARK_SIZE, SPARK_MS, SPARK_CENTER>
 ```
 
 # Arguments
-COLOR: COLOR
-SPARK_SIZE, SPARK_MS, SPARK_CENTER: FUNCTIONS
+ * COLOR: COLOR
+ * SPARK_SIZE, SPARK_MS, SPARK_CENTER: FUNCTIONS
 
 # Description
 TrSparkX generates a wave without Fade over the length of the blade from

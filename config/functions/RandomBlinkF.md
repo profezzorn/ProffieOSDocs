@@ -8,7 +8,7 @@ RandomBlinkF<MILLIHZ>
 ```
 
 # Arguments
-MILLHZ: FUNCTION
+ * MILLHZ: FUNCTION
 
 # Description
 Randomly returns either 0 or 32768 for each LED. The returned value

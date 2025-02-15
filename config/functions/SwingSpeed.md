@@ -8,8 +8,8 @@ SwingSpeed<MAX>
 ```
 
 # Arguments
-MAX: FUNCTION
-returned value: FUNCTION
+ * MAX: FUNCTION
+ * returned value: FUNCTION
 
 # Description
 Returns 0-32768 based on swing speed

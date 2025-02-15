@@ -9,8 +9,8 @@ EffectPosition<EFFECT>
 ```
 
 # Arguments
-EFFECT: effect type
-return value: INTEGER
+ * EFFECT: effect type
+ * return value: INTEGER
 
 # Description
 

@@ -11,10 +11,10 @@ TrBoing<MILLIS, N>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-MILLIS: a number
-N: a number
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * MILLIS: a number
+ * N: a number
+ * return value: TRANSITION
 
 # Description
 Similar to TrFade, but transitions back and forth between the two

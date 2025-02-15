@@ -8,7 +8,7 @@ Bump<BUMP_POSITION, BUMP_WIDTH_FRACTION>
 ```
 
 # Arguments
-BUMP_POSITION, BUMP_WIDTH_FRACTION: INTEGER
+ * BUMP_POSITION, BUMP_WIDTH_FRACTION: INTEGER
 
 # Description
 Returns different values for each LED, forming a bump shape.

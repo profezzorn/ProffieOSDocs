@@ -11,8 +11,8 @@ RandomL<B>
 ```
 
 # Arguments
-A, B: COLOR
-return value: COLOR
+ * A, B: COLOR
+ * return value: COLOR
 
 # Description
 Mixes randomly between A and B.

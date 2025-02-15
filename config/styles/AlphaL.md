@@ -8,9 +8,9 @@ AlphaL<COLOR, ALPHA>
 ```
 
 # Arguments
-COLOR: COLOR or LAYER
-ALPHA: FUNCTION
-Return value: LAYER
+ * COLOR: COLOR or LAYER
+ * ALPHA: FUNCTION
+ * Return value: LAYER
 
 # Description
 This function makes a color transparent. The ALPHA function specifies just how opaque it should be.

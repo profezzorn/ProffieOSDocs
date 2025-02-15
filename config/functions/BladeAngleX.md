@@ -8,9 +8,9 @@ BladeAngleX<MIN, MAX>
 ```
 
 # Arguments
-MIN : FUNCTION (defaults to Int<0>)
-MAX : FUNCTION (defaults to Int<32768>)
-Returns: 0-32768 based on angle of blade
+ * MIN : FUNCTION (defaults to Int<0>)
+ * MAX : FUNCTION (defaults to Int<32768>)
+ * Returns: 0-32768 based on angle of blade
 
 # Description
 MIN and MAX specifies the range of angles which are used.

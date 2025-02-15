@@ -8,8 +8,8 @@ InOutFunc<OUT_MILLIS, IN_MILLIS>
 ```
 
 # Arguments
-IN_MILLIS, OUT_MILLIS: a number
-RETURN VALUE: FUNCTION
+ * IN_MILLIS, OUT_MILLIS: a number
+ * RETURN VALUE: FUNCTION
 
 # Description
 0 when off, 32768 when on, takes OUT_MILLIS to go from 0 to 32768

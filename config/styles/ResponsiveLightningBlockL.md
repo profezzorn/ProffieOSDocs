@@ -8,7 +8,7 @@ ResponsiveLightningBlockL<LIGHTNING BLOCK COLOR, TRANSITION1, TRANSITION2>
 ```
 
 # Arguments
-TRANSITION1 & TRANSITION2: transition Begin & End
+ * TRANSITION1 & TRANSITION2: transition Begin & End
 
 # Description
 Implements hybrid Force Lightning Block with animation, intensity responds to turning the hilt and location/focus will respond to blade angle

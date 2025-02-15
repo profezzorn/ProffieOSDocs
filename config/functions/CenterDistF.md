@@ -8,7 +8,7 @@ CenterDistF<CENTER>
 ```
 
 # Arguments
-CENTER : FUNCTION (defaults to Int<16384>)
+ * CENTER : FUNCTION (defaults to Int<16384>)
 
 # Description
 Returns distance from center, a full blade length counts as 32768.

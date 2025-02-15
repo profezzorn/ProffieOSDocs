@@ -8,8 +8,8 @@ TrJoin<TR1, TR2, ...>
 ```
 
 # Arguments
-TR1, TR2: TRANSITION
-return value: TRANSITION
+ * TR1, TR2: TRANSITION
+ * return value: TRANSITION
 
 # Description
 A little hard to explain, but all the specified

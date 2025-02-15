@@ -8,9 +8,9 @@ ResponsiveDragL<DRAG COLOR, TRANSTION1, TRANSITION2, SIZE1, SIZE2>
 ```
 
 # Arguments
-TRANSITION1 & TRANSITION2: transition Begin & End
-SIZE1 & SIZE2: control limits for DRAG size with TwistAngle
-LOCATION: controls SmoothStep location
+ * TRANSITION1 & TRANSITION2: transition Begin & End
+ * SIZE1 & SIZE2: control limits for DRAG size with TwistAngle
+ * LOCATION: controls SmoothStep location
 
 # Description
 Implements Drag that will increase or decrease in size based on turning hilt

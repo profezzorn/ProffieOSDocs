@@ -8,10 +8,10 @@ TrConcat<TRANSITION, INTERMEDIATE, TRANSITION, ...>
 ```
 
 # Arguments
-OR:  TrConcat<TRANSITION, TRANSITION, ...>
-TRANSITION: TRANSITION
-INTERMEDIATE: COLOR
-return value: TRANSITION
+ * OR:  TrConcat<TRANSITION, TRANSITION, ...>
+ * TRANSITION: TRANSITION
+ * INTERMEDIATE: COLOR
+ * return value: TRANSITION
 
 # Description
 Concatenates any number of transitions.

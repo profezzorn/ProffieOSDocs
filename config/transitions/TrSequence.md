@@ -8,8 +8,8 @@ TrSequence<TR1, TR2, ...>
 ```
 
 # Arguments
-TR1, TR2: TRANSITION
-return value: TRANSITION
+ * TR1, TR2: TRANSITION
+ * return value: TRANSITION
 
 # Description
 Each time a new transition is started, a transition is selected

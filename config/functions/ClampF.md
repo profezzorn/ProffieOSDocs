@@ -11,9 +11,9 @@ ClampF<F, MIN, MAX>
 ```
 
 # Arguments
-F, MIN, MAX: INTEGER
-MINCLASS, MAXCLASS: FUNCTION
-return value: INTEGER
+ * F, MIN, MAX: INTEGER
+ * MINCLASS, MAXCLASS: FUNCTION
+ * return value: INTEGER
 
 # Description
 Clamps value between MIN and MAX

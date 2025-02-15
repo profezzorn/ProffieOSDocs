@@ -11,8 +11,8 @@ AudioFlickerL<B>
 ```
 
 # Arguments
-A, B: COLOR
-return value: COLOR
+ * A, B: COLOR
+ * return value: COLOR
 
 # Description
 Mixes between A and B based on audio. Quiet audio

@@ -8,8 +8,8 @@ EffectIncrementF<EFFECT, MAX, I>
 ```
 
 # Arguments
-I, MAX: FUNCTION
-return value: FUNCTION
+ * I, MAX: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Increases by value I (up to MAX) each time EFFECT is triggered

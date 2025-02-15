@@ -8,7 +8,7 @@ LockupPulseF<LOCKUP_TYPE>
 ```
 
 # Arguments
-LOCKUP_TYPE: a SaberBase::LockupType
+ * LOCKUP_TYPE: a SaberBase::LockupType
 
 # Description
 Returns 32768 once for each time the given lockup occurs.

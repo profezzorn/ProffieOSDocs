@@ -8,9 +8,9 @@ Remap<F,COLOR>
 ```
 
 # Arguments
-F: FUNCTION - the remapping function
-COLOR: COLOR - color values to remap
-Returns: COLOR
+ * F: FUNCTION - the remapping function
+ * COLOR: COLOR - color values to remap
+ * Returns: COLOR
 
 # Description
 

@@ -9,8 +9,8 @@ LengthFinder<>
 ```
 
 # Arguments
-BASE, LIGHTUP: COLOR
-Return value: COLOR
+ * BASE, LIGHTUP: COLOR
+ * Return value: COLOR
 
 # Description
 Lights up exactly one led, based on the current color change

@@ -8,8 +8,8 @@ StrobeF<STROBE_FREQUENCY, STROBE_MILLIS>
 ```
 
 # Arguments
-STROBE_FREQUENCY_FUNC, STROBE_MILLIS_FUNC: FUNCTION
-return value: INTEGER
+ * STROBE_FREQUENCY_FUNC, STROBE_MILLIS_FUNC: FUNCTION
+ * return value: INTEGER
 
 # Description
 Stroboscope-like effect, turns the color to STROBE_COLOR for STROBE_MILLIS

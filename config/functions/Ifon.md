@@ -8,8 +8,8 @@ Ifon<A, B>
 ```
 
 # Arguments
-A, B: INTEGER
-return value: FUNCTION
+ * A, B: INTEGER
+ * return value: FUNCTION
 
 # Description
 Returns A if saber is on, B otherwise.

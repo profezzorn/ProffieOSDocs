@@ -8,9 +8,9 @@ IntSelect<SELECTION, Int1, Int2...>
 ```
 
 # Arguments
-SELECTION: FUNCTION
-N: numbers
-return value: INTEGER
+ * SELECTION: FUNCTION
+ * N: numbers
+ * return value: INTEGER
 
 # Description
 Returns SELECTION of N

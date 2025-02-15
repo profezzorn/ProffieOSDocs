@@ -8,11 +8,11 @@ BlinkingF<A, B, BLINK_MILLIS_FUNC, BLINK_PROMILLE_FUNC>
 ```
 
 # Arguments
-BLINK_MILLIS: a number
-BLINK_PROMILLE: a number, defaults to 500
-BLINK_MILLIS_FUNC: FUNCTION
-BLINK_PROMILLE_FUNC: FUNCTION
-return value: FUNCTION
+ * BLINK_MILLIS: a number
+ * BLINK_PROMILLE: a number, defaults to 500
+ * BLINK_MILLIS_FUNC: FUNCTION
+ * BLINK_PROMILLE_FUNC: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Switches between 0 and 32768

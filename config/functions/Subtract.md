@@ -8,8 +8,8 @@ Subtract<A, B>
 ```
 
 # Arguments
-A, B: FUNCTION
-return value: FUNCTION
+ * A, B: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Subtracts B from A (A - B)

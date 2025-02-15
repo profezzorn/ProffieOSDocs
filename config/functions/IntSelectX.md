@@ -8,7 +8,7 @@ IntSelectX<SELECTION, F1, F2, ...>
 ```
 
 # Arguments
-SELECTION: FUNCTION
+ * SELECTION: FUNCTION
 
 # Description
 Returns SELECTION of N

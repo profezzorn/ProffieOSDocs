@@ -8,9 +8,9 @@ ThresholdPulseF<F, THRESHOLD, HYST_PERCENT>
 ```
 
 # Arguments
-F: FUNCTION
-THRESHOLD: FUNCTION (defaults to Int<32768>)
-HYST_PERCENT: FUNCTION (defaults to Int<66>
+ * F: FUNCTION
+ * THRESHOLD: FUNCTION (defaults to Int<32768>)
+ * HYST_PERCENT: FUNCTION (defaults to Int<66>
 
 # Description
 Returns 32768 once when F > THRESHOLD, then waits until

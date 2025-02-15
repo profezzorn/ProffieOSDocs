@@ -11,10 +11,10 @@ LockupTrL<COLOR, BeginTr, EndTr, LOCKUP_TYPE, CONDITION>
 ```
 
 # Arguments
-COLOR: COLOR or LAYER
-BeginTr, EndTr: TRANSITION
-LOCKUP_TYPE: a SaberBase::LockupType
-Return type: LAYER
+ * COLOR: COLOR or LAYER
+ * BeginTr, EndTr: TRANSITION
+ * LOCKUP_TYPE: a SaberBase::LockupType
+ * Return type: LAYER
 
 # Description
 This layer creates a complete lockup effect.

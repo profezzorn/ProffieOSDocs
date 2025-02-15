@@ -8,9 +8,9 @@ ResponsiveLockupL<LOCKUP COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE>
 ```
 
 # Arguments
-TRANSITION1 & TRANSITION2: transition Begin & End
-TOP: uppermost lockup position limit, BOTTOM = lowermost lockup position limit, 32768 = tip, 0 = hilt
-SIZE: controls LOCKUP area size 0 ~ 32768
+ * TRANSITION1 & TRANSITION2: transition Begin & End
+ * TOP: uppermost lockup position limit, BOTTOM = lowermost lockup position limit, 32768 = tip, 0 = hilt
+ * SIZE: controls LOCKUP area size 0 ~ 32768
 
 # Description
 Implements LocalizedLockup that will move based on the angle of the blade

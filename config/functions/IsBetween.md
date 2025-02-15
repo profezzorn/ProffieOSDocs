@@ -8,8 +8,8 @@ IsBetween<F, BOTTOM, TOP>
 ```
 
 # Arguments
-F, BOTTOM, TOP: INTEGER
-return value: INTEGER
+ * F, BOTTOM, TOP: INTEGER
+ * return value: INTEGER
 
 # Description
 Returns 0 or 32768 based F > BOTTOM and < TOP

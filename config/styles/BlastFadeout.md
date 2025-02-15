@@ -11,9 +11,9 @@ BlastFadeoutL<BLAST, FADEOUT_MS>
 ```
 
 # Arguments
-BASE, BLAST: COLOR
-FADEOUT_MS: a number (defaults to 250)
-return value: COLOR
+ * BASE, BLAST: COLOR
+ * FADEOUT_MS: a number (defaults to 250)
+ * return value: COLOR
 
 # Description
 Normally shows BASE, but swiches to BLAST when a blast

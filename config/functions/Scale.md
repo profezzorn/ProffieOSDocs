@@ -8,8 +8,8 @@ Scale<F, A, B>
 ```
 
 # Arguments
-F, A, B: FUNCTION
-return value: FUNCTION
+ * F, A, B: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Changes values in range 0 - 32768 to A-B

@@ -8,9 +8,9 @@ InOutHelperX<BASE, EXTENSION, OFF_COLOR>
 ```
 
 # Arguments
-BASE, OFF_COLOR: COLOR
-EXTENSION: FUNCTION
-return value: COLOR
+ * BASE, OFF_COLOR: COLOR
+ * EXTENSION: FUNCTION
+ * return value: COLOR
 
 # Description
 This class does a basic extend/retract. Basically it fades between

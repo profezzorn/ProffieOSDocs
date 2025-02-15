@@ -11,9 +11,9 @@ TransitionLoopL<TRANSITION>
 ```
 
 # Arguments
-COLOR: COLOR
-TRANSITION : TRANSITION
-return value: COLOR
+ * COLOR: COLOR
+ * TRANSITION : TRANSITION
+ * return value: COLOR
 
 # Description
 

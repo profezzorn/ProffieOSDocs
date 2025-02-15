@@ -8,8 +8,8 @@ HoldPeakF<F, HOLD_MILLIS, SPEED>
 ```
 
 # Arguments
-F, HOLD_MILLIS and SPEED: FUNCTION
-return value: FUNCTION, same for all LEDs
+ * F, HOLD_MILLIS and SPEED: FUNCTION
+ * return value: FUNCTION, same for all LEDs
 
 # Description
 Holds Peak value of F for HOLD_MILLIS.

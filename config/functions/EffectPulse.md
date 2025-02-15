@@ -8,7 +8,7 @@ EffectPulse<EFFECT>
 ```
 
 # Arguments
-EFFECT: BladeEffectType
+ * EFFECT: BladeEffectType
 
 # Description
 Returns 32768 once for each time the given effect occurs.

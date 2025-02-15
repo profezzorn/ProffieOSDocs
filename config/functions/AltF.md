@@ -8,7 +8,7 @@ AltF
 ```
 
 # Arguments
-return value: INTEGER
+ * return value: INTEGER
 
 # Description
 Returns current_alternative for use in ColorSelect<>, TrSelect<> or IntSelect<>

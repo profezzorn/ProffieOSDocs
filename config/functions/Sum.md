@@ -8,8 +8,8 @@ Sum<A, B, ...>
 ```
 
 # Arguments
-A, B: FUNCTION
-return value: FUNCTION
+ * A, B: FUNCTION
+ * return value: FUNCTION
 
 # Description
 Adds A + B...

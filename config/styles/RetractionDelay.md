@@ -8,9 +8,9 @@ RetractionDelay<DELAY_MILLIS, BASE>
 ```
 
 # Arguments
-DELAY_MILLIS: a number
-BASE: COLOR
-return value: COLOR
+ * DELAY_MILLIS: a number
+ * BASE: COLOR
+ * return value: COLOR
 
 # Description
 This class renders BASE as normal, but delays retraction by

@@ -8,7 +8,7 @@ BlasterModeF
 ```
 
 # Arguments
-Returns the current blaster mode as an integer:
+ * Returns the current blaster mode as an integer:
 
 # Description
 0 for MODE_STUN, 1 for MODE_KILL, 2 for MODE_AUTO

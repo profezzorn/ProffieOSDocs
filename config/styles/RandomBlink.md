@@ -13,11 +13,11 @@ RandomBlinkL<MILLIHZ_CLASS, COLOR1>
 ```
 
 # Arguments
-MILLIHZ: integer
-MILLHZ_CLASS: NUMBER
-COLOR1: COLOR (defaults to WHITE)
-COLOR2: COLOR (defaults to BLACK)
-return value: COLOR
+ * MILLIHZ: integer
+ * MILLHZ_CLASS: NUMBER
+ * COLOR1: COLOR (defaults to WHITE)
+ * COLOR2: COLOR (defaults to BLACK)
+ * return value: COLOR
 
 # Description
 Each LED is randomly chosen as COLOR1 or COLOR2, then stays

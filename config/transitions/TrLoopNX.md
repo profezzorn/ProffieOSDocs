@@ -11,10 +11,10 @@ TrLoopN<N, TRANSITION>
 ```
 
 # Arguments
-N_FUNCTION: FUNCTION (number of Loops)
-N: a number (Loops)
-TRANSITION: TRANSITION
-Return Value: TRANSITION
+ * N_FUNCTION: FUNCTION (number of Loops)
+ * N: a number (Loops)
+ * TRANSITION: TRANSITION
+ * Return Value: TRANSITION
 
 # Description
 Runs the specified transition N times.

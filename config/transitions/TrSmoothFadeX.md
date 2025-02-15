@@ -11,9 +11,9 @@ TrSmoothFade<MILLIS>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-MILLIS: a number
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * MILLIS: a number
+ * return value: TRANSITION
 
 # Description
 Similar to TrFade, but uses a cubic fading function

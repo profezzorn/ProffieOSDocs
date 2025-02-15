@@ -8,7 +8,7 @@ SyncAltToVarianceF
 ```
 
 # Arguments
-return value: INTEGER (always zero)
+ * return value: INTEGER (always zero)
 
 # Description
 Enables Bidirectional synchronization between ALT and VARIANCE.

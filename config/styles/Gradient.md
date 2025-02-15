@@ -8,10 +8,10 @@ Gradient<A, B>
 ```
 
 # Arguments
-OR: Gradient<A, B, C>
-OR: Gradient<A, B, C, D, ...>
-A, B, C, D: COLOR or LAYER
-return value: COLOR or LAYER (if any of the inputs are layers)
+ * OR: Gradient<A, B, C>
+ * OR: Gradient<A, B, C, D, ...>
+ * A, B, C, D: COLOR or LAYER
+ * return value: COLOR or LAYER (if any of the inputs are layers)
 
 # Description
 Gradient, color A at base, B at tip.

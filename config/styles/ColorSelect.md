@@ -8,10 +8,10 @@ ColorSelect<SELECTION, TRANSITION, COLOR1, COLOR2, ...>
 ```
 
 # Arguments
-SELECTION: function
-TRANSITION: transition
-COLOR1, COLOR2, ...:  COLOR
-Return value: COLOR
+ * SELECTION: function
+ * TRANSITION: transition
+ * COLOR1, COLOR2, ...:  COLOR
+ * Return value: COLOR
 
 # Description
 Decides what color to return based on the current selection.

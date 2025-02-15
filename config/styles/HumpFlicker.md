@@ -11,9 +11,9 @@ HumpFlickerL<B, HUMP_WIDTH>
 ```
 
 # Arguments
-A, B: COLOR
-HUMP_WIDTH: a number
-return value: COLOR
+ * A, B: COLOR
+ * HUMP_WIDTH: a number
+ * return value: COLOR
 
 # Description
 Makes a random "hump" which is about 2xHUMP_WIDTH leds wide.

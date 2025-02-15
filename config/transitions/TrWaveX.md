@@ -8,8 +8,8 @@ TrWaveX<COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_MS, WAVE_CENTER>
 ```
 
 # Arguments
-COLOR: COLOR
-FADEOUT_MS, WAVE_SIZE, WAVE_MS, WAVE_CENTER: FUNCTION
+ * COLOR: COLOR
+ * FADEOUT_MS, WAVE_SIZE, WAVE_MS, WAVE_CENTER: FUNCTION
 
 # Description
 TrWave is implements a wave traveling out from a specified point.

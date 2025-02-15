@@ -8,10 +8,10 @@ Sin<RPM, LOW, HIGH>
 ```
 
 # Arguments
-LOW: FUNCTION (defaults to Int<0>)
-HIGH: FUNCTION (defaults to Int<32768>)
-RPM: FUNCTION
-return value: FUNCTION
+ * LOW: FUNCTION (defaults to Int<0>)
+ * HIGH: FUNCTION (defaults to Int<32768>)
+ * RPM: FUNCTION
+ * return value: FUNCTION
 
 # Description
 pulses between LOW - HIGH RPM times per minute

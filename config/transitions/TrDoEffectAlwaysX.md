@@ -11,11 +11,11 @@ TrDoEffectsAlways<TRANSITION, EFFECT, WAVNUM, LOCATION>
 ```
 
 # Arguments
-TRANSITION: TRANSITION
-EFFECT: effect type
-WAVNUM, LOCATION: a number
-LOCATION_CLASS: INTEGER
-return value: TRANSITION
+ * TRANSITION: TRANSITION
+ * EFFECT: effect type
+ * WAVNUM, LOCATION: a number
+ * LOCATION_CLASS: INTEGER
+ * return value: TRANSITION
 
 # Description
 TrDoEffectAlways is the same as TrDoEffectX, but runs even if

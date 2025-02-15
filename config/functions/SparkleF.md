@@ -8,8 +8,8 @@ SparkleF<SPARK_CHANCE_PROMILLE, SPARK_INTENSITY>
 ```
 
 # Arguments
-SPARK_CHANCE_PROMILLE: a number
-SPARK_INTENSITY: a number
+ * SPARK_CHANCE_PROMILLE: a number
+ * SPARK_INTENSITY: a number
 
 # Description
 

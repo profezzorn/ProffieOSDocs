@@ -11,10 +11,10 @@ TrExtend<MILLIS, TRANSITION>
 ```
 
 # Arguments
-MILLIS_FUNCTION: FUNCTION
-TRANSITION: TRANSITION
-MILLIS: a number
-return value: TRANSITION
+ * MILLIS_FUNCTION: FUNCTION
+ * TRANSITION: TRANSITION
+ * MILLIS: a number
+ * return value: TRANSITION
 
 # Description
 Runs the specified transition, then holds the

@@ -11,9 +11,9 @@ BrownNoiseFlickerL<B, grade>
 ```
 
 # Arguments
-A, B: COLOR
-grade: int
-return value: COLOR
+ * A, B: COLOR
+ * grade: int
+ * return value: COLOR
 
 # Description
 Randomly selects between A and B, but keeps nearby

@@ -11,12 +11,12 @@ LockupL<LOCKUP, DRAG_COLOR, LOCKUP_SHAPE, DRAG_SHAPE, LB_SHAPE>
 ```
 
 # Arguments
-BASE, LOCKUP: COLOR
-DRAG_COLOR: COLOR (defaults to the LOCKUP color)
-LOCKUP_SHAPE: FUNCTION (defaults to Int<32768>)
-DRAG_SHAPE: FUNCTION (defaults to SmoothStep<Int<28671>, Int<4096>>)
-LB_SHAPE: FUNCTION (defaults to a suitable function)
-return value: COLOR
+ * BASE, LOCKUP: COLOR
+ * DRAG_COLOR: COLOR (defaults to the LOCKUP color)
+ * LOCKUP_SHAPE: FUNCTION (defaults to Int<32768>)
+ * DRAG_SHAPE: FUNCTION (defaults to SmoothStep<Int<28671>, Int<4096>>)
+ * LB_SHAPE: FUNCTION (defaults to a suitable function)
+ * return value: COLOR
 
 # Description
 Shows LOCKUP if the lockup state is true, otherwise BASE.

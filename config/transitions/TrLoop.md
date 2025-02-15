@@ -8,8 +8,8 @@ TrLoop<TRANSITION>
 ```
 
 # Arguments
-TRANSITION: TRANSITION
-Return Value: TRANSITION
+ * TRANSITION: TRANSITION
+ * Return Value: TRANSITION
 
 # Description
 Runs the specified transition in a loop forever.

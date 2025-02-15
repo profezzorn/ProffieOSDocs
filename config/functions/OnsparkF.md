@@ -8,8 +8,8 @@ OnsparkF<MILLIS>
 ```
 
 # Arguments
-MILLIS: FUNCTION (defaults to Int<200>)
-return value: FUNCTION
+ * MILLIS: FUNCTION (defaults to Int<200>)
+ * return value: FUNCTION
 
 # Description
 When the blade turns on, this function starts returning

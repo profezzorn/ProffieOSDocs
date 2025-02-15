@@ -8,11 +8,11 @@ BlastF<FADEOUT_MS, WAVE_SIZE, WAVE_MS, EFFECT>
 ```
 
 # Arguments
-FADOUT_MS: a number (defaults to 200)
-WAVE_SIZE: a number (defaults to 100)
-WAVE_MS: a number (defaults to 400)
-EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
-returned value: FUNCTION
+ * FADOUT_MS: a number (defaults to 200)
+ * WAVE_SIZE: a number (defaults to 100)
+ * WAVE_MS: a number (defaults to 400)
+ * EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
+ * returned value: FUNCTION
 
 # Description
 This function is intended to be used in a Mix<> or AlphaL<>

@@ -8,8 +8,8 @@ ChangeSlowly<F, SPEED>
 ```
 
 # Arguments
-F, SPEED: FUNCTION
-return value: FUNCTION, same for all LEDs
+ * F, SPEED: FUNCTION
+ * return value: FUNCTION, same for all LEDs
 
 # Description
 Changes F by no more than SPEED values per second.

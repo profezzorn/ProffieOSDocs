@@ -9,8 +9,8 @@ ReadPinF<PIN, PIN_MODE>
 ```
 
 # Arguments
-PIN: int, pin you want your style to respond to
-PIN_MODE: int, one of INPUT, INPUT_PULLUP or INPUT_PULLDOWN, defaults to INPUT
+ * PIN: int, pin you want your style to respond to
+ * PIN_MODE: int, one of INPUT, INPUT_PULLUP or INPUT_PULLDOWN, defaults to INPUT
 
 # Description
 returns INTEGER, 0 if pin is low and 32768 if pin is high

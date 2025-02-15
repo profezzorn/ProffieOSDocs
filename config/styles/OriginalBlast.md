@@ -11,8 +11,8 @@ OriginalBlastL<BLAST>
 ```
 
 # Arguments
-BASE, BLAST: COLOR
-return value: COLOR
+ * BASE, BLAST: COLOR
+ * return value: COLOR
 
 # Description
 Normally shows BASE, but creates a blast effect using

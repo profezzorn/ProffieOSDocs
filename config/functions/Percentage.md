@@ -8,9 +8,9 @@ Percentage<F, V>
 ```
 
 # Arguments
-F: FUNCTION
-V: INTEGER
-return value: FUNCTION
+ * F: FUNCTION
+ * V: INTEGER
+ * return value: FUNCTION
 
 # Description
 Gets Percentage V of value F,

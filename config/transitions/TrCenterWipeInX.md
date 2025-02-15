@@ -11,10 +11,10 @@ TrCenterWipeIn<POSITION, MILLIS>
 ```
 
 # Arguments
-POSITION_FUNCTION & MILLIS_FUNCTION: FUNCTION
-POSITION: Int
-MILLIS: a number
-return value: TRANSITION
+ * POSITION_FUNCTION & MILLIS_FUNCTION: FUNCTION
+ * POSITION: Int
+ * MILLIS: a number
+ * return value: TRANSITION
 
 # Description
 In the beginning entire blade is color A, then color B

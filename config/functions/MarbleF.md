@@ -8,11 +8,11 @@ MarbleF<OFFSET, FRICTION, ACCELERATION, GRAVITY>
 ```
 
 # Arguments
-OFFSET: FUNCTION  0-32768, adjust until "down" represents is actually down
-FRICTION: FUNCTION, higher values makes the marble slow down, usually a constant
-ACCELERATION: FUNCTION, a function specifying how much speed to add to the marble
-GRAVITY: FUNCTION higher values makes the marble heavier
-return value: FUNCTION  0-32768, representing point on a circle
+ * OFFSET: FUNCTION  0-32768, adjust until "down" represents is actually down
+ * FRICTION: FUNCTION, higher values makes the marble slow down, usually a constant
+ * ACCELERATION: FUNCTION, a function specifying how much speed to add to the marble
+ * GRAVITY: FUNCTION higher values makes the marble heavier
+ * return value: FUNCTION  0-32768, representing point on a circle
 
 # Description
 This is intended for a small ring of neopixels.

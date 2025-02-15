@@ -8,8 +8,8 @@ LayerFunctions<F1, F2, ...>
 ```
 
 # Arguments
-F1, F2: FUNCTIONS
-return value: FUNCTION
+ * F1, F2: FUNCTIONS
+ * return value: FUNCTION
 
 # Description
 Returns (32768 - (32768 - F1) * (32768 * F2) / 32768)

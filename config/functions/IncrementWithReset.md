@@ -8,9 +8,9 @@ IncrementWithReset<PULSE, RESET_PULSE, MAX, I>
 ```
 
 # Arguments
-PULSE: FUNCTION (pulse type)
-RESET_PULSEE: FUNCTION (pulse type) defaults to Int<0> (no reset)
-MAX, I: FUNCTION
+ * PULSE: FUNCTION (pulse type)
+ * RESET_PULSEE: FUNCTION (pulse type) defaults to Int<0> (no reset)
+ * MAX, I: FUNCTION
 
 # Description
 Starts at zero, increments by I each time the PULSE occurse.

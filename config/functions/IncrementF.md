@@ -8,9 +8,9 @@ IncrementF<F, V, MAX, I, HYST_PERCENT>
 ```
 
 # Arguments
-F, V, I, MAX: FUNCTION
-HYST_PERCENT: FUNCTION percent (defaults to 66)
-return value: FUNCTION
+ * F, V, I, MAX: FUNCTION
+ * HYST_PERCENT: FUNCTION percent (defaults to 66)
+ * return value: FUNCTION
 
 # Description
 Increases by value I (up to MAX) each time F >= V

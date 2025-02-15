@@ -8,11 +8,11 @@ ResponsiveBlastL<BLAST COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_SPEED, TOP, BOTTOM, EF
 ```
 
 # Arguments
-FADE: fade time ms
-WAVE_SIZE: size
-WAVE MS: speed ms
-TOP: uppermost Blast position limit, BOTTOM = lowermost Blast position limit, 32768 = tip, 0 = hilt
-EFFECT: effect type, defaults to EFFECT_BLAST
+ * FADE: fade time ms
+ * WAVE_SIZE: size
+ * WAVE MS: speed ms
+ * TOP: uppermost Blast position limit, BOTTOM = lowermost Blast position limit, 32768 = tip, 0 = hilt
+ * EFFECT: effect type, defaults to EFFECT_BLAST
 
 # Description
 Implements Blast effect that will move based on angle of the blade instead of random location Blast will impact and disperse along the blade from original position

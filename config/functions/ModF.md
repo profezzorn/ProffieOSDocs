@@ -8,8 +8,8 @@ ModF<F, MAX>
 ```
 
 # Arguments
-F: FUNCTION
-MAX: FUNCTION (not zero)
+ * F: FUNCTION
+ * MAX: FUNCTION (not zero)
 
 # Description
 When F is greater than MAX, F wraps to 0

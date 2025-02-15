@@ -11,10 +11,10 @@ SparkleL<SPARKLE_COLOR, SPARK_CHANCE_PROMILLE, SPARK_INTENSITY>
 ```
 
 # Arguments
-BASE: COLOR
-SPARKLE_COLOR: COLOR (defaults to white)
-SPARK_CHANCE_PROMILLE: a number
-SPARK_INTENSITY: a number
+ * BASE: COLOR
+ * SPARKLE_COLOR: COLOR (defaults to white)
+ * SPARK_CHANCE_PROMILLE: a number
+ * SPARK_INTENSITY: a number
 
 # Description
 Generally displays BASE, but creates little sparkles of SPARKLE_COLOR

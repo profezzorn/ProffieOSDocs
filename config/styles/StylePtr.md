@@ -8,8 +8,8 @@ StylePtr<BLADE>
 ```
 
 # Arguments
-BLADE: COLOR
-return value: suitable for preset array
+ * BLADE: COLOR
+ * return value: suitable for preset array
 
 # Description
 Most blade styls are created by taking a blade style template and wrapping it

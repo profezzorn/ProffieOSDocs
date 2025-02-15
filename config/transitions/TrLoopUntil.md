@@ -8,9 +8,9 @@ TrLoopUntil<PULSE, TRANSITION, OUT>
 ```
 
 # Arguments
-TRANSITION, OUT: TRANSITION
-PULSE: FUNCTION (pulse)
-Return Value: TRANSITION
+ * TRANSITION, OUT: TRANSITION
+ * PULSE: FUNCTION (pulse)
+ * Return Value: TRANSITION
 
 # Description
 Runs the specified transition until the pulse occurs.

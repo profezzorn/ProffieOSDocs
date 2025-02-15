@@ -8,11 +8,11 @@ Sequence<COLOR1, COLOR2, int millis_per_bits, int bits, 0b0000000000000000, ....
 ```
 
 # Arguments
-COLOR1: COLOR
-COLOR2: COLOR
-millis_per_bit: millseconds spent on each bit
-bits: number of bits before we loop around to the beginning
-0b0000000000000000: 16-bit binary numbers containing the actual sequence.
+ * COLOR1: COLOR
+ * COLOR2: COLOR
+ * millis_per_bit: millseconds spent on each bit
+ * bits: number of bits before we loop around to the beginning
+ * 0b0000000000000000: 16-bit binary numbers containing the actual sequence.
 
 # Description
 

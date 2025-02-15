@@ -8,9 +8,9 @@ BlastFadeoutF<FADEOUT_MS, EFFECT>
 ```
 
 # Arguments
-FADEOUT_MS: a number (defaults to 250)
-EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
-return value: FUNCTION
+ * FADEOUT_MS: a number (defaults to 250)
+ * EFFECT: a BladeEffectType (defaults to EFFECT_BLAST)
+ * return value: FUNCTION
 
 # Description
 NOrmally returns 0, but returns up to 32768 when the

@@ -9,9 +9,9 @@ InOutHelper<BASE, OUT_MILLIS, IN_MILLIS, OFF_COLOR>
 ```
 
 # Arguments
-BASE, OFF_COLOR: COLOR
-OUT_MILLIS, IN_MILLIS: a number
-return value: COLOR
+ * BASE, OFF_COLOR: COLOR
+ * OUT_MILLIS, IN_MILLIS: a number
+ * return value: COLOR
 
 # Description
 This class does a basic extend/retract. Basically it fades between

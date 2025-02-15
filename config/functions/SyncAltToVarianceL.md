@@ -8,7 +8,7 @@ SyncAltToVarianceL
 ```
 
 # Arguments
-return value: LAYER (transparent)
+ * return value: LAYER (transparent)
 
 # Description
 Synchronizes alt to variance, just put it somewhere in the layer stack. (but not first)

@@ -8,9 +8,9 @@ TrSelect<SELECTION, TR1, TR2, ...>
 ```
 
 # Arguments
-SELECTION: FUNCTION
-TR1, TR2: TRANSITION
-return value: TRANSITION
+ * SELECTION: FUNCTION
+ * TR1, TR2: TRANSITION
+ * return value: TRANSITION
 
 # Description
 transition option is picked from the specified list of
