@@ -4,7 +4,7 @@ title: IgnitionDelay
 
 # Usage
 ```cpp
-IgnitionDelay&lt;DELAY_MILLIS, BASE&gt;
+IgnitionDelay<DELAY_MILLIS, BASE>
 ```
 
 # Arguments

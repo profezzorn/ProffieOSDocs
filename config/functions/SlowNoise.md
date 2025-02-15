@@ -4,7 +4,7 @@ title: SlowNoise
 
 # Usage
 ```cpp
-SlowNoise&lt;SPEED&gt;
+SlowNoise<SPEED>
 ```
 
 # Arguments

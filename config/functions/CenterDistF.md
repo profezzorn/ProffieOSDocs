@@ -4,7 +4,7 @@ title: CenterDistF
 
 # Usage
 ```cpp
-CenterDistF&lt;CENTER&gt;
+CenterDistF<CENTER>
 ```
 
 # Arguments

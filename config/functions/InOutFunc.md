@@ -4,7 +4,7 @@ title: InOutFunc
 
 # Usage
 ```cpp
-InOutFunc&lt;OUT_MILLIS, IN_MILLIS&gt;
+InOutFunc<OUT_MILLIS, IN_MILLIS>
 ```
 
 # Arguments

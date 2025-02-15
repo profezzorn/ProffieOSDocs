@@ -4,7 +4,7 @@ title: StrobeF
 
 # Usage
 ```cpp
-StrobeF&lt;STROBE_FREQUENCY, STROBE_MILLIS&gt;
+StrobeF<STROBE_FREQUENCY, STROBE_MILLIS>
 ```
 
 # Arguments

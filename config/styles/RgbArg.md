@@ -4,7 +4,7 @@ title: RgbArg
 
 # Usage
 ```cpp
-RgbArg&lt;ARG, DEFAULT_COLOR&gt;
+RgbArg<ARG, DEFAULT_COLOR>
 ```
 
 # Arguments

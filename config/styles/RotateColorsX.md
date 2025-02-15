@@ -4,7 +4,7 @@ title: RotateColorsX
 
 # Usage
 ```cpp
-RotateColorsX&lt;ROTATION, COLOR&gt;
+RotateColorsX<ROTATION, COLOR>
 ```
 
 # Arguments

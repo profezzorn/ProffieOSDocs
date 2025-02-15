@@ -4,7 +4,7 @@ title: TrWaveX
 
 # Usage
 ```cpp
-TrWaveX&lt;COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_MS, WAVE_CENTER&gt;
+TrWaveX<COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_MS, WAVE_CENTER>
 ```
 
 # Arguments

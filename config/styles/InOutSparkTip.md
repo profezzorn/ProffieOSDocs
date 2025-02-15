@@ -4,7 +4,7 @@ title: InOutSparkTip
 
 # Usage
 ```cpp
-InOutSparkTip&lt;BASE, OUT_MILLIS, IN_MILLIS, SPARK_COLOR&gt;
+InOutSparkTip<BASE, OUT_MILLIS, IN_MILLIS, SPARK_COLOR>
 ```
 
 # Arguments

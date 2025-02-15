@@ -4,7 +4,7 @@ title: BlastFadeoutF
 
 # Usage
 ```cpp
-BlastFadeoutF&lt;FADEOUT_MS, EFFECT&gt;
+BlastFadeoutF<FADEOUT_MS, EFFECT>
 ```
 
 # Arguments

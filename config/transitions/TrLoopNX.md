@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrLoopNX&lt;N_FUNCTION, TRANSITION&gt;
-TrLoopN&lt;N, TRANSITION&gt;
+TrLoopNX<N_FUNCTION, TRANSITION>
+TrLoopN<N, TRANSITION>
 ```
 
 # Arguments

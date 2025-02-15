@@ -4,7 +4,7 @@ title: TrLoopUntil
 
 # Usage
 ```cpp
-TrLoopUntil&lt;PULSE, TRANSITION, OUT&gt;
+TrLoopUntil<PULSE, TRANSITION, OUT>
 ```
 
 # Arguments

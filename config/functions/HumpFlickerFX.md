@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-HumpFlickerFX&lt;FUNCTION&gt;
-HumpFlickerF&lt;N&gt;
+HumpFlickerFX<FUNCTION>
+HumpFlickerF<N>
 ```
 
 # Arguments

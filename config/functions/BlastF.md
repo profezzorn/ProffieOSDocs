@@ -4,7 +4,7 @@ title: BlastF
 
 # Usage
 ```cpp
-BlastF&lt;FADEOUT_MS, WAVE_SIZE, WAVE_MS, EFFECT&gt;
+BlastF<FADEOUT_MS, WAVE_SIZE, WAVE_MS, EFFECT>
 ```
 
 # Arguments

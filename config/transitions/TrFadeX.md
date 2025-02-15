@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrFadeX&lt;MILLIS_FUNCTION&gt;
-TrFade&lt;MILLIS&gt;
+TrFadeX<MILLIS_FUNCTION>
+TrFade<MILLIS>
 ```
 
 # Arguments

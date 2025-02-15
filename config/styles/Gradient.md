@@ -4,7 +4,7 @@ title: Gradient
 
 # Usage
 ```cpp
-Gradient&lt;A, B&gt;
+Gradient<A, B>
 ```
 
 # Arguments

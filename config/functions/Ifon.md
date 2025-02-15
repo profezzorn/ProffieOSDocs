@@ -4,7 +4,7 @@ title: Ifon
 
 # Usage
 ```cpp
-Ifon&lt;A, B&gt;
+Ifon<A, B>
 ```
 
 # Arguments

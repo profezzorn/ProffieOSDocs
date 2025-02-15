@@ -4,7 +4,7 @@ title: EffectPulse
 
 # Usage
 ```cpp
-EffectPulse&lt;EFFECT&gt;
+EffectPulse<EFFECT>
 ```
 
 # Arguments

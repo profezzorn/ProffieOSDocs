@@ -4,7 +4,7 @@ title: IncrementModulo
 
 # Usage
 ```cpp
-IncrementModulo&lt;PULSE, MAX, INCREMENT&gt;
+IncrementModulo<PULSE, MAX, INCREMENT>
 ```
 
 # Arguments

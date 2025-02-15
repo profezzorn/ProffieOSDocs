@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrBlinkX&lt;MILLIS_FUNCTION, N, WIDTH_FUNCTION&gt;
-TrBlink&lt;MILLIS, N, WIDTH&gt;
+TrBlinkX<MILLIS_FUNCTION, N, WIDTH_FUNCTION>
+TrBlink<MILLIS, N, WIDTH>
 ```
 
 # Arguments

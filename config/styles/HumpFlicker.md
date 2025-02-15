@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-HumpFlicker&lt;A, B, HUMP_WIDTH&gt;
-HumpFlickerL&lt;B, HUMP_WIDTH&gt;
+HumpFlicker<A, B, HUMP_WIDTH>
+HumpFlickerL<B, HUMP_WIDTH>
 ```
 
 # Arguments

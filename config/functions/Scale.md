@@ -4,7 +4,7 @@ title: Scale
 
 # Usage
 ```cpp
-Scale&lt;F, A, B&gt;
+Scale<F, A, B>
 ```
 
 # Arguments

@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrDelayX&lt;MILLIS_FUNCTION&gt;
-TrDelay&lt;MILLIS&gt;
+TrDelayX<MILLIS_FUNCTION>
+TrDelay<MILLIS>
 ```
 
 # Arguments

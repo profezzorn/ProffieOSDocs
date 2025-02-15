@@ -4,7 +4,7 @@ title: SmoothStep
 
 # Usage
 ```cpp
-SmoothStep&lt;POS, WIDTH&gt;
+SmoothStep<POS, WIDTH>
 ```
 
 # Arguments

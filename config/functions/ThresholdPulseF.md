@@ -4,7 +4,7 @@ title: ThresholdPulseF
 
 # Usage
 ```cpp
-ThresholdPulseF&lt;F, THRESHOLD, HYST_PERCENT&gt;
+ThresholdPulseF<F, THRESHOLD, HYST_PERCENT>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: IncrementWithReset
 
 # Usage
 ```cpp
-IncrementWithReset&lt;PULSE, RESET_PULSE, MAX, I&gt;
+IncrementWithReset<PULSE, RESET_PULSE, MAX, I>
 ```
 
 # Arguments

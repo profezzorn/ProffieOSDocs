@@ -4,7 +4,7 @@ title: ResponsiveDragL
 
 # Usage
 ```cpp
-ResponsiveDragL&lt;DRAG COLOR, TRANSTION1, TRANSITION2, SIZE1, SIZE2&gt;
+ResponsiveDragL<DRAG COLOR, TRANSTION1, TRANSITION2, SIZE1, SIZE2>
 ```
 
 # Arguments

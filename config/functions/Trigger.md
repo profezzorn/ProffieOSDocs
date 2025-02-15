@@ -4,7 +4,7 @@ title: Trigger
 
 # Usage
 ```cpp
-Trigger&lt;EFFECT, FADE_IN_MILLIS, SUSTAIN_MILLIS, FADE_OUT_MILLIS, DELAY&gt;
+Trigger<EFFECT, FADE_IN_MILLIS, SUSTAIN_MILLIS, FADE_OUT_MILLIS, DELAY>
 ```
 
 # Arguments

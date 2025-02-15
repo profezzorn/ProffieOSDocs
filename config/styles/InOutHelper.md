@@ -4,8 +4,8 @@ title: InOutHelper
 
 # Usage
 ```cpp
-InOutHelper&lt;BASE, OUT_MILLIS, IN_MILLIS&gt;
-InOutHelper&lt;BASE, OUT_MILLIS, IN_MILLIS, OFF_COLOR&gt;
+InOutHelper<BASE, OUT_MILLIS, IN_MILLIS>
+InOutHelper<BASE, OUT_MILLIS, IN_MILLIS, OFF_COLOR>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: BlinkingF
 
 # Usage
 ```cpp
-BlinkingF&lt;A, B, BLINK_MILLIS_FUNC, BLINK_PROMILLE_FUNC&gt;
+BlinkingF<A, B, BLINK_MILLIS_FUNC, BLINK_PROMILLE_FUNC>
 ```
 
 # Arguments

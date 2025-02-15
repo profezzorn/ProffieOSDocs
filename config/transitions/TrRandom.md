@@ -4,7 +4,7 @@ title: TrRandom
 
 # Usage
 ```cpp
-TrRandom&lt;TR1, TR2, ...&gt;
+TrRandom<TR1, TR2, ...>
 ```
 
 # Arguments

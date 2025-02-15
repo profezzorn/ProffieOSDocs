@@ -4,8 +4,8 @@ title: LengthFinder
 
 # Usage
 ```cpp
-LengthFinder&lt;BASE, LIGHTUP&gt;
-LengthFinder&lt;&gt;
+LengthFinder<BASE, LIGHTUP>
+LengthFinder<>
 ```
 
 # Arguments

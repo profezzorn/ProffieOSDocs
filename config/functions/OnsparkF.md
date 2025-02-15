@@ -4,7 +4,7 @@ title: OnsparkF
 
 # Usage
 ```cpp
-OnsparkF&lt;MILLIS&gt;
+OnsparkF<MILLIS>
 ```
 
 # Arguments

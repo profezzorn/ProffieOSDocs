@@ -4,7 +4,7 @@ title: ResponsiveBlastWaveL
 
 # Usage
 ```cpp
-ResponsiveBlastWaveL&lt;BLAST COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_SPEED, TOP, BOTTOM, EFFECT&gt;
+ResponsiveBlastWaveL<BLAST COLOR, FADEOUT_MS, WAVE_SIZE, WAVE_SPEED, TOP, BOTTOM, EFFECT>
 ```
 
 # Arguments

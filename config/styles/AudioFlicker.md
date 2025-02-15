@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-AudioFlicker&lt;A, B&gt;
-AudioFlickerL&lt;B&gt;
+AudioFlicker<A, B>
+AudioFlickerL<B>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: SwingAcceleration
 
 # Usage
 ```cpp
-SwingAcceleration&lt;MAX&gt;
+SwingAcceleration<MAX>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: ClashImpactFX
 
 # Usage
 ```cpp
-ClashImpactFX&lt;MIN, MAX&gt;
+ClashImpactFX<MIN, MAX>
 ```
 
 # Arguments

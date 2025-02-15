@@ -4,7 +4,7 @@ title: Bump
 
 # Usage
 ```cpp
-Bump&lt;BUMP_POSITION, BUMP_WIDTH_FRACTION&gt;
+Bump<BUMP_POSITION, BUMP_WIDTH_FRACTION>
 ```
 
 # Arguments

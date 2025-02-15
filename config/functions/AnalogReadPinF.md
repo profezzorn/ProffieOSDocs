@@ -4,8 +4,8 @@ title: AnalogReadPinF
 
 # Usage
 ```cpp
-AnalogReadPinF&lt;PIN&gt;
-AnalogReadPinF&lt;PIN, PIN_MODE&gt;
+AnalogReadPinF<PIN>
+AnalogReadPinF<PIN, PIN_MODE>
 ```
 
 # Arguments

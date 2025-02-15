@@ -4,7 +4,7 @@ title: RandomBlinkF
 
 # Usage
 ```cpp
-RandomBlinkF&lt;MILLIHZ&gt;
+RandomBlinkF<MILLIHZ>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: PixelateX
 
 # Usage
 ```cpp
-PixelateX&lt;COLOR, PIXEL_SIZE_FUNC&gt;
+PixelateX<COLOR, PIXEL_SIZE_FUNC>
 ```
 
 # Arguments

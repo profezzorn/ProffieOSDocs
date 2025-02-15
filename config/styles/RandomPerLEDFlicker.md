@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-RandomPerLEDFlicker&lt;A, B&gt;
-RandomPerLEDFlickerL&lt;B&gt;
+RandomPerLEDFlicker<A, B>
+RandomPerLEDFlickerL<B>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: ModF
 
 # Usage
 ```cpp
-ModF&lt;F, MAX&gt;
+ModF<F, MAX>
 ```
 
 # Arguments

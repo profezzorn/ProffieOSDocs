@@ -4,7 +4,7 @@ title: SparkleF
 
 # Usage
 ```cpp
-SparkleF&lt;SPARK_CHANCE_PROMILLE, SPARK_INTENSITY&gt;
+SparkleF<SPARK_CHANCE_PROMILLE, SPARK_INTENSITY>
 ```
 
 # Arguments

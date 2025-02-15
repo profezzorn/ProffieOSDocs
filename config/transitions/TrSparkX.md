@@ -4,7 +4,7 @@ title: TrSparkX
 
 # Usage
 ```cpp
-TrSparkX&lt; COLOR, SPARK_SIZE, SPARK_MS, SPARK_CENTER&gt;
+TrSparkX< COLOR, SPARK_SIZE, SPARK_MS, SPARK_CENTER>
 ```
 
 # Arguments

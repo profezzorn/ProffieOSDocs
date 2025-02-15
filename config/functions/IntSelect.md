@@ -4,7 +4,7 @@ title: IntSelect
 
 # Usage
 ```cpp
-IntSelect&lt;SELECTION, Int1, Int2...&gt;
+IntSelect<SELECTION, Int1, Int2...>
 ```
 
 # Arguments

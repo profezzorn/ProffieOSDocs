@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrDoEffectAlwaysX&lt;TRANSITION, EFFECT, WAVNUM, LOCATION_CLASS&gt;
-TrDoEffectsAlways&lt;TRANSITION, EFFECT, WAVNUM, LOCATION&gt;
+TrDoEffectAlwaysX<TRANSITION, EFFECT, WAVNUM, LOCATION_CLASS>
+TrDoEffectsAlways<TRANSITION, EFFECT, WAVNUM, LOCATION>
 ```
 
 # Arguments

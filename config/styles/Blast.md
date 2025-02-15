@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-Blast&lt;BASE, BLAST, FADEOUT_MS, WAVE_SIZE, WAVE_MS&gt;
-BlastL&lt;BLAST, FADEOUT_MS, WAVE_SIZE, WAVE_MS&gt;
+Blast<BASE, BLAST, FADEOUT_MS, WAVE_SIZE, WAVE_MS>
+BlastL<BLAST, FADEOUT_MS, WAVE_SIZE, WAVE_MS>
 ```
 
 # Arguments

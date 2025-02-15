@@ -7,9 +7,9 @@ redirect_from:
 
 # Usage
 ```cpp
-Pulsing&lt;A, B, PULSE_MILLIS&gt;
-PulsingX&lt;A, B, PULSE_MILLIS_FUNC&gt;
-PulsingL&lt;B, PULSE_MILLIS_FUNC&gt;
+Pulsing<A, B, PULSE_MILLIS>
+PulsingX<A, B, PULSE_MILLIS_FUNC>
+PulsingL<B, PULSE_MILLIS_FUNC>
 ```
 
 # Arguments

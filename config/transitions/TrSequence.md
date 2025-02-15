@@ -4,7 +4,7 @@ title: TrSequence
 
 # Usage
 ```cpp
-TrSequence&lt;TR1, TR2, ...&gt;
+TrSequence<TR1, TR2, ...>
 ```
 
 # Arguments

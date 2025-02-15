@@ -4,7 +4,7 @@ title: ColorSelect
 
 # Usage
 ```cpp
-ColorSelect&lt;SELECTION, TRANSITION, COLOR1, COLOR2, ...&gt;
+ColorSelect<SELECTION, TRANSITION, COLOR1, COLOR2, ...>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: Sum
 
 # Usage
 ```cpp
-Sum&lt;A, B, ...&gt;
+Sum<A, B, ...>
 ```
 
 # Arguments

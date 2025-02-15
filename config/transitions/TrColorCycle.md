@@ -4,7 +4,7 @@ title: TrColorCycle
 
 # Usage
 ```cpp
-TrColorCycle&lt;MILLIS, START_RPM, END_RPM&gt;
+TrColorCycle<MILLIS, START_RPM, END_RPM>
 ```
 
 # Arguments

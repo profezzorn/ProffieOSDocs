@@ -4,8 +4,8 @@ title: WavNum
 
 # Usage
 ```cpp
-WavNum&lt;&gt;
-WavNum&lt;EFFECT&gt;
+WavNum<>
+WavNum<EFFECT>
 ```
 
 # Arguments

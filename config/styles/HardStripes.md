@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-HardStripes&lt;WIDTH, SPEED, COLOR1, COLOR2, ... &gt;
-HardStripesX&lt;WIDTH_CLASS, SPEED, COLOR1, COLOR2, ... &gt;
+HardStripes<WIDTH, SPEED, COLOR1, COLOR2, ... >
+HardStripesX<WIDTH_CLASS, SPEED, COLOR1, COLOR2, ... >
 ```
 
 # Arguments

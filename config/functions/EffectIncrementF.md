@@ -4,7 +4,7 @@ title: EffectIncrementF
 
 # Usage
 ```cpp
-EffectIncrementF&lt;EFFECT, MAX, I&gt;
+EffectIncrementF<EFFECT, MAX, I>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: LinearSectionF
 
 # Usage
 ```cpp
-LinearSectionF&lt;POSITION, FRACTION&gt;
+LinearSectionF<POSITION, FRACTION>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: ByteOrderStyle
 
 # Usage
 ```cpp
-ByteOrderStyle&lt;BYTEORDER, COLOR&gt;
+ByteOrderStyle<BYTEORDER, COLOR>
 ```
 
 # Arguments

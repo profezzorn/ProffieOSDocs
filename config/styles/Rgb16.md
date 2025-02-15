@@ -4,7 +4,7 @@ title: Rgb16
 
 # Usage
 ```cpp
-Rgb16&lt;R, G, B&gt;
+Rgb16<R, G, B>
 ```
 
 # Arguments

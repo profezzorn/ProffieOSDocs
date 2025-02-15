@@ -4,8 +4,8 @@ title: ReadPinF
 
 # Usage
 ```cpp
-ReadPinF&lt;PIN&gt;
-ReadPinF&lt;PIN, PIN_MODE&gt;
+ReadPinF<PIN>
+ReadPinF<PIN, PIN_MODE>
 ```
 
 # Arguments

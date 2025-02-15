@@ -4,7 +4,7 @@ title: TrSelect
 
 # Usage
 ```cpp
-TrSelect&lt;SELECTION, TR1, TR2, ...&gt;
+TrSelect<SELECTION, TR1, TR2, ...>
 ```
 
 # Arguments

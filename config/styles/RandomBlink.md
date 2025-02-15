@@ -7,9 +7,9 @@ redirect_from:
 
 # Usage
 ```cpp
-RandomBlink&lt;MILLIHZ, COLOR1, COLOR2&gt;
-RandomBlinkX&lt;MILLIHZ_CLASS, COLOR1, COLOR2&gt;
-RandomBlinkL&lt;MILLIHZ_CLASS, COLOR1&gt;
+RandomBlink<MILLIHZ, COLOR1, COLOR2>
+RandomBlinkX<MILLIHZ_CLASS, COLOR1, COLOR2>
+RandomBlinkL<MILLIHZ_CLASS, COLOR1>
 ```
 
 # Arguments

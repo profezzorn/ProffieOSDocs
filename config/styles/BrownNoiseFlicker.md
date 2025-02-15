@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-BrownNoiseFlicker&lt;A, B, grade&gt;
-BrownNoiseFlickerL&lt;B, grade&gt;
+BrownNoiseFlicker<A, B, grade>
+BrownNoiseFlickerL<B, grade>
 ```
 
 # Arguments

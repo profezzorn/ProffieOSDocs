@@ -4,7 +4,7 @@ title: EffectRandomF
 
 # Usage
 ```cpp
-EffectRandomF&lt;EFFECT&gt;
+EffectRandomF<EFFECT>
 ```
 
 # Arguments

@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-BlastFadeout&lt;BASE, BLAST, FADEOUT_MS&gt;
-BlastFadeoutL&lt;BLAST, FADEOUT_MS&gt;
+BlastFadeout<BASE, BLAST, FADEOUT_MS>
+BlastFadeoutL<BLAST, FADEOUT_MS>
 ```
 
 # Arguments

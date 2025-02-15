@@ -4,7 +4,7 @@ title: IncrementF
 
 # Usage
 ```cpp
-IncrementF&lt;F, V, MAX, I, HYST_PERCENT&gt;
+IncrementF<F, V, MAX, I, HYST_PERCENT>
 ```
 
 # Arguments

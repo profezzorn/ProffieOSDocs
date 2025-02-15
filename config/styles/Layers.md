@@ -4,7 +4,7 @@ title: Layers
 
 # Usage
 ```cpp
-Layers&lt;BASE, LAYER1, LAYER2, ...&gt;
+Layers<BASE, LAYER1, LAYER2, ...>
 ```
 
 # Arguments

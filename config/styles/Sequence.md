@@ -4,7 +4,7 @@ title: Sequence
 
 # Usage
 ```cpp
-Sequence&lt;COLOR1, COLOR2, int millis_per_bits, int bits, 0b0000000000000000, ....&gt;
+Sequence<COLOR1, COLOR2, int millis_per_bits, int bits, 0b0000000000000000, ....>
 ```
 
 # Arguments

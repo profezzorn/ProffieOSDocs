@@ -4,7 +4,7 @@ title: ChangeSlowly
 
 # Usage
 ```cpp
-ChangeSlowly&lt;F, SPEED&gt;
+ChangeSlowly<F, SPEED>
 ```
 
 # Arguments

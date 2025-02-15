@@ -4,7 +4,7 @@ title: TrLoop
 
 # Usage
 ```cpp
-TrLoop&lt;TRANSITION&gt;
+TrLoop<TRANSITION>
 ```
 
 # Arguments

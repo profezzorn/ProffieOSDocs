@@ -4,7 +4,7 @@ title: LayerFunctions
 
 # Usage
 ```cpp
-LayerFunctions&lt;F1, F2, ...&gt;
+LayerFunctions<F1, F2, ...>
 ```
 
 # Arguments

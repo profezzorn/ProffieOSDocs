@@ -4,7 +4,7 @@ title: InOutTr
 
 # Usage
 ```cpp
-InOutTr&lt;BASE, OUT_TRANSITION, IN_TRANSITION, OFF_COLOR&gt;
+InOutTr<BASE, OUT_TRANSITION, IN_TRANSITION, OFF_COLOR>
 ```
 
 # Arguments

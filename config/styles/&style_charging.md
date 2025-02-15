@@ -4,7 +4,7 @@ title: &style_charging
 
 # Usage
 ```cpp
-&amp;style_charging
+&style_charging
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: IsLessThan
 
 # Usage
 ```cpp
-IsLessThan&lt;F, V&gt;
+IsLessThan<F, V>
 ```
 
 # Arguments

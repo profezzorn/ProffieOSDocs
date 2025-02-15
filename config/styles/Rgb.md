@@ -4,7 +4,7 @@ title: Rgb
 
 # Usage
 ```cpp
-Rgb&lt;R, G, B&gt;
+Rgb<R, G, B>
 ```
 
 # Arguments

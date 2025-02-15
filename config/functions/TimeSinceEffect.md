@@ -4,8 +4,8 @@ title: TimeSinceEffect
 
 # Usage
 ```cpp
-TimeSinceEffect&lt;&gt;
-TimeSinceEffect&lt;EFFECT&gt;
+TimeSinceEffect<>
+TimeSinceEffect<EFFECT>
 ```
 
 # Arguments

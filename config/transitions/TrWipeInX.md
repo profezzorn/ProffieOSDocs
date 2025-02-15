@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrWipeInX&lt;MILLIS_FUNCTION&gt;
-TrWipeIn&lt;MILLIS&gt;
+TrWipeInX<MILLIS_FUNCTION>
+TrWipeIn<MILLIS>
 ```
 
 # Arguments

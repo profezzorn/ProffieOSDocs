@@ -4,7 +4,7 @@ title: Sin
 
 # Usage
 ```cpp
-Sin&lt;RPM, LOW, HIGH&gt;
+Sin<RPM, LOW, HIGH>
 ```
 
 # Arguments

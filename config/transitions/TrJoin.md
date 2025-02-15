@@ -4,7 +4,7 @@ title: TrJoin
 
 # Usage
 ```cpp
-TrJoin&lt;TR1, TR2, ...&gt;
+TrJoin<TR1, TR2, ...>
 ```
 
 # Arguments

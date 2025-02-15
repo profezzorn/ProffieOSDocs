@@ -4,7 +4,7 @@ title: RetractionDelay
 
 # Usage
 ```cpp
-RetractionDelay&lt;DELAY_MILLIS, BASE&gt;
+RetractionDelay<DELAY_MILLIS, BASE>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: Remap
 
 # Usage
 ```cpp
-Remap&lt;F,COLOR&gt;
+Remap<F,COLOR>
 ```
 
 # Arguments

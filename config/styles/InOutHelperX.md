@@ -4,7 +4,7 @@ title: InOutHelperX
 
 # Usage
 ```cpp
-InOutHelperX&lt;BASE, EXTENSION, OFF_COLOR&gt;
+InOutHelperX<BASE, EXTENSION, OFF_COLOR>
 ```
 
 # Arguments

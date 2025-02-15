@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-OriginalBlast&lt;BASE, BLAST&gt;
-OriginalBlastL&lt;BLAST&gt;
+OriginalBlast<BASE, BLAST>
+OriginalBlastL<BLAST>
 ```
 
 # Arguments

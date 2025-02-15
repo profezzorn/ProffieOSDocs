@@ -4,7 +4,7 @@ title: Mult
 
 # Usage
 ```cpp
-Mult&lt;F, V&gt;
+Mult<F, V>
 ```
 
 # Arguments

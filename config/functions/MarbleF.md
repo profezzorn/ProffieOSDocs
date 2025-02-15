@@ -4,7 +4,7 @@ title: MarbleF
 
 # Usage
 ```cpp
-MarbleF&lt;OFFSET, FRICTION, ACCELERATION, GRAVITY&gt;
+MarbleF<OFFSET, FRICTION, ACCELERATION, GRAVITY>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: ResponsiveLightningBlockL
 
 # Usage
 ```cpp
-ResponsiveLightningBlockL&lt;LIGHTNING BLOCK COLOR, TRANSITION1, TRANSITION2&gt;
+ResponsiveLightningBlockL<LIGHTNING BLOCK COLOR, TRANSITION1, TRANSITION2>
 ```
 
 # Arguments

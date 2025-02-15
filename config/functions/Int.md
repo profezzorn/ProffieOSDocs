@@ -4,7 +4,7 @@ title: Int
 
 # Usage
 ```cpp
-Int&lt;N&gt;
+Int<N>
 ```
 
 # Arguments

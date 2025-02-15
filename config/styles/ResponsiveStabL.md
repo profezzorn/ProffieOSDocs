@@ -4,7 +4,7 @@ title: ResponsiveStabL
 
 # Usage
 ```cpp
-ResponsiveStabL&lt;STAB COLOR, TRANSITION1, TRANSITION2, SIZE1, SIZE2&gt;
+ResponsiveStabL<STAB COLOR, TRANSITION1, TRANSITION2, SIZE1, SIZE2>
 ```
 
 # Arguments

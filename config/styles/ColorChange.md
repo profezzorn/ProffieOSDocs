@@ -4,7 +4,7 @@ title: ColorChange
 
 # Usage
 ```cpp
-ColorChange&lt;TRANSITION, COLOR1, COLOR2, ...&gt;
+ColorChange<TRANSITION, COLOR1, COLOR2, ...>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: ResponsiveLockupL
 
 # Usage
 ```cpp
-ResponsiveLockupL&lt;LOCKUP COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE&gt;
+ResponsiveLockupL<LOCKUP COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE>
 ```
 
 # Arguments

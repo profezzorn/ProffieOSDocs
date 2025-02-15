@@ -7,9 +7,9 @@ redirect_from:
 
 # Usage
 ```cpp
-OnSpark&lt;BASE, SPARK_COLOR, MILLIS&gt;
-OnSparX&lt;BASE, SPARK_COLOR, MILLI_CLASS&gt;
-OnSparL&lt;SPARK_COLOR, MILLI_CLASS&gt;
+OnSpark<BASE, SPARK_COLOR, MILLIS>
+OnSparX<BASE, SPARK_COLOR, MILLI_CLASS>
+OnSparL<SPARK_COLOR, MILLI_CLASS>
 ```
 
 # Arguments

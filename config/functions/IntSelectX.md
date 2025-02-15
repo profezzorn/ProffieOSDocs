@@ -4,7 +4,7 @@ title: IntSelectX
 
 # Usage
 ```cpp
-IntSelectX&lt;SELECTION, F1, F2, ...&gt;
+IntSelectX<SELECTION, F1, F2, ...>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: TransitionPulseL
 
 # Usage
 ```cpp
-TransitionPulseL&lt;TRANSITION, PULSE&gt;
+TransitionPulseL<TRANSITION, PULSE>
 ```
 
 # Arguments

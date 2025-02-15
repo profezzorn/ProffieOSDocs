@@ -4,7 +4,7 @@ title: Divide
 
 # Usage
 ```cpp
-Divide&lt;F, V&gt;
+Divide<F, V>
 ```
 
 # Arguments

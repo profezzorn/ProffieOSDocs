@@ -4,7 +4,7 @@ title: StylePtr
 
 # Usage
 ```cpp
-StylePtr&lt;BLADE&gt;
+StylePtr<BLADE>
 ```
 
 # Arguments

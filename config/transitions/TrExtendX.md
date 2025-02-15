@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrExtendX&lt;MILLIS_FUNCTION, TRANSITION&gt;
-TrExtend&lt;MILLIS, TRANSITION&gt;
+TrExtendX<MILLIS_FUNCTION, TRANSITION>
+TrExtend<MILLIS, TRANSITION>
 ```
 
 # Arguments

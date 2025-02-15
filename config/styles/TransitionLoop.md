@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TransitionLoop&lt;COLOR, TRANSITION&gt;
-TransitionLoopL&lt;TRANSITION&gt;
+TransitionLoop<COLOR, TRANSITION>
+TransitionLoopL<TRANSITION>
 ```
 
 # Arguments

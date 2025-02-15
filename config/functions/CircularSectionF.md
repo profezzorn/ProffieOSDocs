@@ -4,7 +4,7 @@ title: CircularSectionF
 
 # Usage
 ```cpp
-CircularSectionF&lt;POSITION, FRACTION&gt;
+CircularSectionF<POSITION, FRACTION>
 ```
 
 # Arguments

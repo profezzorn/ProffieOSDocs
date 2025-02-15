@@ -4,8 +4,8 @@ title: WavLen
 
 # Usage
 ```cpp
-WavLen&lt;&gt;
-WavLen&lt;EFFECT&gt;
+WavLen<>
+WavLen<EFFECT>
 ```
 
 # Arguments

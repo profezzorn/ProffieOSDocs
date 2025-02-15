@@ -4,8 +4,8 @@ title: Mix
 
 # Usage
 ```cpp
-Mix&lt;F, A, B&gt;
-Mix&lt;F, A, B, C, ....&gt;
+Mix<F, A, B>
+Mix<F, A, B, C, ....>
 ```
 
 # Arguments

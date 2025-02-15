@@ -4,7 +4,7 @@ title: Percentage
 
 # Usage
 ```cpp
-Percentage&lt;F, V&gt;
+Percentage<F, V>
 ```
 
 # Arguments

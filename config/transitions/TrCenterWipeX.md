@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrCenterWipeX&lt;POSITION_FUNCTION, MILLIS_FUNCTION&gt;
-TrCenterWipe&lt;POSITION, MILLIS&gt;
+TrCenterWipeX<POSITION_FUNCTION, MILLIS_FUNCTION>
+TrCenterWipe<POSITION, MILLIS>
 ```
 
 # Arguments

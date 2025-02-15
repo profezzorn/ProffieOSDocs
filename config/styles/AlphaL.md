@@ -4,7 +4,7 @@ title: AlphaL
 
 # Usage
 ```cpp
-AlphaL&lt;COLOR, ALPHA&gt;
+AlphaL<COLOR, ALPHA>
 ```
 
 # Arguments

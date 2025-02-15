@@ -4,7 +4,7 @@ title: TrWipeSparkTip
 
 # Usage
 ```cpp
-TrWipeSparkTip&lt;SPARK_COLOR, MILLIS, SIZE&gt;
+TrWipeSparkTip<SPARK_COLOR, MILLIS, SIZE>
 ```
 
 # Arguments

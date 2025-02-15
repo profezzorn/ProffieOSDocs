@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-LockupTr&lt;BASE, COLOR, BeginTr, EndTr, LOCKUP_TYPE, CONDITION&gt;
-LockupTrL&lt;COLOR, BeginTr, EndTr, LOCKUP_TYPE, CONDITION&gt;
+LockupTr<BASE, COLOR, BeginTr, EndTr, LOCKUP_TYPE, CONDITION>
+LockupTrL<COLOR, BeginTr, EndTr, LOCKUP_TYPE, CONDITION>
 ```
 
 # Arguments

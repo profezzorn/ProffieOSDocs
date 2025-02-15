@@ -4,7 +4,7 @@ title: HoldPeakF
 
 # Usage
 ```cpp
-HoldPeakF&lt;F, HOLD_MILLIS, SPEED&gt;
+HoldPeakF<F, HOLD_MILLIS, SPEED>
 ```
 
 # Arguments

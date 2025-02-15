@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-SimpleClash&lt;BASE, CLASH_COLOR, CLASH_MILLIS&gt;
-SimpleClashL&lt;CLASH_COLOR, CLASH_MILLIS&gt;
+SimpleClash<BASE, CLASH_COLOR, CLASH_MILLIS>
+SimpleClashL<CLASH_COLOR, CLASH_MILLIS>
 ```
 
 # Arguments

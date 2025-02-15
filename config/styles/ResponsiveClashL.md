@@ -4,7 +4,7 @@ title: ResponsiveClashL
 
 # Usage
 ```cpp
-ResponsiveClashL&lt;CLASH COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE&gt;
+ResponsiveClashL<CLASH COLOR, TRANSITION1, TRANSITION2, TOP, BOTTOM, SIZE>
 ```
 
 # Arguments

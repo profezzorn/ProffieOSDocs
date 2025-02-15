@@ -4,7 +4,7 @@ title: Subtract
 
 # Usage
 ```cpp
-Subtract&lt;A, B&gt;
+Subtract<A, B>
 ```
 
 # Arguments

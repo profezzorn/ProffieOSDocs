@@ -4,7 +4,7 @@ title: OriginalBlastF
 
 # Usage
 ```cpp
-OriginalBlastF&lt;EFFECT&gt;
+OriginalBlastF<EFFECT>
 ```
 
 # Arguments

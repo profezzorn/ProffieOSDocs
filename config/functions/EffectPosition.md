@@ -4,8 +4,8 @@ title: EffectPosition
 
 # Usage
 ```cpp
-EffectPosition&lt;&gt;
-EffectPosition&lt;EFFECT&gt;
+EffectPosition<>
+EffectPosition<EFFECT>
 ```
 
 # Arguments

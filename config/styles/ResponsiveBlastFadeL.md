@@ -4,7 +4,7 @@ title: ResponsiveBlastFadeL
 
 # Usage
 ```cpp
-ResponsiveBlastFadeL&lt;BLAST COLOR, SIZE, FADE, TOP, BOTTOM, EFFECT&gt;
+ResponsiveBlastFadeL<BLAST COLOR, SIZE, FADE, TOP, BOTTOM, EFFECT>
 ```
 
 # Arguments

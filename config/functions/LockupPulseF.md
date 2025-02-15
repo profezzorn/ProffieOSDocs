@@ -4,7 +4,7 @@ title: LockupPulseF
 
 # Usage
 ```cpp
-LockupPulseF&lt;LOCKUP_TYPE&gt;
+LockupPulseF<LOCKUP_TYPE>
 ```
 
 # Arguments

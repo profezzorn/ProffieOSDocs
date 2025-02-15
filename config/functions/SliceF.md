@@ -4,8 +4,8 @@ title: SliceF
 
 # Usage
 ```cpp
-SliceF&lt;DENSITY_FUNCTION&gt;
-SliceF&lt;DENSITY_FUNCTION, OFFSET&gt;
+SliceF<DENSITY_FUNCTION>
+SliceF<DENSITY_FUNCTION, OFFSET>
 ```
 
 # Arguments

@@ -4,7 +4,7 @@ title: TwistAcceleration
 
 # Usage
 ```cpp
-TwistAcceleration&lt;MAX&gt;
+TwistAcceleration<MAX>
 ```
 
 # Arguments

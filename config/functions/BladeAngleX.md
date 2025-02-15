@@ -4,7 +4,7 @@ title: BladeAngleX
 
 # Usage
 ```cpp
-BladeAngleX&lt;MIN, MAX&gt;
+BladeAngleX<MIN, MAX>
 ```
 
 # Arguments

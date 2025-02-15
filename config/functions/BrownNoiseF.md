@@ -4,7 +4,7 @@ title: BrownNoiseF
 
 # Usage
 ```cpp
-BrownNoiseF&lt;GRADE&gt;
+BrownNoiseF<GRADE>
 ```
 
 # Arguments

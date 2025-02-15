@@ -4,7 +4,7 @@ title: IsBetween
 
 # Usage
 ```cpp
-IsBetween&lt;F, BOTTOM, TOP&gt;
+IsBetween<F, BOTTOM, TOP>
 ```
 
 # Arguments

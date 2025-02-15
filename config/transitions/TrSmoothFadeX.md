@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrSmoothFadeX&lt;MILLIS_FUNCTION&gt;
-TrSmoothFade&lt;MILLIS&gt;
+TrSmoothFadeX<MILLIS_FUNCTION>
+TrSmoothFade<MILLIS>
 ```
 
 # Arguments

@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-TrBoingX&lt;MILLIS_FUNCTION, N&gt;
-TrBoing&lt;MILLIS, N&gt;
+TrBoingX<MILLIS_FUNCTION, N>
+TrBoing<MILLIS, N>
 ```
 
 # Arguments

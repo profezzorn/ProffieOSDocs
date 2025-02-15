@@ -4,7 +4,7 @@ title: TrConcat
 
 # Usage
 ```cpp
-TrConcat&lt;TRANSITION, INTERMEDIATE, TRANSITION, ...&gt;
+TrConcat<TRANSITION, INTERMEDIATE, TRANSITION, ...>
 ```
 
 # Arguments

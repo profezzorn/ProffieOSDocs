@@ -4,7 +4,7 @@ title: ResponsiveMeltL
 
 # Usage
 ```cpp
-ResponsiveMeltL&lt;MELT COLOR, TRANSITION1, TRANSITION2, SIZE1, SIZE2&gt;
+ResponsiveMeltL<MELT COLOR, TRANSITION1, TRANSITION2, SIZE1, SIZE2>
 ```
 
 # Arguments

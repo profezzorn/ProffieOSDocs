@@ -6,8 +6,8 @@ redirect_from:
 
 # Usage
 ```cpp
-ClampF&lt;F, MIN, MAX&gt;
-   ClampFX&lt;F, MINCLASS, MAXCLASS&gt;
+ClampF<F, MIN, MAX>
+   ClampFX<F, MINCLASS, MAXCLASS>
 ```
 
 # Arguments

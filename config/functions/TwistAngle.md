@@ -4,7 +4,7 @@ title: TwistAngle
 
 # Usage
 ```cpp
-TwistAngle&lt;N, OFFSET&gt;
+TwistAngle<N, OFFSET>
 ```
 
 # Arguments
