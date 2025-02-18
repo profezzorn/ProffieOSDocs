@@ -539,8 +539,21 @@ This define can be used together with MENU_SPEC_TEMPLATE to make the "enter menu
 ```
 
 ### COLOR_MENU_GAMMA
-ProffieOS uses linear colors, which means that Rgb<10,10,10> is exactly twice as bright as Rgb<5,5,5>, however, human visual perception is *not* linear, which means that it doesn't appear twice as bright. This is particularly apparent when using the menu system to adjust colors. The difference between Rgb<5,5,5> and Rgb<10,10,10> feels much more important than the difference between Rgb<205,205,205> and Rgb<210,210,210>. This is why computer RGB uses sRGB, which has a gamma of about 2.2. This define allows you to apply such a gamma factor when selecting R, G and B values in the color menus. A value between 2 and 3 will probably make the most sense. The higher the gamma value, the more space will be allocated to adjusting dark values, less space will be allocated for adjusting bright values. The default is 2.2, just like sRGB. You can try stting it to 1.0 to appreciate the difference.
+ProffieOS uses linear colors, which means that Rgb<10,10,10> is exactly twice as bright as Rgb<5,5,5>, however, human visual perception is *not* linear, which means that it doesn't appear twice as bright. This is particularly apparent when using the menu system to adjust colors. The difference between Rgb<5,5,5> and Rgb<10,10,10> feels much more important than the difference between Rgb<205,205,205> and Rgb<210,210,210>. This is why computer RGB uses sRGB, which has a gamma of about 2.2. This define allows you to apply such a gamma factor when selecting R, G and B values in the color menus. A value between 2 and 3 will probably make the most sense. The higher the gamma value, the more space will be allocated to adjusting dark values, less space will be allocated for adjusting bright values. The default is 2.2, just like sRGB. You can try stting it to 1.0 to appreciate the difference. Note that some props have their own menus and might not use this define.
 
 ```cpp
 #define COLOR_MENU_GAMMA 2.2
+```
+### CLASH_THRESHOLD_GAMMA
+Just lke COLOR_MENU_GAMMA above, this only affects the clash threshold menu, and gives you more accuracy when adjusting low values than when adjusting high values. Default is 2.0. Note that some props have their own menus and might not use this define.
+
+```cpp
+#define CLASH_THRESHOLD_GAMMA 2.0
+```
+
+### VOLUME_MENU_GAMMA
+Just lke COLOR_MENU_GAMMA above, this only affects the clash threshold menu, and gives you more accuracy when adjusting low values than when adjusting high values. Default is 2.2. Note that some props have their own menus and might not use this define.
+
+```cpp
+#define VOLUME_MENU_GAMMA 2.2
 ```
