@@ -573,3 +573,10 @@ This define stops ID scanning while the saber is ignited. With no scanning there
 ```cpp
 #define BLADE_ID_STOP_SCAN_WHEN_IGNITED
 ```
+
+### ENABLE_SPIDISPLAY
+Currently, including support for color displays use a small amount of memory even if no display is actually used. To work around this issue, we have this define. Without it, color display support is disabled and takes no memory. With it, you can use color displays in your config file.
+
+```cpp
+#define ENABLE_SPIDISPLAY
+```
