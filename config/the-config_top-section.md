@@ -557,3 +557,19 @@ Just lke COLOR_MENU_GAMMA above, this only affects the clash threshold menu, and
 ```cpp
 #define VOLUME_MENU_GAMMA 2.2
 ```
+
+### BLADE_ID_SCAN_TIMEOUT
+This define allows you to set a timeout on how long active
+blade scanning will actually be active for. Similar to IDLE_OFF_TIME, but
+just for the continous blade ID scan.
+
+```cpp
+#define BLADE_ID_SCAN_TIMEOUT 5 * 60 * 1000
+```
+
+### BLADE_ID_STOP_SCAN_WHEN_IGNITED
+This define stops ID scanning while the saber is ignited. With no scanning there is no chance of getting the ID wrong and re-initialize the saber while using it.
+
+```cpp
+#define BLADE_ID_STOP_SCAN_WHEN_IGNITED
+```
