@@ -12,6 +12,8 @@ ProffieOS currently has support for four types of color displays:
 
 More will be added in the future.
 
+I highly recommend using an [eyespi breakout board](https://www.adafruit.com/product/5613) to connect to the displays, but it is also possible to solder directly to the displays.
+
 Note that you will need a V3 Proffieboard to use color displays.
 
 # Wiring and Configuration
