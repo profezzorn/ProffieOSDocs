@@ -29,12 +29,15 @@ When you enter the menu system, this is where you end up. The default top menu h
 The settings menu is fairly simple. Note that depending on what defines you use, some of these settings might not be available. Depending on your defines, these settings may be saved between reboots, or not.
 
 * Change Volume
+
 This allows you to change the volume. Select, rotate left / right to adjust the volume, then click power to select the volume you want. See also the [VOLUME_MENU_GAMMA](/config/the-config_top-section.html#volumemenugamma) define.
 
 * SD Access
+
 Lets you select if the SD card can be accessed from a computer or not. Defaults to off to protect the SD card from accidental corruption when programming the board. Available with the [MOUNT_SD_SETTING](/config/the-config_top-section.html#mountsdsetting) define.
 
 * Blade Length
+
 Lets you shorten the blade to match the inserted blade.
 
 ### Clash Threshold
@@ -45,13 +48,16 @@ Lets you make all your LEDs darker, can be helpful to save on battery, or when u
 
 # The Edit Presets Menu
 
-### Select Font
+* Select Font
+  
 This will go to a sub-menu, where each entry is a font on your SD card. Note that all fonts must be in the top-level to be found, and must have a "font.wav" file so you know which font it is. If you click AUX, it will exit the menu without changing anything, if you click POW, the selected font will be used for the current preset.
 
-### Select Track
+* Select Track
+  
 Similar to the "Select Font" sub menu, but for tracks. Tracks must be in `/tracks/*.wav` or `/FONT/tracks/*.wav` to be found.
 
-### [Edit Blade Style](#theeditbladestylemenu) (one per blade)
+* [Edit Blade Style](#theeditbladestylemenu) (one per blade)
+  
 If you have multiple blades (or accents, illuminated PCBs, buttons, etc.) there will be multiple "Select blade style" menus, one per blade. Selecting this entry will enter the "Edit Blade Style" menu, see below.
 
 ### Move Preset Up
