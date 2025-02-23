@@ -587,3 +587,9 @@ When using the MENU_SPEC_TEMPLATE, you can edit and modify presets using menus. 
 ```cpp
 #define FONT_PATTERN "*;common"
 ```
+
+### SMOOTH_COLORCHANGE_TICKS_PER_REVOLUTION
+This define enables "tick" sounds when using the smooth color change menu. The ticks don't actually have any meaning, but improves the feel of using the smooth color change menu nontheless. The define also specifies how many ticks to play per revolution.
+```cpp
+#define SMOOTH_COLORCHANGE_TICKS_PER_REVOLUTION 60
+```
