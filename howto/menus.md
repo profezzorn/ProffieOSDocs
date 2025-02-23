@@ -45,16 +45,13 @@ Lets you make all your LEDs darker, can be helpful to save on battery, or when u
 
 # The Edit Presets Menu
 
-* Select Font
-  
+### Select Font
 This will go to a sub-menu, where each entry is a font on your SD card. Note that all fonts must be in the top-level to be found, and must have a "font.wav" file so you know which font it is. If you click AUX, it will exit the menu without changing anything, if you click POW, the selected font will be used for the current preset.
 
-* Select Track
-  
+### Select Track  
 Similar to the "Select Font" sub menu, but for tracks. Tracks must be in `/tracks/*.wav` or `/FONT/tracks/*.wav` to be found.
 
-* [Edit Blade Style](#the-edit-blade-style-menu) (one per blade)
-  
+### [Edit Blade Style](#the-edit-blade-style-menu) (one per blade)
 If you have multiple blades (or accents, illuminated PCBs, buttons, etc.) there will be multiple "Select blade style" menus, one per blade. Selecting this entry will enter the "Edit Blade Style" menu, see below.
 
 ### Move Preset Up
