@@ -78,6 +78,22 @@ Begin/end drag.
 
 Begin/end melt.
 
+## quote
+
+Triggers quote.
+
+## swing
+
+Triggers swing/accent swing.
+
+## slash
+
+Triggers accent slash.
+
+## spin
+
+Triggers accent spin (if enabled with ENABLE_SPINS)
+
 ## ccmode
 
 Enter/exit color change mode.
