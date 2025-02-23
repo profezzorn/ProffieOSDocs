@@ -22,22 +22,19 @@ The saber will tell you what menu entry it's on through the speaker, so make sur
 # The top menu
 When you enter the menu system, this is where you end up. The default top menu has two entries, both of which leads to sub-menus:
 
-* [Edit Presets](#theeditpresetsmenu)
-* [Settings](#thesettingsmenu)
+### [Edit Presets](#the-edit-presets-menu)
+### [Settings](#the-setting-smenu)
 
 # The Settings Menu
 The settings menu is fairly simple. Note that depending on what defines you use, some of these settings might not be available. Depending on your defines, these settings may be saved between reboots, or not.
 
-* Change Volume
-
+### Change Volume
 This allows you to change the volume. Select, rotate left / right to adjust the volume, then click power to select the volume you want. See also the [VOLUME_MENU_GAMMA](/config/the-config_top-section.html#volumemenugamma) define.
 
-* SD Access
-
+### SD Access
 Lets you select if the SD card can be accessed from a computer or not. Defaults to off to protect the SD card from accidental corruption when programming the board. Available with the [MOUNT_SD_SETTING](/config/the-config_top-section.html#mountsdsetting) define.
 
-* Blade Length
-
+### Blade Length
 Lets you shorten the blade to match the inserted blade.
 
 ### Clash Threshold
@@ -56,7 +53,7 @@ This will go to a sub-menu, where each entry is a font on your SD card. Note tha
   
 Similar to the "Select Font" sub menu, but for tracks. Tracks must be in `/tracks/*.wav` or `/FONT/tracks/*.wav` to be found.
 
-* [Edit Blade Style](#theeditbladestylemenu) (one per blade)
+* [Edit Blade Style](#the-edit-blade-style-menu) (one per blade)
   
 If you have multiple blades (or accents, illuminated PCBs, buttons, etc.) there will be multiple "Select blade style" menus, one per blade. Selecting this entry will enter the "Edit Blade Style" menu, see below.
 
@@ -76,7 +73,7 @@ Inserts a copy of the selected preset before the current preset. It's recommende
 This will enter a confirmation menu that has several cancel entries and one select entry. If you select the select entry, the current preset will be deleted. While the deleted entry can be reconstructed, there is no easy "undo", apart from deleting your presets.ini and presets.tmp files, which would reset all edits made using the menu system.
 
 # The Edit Blade Style Menu
-### (Edit Style Options)[#theeditstyleoptionsmenu]
+### (Edit Style Options)[#the-edit-style-options-menu]
 If this style has options that can be changed, like base color, retraction time, etc. then selecting this will enter a menu which lets you change those options.
 
 ### Select Style Entry
@@ -94,7 +91,7 @@ Resets all colors of this style to their defaults.
 ### Reset Style Options
 Resets all colors, options and timing values for this style to their defaults.
 
-### (Select Style)[#theselectstylemenu]
+### Select Style
 This will let you select a different style from any of the presets in the config file.
 
 # The Edit Style Options Menu
