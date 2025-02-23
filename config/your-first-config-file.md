@@ -30,3 +30,4 @@ While it's possible to just open up a text editor and write a config file, I wou
 ```
 Of course, replace my_saber_config with the actual name of your config file.
 
+For more information about configuration files and what they can contain, proceed to [the config file page](/config/the-config-file.html).
