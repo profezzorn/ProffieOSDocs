@@ -45,6 +45,7 @@ Each blade definition should use one of the following: (click for more info)
 * [FASTLEDBladePtr](/config/blades/fastledbladeptr.html) - EXPERIMENTAL, used for dotstar blades
 * [DimBlade](/config/blades/dimblade.html) - Similar to SubBlade, but reduces the brightness of the blade.
 * [SpiBladePtr](/config/blades/spibladeptr.html) - Non-experimental, but somewhat slow dotstar support.
+* [ServoBladePtr](/config/blades/servobladeptr.html) - for controlling servos, best used with the Free* pins on V3 Proffieboards.
 
 The Preset array is made up of Presets, see [Preset Configuration](/config/preset-configuration.html) for details.
 
