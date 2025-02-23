@@ -13,8 +13,9 @@ Let's say we have a string that has one accent LED, one 8-pixel battery indicato
 
 ```cpp
 SubBlade(9, 108, WS281XBlade<109, bladePin, Color8::GRB>()),
-SubBlade(0, 0, NULL),
 SubBlade(1, 8, NULL),
+SubBlade(0, 0, NULL),
+
 ```
 
 Note that the first LED in the string is counted as zero, so there's always a -1 offset to your numbers to the actual pixels as you'd count them.
