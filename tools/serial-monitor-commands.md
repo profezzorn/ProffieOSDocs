@@ -78,22 +78,6 @@ Begin/end drag.
 
 Begin/end melt.
 
-## quote
-
-Triggers quote.
-
-## swing
-
-Triggers swing/accent swing.
-
-## slash
-
-Triggers accent slash.
-
-## spin
-
-Triggers accent spin (if enabled with ENABLE_SPINS)
-
 ## ccmode
 
 Enter/exit color change mode.
@@ -187,3 +171,26 @@ font, then present an average speed and a histogram of how long it took to read 
 
 Like the "sdtest" command, but reads every file on the SD card, this can take a while.
 
+# Commands available from ProffieOS 8.x and later.
+
+## quote
+
+Triggers quote.
+
+## swing
+
+Triggers swing/accent swing.
+
+## slash
+
+Triggers accent slash.
+
+## spin
+
+Triggers accent spin (if enabled with ENABLE_SPINS)
+
+## sd
+* sd 1 - enable sd card access from computer
+* sd 0 - disable sd card access from computer
+* sd - check if sd card access is on or off
+Note, requres MOUNT_SD_SETTING. Also, the sd setting is never saved, so it always reverts to disabled when the board reboots or looses power.
