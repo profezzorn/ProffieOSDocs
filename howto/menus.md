@@ -22,19 +22,19 @@ The saber will tell you what menu entry it's on through the speaker, so make sur
 # The top menu
 When you enter the menu system, this is where you end up. The default top menu has two entries, both of which leads to sub-menus:
 
-### [Edit Presets](#theeditpresetsmenu)
-### [Settings](#thesettingsmenu)
+* [Edit Presets](#theeditpresetsmenu)
+* [Settings](#thesettingsmenu)
 
 # The Settings Menu
 The settings menu is fairly simple. Note that depending on what defines you use, some of these settings might not be available. Depending on your defines, these settings may be saved between reboots, or not.
 
-### Change Volume
+* Change Volume
 This allows you to change the volume. Select, rotate left / right to adjust the volume, then click power to select the volume you want. See also the [VOLUME_MENU_GAMMA](/config/the-config_top-section.html#volumemenugamma) define.
 
-### SD Access
+* SD Access
 Lets you select if the SD card can be accessed from a computer or not. Defaults to off to protect the SD card from accidental corruption when programming the board. Available with the [MOUNT_SD_SETTING](/config/the-config_top-section.html#mountsdsetting) define.
 
-### Blade Length
+* Blade Length
 Lets you shorten the blade to match the inserted blade.
 
 ### Clash Threshold
