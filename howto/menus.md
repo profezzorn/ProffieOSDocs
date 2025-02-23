@@ -92,7 +92,7 @@ Resets all colors, options and timing values for this style to their defaults.
 This will let you select a different style from any of the presets in the config file.
 
 # The Edit Style Options Menu
-Note that only those options that your style actually uses will show up in this menu, so while this menu is fairly long, it might not be when you access it on your saber. If you select a color option in this menu, it will go to [the color menu](#thecolormenu), if you select any other option, you will enter a menu that lets you select the value for that option.
+Note that only those options that your style actually uses will show up in this menu, so while this menu is fairly long, it might not be when you access it on your saber. If you select a color option in this menu, it will go to [the color menu](#the-color-menu), if you select any other option, you will enter a menu that lets you select the value for that option.
 
 ### Base Color
 ### Alt Color
