@@ -580,3 +580,10 @@ Currently, including support for color displays use a small amount of memory eve
 ```cpp
 #define ENABLE_SPIDISPLAY
 ```
+
+### FONT_PATTERN
+When using the MENU_SPEC_TEMPLATE, you can edit and modify presets using menus. However, font packs are typically stored in a directory called "common", so the font search path for each preset is typically on the form "font_directory;common". This works well in many cases, but can be somewhat limiting. By using this define, you can change the pattern used to extract and construct font search paths.  The default FONT_PATTERN is "*;common", and the star is where the font directory will go. However, you could set it to something like "override;*;common", and now any sound you put in "override" will be used by all fonts. There can also be multiple stars in the pattern, for instance, you could use "*;*/mysaber;common", and if your font direcory is "ANH", then the final search path will be "ANH;ANH/mysaber;common". Note that, in order for ProffieOS to be able to extract the font directory from the font search path, all presets in your config file must have font search paths that match the pattern.
+
+```cpp
+#define FONT_PATTERN "*;common"
+```
