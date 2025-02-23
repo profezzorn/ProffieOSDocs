@@ -593,3 +593,11 @@ This define enables "tick" sounds when using the smooth color change menu. The t
 ```cpp
 #define SMOOTH_COLORCHANGE_TICKS_PER_REVOLUTION 60
 ```
+
+### ENABLE_IDLE_SOUND
+This enables a sound effect called "idle", which is basically the inverse of "hum" as it will play when the saber is off, instead of when it's on. It will stop playing after IDLE_OFF_TIME has passed.
+
+```cpp
+#define ENABLE_IDLE_SOUND
+```
+
