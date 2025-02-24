@@ -12,7 +12,7 @@ Note the use of () instead of <>, as SubBlade is a regular function, not a templ
 Let's say we have a string that has one accent LED, one 8-pixel battery indicator and then a 100-LED blade. The blades[] array could then look something like this:
 
 ```cpp
-SubBlade(9, 108, WS281XBlade<109, bladePin, Color8::GRB>()),
+SubBlade(9, 108, WS281XBlade<109, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>()),
 SubBlade(1, 8, NULL),
 SubBlade(0, 0, NULL),
 
