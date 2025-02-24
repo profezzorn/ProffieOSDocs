@@ -20,6 +20,18 @@ From ProffieOS 7.x, these additional events are available:
 * in
 * pstoff
 
+From ProffieOS 8.x, these additional events are available:
+* lowbatt
+
+Also, from Proffie 8.x, you can use the BlasterDisplayController to activate these extra events:
+* blast
+* reload
+* empty
+* jam
+* clipin
+* clipout
+* destruct
+
 In the future, there will probably be more things that will trigger loading OLED images or animations from the SD card, as well as additional size displays, including color, etc..
 For this page's explanations, a typical monochrome 128x32 pixel OLED display is used as the example target.
    
@@ -136,4 +148,15 @@ a define to the CONFIG_TOP section of the uploaded config file:
 There's also an option to flip it mirror image:  
 ```cpp
 #define OLED_MIRRORED
+```
+
+## Activating the BlasterDisplayController
+In CONFIG_TOP use:
+```cpp
+#define INCLUDE_SSD1306
+```
+In CONFIG_BOTTOM use:
+```cpp
+BlasterDisplayController<128, uint32_t> display_controller;
+SSD1306Template<128, uint32_t> display(&display_controller);
 ```
