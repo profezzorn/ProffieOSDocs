@@ -81,6 +81,11 @@ See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list o
 | `preon`              | `preon`    | Played before the blade turns on |
 | `pstoff`             | `pstoff`   | Played after retraction when the blade turns off |
 | `altchng`            | `altchng`  | Played when the alt is changed. (OS7+) |
+| `fastout`            | `fastout`  | Played instead of "out" when using fast on (OS8+) |
+| `quote`              | `quote`    | Plays a quote (OS8+) |
+| `chhum`              | `chhum`    | Like `altchng`, but played before the new hum with no gap. (OS8+) |
+| `mclick`             | `mclick`   | Short menu clicked played when going between menu entries (OS8+) |
+| `idle`               | `idle`     | Played when not on (OS8+, ENABLE_IDLE_SOUND) |
 
 #### Thermal Detonator Props
 * `bgnarm` - when the td is arming
