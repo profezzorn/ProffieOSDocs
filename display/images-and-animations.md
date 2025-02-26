@@ -160,3 +160,18 @@ In CONFIG_BOTTOM use:
 BlasterDisplayController<128, uint32_t> display_controller;
 SSD1306Template<128, uint32_t> display(&display_controller);
 ```
+
+## Using two OLED displays
+
+1. Your displays need to have different I2C IDs
+2. Add `#define INCLUDE_SSD1306` the CONFIG_TOP section.
+3. In CONFIG_BOTTOM, use something like this:
+
+```cpp
+StandardDisplayController<128, uint32_t, STRTYPE("oled1/")> display_controller1;
+SSD1306Template<128, uint32_t> display1(&display_controller1, ID1 /* enter I2C ID of first display here */);
+StandardDisplayController<128, uint32_t, STRTYPE("oled2/")> display_controller2;
+SSD1306Template<128, uint32_t> display2(&display_controller2, ID2 /* enter I2C ID of first display here */);
+```
+
+Put the images for the first display in FONT/oled1/ and the images for the second display in FONT/oled2/.
