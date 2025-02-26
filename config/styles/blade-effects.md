@@ -139,6 +139,19 @@ Uses sounds named trloopNN.wav, where N is a number if more than one trloop.wav 
 ### EFFECT_PLI_ON  
 ### EFFECT_PLI_OFF  
 
+### EFFECT_MENU_CHANGE
+*(OS 8.x+)*
+Triggered when switching between menu entries.
+
+### EFFECT_ACCENT_SWING
+*(OS 8.x+)*
+Triggered when smoothswing is active, and you swing hard enough to trigger an accent swing.
+
+### EFFECT_ACCENT_SLASH
+*(OS 8.x+)*
+Triggered when smoothswing is active, and you swing hard enough to trigger an accent slash.
+
+
 ## Mini game effects  
 ### EFFECT_GAME_START
 *(OS 7.0+)* 
