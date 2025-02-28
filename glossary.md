@@ -5,6 +5,9 @@ title: Glossary
 ## [Arduino](https://www.arduino.cc/en/software)
 A cross-platform program that attempts to make software development for embedded platforms simple.
 
+## [Arduino-proffieboard-plugin](https://github.com/profezzorn/arduino-proffieboard)
+Plugin that makes Arduino capable of compiling and uploading programs to proffieboards. [Installation instructions can be found here.](/proffieboard-setup.html#the-arduino-proffieboard-plugin)
+
 ## [config file](/config/the-config-file.html)
 A file that specifies everything ProffieOS needs to know to make your saber (or other prop) work.
 
