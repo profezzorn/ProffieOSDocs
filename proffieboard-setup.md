@@ -55,7 +55,7 @@ On debian-like systems, this can be fixed with the following commands:
     sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
 
 ### Mac
-If you're using an M1/M2 mac, you're going to need to install Rosetta. The Arduino-Proffieboard plugin does not have native arm-mac support yet.
+No extra steps needed, it should just work.
 
 ## Done
 
