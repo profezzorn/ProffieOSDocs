@@ -6,7 +6,7 @@ title: Color Displays
 
 ProffieOS currently has support for four types of color displays:
 1. [DFRobot 847 160x80 0.96"](https://wiki.dfrobot.com/0.96_Inch_160_80_Color_SPI_TFT_Display_SKU_DFR0847) - small display suitable for sabers
-2. [Adafruit 358 128x128 1.8"](https://www.adafruit.com/product/358) - You can find similar displays on ebay, which should also work.
+2. [Adafruit 358 160x128 1.8"](https://www.adafruit.com/product/358) - You can find similar displays on ebay, which should also work.
 3. [Adafruit 5206 280x240 1.69"](https://www.adafruit.com/product/5206) - higher resolution display
 4. [Adafruit 4311 320x240 2.0"](https://www.adafruit.com/product/4311) - biggest, highest resolution
 
