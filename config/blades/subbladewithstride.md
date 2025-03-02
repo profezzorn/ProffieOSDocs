@@ -11,7 +11,7 @@ So instead of editing every single argument that pertains to speed throughout th
 
 ## SubBladeWithStride usage
 
-Same as above, but an additional argument of stride length is added like this:
+Same as SubBlade, but with an additional argument of stride length is added like this:
 
 ```cpp
 SubBladeWithStride(first_led, last_led, stride_length, blade_definition)
