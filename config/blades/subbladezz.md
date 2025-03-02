@@ -23,4 +23,4 @@ BladeConfig blades[] = {
 
 Now we have one blade for each column in the grid.
 
-See also: [SubBlade](/config/blades/subblade.html), [SubBladeReverse](/config/blades/sunbladereverse.html), [SubBladeWithStride](/config/blades/subbladewithstride.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
+See also: [SubBlade](/config/blades/subblade.html), [SubBladeReverse](/config/blades/subbladereverse.html), [SubBladeWithStride](/config/blades/subbladewithstride.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
