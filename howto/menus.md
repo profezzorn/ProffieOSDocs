@@ -36,12 +36,15 @@ Lets you select if the SD card can be accessed from a computer or not. Defaults 
 
 ### Blade Length
 Lets you shorten the blade to match the inserted blade.
+Available with the DYNAMIC_BLADE_LENGTH define.
 
 ### Clash Threshold
 Lets you adjust the clash threshold. Reasonable values range from around 1 to 8.
+Available with the DYNAMIC_CLASH_THRESHOLD define.
 
 ### Blade Dimming
 Lets you make all your LEDs darker, can be helpful to save on battery, or when using your saber in a dark environment.
+Available with the DYNAMIC_BLADE_DIMMING define.
 
 # The Edit Presets Menu
 
