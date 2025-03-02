@@ -29,4 +29,4 @@ BladeConfig blades[] = {
 };
 ```
 
-See also: [SubBlade](/config/blades/subblade.html), [SubBladeReverse](/config/blades/subladereverse.html), [SubBladeZZ](/config/blades/subbbladezz.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
+See also: [SubBlade](/config/blades/subblade.html), [SubBladeReverse](/config/blades/subbladereverse.html), [SubBladeZZ](/config/blades/subbladezz.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
