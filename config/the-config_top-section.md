@@ -534,7 +534,7 @@ Note that this define is currently only supported by the saber.h and saber_BC_bu
 #define MENU_SPEC_TEMPLATE DefaultMenuSpec
 ```
 You may also want to add the ENABLE_ALL_EDIT_OPTIONS define, or some menu entries might not be available.
-
+To learn how to use the menus, see [this page](/howto/menus.html).
 
 ### MENU_SPEC_MENU
 This define can be used together with MENU_SPEC_TEMPLATE to make the "enter menu" launch directly into a submenu. This means that only that submenu will be available, and all other menues will not possible to access. For instance, if you only want a volume menu, you could set this define to "ChangeVolumeMode". The name for each menu can be found in the menu specification.
