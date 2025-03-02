@@ -13,4 +13,4 @@ SubBladeReverse(100, 199, NULL)
 Note that you'll need to increase maxLedsPerString to 200.
 Also, the first LED in the string is counted as zero, so there's always a -1 offset to your numbers to the actual pixels as you'd count them.
 
-See also: [SubBlade](/config/blades/subblade.html), [SubBladeWithStride](/config/blades/subladewithstride.html), [SubBladeZZ](/config/blades/subbbladezz.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
+See also: [SubBlade](/config/blades/subblade.html), [SubBladeWithStride](/config/blades/subbladewithstride.html), [SubBladeZZ](/config/blades/subbladezz.html), [SubBladeWithList](/config/blades/subbladewithlist.html)
