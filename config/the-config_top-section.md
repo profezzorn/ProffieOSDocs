@@ -385,18 +385,20 @@ Saves memory by disabling old-fashioned styles. With this define, these styles w
 
 ### ENABLE_ALL_EDIT_OPTIONS
 The following "umbrella" define is equivalent to separately defining:
-DYNAMIC_BLADE_LENGTH
-DYNAMIC_BLADE_DIMMING
-DYNAMIC_CLASH_THRESHOLD
-SAVE_VOLUME
-SAVE_BLADE_DIMMING
-SAVE_CLASH_THRESHOLD
-SAVE_COLOR_CHANGE
-*Note - `#define SAVE_STATE` is different, as that encompasses:
-SAVE_VOLUME
-SAVE_PRESET
-SAVE_COLOR_CHANGE
-SAVE_BLADE_DIMMING (From ProffieOS 7.9 onward)
+* DYNAMIC_BLADE_LENGTH
+* DYNAMIC_BLADE_DIMMING
+* DYNAMIC_CLASH_THRESHOLD
+* SAVE_VOLUME
+* SAVE_BLADE_DIMMING
+* SAVE_CLASH_THRESHOLD
+* SAVE_COLOR_CHANGE
+* MOUNT_SD_SETTING (from OS 8.x)
+
+Note - `#define SAVE_STATE` is different, as that encompasses:
+* SAVE_VOLUME
+* SAVE_PRESET
+* SAVE_COLOR_CHANGE
+* SAVE_BLADE_DIMMING (From ProffieOS 7.9 onward)
 
 ```cpp
 #define ENABLE_ALL_EDIT_OPTIONS
@@ -531,6 +533,8 @@ Note that this define is currently only supported by the saber.h and saber_BC_bu
 ```cpp
 #define MENU_SPEC_TEMPLATE DefaultMenuSpec
 ```
+You may also want to add the ENABLE_ALL_EDIT_OPTIONS define, or some menu entries might not be available.
+
 
 ### MENU_SPEC_MENU
 This define can be used together with MENU_SPEC_TEMPLATE to make the "enter menu" launch directly into a submenu. This means that only that submenu will be available, and all other menues will not possible to access. For instance, if you only want a volume menu, you could set this define to "ChangeVolumeMode". The name for each menu can be found in the menu specification.
