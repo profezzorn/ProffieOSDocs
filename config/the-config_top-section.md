@@ -46,7 +46,7 @@ Sometimes (like late night for example) you may want to boot the saber at a lowe
 
 ### maxLedsPerStrip
 I don't remember why, but this next number is a constant instead of a define.
-It specifies how many pixels we can have in a single strip. Note that if you use RGBW pixels, this number needs to be 25% bigger than your actual number of pixels. There is no need to make this smaller if your strips are not 144 pixels long, but you do need to make it bigger if they are more than 144 pixels long.
+It specifies how many pixels we can have in a single strip. There is no need to make this smaller if your strips are not 144 pixels long, but you do need to make it bigger if they are more than 144 pixels long.
 
 ```cpp
 const unsigned int maxLedsPerStrip = 144;
