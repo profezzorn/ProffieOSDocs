@@ -28,6 +28,7 @@ While it's possible to just open up a text editor and write a config file, I wou
 ```cpp
 #define CONFIG_FILE "config/my_saber_config.h"
 ```
-Of course, replace my_saber_config with the actual name of your config file.
+Of course, replace my_saber_config with the actual name of your config file.  
+Once this is done, you can click the "Upload" button in Arduino to send your programming to the Proffieboard.
 
 For more information about configuration files and what they can contain, proceed to [the config file page](/config/the-config-file.html).
