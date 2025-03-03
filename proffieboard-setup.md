@@ -60,3 +60,6 @@ No extra steps needed, it should just work.
 ## Done
 
 Now you're ready to configure, compile and upload ProffieOS to your Proffieboards.
+
+Go here next: [Your First Config File](/config/your-first-config-file.html)
+
