@@ -9,7 +9,7 @@ While it's possible to just open up a text editor and write a config file, I wou
 
 * If you bought your saber from somewhere, the seller or installer usually saves the config file, or a copy of ProffieOS with a config file in it on the SD card. If you need help finding it, check [this page](/config/get-from-sd-card.html) Note that not all sellers/installers do this, and if that is the case, you should contact them and get the file directly from them.
 * If you are installing your own Proffieboard, you can use the [configuration generator web page](/config/generator.html) to generate a config file for your board.
-* You can take an existing, similar config file and modify it. (If necessary)
+* You can take an existing, similar config file and modify it. (If necessary) Just don't overwrite or delete any of the ones whose name starts with "proffieboard". Making a copy of OS6_config_example.h is a good idea.
 * You can use the [Fett263 configuration helper tool](https://www.fett263.com/fett263-os7-config-helper.html), but please beware that it requires you to input the blade configuration, so it's usually best to start with one of the other methods above, and then use the Fett263 tool to generate a *better* config file.
 * There is also the [ProffieConfig tool](https://github.com/ryancog/ProffieConfig), which aims to streamline this entire process, including uploads to the board.
 
