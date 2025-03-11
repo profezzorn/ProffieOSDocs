@@ -18,6 +18,16 @@ A further optional define will play the arrayx.wav file *and* the font.wav file:
 `#define SABERSENSE_ENABLE_ARRAY_FONT_IDENT`
 
 This helps when you have arrays set to save the last font used in that array, as it tells you which font you've landed on when you perform an array switch.
+
+## Array Saving
+
+By default, the system will save which array you're on. This means that the system will boot up into the last array that you were using.
+You can disable array saving by adding this define to the CONFIG_TOP section of your config:
+
+`#define SABERSENSE_DISABLE_SAVE_ARRAY`
+
+## Specifying Arrays
+
 You will also need to specify the arrays themselves, with sequential index numbers starting at zero, like this:
 
 ```
