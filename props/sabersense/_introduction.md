@@ -8,7 +8,7 @@ and consistent in terms of ‘rules’. It doesn’t require a ‘knack’ to ac
 Basic features like normal ignition, track playing, force effects, mute ignition, quotes etc. all have the same button controls on both one-button and two-button setups. This means users with large hilt collections which include one-button and two-button sabers don’t need to remember different sets of controls for these core features.
 
 ## Consistent ‘Rules’
-This again means the user has less to remember. For example, one click of POWER with blade off ALWAYS lights the blade - short click for normal, long click for muted; double click POWER ALWAYS plays a sound effect - track with blade off, character quote or force effect with blade on pointed up/down respectively. This is all intended to make it easier for people to remember the various controls.
+This again means the user has less to remember. For example, one click of POWER with blade off ALWAYS lights the blade - short click for normal, long click for muted; double click POWER ALWAYS plays a sound effect - track with blade off, character quote or force effect with blade on pointed up/down respectively. This is all intended to make it easier for the user to remember the various controls.
 
 ## Comprehensive Font Navigation 
 One-button and two-button setups both allow users to move forwards or backwards one font at a time, or to skip to first font, last font or middle font. Two-button setups include additional navigation features which allow the user to skip forwards or backwards five and ten fonts at a time.
