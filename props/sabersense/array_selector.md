@@ -34,31 +34,31 @@ You will also need to specify the arrays themselves, with sequential index numbe
 
 ```cpp
 BladeConfig blades[] = {
-{ 0,
-  //  Main Blade:
-  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets),  "Save1"}
-{ 1,
-   //  Main Blade:
-   WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-   //  Crystal Chamber:   
-   WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-   CONFIGARRAY(presets),  "Save2"}
-{ 2,
-  //  Main Blade:
-  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets),  "Save3"}
-{ 3,
-  //  Main Blade:
-  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets),  "Save4"}
-};
+    { 0,
+      //  Main Blade:
+      WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets),  "Save1"}
+    { 1,
+       //  Main Blade:
+       WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+       //  Crystal Chamber:   
+       WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+       CONFIGARRAY(presets),  "Save2"}
+    { 2,
+      //  Main Blade:
+      WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets),  "Save3"}
+    { 3,
+      //  Main Blade:
+      WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets),  "Save4"}
+  };
 #endif
 ```
 
@@ -70,31 +70,31 @@ An alternative implementation might look like this:
 
 ```cpp
 BladeConfig blades[] = {
-{ 0,
-  //  Main Blade:
-  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets)},
-{ 1,
-  //  Main Blade:
-  WS281XBladePtr<122, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets)},
-{ 2,
-  //  Main Blade:
-  WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets)},
-{ 3,
-  //  Main Blade:
-  WS281XBladePtr<98, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-  //  Crystal Chamber:   
-  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-  CONFIGARRAY(presets)},
-};
+    { 0,
+      //  Main Blade:
+      WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    { 1,
+      //  Main Blade:
+      WS281XBladePtr<122, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    { 2,
+      //  Main Blade:
+      WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    { 3,
+      //  Main Blade:
+      WS281XBladePtr<98, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    };
 #endif
 ```
 In this instance, the only difference is the pixel count. This means switching array will stay on the same font that you're currently on, but all that will change is the blade length.
