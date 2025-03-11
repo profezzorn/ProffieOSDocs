@@ -1,40 +1,47 @@
 # Array Selector Explained
 
 ## Principles and Practice
-Array selection is a seemingly simple tool that is actually surprisingly powerful. The idea is that multiple different blade settings can be accessed at the press of a button, with simple config tweaks providing enormous options. It can be added to a config using the following define:
+Array selection is a seemingly simple tool that is actually surprisingly powerful. The idea is that multiple different blade settings can be accessed at the press of a button, with simple config tweaks providing enormous options. Adjustments to the blade array can help build many different Array Selection setups, such as:
+
+- By specifying dummy blades, you can have a different number of effective blades on the same saber by switching arrays.
+- Multiple blade arrays can all look at the same preset array.
+- Specifying or not specifying individual save files per blade array allows you to control which blade preset (font) you land on when you switch into a new array.
+- If you have the same number of presets in multiple preset arrays, array switching can become invisible and appear to the user as a simple toggle between single differences between preset arrays.
+
+To add array selection to your saber, you need to add the following define to the CONFIG_TOP section of your config:
 `#define SABERSENSE_ARRAY_SELECTOR`
 When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead.
 A further optional define will play the arrayx.wav file *and* the font.wav file.
 `#define SABERSENSE_ENABLE_ARRAY_FONT_IDENT`
 This helps when you have arrays set to save the last font used in that array, as it tells you which font you've landed on when you perform an array switch.
-You will also need to specify the number of arrays you want, with sequential index numbers starting at zero, like this:
+You will also need to specify the arrays themselves, with sequential index numbers starting at zero, like this:
 
 ```
 BladeConfig blades[] = {
-   { 0,
-    //  Main Blade:
- 	  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets),  "Save1"}
-   { 1,
-    //  Main Blade:
- 	  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets),  "Save2"}
-   { 2,
-    //  Main Blade:
- 	  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets),  "Save3"}
-   { 3,
-    //  Main Blade:
- 	  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets),  "Save4"}
+{ 0,
+  //  Main Blade:
+  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets),  "Save1"}
+{ 1,
+   //  Main Blade:
+   WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+   //  Crystal Chamber:   
+   WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+   CONFIGARRAY(presets),  "Save2"}
+{ 2,
+  //  Main Blade:
+  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets),  "Save3"}
+{ 3,
+  //  Main Blade:
+  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets),  "Save4"}
 };
 #endif
 ```
@@ -46,41 +53,34 @@ An alternative implementation might look like this:
 
 ```
 BladeConfig blades[] = {
-   { 0,
-    //  Main Blade:
- 	  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets)},
-   { 1,
-    //  Main Blade:
- 	  WS281XBladePtr<122, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets)},
-   { 2,
-    //  Main Blade:
- 	  WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets)},
-   { 3,
-    //  Main Blade:
- 	  WS281XBladePtr<98, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
-    //  Crystal Chamber:   
-   	WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
-      CONFIGARRAY(presets)},
+{ 0,
+  //  Main Blade:
+  WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets)},
+{ 1,
+  //  Main Blade:
+  WS281XBladePtr<122, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets)},
+{ 2,
+  //  Main Blade:
+  WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets)},
+{ 3,
+  //  Main Blade:
+  WS281XBladePtr<98, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+  //  Crystal Chamber:   
+  WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+  CONFIGARRAY(presets)},
 };
 #endif
 ```
 In this instance, the ony difference is the pixel count. This means switching array will stay on the same font that you're currently on, but all that will change is the blade length.
-
-Further adjustments to the blade array can help build many different Array Selection setups, such as:
-
-- By specifying dummy blades, you can have a different number of effective blades on the same saber by switching arrays.
-- Multiple blade arrays can all look at the same preset array.
-- Specifying or not specifying individual save files per blade array allows you to control which blade preset (font) you land on when you switch into a new array.
-- If you have the same number of presets in multiple preset arrays, array switching can become invisible and appear to the user as a simple toggle between single differences between preset arrays.
 
 # Example Implementations
 To illustrate the above concepts, let's look at some examples of how they might be implemented:
