@@ -1,3 +1,7 @@
+---
+title: Introduction
+---
+
 # Introducing the Sabersense Button System
 
 ## Overview
@@ -14,16 +18,16 @@ This again means the user has less to remember. For example, one click of POWER 
 One-button and two-button setups both allow users to move forwards or backwards one font at a time, or to skip to first font, last font or middle font. Two-button setups include additional navigation features which allow the user to skip forwards or backwards five and ten fonts at a time.
 
 ## Blade ID Scanning On Demand
-This allows users to run blade ID with a button press, removing the need for continuous automatic scanning.
+This allows users to run blade ID with a button press, removing the need for continuous automatic scanning. More details can be found here: https://pod.hubbe.net/props/sabersense/blade_id
 
 ## Manual Array Selection
-This allows users to cycle through multiple blade arrays manually. This system can be implemented in many different ways. See the Array Selector page for more details.
+This allows users to cycle through multiple blade arrays manually. This system can be implemented in many different ways. See the Array Selector page for more details. More details can be found here: https://pod.hubbe.net/props/sabersense/array_selector
 
 ## Button ‘Clicker’
-For hilts that have buttons with poor tactile feedback (KR’s Scavenger for instance, with the emitter wheel button setup), the system can be set to play custom click sounds to accompany button presses, aiding in system navigation.
+For hilts that have buttons with poor tactile feedback (KR’s Scavenger for instance, with the emitter wheel button setup), the system can be set to play custom click sounds to accompany button presses, aiding in system navigation. More details can be found here: https://pod.hubbe.net/props/sabersense/button_clicker
 
 ## System Reset Feature
-As users make changes to things like blade colour, volume and which font they last used, these changes are stored in system save files on the SD card. The Sabersense Button System includes the ability to completely reset the system and 'restore factory defaults' by deleting these save files simply with a button press.
+As users make changes to things like blade colour, volume and which font they last used, these changes are stored in system save files on the SD card. The Sabersense Button System includes the ability to completely reset the system and 'restore factory defaults' by deleting these save files simply with a button press. More details can be found here: https://pod.hubbe.net/props/sabersense/restore_defaults
 
 ## Compatibility
 The Sabersense Button System has been written for, and is included with, ProffieOS 8.x or later. However a ProffieOS 7.x compatible version, with all the same features, is available as a free download from the Sabersense website.
