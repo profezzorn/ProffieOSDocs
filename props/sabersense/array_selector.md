@@ -157,7 +157,7 @@ If you add the define to play the font ident after each array switch, it will te
 - Array 1 - Full Power Mode
 - Array 2 - Half Power Mode
 
-Point both blade arrays at the same preset array and set one array with `{ 0, DimBlade(50.0, WS281XBladePtr etc.`, and array switching becomes a way of entering and exiting a low power battery saving mode. For even more clarity, make array1.wav say, "Exiting low power mode" and make array2.wav say, "Entering Low power Mode", and user navigation becomes even slicker. (A range of various idents are available from the Sabersense website - simply rename the files you need appropriately.
+Point both blade arrays at the same preset array and set one array with `{ 0, DimBlade(50.0, WS281XBladePtr etc.`, and array switching becomes a way of entering and exiting a low power battery saving mode. For even more clarity, make array1.wav say, *"Exiting low power mode"* and make array2.wav say, *"Entering Low power Mode"*, and user navigation becomes even slicker. (A range of various idents are available from the Sabersense website - simply rename the files you need appropriately.
 
 ## Mix Blade Length and User Favourites
 - Array 1 - KR 36 inch, User save font 1
