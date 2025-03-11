@@ -1,3 +1,7 @@
+---
+title: Array Selector
+---
+
 # Array Selector Explained
 
 ## Principles and Practice
@@ -12,8 +16,7 @@ To add array selection to your saber, you need to add the following define to th
 
 `#define SABERSENSE_ARRAY_SELECTOR`
 
-When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead.
-A further optional define will play the arrayx.wav file *and* the font.wav file:
+When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead. A further optional define will play the arrayx.wav file *and* the font.wav file:
 
 `#define SABERSENSE_ENABLE_ARRAY_FONT_IDENT`
 
@@ -21,8 +24,7 @@ This helps when you have arrays set to save the last font used in that array, as
 
 ## Array Saving
 
-By default, the system will save which array you're on. This means that the system will boot up into the last array that you were using.
-You can disable array saving by adding this define to the CONFIG_TOP section of your config:
+By default, the system will save which array you're on. This means that the system will boot up into the last array that you were using. You can disable array saving by adding this define to the CONFIG_TOP section of your config:
 
 `#define SABERSENSE_DISABLE_SAVE_ARRAY`
 
@@ -61,6 +63,7 @@ BladeConfig blades[] = {
 ```
 
 In the above example, all arrays are identical, all are looking at the same presets array (presets) but all have separate save folders specified (Save1, Save2 etc.). This means that when you switch from one array to another, the system will remember which font you were on on the previous array and will switch to that font when you next cycle to that array.
+
 Note that the save references pertain to folders that the system will store the save files in. This means in the above instance, you would need to create the four save folders on the SD card yourself - the system will then place the save files inside those folders.
 
 An alternative implementation might look like this:
@@ -113,11 +116,12 @@ This can be achieved by having unspecified save files and all blade arrays looki
 - Array 2 - Motor Off 
 
 Things like this can be done one of two ways...
-Either have a single preset array with two blade arrays, and on the second blade array (motor off) specify an unused LED power pad for the motor. This way the motor never receives the preset instruction to start up.
-Alternatively have two preset arrays, both idential except for the motor preset which is set for off.
-If you opt for the latter, you can also specifiy two separate save files in the blade array. This means when you switch into the opposite array, you will land on the blade preset (font) that was last used on that array.
-Conversely, if you don't specify any save files, and you're on preset number six on array one for example, you will land on preset six again when you switch to array two.
 
+Either have a single preset array with two blade arrays, and on the second blade array (motor off) specify an unused LED power pad for the motor. This way the motor never receives the preset instruction to start up.
+
+Alternatively have two preset arrays, both idential except for the motor preset which is set for off.
+
+If you opt for the latter, you can also specifiy two separate save files in the blade array. This means when you switch into the opposite array, you will land on the blade preset (font) that was last used on that array. Conversely, if you don't specify any save files, and you're on preset number six on array one for example, you will land on preset six again when you switch to array two.
 
 ## Adding Different Effects Options
 - Array 1 - Light blade flicker, crystal follows blade
@@ -149,8 +153,8 @@ Simply lay your blade presets out as per above, and point the four identical bla
 - Array 5 - User Favourite 5
 - Array 6 - User Favourite 6
 
-On sabers with very large number of sound fonts, this feature allows users to have them all available but to select (in the case above) six easily-accessible favourites.
-To make it work, simply specify unique save files to each blade array and the system will always remember, and return to, the font that was last used on a given array when you switch to it.
+On sabers with very large number of sound fonts, this feature allows users to have them all available but to select (in the case above) six easily-accessible favourites. To make it work, simply specify unique save files to each blade array and the system will always remember, and return to, the font that was last used on a given array when you switch to it.
+
 If you add the define to play the font ident after each array switch, it will tell you which font you've landed on when you switch arrays. Or alternatively, simply delete the arrayx.wav files from the SD card, and the system will play the font idents instead of the array idents automatically.
 
 ## Power Saving Mode
@@ -170,4 +174,4 @@ Point both blade arrays at the same preset array and set one array with `{ 0, Di
 A single preset array, individual specified save files, gives the option to save three favourite fonts per blade length.
 
 ## Always a Way Out...
-If users end up with arrays saved in ways they don't want, all they need do is *four-clicks-and-hold* the Power button and the system will completely reset to config defaults by deleting all the save files.
+If users end up with arrays saved in ways they don't want, all they need do is *four-clicks-and-hold* the Power button and the system will completely reset to config defaults by deleting all the save files. More details can be found here: https://pod.hubbe.net/props/sabersense/restore_defaults
