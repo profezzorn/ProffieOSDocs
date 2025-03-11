@@ -134,7 +134,6 @@ By having four preset arrays, all listing the same fonts, you can simply add dif
 By using dummy blades, we can split 16 pixel Shtok connectors into two blades for blade out settings, giving greater scope for different emitter animations, while keeping normal blade functionality when using a blade.
 
 ## Split Presets/Fonts Into Groups
-SPLIT PRESETS/FONTS INTO BATCHES
 - Array 1 - Light Side Fonts
 - Array 2 - Dark Side Fonts
 - Array 3 - Unstable Fonts
@@ -150,7 +149,7 @@ Simply lay your blade presets out as per above, and point the four identical bla
 - Array 5 - User Favourite 5
 - Array 6 - User Favourite 6
 
-On sabers with very large number of sound fonts, this feature allows users to have them all available but to select (in the case above)  six easily-accessible favourites.
+On sabers with very large number of sound fonts, this feature allows users to have them all available but to select (in the case above) six easily-accessible favourites.
 To make it work, simply specify unique save files to each blade array and the system will always remember, and return to, the font that was last used on a given array when you switch to it.
 If you add the define to play the font ident after each array switch, it will tell you which font you've landed on when you switch arrays. Or alternatively, simply delete the arrayx.wav files from the SD card, and the system will play the font idents instead of the array idents automatically.
 
