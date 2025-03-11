@@ -9,10 +9,14 @@ Array selection is a seemingly simple tool that is actually surprisingly powerfu
 - If you have the same number of presets in multiple preset arrays, array switching can become invisible and appear to the user as a simple toggle between single differences between preset arrays.
 
 To add array selection to your saber, you need to add the following define to the CONFIG_TOP section of your config:
+
 `#define SABERSENSE_ARRAY_SELECTOR`
+
 When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead.
-A further optional define will play the arrayx.wav file *and* the font.wav file.
+A further optional define will play the arrayx.wav file *and* the font.wav file:
+
 `#define SABERSENSE_ENABLE_ARRAY_FONT_IDENT`
+
 This helps when you have arrays set to save the last font used in that array, as it tells you which font you've landed on when you perform an array switch.
 You will also need to specify the arrays themselves, with sequential index numbers starting at zero, like this:
 
@@ -80,7 +84,7 @@ BladeConfig blades[] = {
 };
 #endif
 ```
-In this instance, the ony difference is the pixel count. This means switching array will stay on the same font that you're currently on, but all that will change is the blade length.
+In this instance, the only difference is the pixel count. This means switching array will stay on the same font that you're currently on, but all that will change is the blade length.
 
 # Example Implementations
 To illustrate the above concepts, let's look at some examples of how they might be implemented:
