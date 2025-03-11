@@ -1,7 +1,10 @@
+---
+title: Sound Effect Player
+---
+
 # Quote, Force Effect and Track Players
 
-Built into the Sabersense button system is the ability to play music tracks with the blade off, force effects with the blade on and character quotes with the blade off or on.
-The controls are as follows:
+Built into the Sabersense button system is the ability to play music tracks with the blade off, force effects with the blade on and character quotes with the blade off or on. The controls are as follows:
 
 ## Blade Off
 
