@@ -22,5 +22,11 @@ This allows users to cycle through multiple blade arrays manually. This system c
 ## Button ‘Clicker’
 For hilts that have buttons with poor tactile feedback (KR’s Scavenger for instance, with the emitter wheel button setup), the system can be set to play custom click sounds to accompany button presses, aiding in system navigation.
 
+## System Reset Feature
+As users make changes to things like blade colour, volume and which font they last used, these changes are stored in system save files on the SD card. The Sabersense Button System includes the ability to completely reset the system and 'restore factory defaults' by deleting these save files simply with a button press.
+
+## Compatibility
+The Sabersense Button System has been written for, and is included with, ProffieOS 8.x or later. However a ProffieOS 7.x compatible version, with all the same features, is available as a free download from the Sabersense website.
+
 ## Free Sound Files
 The Sabersense Prop File uses certain sound files to aid feature navigation. Although not mandatory for the system to work, these files can be downloaded for free from the Sabersense website. Visit www.sabersense.co.uk and navigate to *downloads*.
