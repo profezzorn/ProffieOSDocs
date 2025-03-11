@@ -30,7 +30,7 @@ You can disable array saving by adding this define to the CONFIG_TOP section of 
 
 You will also need to specify the arrays themselves, with sequential index numbers starting at zero, like this:
 
-```
+```cpp
 BladeConfig blades[] = {
 { 0,
   //  Main Blade:
@@ -65,7 +65,7 @@ Note that the save references pertain to folders that the system will store the 
 
 An alternative implementation might look like this:
 
-```
+```cpp
 BladeConfig blades[] = {
 { 0,
   //  Main Blade:
