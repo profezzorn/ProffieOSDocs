@@ -33,4 +33,4 @@ As users make changes to things like blade colour, volume and which font they la
 The Sabersense Button System has been written for, and is included with, ProffieOS 8.x or later. However a ProffieOS 7.x compatible version, with all the same features, is available as a free download from the Sabersense website.
 
 ## Free Sound Files
-The Sabersense Prop File uses certain sound files to aid feature navigation. Although not mandatory for the system to work, these files can be downloaded for free from the Sabersense website. Visit www.sabersense.co.uk and navigate to *downloads*.
+The Sabersense Prop File uses certain sound files to aid feature navigation. Although not necessary for the system to work, these files are available as a free download from the Sabersense website. Visit www.sabersense.co.uk and navigate to *downloads*.
