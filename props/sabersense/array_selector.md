@@ -184,13 +184,13 @@ For example the top line of a preset might look like this:
   {"DarkLord;common", "tracks/Imperial_March.wav",
 ```
 
-In this instance, 'DarkLord' is the name of the font folder, followed by 'common' which typically houses files shared by all presets, and the music track for this preset is the *Imperial_March.wav* file inside the 'tracks' folder . When the system needs a file, it will look first in the 'DarkLord' folder, and if it can't find the file it needs there, it will then look inside 'common'. And when you play a track, it will access and play the *Imperial_March.wav* file.
+In this instance, 'DarkLord' is the name of the font folder, followed by 'common', which typically houses files shared by all presets, and the music track is the *Imperial_March.wav* file inside the 'tracks' folder. When the system needs a file, it will look first in the 'DarkLord' folder, and if it can't find the file it needs there, it will then look inside 'common'. And when you play a track, it will access and play the *Imperial_March.wav* file.
 
 If we duplicate the complete presets array but add a 'PreFont' folder and *Mute.wav* music track to each preset on one of the arrays like this:
 ```cpp
   {"PreFont;DarkLord;common", "tracks/Mute.wav",
 ```
-then the system will look first in the 'PreFont' folder for any effects it wants. If it's looking for *quote* or *force*, and 'PreFont' contains *quote.wav* and *force.wav* files, both comprising one second of silence, the system will play those silent files and not look any further for the quote or force files in the font folder. The same goes for adding a *mute.wav* file to the 'tracks' folder.
+then the system will look first in the 'PreFont' folder for any effects it wants. If it's looking for *quote* or *force* - and 'PreFont' contains *quote.wav* and *force.wav* files, both comprising one second of silence - the system will play those silent files and not look any further. The same goes for adding a *mute.wav* file to the 'tracks' folder.
 
 As long as both preset arrays are otherwise the same and we don't specify separate save file locations for each one, the Array Selector will, to the end user, simply become a toggle to switch effect player functionality on or off.
 
