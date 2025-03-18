@@ -173,5 +173,26 @@ Point both blade arrays at the same preset array and set one array with `{ 0, Di
 
 A single preset array, individual specified save files, gives the option to save three favourite fonts per blade length.
 
+## Switch Audio Players On and Off
+- Array 1 - Includes Force/Quote/Track Players
+- Array 2 - Disables Force/Quote/Track Players
+
+If we duplicate our preset array but make small changes to the folder and file paths and a couple of audio files for each preset, the Array Selector can become a toggle to switch effects player functionality on and off.
+
+For example the top line of a preset might look like this:
+```cpp
+  {"DarkLord;common", "tracks/Imperial_March.wav",
+```
+
+In this instance, 'DarkLord' is the name of the font folder, followed by 'common' which typically houses files shared by all presets, and the music track for this preset is the *Imperial_March.wav* file inside the 'tracks' folder . When the system needs a file, it will look first in the 'DarkLord' folder, and if it can't find the file it needs there, it will then look inside 'common'. And when you play a track, it will access and play the *Imperial_March.wav* file.
+
+If we duplicate the complete presets array but add a 'PreFont' folder and *Mute.wav* music track to each preset on one of the arrays like this:
+```cpp
+  {"PreFont;DarkLord;common", "tracks/Mute.wav",
+```
+then the system will look first in the 'PreFont' folder for any effects it wants. If it's looking for *quote* or *force*, and 'PreFont' contains *quote.wav* and *force.wav* files, both comprising one second of silence, the system will play those silent files and not look any further for the quote or force files in the font folder. The same goes for adding a *mute.wav* file to the 'tracks' folder.
+
+As long as both preset arrays are otherwise the same and we don't specify separate save file locations for each one, the Array Selector will, to the end user, simply become a toggle to switch effect player functionality on or off.
+
 ## Always a Way Out...
 If users end up with arrays saved in ways they don't want, all they need do is *four-clicks-and-hold* the Power button and the system will completely reset to config defaults by deleting all the save files. More details can be found here: https://pod.hubbe.net/props/sabersense/restore_defaults
