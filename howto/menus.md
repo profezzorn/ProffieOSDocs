@@ -2,7 +2,13 @@
 title: Navigating the menu system
 ---
 
-ProffieOS has a configurable menu system which can be configured with any menus you want. Also, some props have their own menues. This page describes the default menues, which is what you get by using this define with a prop that supports it:
+ProffieOS has a configurable menu system which can be configured with any menus you want. Also, some props have their own menues.  
+Please note that in order to not get lost in a menu system, a 'common' folder from a ProffieOS V2 Voicepack needs to be on the SD card and included in the [Preset's Font Search Path](/sound/sound-font-configuration.html#font-search-paths).  
+Voicepacks are available at the following pages:  
+[Default ProffieOS V2 Voicepacks](https://fredrik.hubbe.net/lightsaber/sound/)  
+[BC Custom ProffieOS V2 Voicepacks](https://crucible.hubbe.net/t/additional-voicepacks/4227)  
+
+This page describes the default menues, which is what you get by using this define with a prop that supports it:
 
 ```cpp
 #define MENU_SPEC_TEMPLATE DefaultMenuSpec
