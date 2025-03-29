@@ -134,8 +134,8 @@ It seems that lately this is mostly a specific problem encountered by using a ne
 Everything will appear fine in your config file on the surface, but this error means it contains one or more stylized characters, like fancy quotation marks, italicized looking braces etc... that are not valid characters to the Arduino compiler.
 
 The fix is to delete the offending character(s) and retype them. Sometimes it can even be a return character (invisible) so deleting back to the last character in the previous line and typing a new return sometimes is needed.
-That being said, you need to make sure your text editing software is set to PLAIN TEXT. In MacOS's Textedit, this option has changed defaults lately, so go to the menubar>Format>Make Plain Text before re-typing the characters. 
-This is another reason I highly suggest using SublimeText instead, as it uses proper unicode for coding, numbered lines, is color coded, and can even "spell-check" your code using linting if you want.
+That being said, you need to make sure your text editing software is set to PLAIN TEXT. In MacOS's Textedit, this option has changed defaults lately, so go to the menubar>Format>Make Plain Text before re-typing the characters.  
+This is another reason I highly suggest using [SublimeText](https://www.sublimetext.com/download) instead, as it uses proper unicode for coding, numbered lines, is color coded, and can even "spell-check" your code using linting if you want.
 
 Here's an example:<br>
 
