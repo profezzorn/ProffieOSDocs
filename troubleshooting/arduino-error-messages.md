@@ -154,9 +154,8 @@ sketch/config/my_config.h:17:1: error: missing terminating " character
 ```
 
 If you look, you can see that it didn’t like something about the file my_config.h, line 17, character 1, and in this case that’s the opening brace. Now this is not a great example because the problem lies AFTER the reported character, but this happens, and sometimes you need to look before AND after the little pointer to see what’s wrong, but it’s always close by. 
-However, in this case, it DOES tell you in plain English that there’s a missing terminating " character. That’s because the ” is not the same as " . 
-So there’s your problem. 
-Delete the fancy/italicized weird Unicode ” with a nice plain text " , save the file, and then try Verify again.
+However, in this case, it DOES tell you in plain English that there’s a missing terminating `"` character. That’s because the `”` is not the same as `"`, and it causes the error.   
+Delete the fancy/italicized weird Unicode `”` with a nice plain text `"`, save the file, and then try Verify again.
 Alternately, selecting the whole body of the file and Make Plain Text should work as well (shift+cmd+F in MacOS Textedit)
 
 # **Base layer can't have transparency**
