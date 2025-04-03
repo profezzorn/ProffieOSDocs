@@ -16,6 +16,8 @@ To add array selection to your saber, you need to add the following define to th
 
 `#define SABERSENSE_ARRAY_SELECTOR`
 
+Arrays must be numbered sequentially, starting at zero (0), in the field that would otherwise contain BladeID values. If used with Blade Detect, you would replace the array numbered zero with the array named NO_BLADE. When the end user cycles through the arrays, the NO_BLADE array will be ignored by Array Selector and will only be accessed by the Blade Detect process.
+
 When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead. A further optional define will play the arrayx.wav file *and* the font.wav file:
 
 `#define SABERSENSE_ENABLE_ARRAY_FONT_IDENT`
@@ -27,6 +29,14 @@ This helps when you have arrays set to save the last font used in that array, as
 By default, the system will save which array you're on. This means that the system will boot up into the last array that you were using. You can disable array saving by adding this define to the CONFIG_TOP section of your config:
 
 `#define SABERSENSE_DISABLE_SAVE_ARRAY`
+
+## Default Array
+
+If using multiple arrays, you might want to tell the system which one to use as the default array. You can do this by adding the following define to the CONFIG_TOP section of your config, followed by the array number you want to specify, like this:
+
+`#define SABERSENSE_DEFAULT_ARRAY 3`
+
+Note that the number you specify refers to where the array is in the array list, NOT the index number. For instance, if your arrays are numbered 0, 1, 2, 3, 4, 5 and you set 4 as the default, the system will use the array numbered 3, as that is the fourth array in the list due to the zero. The default array number includes the array numbered zero, but does NOT include the array named NO_BLADE.
 
 ## Specifying Arrays
 
@@ -98,6 +108,40 @@ BladeConfig blades[] = {
 #endif
 ```
 In this instance, the only difference is the pixel count. This means switching array will stay on the same font that you're currently on, but all that will change is the blade length.
+
+## Using with Blade Detect
+
+If using with blade detect, you must change the name of the first array from zero (0) to NO_BLADE, like this:
+```cpp
+BladeConfig blades[] = {
+    { NO_BLADE,
+      //  Main Blade:
+      WS281XBladePtr<16, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(no_blade)},
+    { 1,  // KR 36 inch blade.
+      //  Main Blade:
+      WS281XBladePtr<132, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    { 2,  // KR 32 inch blade.
+      //  Main Blade:
+      WS281XBladePtr<122, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    { 3,  // KR Shoto blade.
+      //  Main Blade:
+      WS281XBladePtr<108, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3>>(),
+      //  Crystal Chamber:   
+      WS281XBladePtr<1, blade2Pin, Color8::GRB, PowerPINS<bladePowerPin4>>(),  
+      CONFIGARRAY(presets)},
+    };
+#endif
+```
+With this setup, the system will switch to the NO_BLADE array only when told to do so by the Blade Detection pin. By contrast, the manual Array Selector will ignore the NO_BLADE array and only cycle through the numbered arrays.
 
 # Example Implementations
 To illustrate the above concepts, let's look at some examples of how they might be implemented:
