@@ -13,8 +13,8 @@ IncrementModulo<PULSE, MAX, INCREMENT>
  * INCREMENT: FUNCTION defaults to Int<1>
 
 # Description
-Increments by I each time PULSE occurs wraps around when
-it reaches MAX.
+Increments by INCREMENT each time PULSE occurs,  
+wraps around when it reaches MAX.
 
 # See Also
 [ThresholdPulseF](/config/functions/ThresholdPulseF.html), [IncrementF](/config/functions/IncrementF.html)
