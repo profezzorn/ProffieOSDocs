@@ -16,7 +16,7 @@ To add array selection to your saber, you need to add the following define to th
 
 `#define SABERSENSE_ARRAY_SELECTOR`
 
-Arrays must be numbered sequentially, starting at zero (0), in the field that would otherwise contain BladeID values. If using Array Selector with Blade Detect, you must add `#define SABERSENSE_NO_BLADE` to the top of your config. You also need to replace the zero (0) in the first array with NO_BLADE. When the end user cycles through the arrays, the NO_BLADE array will be ignored by Array Selector and will only be accessed by the Blade Detect process.
+Arrays must be numbered sequentially, starting at zero (0), in the field that would otherwise contain BladeID values. If using Array Selector with Blade Detect, you must add `#define SABERSENSE_NO_BLADE` to the top of your config. You also need to replace the zero (0) in the first array with NO_BLADE. When the end user cycles through the arrays, the NO_BLADE array will be ignored by Array Selector and will only be accessed by the Blade Detect process. Further details about Blade Detect can found here: https://pod.hubbe.net/howto/blade-detect.html
 
 When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead. A further optional define will play the arrayx.wav file *and* the font.wav file:
 
