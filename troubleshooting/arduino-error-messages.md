@@ -134,8 +134,8 @@ It seems that lately this is mostly a specific problem encountered by using a ne
 Everything will appear fine in your config file on the surface, but this error means it contains one or more stylized characters, like fancy quotation marks, italicized looking braces etc... that are not valid characters to the Arduino compiler.
 
 The fix is to delete the offending character(s) and retype them. Sometimes it can even be a return character (invisible) so deleting back to the last character in the previous line and typing a new return sometimes is needed.
-That being said, you need to make sure your text editing software is set to PLAIN TEXT. In MacOS's Textedit, this option has changed defaults lately, so go to the menubar>Format>Make Plain Text before re-typing the characters. 
-This is another reason I highly suggest using SublimeText instead, as it uses proper unicode for coding, numbered lines, is color coded, and can even "spell-check" your code using linting if you want.
+That being said, you need to make sure your text editing software is set to PLAIN TEXT. In MacOS's Textedit, this option has changed defaults lately, so go to the menubar>Format>Make Plain Text before re-typing the characters.  
+This is why using a code-fiendly text editor like [SublimeText](https://www.sublimetext.com/download) is recommended, as it uses proper unicode for coding, numbered lines, is color coded, and can even "spell-check" your code using linting if you want.
 
 Here's an example:<br>
 
@@ -154,9 +154,8 @@ sketch/config/my_config.h:17:1: error: missing terminating " character
 ```
 
 If you look, you can see that it didn’t like something about the file my_config.h, line 17, character 1, and in this case that’s the opening brace. Now this is not a great example because the problem lies AFTER the reported character, but this happens, and sometimes you need to look before AND after the little pointer to see what’s wrong, but it’s always close by. 
-However, in this case, it DOES tell you in plain English that there’s a missing terminating " character. That’s because the ” is not the same as " . 
-So there’s your problem. 
-Delete the fancy/italicized weird Unicode ” with a nice plain text " , save the file, and then try Verify again.
+However, in this case, it DOES tell you in plain English that there’s a missing terminating `"` character. That’s because the `”` is not the same as `"`, and it causes the error.   
+Delete the fancy/italicized weird Unicode `”` with a nice plain text `"`, save the file, and then try Verify again.
 Alternately, selecting the whole body of the file and Make Plain Text should work as well (shift+cmd+F in MacOS Textedit)
 
 # **Base layer can't have transparency**
