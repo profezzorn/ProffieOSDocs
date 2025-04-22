@@ -16,7 +16,7 @@ To add array selection to your saber, you need to add the following define to th
 
 `#define SABERSENSE_ARRAY_SELECTOR`
 
-Arrays must be numbered sequentially, starting at zero (0), in the field that would otherwise contain BladeID values. If used with Blade Detect, you would replace the array numbered zero with the array named NO_BLADE. When the end user cycles through the arrays, the NO_BLADE array will be ignored by Array Selector and will only be accessed by the Blade Detect process.
+Arrays must be numbered sequentially, starting at zero (0), in the field that would otherwise contain BladeID values. If using Array Selector with Blade Detect, you must add `#define SABERSENSE_NO_BLADE` to the top of your config. You also need to replace the zero (0) in the first array with NO_BLADE. When the end user cycles through the arrays, the NO_BLADE array will be ignored by Array Selector and will only be accessed by the Blade Detect process.
 
 When switching arrays, the switch is confirmed by playing an associated arrayx.wav file. If no array file is available, the system will play the font.wav file instead. A further optional define will play the arrayx.wav file *and* the font.wav file:
 
@@ -29,14 +29,6 @@ This helps when you have arrays set to save the last font used in that array, as
 By default, the system will save which array you're on. This means that the system will boot up into the last array that you were using. You can disable array saving by adding this define to the CONFIG_TOP section of your config:
 
 `#define SABERSENSE_DISABLE_SAVE_ARRAY`
-
-## Default Array
-
-If using multiple arrays, you might want to tell the system which one to use as the default array. You can do this by adding the following define to the CONFIG_TOP section of your config, followed by the array number you want to specify, like this:
-
-`#define SABERSENSE_DEFAULT_ARRAY 3`
-
-Note that the number you specify refers to where the array is in the array list, NOT the index number. For instance, if your arrays are numbered 0, 1, 2, 3, 4, 5 and you set 4 as the default, the system will use the array numbered 3, as that is the fourth array in the list due to the zero. The default array number includes the array numbered zero, but does NOT include the array named NO_BLADE.
 
 ## Specifying Arrays
 
