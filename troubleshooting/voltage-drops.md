@@ -15,7 +15,7 @@ Note that this just shows the path of the battery power to and from the blade, a
 1. Turn the saber on and ignite it with the blade connected.
 2. Start at the battery (position 1 and 7), measure the voltage betweend + and -. Is it low? (Meaning less than 3.5 volts.) Then the battery is the problem. Try charging it. If that doesn't help, get a new battery.
 3. Leave the negative probe on the battery -, and move the positive probe from + to the next step in the circuit. If the voltage changed by more than 0.1 volt, you have found a problem.
-4. Once you reach the LED strip (7), move the positive probe back to (1), and then start moving the negative probe instead. Again, if you see a drop greater than 0.1 volts, you have found a problem.
+4. Once you reach the LED strip (6), move the positive probe back to (1), and then start moving the negative probe instead. Again, if you see a drop greater than 0.1 volts, you have found a problem.
 
 ## Ok, so I found the problem, now what?
 
