@@ -36,7 +36,7 @@ files are rendered into an in-memory frame buffer.
 DisplayStyle is used to read from that frame buffer.
 Note that it's totally ok to use this with regular
 blades, just make the height or the width of the
-display equal to 1.
+display equal to 1.  
 
 For more information about SCR files, read [the SCR Page](/display/SCR.html).  
 For more information about PQF files, read [the PQF Page](/display/PQF.html).  
