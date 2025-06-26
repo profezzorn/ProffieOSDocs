@@ -7,7 +7,7 @@ SCR files tells displays what to do. When event happens, the corresponding SCR f
 # The instructions
 
 ### file=filename.pqf
-This instruction tells the display to start playing "filename.pqf". The filename can be anything you want to. Note that if you have several PQF files and you want ProffieOS to choose one randomly, you must also have multiple SCR files, one for each PQF file. File names are relative to where the SCR files are, so if your SCR file is called "smthjedi/160x80/clash.pqf" and your PQF file is called "smthjedi/160x80/pqf/clash.pqf", then you would use "file=pqf/clash.pqf". (No need to include the smthjedi/160x80 part.)
+This instruction tells the display to start playing "filename.pqf". The filename can be anything you want to. Note that if you have several PQF files and you want ProffieOS to choose one randomly, you must also have multiple SCR files, one for each PQF file. File names are relative to where the SCR files are, so if your SCR file is called "smthjedi/160x80/clash.scr" and your PQF file is called "smthjedi/160x80/pqf/clash.pqf", then you would use "file=pqf/clash.pqf". (No need to include the smthjedi/160x80 part.)
 
 Note that if the layer is already playing this file, it will just continue playing it.
 
