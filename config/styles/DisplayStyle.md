@@ -38,5 +38,7 @@ Note that it's totally ok to use this with regular
 blades, just make the height or the width of the
 display equal to 1.
 
+For more information about SCR files, read [the SCR Page](/display/SCR.html).  
+For more information about PQF files, read [the PQF Page](/display/PQF.html).  
 # Source Link
 https://github.com/profezzorn/ProffieOS/blob/6f8add544c627172ad2dd698c90e5e55078a420a/styles/display.h#L7
