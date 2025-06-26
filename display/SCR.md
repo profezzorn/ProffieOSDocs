@@ -49,4 +49,5 @@ file=logo.pqf
 * A=battery specifies that the "A" value (which is used by batt.pqf) will draw it's values from the battery sensor.
 * The third layer will play logo.pqf, which shows "ProffieOS" for a few seconds, then becomes transparent, and then stops, which shows the layers below.
 
-The "vc.pqf" file in this virtual crystal example has internal conditions that handles on/off, clash and lockup, so there is no need for the SCR files to do anything about that. For more information about PQF files, read [the PQF Page](/display/PQF.html).
+The "vc.pqf" file in this virtual crystal example has internal conditions that handles on/off, clash and lockup, so there is no need for the SCR files to do anything about that.  
+For more information about PQF files, read [the PQF Page](/display/PQF.html).  
