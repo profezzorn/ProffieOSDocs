@@ -1,8 +1,6 @@
 ---
-title: Button Clicker
+title: Sabersense Button Clicker
 ---
-
-# The Button Clicker
 
 ## Overview
 Some hilts, like KR's Scavenger hilt for instance, have complex switch systems that make it difficult to feel when the saber's switch is actually being pressed or released. This can make accessing certain features difficult.
