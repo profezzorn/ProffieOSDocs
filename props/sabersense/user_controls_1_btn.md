@@ -1,8 +1,6 @@
 ---
-title: Button Controls
+title: One Button Controls
 ---
-
-# One Button Controls
 
 The Sabersense button system has been designed to be simple, intuitive and easy to remember.
 
