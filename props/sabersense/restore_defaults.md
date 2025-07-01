@@ -1,8 +1,6 @@
 ---
-title: Restore Defaults
+title: Sabersense Restore "Factory" Defaults
 ---
-
-# Restore 'Factory' Defaults
 
 If you have set SAVE-STATE, SAVE_VOLUME or any other save setting in your config, the system will save changes that you make to the system such as blade colour, preset etc. It does this by creating save files and storing them on the SD card. Deleting these files from the SD restores the system to 'factory defaults'.
 
