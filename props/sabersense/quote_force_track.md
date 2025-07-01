@@ -1,5 +1,5 @@
 ---
-title: Sound Effect Player
+title: Sabersense Sound Effect Player
 ---
 
 # Quote, Force Effect and Track Players
