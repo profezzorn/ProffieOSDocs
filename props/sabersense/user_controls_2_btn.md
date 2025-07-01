@@ -1,8 +1,6 @@
 ---
-title: Button Controls
+title: Two Button Controls
 ---
-
-# Two Button Controls
 
 The Sabersense button system has been designed to be simple, intuitive and easy to remember.
 
