@@ -139,6 +139,19 @@ ProffieOSOnImageDuration=5000.0
 # melodies which would be played in sync with the beat.
 ProffieOSSmoothSwingHumstart=0
 
+### ---- OS 8.x and above ----
+
+# Smoothswings default to switch back to the other sound again after 180 degrees.
+# This 180 degrees is controllable by using the following:
+
+#Low2HighSeparationDegrees=180
+
+#High2LowSeparationDegrees=180
+
+# How long it takes for the idle sound to fade in when
+# it first starts playing. It loops at full volume afterwards.
+# Default 3.0
+ProffieOSIdleFadeIn=3.0
 ```
 
 From ProffieOS 7.x forward, if there are multiple config.ini files in the font search path, they will all be read. Values specified in the first one will take precedence over values specified in the second one, and so forth. In ProffieOS 6.x and earlier, only once a config.ini was found, no more files were read.
