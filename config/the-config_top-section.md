@@ -466,6 +466,35 @@ This define lets you include some other POV data instead of the default star war
 ```cpp
 #define POV_INCLUDE_FILE "jedi_logo.h"
 ```
+### BUTTON_DOUBLE_CLICK_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. It allows you to alter how many milliseconds can be between to clicks to make them count as a double click. The default is 500 milliseconds.
+```cpp
+#define BUTTON_DOUBLE_CLICK_TIMEOUT 500
+```
+
+### BUTTON_SHORT_CLICK_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. Pressing a button for a shorter than this counts as a "short click". The default is 500 milliseconds.
+```cpp
+#define BUTTON_SHORT_CLICK_TIMEOUT 500
+```
+
+### BUTTON_HELD_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. It determines how long after you press a button, the "held" event is fired. The default is 300 milliseconds.
+```cpp
+#define BUTTON_HELD_TIMEOUT 300
+```
+
+### BUTTON_HELD_MEDIUM_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. It determines how long after you press a button, the "held medium" event is fired. The default is 800 milliseconds.
+```cpp
+#define BUTTON_HELD_MEDIUM_TIMEOUT 800
+```
+
+### BUTTON_HELD_LONG_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. It determines how long after you press a button, the "held long" event is fired. The default is 2000 milliseconds.
+```cpp
+#define BUTTON_HELD_LONG_TIMEOUT 2000
+```
 
 # ProffieOS 8.x defines
 
@@ -602,8 +631,13 @@ This define enables "tick" sounds when using the smooth color change menu. The t
 
 ### ENABLE_IDLE_SOUND
 This enables a sound effect called "idle", which is basically the inverse of "hum" as it will play when the saber is off, instead of when it's on. It will stop playing after IDLE_OFF_TIME has passed.
-
 ```cpp
 #define ENABLE_IDLE_SOUND
+```
+
+### BUTTON_LONG_CLICK_TIMEOUT
+This define is really meant to be used by a prop file, but can also be set in a config file. It allows you to alter the maxium time for a "long click". The default is 2500 milliseconds.
+```cpp
+#define BUTTON_LONG_CLICK_TIMEOUT 2500
 ```
 
