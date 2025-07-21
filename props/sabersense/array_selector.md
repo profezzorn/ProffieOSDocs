@@ -28,6 +28,11 @@ By default, the system will save which array you're on. This means that the syst
 
 `#define SABERSENSE_DISABLE_SAVE_ARRAY`
 
+## Default Array
+In multi-array systems, you can specify which array should be the default by adding this define to the CONFIG_TOP section of your config file, followed by the index number of the array you want (note zero based numbering):
+
+`#define SABERSENSE_DEFAULT_BLADE_ARRAY 3`
+
 ## Specifying Arrays
 
 You will also need to specify the arrays themselves, with sequential index numbers starting at zero, like this:
@@ -143,7 +148,7 @@ To illustrate the above concepts, let's look at some examples of how they might 
 * Array 4 - LGT 32 inch
 * Array 5 - Unspecified 144 pixels
 
-This can be achieved by having unspecified save files and all blade arrays looking at the same preset array - all that changes is the pixel count between blade arrays. This means to the end user, switching arrays simply changes the blade length setting without affecting anything else.
+This can be achieved by having unspecified save files and all blade arrays looking at the same preset array - all that changes is the pixel count between blade arrays. This means to the end user, switching arrays simply changes the blade length setting without affecting anything else, and the system will save the stored length through reboots. You can then use the free wav file downloads available from the [Sabersense Downloads](https://www.sabersense.co.uk/downloads) page to ident which blade length you've switched to.
 
 ## Turning Motors On and Off
 * Array 1 - Motor On when blade lights
