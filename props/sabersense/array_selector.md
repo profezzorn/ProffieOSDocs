@@ -31,7 +31,7 @@ By default, the system will save which array you're on. This means that the syst
 ## Default Array
 In multi-array systems, you can specify which array should be the default by adding this define to the CONFIG_TOP section of your config file, followed by the index number of the array you want (note zero based numbering):
 
-`#define SABERSENSE_DEFAULT_BLADE_ARRAY 3`
+`#define SABERSENSE_DEFAULT_BLADE_ARRAY 4`
 
 ## Specifying Arrays
 
