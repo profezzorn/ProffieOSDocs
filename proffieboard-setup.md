@@ -54,6 +54,12 @@ On debian-like systems, this can be fixed with the following commands:
     sudo apt-get update
     sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
 
+If you're on an arm or risc-v system, which doesn't have native i386 support, you can add support through an emulator by running this line:
+
+    sudo apt-get install binfmt-support qemu-user-static
+
+Then run the three lines above that adds i386 architecture.
+
 ### Mac
 No extra steps needed, it should just work.
 
