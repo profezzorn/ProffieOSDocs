@@ -23,7 +23,7 @@ transition to/from the intermediate steps in a loop.
 If CONDITION <= 0, runs END_TRANSITION and stops.
 
 # See Also
-[TransitionLoop](/config/transitions/TransitionLoop.html)
+[TransitionLoop](/config/styles/TransitionLoop.html)
 
 # Source Link
 https://github.com/profezzorn/ProffieOS/blob/5def63b4b75c8cc9aa8ae761a8ae10a3d1e59992/styles/transition_loop.h#L49
