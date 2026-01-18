@@ -9,7 +9,7 @@ A sound font is mostly made up of many sound files in a single directory. Let's 
 
 This file name is made up of four main parts:
 
-* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](/config/the-config_presets-section.html) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith\1\sith1`, or `fonts\jedi\named\obiwan`, etc.
+* The directory (Yellow) - This can be anything you want, and is typically the name of the font. All sound and config files must be in the same final directory, but fonts can be organized in to as many sub-directories as you want. The first entry in the [presets\[\] array](/config/the-config_presets-section.html) specifies the full path to the font directory. For example, you can have your fonts sorted as `sith/1/sith1`, or `fonts/jedi/named/obiwan`, etc.
 
 * The name (Magenta) - This is the name of the sound type, using the names specified below in the [Sound Effect Names](#sound-effect-names) section. In this example, it's a clash sound.
 
