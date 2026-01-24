@@ -37,6 +37,22 @@ If all else fails, you'll need to reduce the number of presets you use, or use l
 ### Use the same, or similar style for multiple presets.
 Using the same style multiple times in your config file uses no extra memory. This means that you can have multiple presets, with different fonts and tracks, but with identical blade styles, and it will use very little memory. Since ProffieOS 4.x, this sort of memory saving also applies when making minor changes, like changing the base color of a blade. Basically: Having similar blade styles, but with different colors uses less memory than having unique blade styles for each preset.
 
+A variation of this is to use use the same style, but change some of the colors or numbers using Edit Mode, or the 8.x menues. These sort of changes will generally be saved in the presets.ini file on your SD card, but you can also do this directly in your config file. Here is an example, let's say you have three styles like this:
+
+```cpp
+   StyleNormalPtr<AudioFlicker<RED, WHITE>, BLUE, 300, 800>(),
+   StyleNormalPtr<AudioFlicker<GREEN, WHITE>, BLUE, 300, 800>(),
+   StyleNormalPtr<AudioFlicker<YELLOW, WHITE>, BLUE, 300, 800>(),
+```
+If you change this to:
+```cpp
+   StyleNormalPtr<AudioFlicker<RgbArg<BASE_COLOR_ARG,Red>,White>,Blue,300,800>("65535,0,0"),
+   StyleNormalPtr<AudioFlicker<RgbArg<BASE_COLOR_ARG,Red>,White>,Blue,300,800>("0,65535,0"),
+   StyleNormalPtr<AudioFlicker<RgbArg<BASE_COLOR_ARG,Red>,White>,Blue,300,800>("65535,65535,0"),
+````
+
+Then the styles will be exactly the same, and the only difference will be the string at the end, which should reduce the memory usage quite a lot. The format of the string is the same as what is stored in presets.ini (except for the "builting X Y" part.) so you can copy the strings from there if you like.  You can also use the "using" syntax to not have to re-type the style over and over again. Note that it makes no difference in how much memory you save though.
+
 ### Disable basic parser styles.  (ProffieOS 6.x or newer)
 ProffieOS contains a few simple blade styles can be selected, used and customized from the ProffieOS Workbench by using Bluetooth or WebUSB.  If you never use the ProffieOS Workbench, you don't need these styles. Also, if you use styles updated for Edit Mode, then you will have lots of options for customization in the Workbench even if you don't have these basic styles. To disable them, you can add
     
