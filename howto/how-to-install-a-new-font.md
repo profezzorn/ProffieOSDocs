@@ -38,4 +38,4 @@ Using the ProffieOS workbench, or edit mode both ends up modifying a file on the
 
 ## Replacing an existing font on the SD card.
 
-Some people find it easier to just name their font directories something generic, like "font1", "font2", etc. Then you can just replace the contents of those directories to switch the font sounds, and then ProffieOS doesn't need to be told how to find the sounds since they the sounds are in the same place, just new sounds. Of course, you could do this even if the directories aren't generically named, but it might be confusing to have a "darthvader" directory with a Luke font in it.
+Some people find it easier to just name their font directories something generic, like "font1", "font2", etc. Then you can just replace the contents of those directories to switch the font sounds, and then ProffieOS doesn't need to be told how to find the sounds since your new sounds are in the same place. Of course, you could do this even if the directories aren't generically named, but it might be confusing to have a "darthvader" directory with a Luke font in it.
