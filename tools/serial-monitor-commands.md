@@ -189,6 +189,27 @@ Triggers accent slash.
 
 Triggers accent spin (if enabled with ENABLE_SPINS)
 
+## get_variation
+
+Prints out the current variation (used by color change mode)
+
+## tag| command
+
+This command can make communication with apps more robust.
+"tag" can be anything, as long as it doesn't have a space in it.
+ProffieOS will run the command, and then for every output line, it will print:
+
+```
+Line number,line length, tag|output line
+```
+
+Example, if your command is `foo| list_fonts`, the output could be:
+```
+1,8,foo|TeensySF
+2,4,foo|hero
+3,8,foo|graflex7
+```
+
 ## sd
 * sd 1 - enable sd card access from computer
 * sd 0 - disable sd card access from computer
