@@ -126,7 +126,7 @@ Preset no_blade[] = {
 };
 
 
-BladesConfig blades[] = {
+BladeConfig blades[] = {
   { 10000,
     WS281XBladePtr<123, bladePin, Color8::GRB, PowerPINS<bladePowerPin2, bladePowerPin3> >(),
     CONFIGARRAY(blade_1), "blade_1_Save" },
