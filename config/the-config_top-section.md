@@ -640,4 +640,37 @@ This define is really meant to be used by a prop file, but can also be set in a 
 ```cpp
 #define BUTTON_LONG_CLICK_TIMEOUT 2500
 ```
+# PROP SPECIFIC DEFINES
+There are several props that have defines specific to them. These defines will enable or disable controls, menu options, or modes (such as Fett263's "Battle Mode"). The following are a list of defines by prop that have been included in the props folder packaged with OS8. You will need to the corresponding prop defined in your config in order for these to work. (See [The CONFIG_PROP section](https://pod.hubbe.net/config/the-config_prop-section.html)). All of this information is also viewable by opening the .h file for each prop in a text editor. Any defines already listed as non-prop specific have been excluded (even if you see it in the .h file).
+
+# saber_caiwyn_buttons.h PROP DEFINES
+
+### CAIWYN_BUTTON_CLASH
+Enables a clash to be triggered without impact to the blade by pressing the power button.  This effect replaces lightning blocks for two-button sabers, but if a saber has three buttons, the lightning block can be triggered by holding AUX2 and pressing AUX.
+```cpp
+#define CAIWYN_BUTTON_CLASH
+```
+
+### CAIWYN_BUTTON_LOCKUP
+Enables a lockup to be triggered without impact to the blade by pressing and holding the power button. If both CAIWYN_BUTTON_LOCKUP and CAIWYN_BUTTON_CLASH are defined, pressing the power button triggers a lockup, but a clash sound is overlayed on top of the lockup sounds to smooth out the transition from bgnlock and endlock sounds for quick clashes.  I recommend this configuration.
+```cpp
+#define CAIWYN_BUTTON_LOCKUP
+```
+
+### CAIWYN_SAVE_TRACKS
+Automatically saves the selected track for each preset. Any time the user holds the Aux button for one second to change the active track, the preset is updated to default to that track. This ONLY happens when the user selects the track directly; if the Track Player Mode is set to repeat all tracks, the saved track is not updated when the next track is automatically played. If SAVE_STATE is defined, then this will automatically be defined as well.
+```cpp
+#define CAIWYN_SAVE_TRACKS
+```
+
+### CAIWYN_SAVE_TRACK_MODE
+Automatically saves the selected track for each preset. Any time the user holds the Aux button for one second to change the active track, the preset is updated to default to that track. This ONLY happens when the user selects the track directly; if the Track Player Mode is set to repeat all tracks, the saved track is not updated when the next track is automatically played. If SAVE_STATE is defined, then this will automatically be defined as well.
+```cpp
+#define CAIWYN_SAVE_TRACK_MODE
+```
+
+
+
+
+
 
