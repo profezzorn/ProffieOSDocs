@@ -95,9 +95,9 @@ See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list o
 | `bladein`  | Played when a blade is inserted when using [Blade Detect](howto/blade-detect) or [Blade ID](howto/blade-id). |
 | `bladeout`  | Played when a blade is removed when using [Blade Detect](howto/blade-detect) or [Blade ID](howto/blade-id). |
 | `mbuzz`    | Menu sound played to indicate that there are no more menu options or list entries.|
-| `mzoom`    | Sound for color menu / colorchange "zooming in".|
 | `mdown`    | Sound for decrease.|
 | `mup`      | Sound for increase.|
+| `mzoom`    | Sound for color menu / colorchange "zooming in".|
 | `voldown`  | Sound for decreasing volume.|
 | `volup`    | Sound for increasing volume.|
 
