@@ -233,7 +233,7 @@ mpastec.wav
 msdacc.wav  
 mseting2.wav  
 
-A voicepack.ini is just a text file that indicates that a Voicpack is a V2. The contents are simple:
+A voicepack.ini is just a text file in the same folder that indicates that a Voicpack is a V2. The contents are simple:
 ```
 voice_pack_version=2
 ```
