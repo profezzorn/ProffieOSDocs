@@ -3,6 +3,7 @@ title: Voicepack common folder contents
 ---
 
 A 'common' folder from a ProffieOS V2 Voicepack on the SD card should contain the following files with the following phrases (OR similar/whatever you want)  
+* Note - Some prop files (including the default saber.h prop) on Proffie OS 8 *require* a V2 Voicepack, which contains new sounds and a voicepack.ini file.  
 
 battlevl.wav - "the battery level is"  
 chreoend.wav - "end coreography"  
