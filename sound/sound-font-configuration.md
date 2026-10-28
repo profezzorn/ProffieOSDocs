@@ -115,7 +115,6 @@ See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list o
 * `clipin`
 * `clipout`
 * `empty`
-* `fire`
 * `full`
 * `jam`
 * `unjam`
