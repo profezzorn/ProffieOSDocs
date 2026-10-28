@@ -13,7 +13,12 @@ Spoken menu items and some other prompts are contained in a ProffieOS Voicepack,
 Typically these sound files are in a folder named "common" and need to be on the SD card for the system to read them.  
 The "common" folder is just another font folder as far as ProffieOS is concerned, and it is used by including it in the font search path in a preset such as `{ "FontName;common", .....`  
 The default ProffieOS Voicepacks can be found here: [Default ProffieOS Voicepacks](https://fredrik.hubbe.net/lightsaber/sound/)  
-Additional options can be found here: [Additional Voicepacks](https://crucible.hubbe.net/t/additional-voicepacks)
+Additional options can be found here: [Additional Voicepacks](https://crucible.hubbe.net/t/additional-voicepacks)  
+The contents of a Voicepack can be found here: [Voicepack common folder contents](/sound/voicepack-common_folder_contents).
+
+
+
+
 
 ### Font directory too long - Teensysaber boards only as of ProffieOS 6.x.
 If your font directory can't be found AND the name is longer than 8 characters, you may get this error message. Check the path and name of the font folder you specified in the preset and make sure it matched exactly on the SD card.
