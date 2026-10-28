@@ -43,50 +43,63 @@ The decision of which directory to use is done _once_ for all files with the sam
 ## Sound Effect Names
 The name part of the filename needs to be one that ProffieOS can recognize. Sounds can either be monophonic (Plecter) or polyphonic (Naigon Electronics) style. ProffieOS will automatically decide if a specific sound type is monophonic or polyphonic font based on the filename. Monophonic sounds will smoothly join with the hum when they are finished playing. Polyphonic sounds will automatically mix with the hum sound. Keep in mind that you cannot mix mono and polyphonic sounds for the same effect. For example, if you are using `clash`, you cannot use `clsh` as well. You can, however, mix for different effects. You could use `clash` alongside `blst` in the same font for example.
 
-The following sounds are triggered along with blade animations. The buttons, gestures, or actions used to trigger them is specific to the prop file being used.  
+The following sounds are mostly triggered along with blade animations. The buttons, gestures, or actions used to trigger them is specific to the prop file being used.  
 See [The-CONFIG_PROP-section](/config/the-config_prop-section.html) for a list of prop files included with ProffieOS. Additional sounds are available when using some props, such as `quote`. Each prop will have instructions in the top comment section for how to use it.  If you are using the default saber.h prop, you can also read [How to use ProffieOS](/howto/how-to-use-it.html) for more details.
 
 ## List of Names and Effects
 | Monophonic Filename | Polyphonic Filename | Effect |
 |---|---|---|
-| `boot`               | `boot`    | Played when ProffieOS boots up. |
-| `swing`              | `swng`    | Accent swing sounds that play near the peak of a swing motion.|
-| N/A                  | `swingl`  | If present with `swingh`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
-| N/A                  | `swingh`  | If present with `swingl`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
-| `hum`                | `hum`     | Played when the saber is on and stationary (looped) |
-| `poweron`            | `out`     | Extension sound when you ignite the blade. |
-| `poweroff`, `pwroff` | `in`      | Retraction sound when the blade is shut off. |
-| `clash`              | `clsh`    | Played when you hit something with the saber |
-| `force`              | `force`   | Force use sound.|
-| `slsh`               | `slsh`    | Played when you make a swing that is accelerating faster than the threshold set in either config.ini or smoothsw.ini (OS3.x and up) |
-| `stab`               | `stab`    | Played when you make a stabbing motion (OS3.x and up) |
-| `blaster`            | `blst`    | Blaster deflection sound. |
-| `lockup`             | `lock`    | Sound when blades come together and struggle. |
-| `bgnlock`            | `bgnlock` | Played when lockup starts |
-| `endlock`            | `endlock` | Played when lockup ends (if not present, clash is used) |
-| `drag`               | `drag`    | Sound for dragging the tip of the saber blade. |
+| `altchng`             | `altchng` | Played when the alt is changed. (OS7+) |
 | `bgndrag`            | `bgndrag` | Begin drag |
-| `enddrag`            | `enddrag` | End drag |
-|                      | `lb     ` | Force lightning block. |
+| `bgnidle`             | `bgnidle` | Played when idle starts |
 |                      | `bgnlb`   | Begin lightning block. |
-|                      | `endlb`   | End lightning block. |
-|                      | `melt`    | Simulate stabbing and melting an object with blade tip.|
+| `bgnlock`            | `bgnlock` | Played when lockup starts |
 |                      | `bgnmelt` | Begin melt |
+| `blaster`            | `blst`    | Blaster deflection sound. |
+| `boot`               | `boot`    | Played when ProffieOS boots up. |
+| N/A                  | `ccbegin` | Played when entering color change mode. |
+| N/A                  | `ccchange` | Played when changing color in "stepped" color change mode |
+| N/A                  | `ccend`   | Played when exiting color change mode |
+| `chhum`               | `chhum`   | Like `altchng`, but played before the new hum with no gap. (OS8+) |
+| `clash`              | `clsh`    | Played when you hit something with the saber |
+| `drag`               | `drag`    | Sound for dragging the tip of the saber blade. |
+| `enddrag`            | `enddrag` | End drag |
+|                      | `endlb`   | End lightning block. |
+| `endlock`            | `endlock` | Played when lockup ends (if not present, clash is used) |
 |                      | `endmelt` | End melt |
-| `poweronf`           | N/A       | Force power on. (not yet implemented in ProffieOS) |
+| `fastout`             | `fastout` | Played instead of "out" when using fast on (OS8+) |
 | `font`               | `font`    | Played when you switch to this preset. |
-|  N/A                 | `ccbegin` | Played when entering color change mode. |
-|  N/A                 | `ccend`   | Played when exiting color change mode |
-|  N/A                 | `ccchange` | Played when changing color in "stepped" color change mode |
-| `preon`              | `preon`    | Played before the blade turns on |
-| `pstoff`             | `pstoff`   | Played after retraction when the blade turns off |
-| `altchng`            | `altchng`  | Played when the alt is changed. (OS7+) |
-| `spin`               | `spin`     | Spin sound (Experimental, needs #define ENABLE_SPINS)
-| `fastout`            | `fastout`  | Played instead of "out" when using fast on (OS8+) |
-| `quote`              | `quote`    | Plays a quote (OS8+) |
-| `chhum`              | `chhum`    | Like `altchng`, but played before the new hum with no gap. (OS8+) |
-| `mclick`             | `mclick`   | Short menu clicked played when going between menu entries (OS8+) |
-| `idle`               | `idle`     | Played when not on (OS8+, ENABLE_IDLE_SOUND) |
+| `force`              | `force`   | Force use sound. |
+| `hum`                | `hum`     | Played when the saber is on and stationary (looped) |
+| `idle`                | `idle`    | Played when not on (OS8+, ENABLE_IDLE_SOUND) |
+| `poweroff`, `pwroff` | `in`      | Retraction sound when the blade is shut off. |
+|                      | `lb`      | Force lightning block. |
+| `lockup`             | `lock`    | Sound when blades come together and struggle. |
+| `mclick`              | `mclick`  | Short menu clicked played when going between menu entries (OS8+) |
+|                      | `melt`    | Simulate stabbing and melting an object with blade tip. |
+| `poweronf`           | N/A       | Force power on. (not yet implemented in ProffieOS) |
+| `poweron`            | `out`     | Extension sound when you ignite the blade. |
+| `preon`              | `preon`   | Played before the blade turns on |
+| `pstoff`              | `pstoff`  | Played after retraction when the blade turns off |
+| `quote`               | `quote`   | Plays a quote (OS8+) |
+| `slsh`               | `slsh`    | Played when you make a swing that is accelerating faster than the threshold set in either config.ini or smoothsw.ini (OS3.x and up) |
+| `spin`                | `spin`    | Spin sound (Experimental, needs #define ENABLE_SPINS) |
+| `stab`               | `stab`    | Played when you make a stabbing motion (OS3.x and up) |
+| N/A                  | `swingh`  | If present with `swingl`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
+| N/A                  | `swingl`  | If present with `swingh`, the [SmoothSwing algorithm](#smoothswing-configuration) will be used to generate swing sounds from these files when the saber is moved around. |
+| `swing`              | `swng`    | Accent swing sounds that play near the peak of a swing motion. |
+
+## Additional Effects sounds supported
+|Polyphonic Filename | Effect |
+|--|---|
+| `bladein`  | Played when a blade is inserted when using [Blade Detect](howto/blade-detect) or [Blade ID](howto/blade-id). |
+| `bladeout`  | Played when a blade is removed when using [Blade Detect](howto/blade-detect) or [Blade ID](howto/blade-id). |
+| `mbuzz`    | Menu sound played to indicate that there are no more menu options or list entries.|
+| `mzoom`    | Sound for color menu / colorchange "zooming in".|
+| `mdown`    | Sound for decrease.|
+| `mup`      | Sound for increase.|
+| `voldown`  | Sound for decreasing volume.|
+| `volup`    | Sound for increasing volume.|
 
 #### Thermal Detonator Props
 * `bgnarm` - when the td is arming
